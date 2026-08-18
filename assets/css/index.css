@@ -1,0 +1,377 @@
+/* ==========================================================================
+   index.css — Kullanıcı tarafı anasayfa
+   Tema değişkenleri themes.css'ten geliyor, bu dosya SONRA yüklenir.
+   ========================================================================== */
+
+body {
+    margin: 0;
+    background: var(--bg-deep);
+    background-image: radial-gradient(circle at 50% 0%, var(--bg-mid), var(--bg-deep) 60%);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .brand {
+    font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
+a { color: inherit; }
+
+/* ==========================================================================
+   NAV
+   ========================================================================== */
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+.brand i { color: var(--primary-color); }
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+.nav-links a:hover { color: var(--text-primary); }
+
+.nav-kayit {
+    background: var(--accent-lime);
+    color: var(--bg-deep) !important;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 700 !important;
+}
+.nav-kayit:hover { opacity: 0.9; }
+
+/* ==========================================================================
+   HERO — imza öğe: tema rengine uyan atom/yörünge animasyonu
+   ========================================================================== */
+.hero {
+    position: relative;
+    min-height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 60px 24px;
+    text-align: center;
+}
+
+.hero-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 340px;
+    height: 340px;
+    margin: -170px 0 0 -170px;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin: -150px 0 0 -150px;
+    border: 1.5px solid var(--glass-border);
+    border-radius: 50%;
+}
+.orbit-1 { transform: rotate(0deg) scaleY(0.42); }
+.orbit-2 { transform: rotate(60deg) scaleY(0.42); }
+.orbit-3 { transform: rotate(120deg) scaleY(0.42); }
+
+.elektron {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--active-color);
+    box-shadow: 0 0 12px 2px var(--active-color);
+    offset-path: circle(150px at 150px 150px);
+    animation-name: yorunge-donus;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.orbit-1 .elektron { animation-duration: 6s; }
+.orbit-2 .elektron { animation-duration: 9s; animation-direction: reverse; }
+.orbit-3 .elektron { animation-duration: 7.5s; }
+
+@keyframes yorunge-donus {
+    from { offset-distance: 0%; }
+    to   { offset-distance: 100%; }
+}
+
+.cekirdek {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin: -9px 0 0 -9px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: 0 0 30px 8px var(--primary-color);
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+}
+
+.hero-inner h1 {
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    font-weight: 700;
+    line-height: 1.08;
+    margin: 0 0 20px;
+    background: linear-gradient(120deg, var(--text-primary), var(--active-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin: 0 0 36px;
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent-lime);
+    color: var(--bg-deep);
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ==========================================================================
+   INTRO
+   ========================================================================== */
+.intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 24px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 600;
+    margin: 0 0 16px;
+}
+
+.intro-lead {
+    max-width: 600px;
+    margin: 0 auto 48px;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.intro-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    text-align: left;
+}
+
+.intro-card {
+    background: var(--bg-mid);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 28px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.intro-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+}
+
+.intro-card-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: var(--glass);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    margin-bottom: 16px;
+}
+
+.intro-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+.intro-card p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   FEATURES (kayan kartlar)
+   ========================================================================== */
+.features {
+    background: rgba(0, 0, 0, 0.15);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 64px 0;
+}
+
+.features-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 4px 24px 20px;
+    scrollbar-color: var(--glass-border) transparent;
+}
+
+.feature-card {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+    background: var(--bg-deep);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.feature-label {
+    display: inline-block;
+    background: var(--glass);
+    color: var(--active-color);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.feature-card p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+.faq {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 90px 24px;
+}
+.faq h2 {
+    text-align: center;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    margin: 0 0 40px;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--glass-border);
+    padding: 18px 0;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-primary);
+    font-weight: 600;
+    list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary i { transition: transform 0.2s ease; color: var(--text-soft); flex-shrink: 0; }
+.faq-item[open] summary i { transform: rotate(180deg); }
+
+.faq-item p {
+    margin: 14px 0 0;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--text-soft);
+    font-size: 13px;
+    border-top: 1px solid var(--glass-border);
+}
+
+/* ==========================================================================
+   ERİŞİLEBİLİRLİK / DUYARLI TASARIM
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    .elektron { animation: none; }
+}
+
+@media (max-width: 640px) {
+    .hero-orbit { width: 240px; height: 240px; margin: -120px 0 0 -120px; opacity: 0.6; }
+    .orbit { width: 210px; height: 210px; margin: -105px 0 0 -105px; }
+    .elektron { offset-path: circle(105px at 105px 105px); }
+    .site-nav { padding: 12px 16px; }
+    .nav-links { gap: 14px; }
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 2px solid var(--active-color);
+    outline-offset: 3px;
+}
