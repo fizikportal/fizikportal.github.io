@@ -1,0 +1,32 @@
+[
+    {
+        "id": "kul_demo0000001",
+        "ad_soyad": "Demo Kullanıcı",
+        "email": "demo@fizikplatformu.com",
+        "sifre_hash": "$2y$10$E9VjUUDmV58X72YfEHIg8ejs53A9PS8zzM3lNlRvYEvnNislFx3l2",
+        "rol": "admin",
+        "olusturulma": "05.08.2026 00:00:00",
+        "son_giris": "12.08.2026 17:02:06",
+        "basarisiz_deneme": 0,
+        "kilit_bitis": null,
+        "hatirla_hash": null,
+        "hatirla_bitis": null,
+        "reset_hash": null,
+        "reset_bitis": null
+    },
+    {
+        "id": "kul_a32b5b8df2cb1585",
+        "ad_soyad": "Fuat Karalı",
+        "email": "validebag.fizik@gmail.com",
+        "sifre_hash": "$2y$10$FV.BV.5\/BRfv0nfGtcRKaeqiE7\/qv9\/85b9BTuC4YpIzzqH6MyMtW",
+        "rol": "kullanici",
+        "olusturulma": "06.08.2026 16:40:37",
+        "son_giris": "06.08.2026 19:22:17",
+        "basarisiz_deneme": 0,
+        "kilit_bitis": null,
+        "hatirla_hash": null,
+        "hatirla_bitis": null,
+        "reset_hash": null,
+        "reset_bitis": null
+    }
+]

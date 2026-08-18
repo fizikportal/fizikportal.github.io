@@ -1,0 +1,90 @@
+{
+    "hero": {
+        "title": "evrenin yeni dili",
+        "subtitle": "Oku. Hesapla. Keşfet. Tek portaldan",
+        "cta_text": "Keşfetmeye başla",
+        "cta_url": "#konular"
+    },
+    "intro": {
+        "title": "formülleri oku, denklemleri çöz, kavramları keşfet",
+        "lead": "Fizik Portal ile evrenin kurallarını daha kolay anla",
+        "cards": [
+            {
+                "icon": "∑",
+                "title": "Ücretsiz ve açık",
+                "text": "Hobi amaçlı, tamamen ücretsiz. Herkes tüm içeriklere sınırsız erişebilir."
+            },
+            {
+                "icon": "Φ",
+                "title": "Türkçe anlatım",
+                "text": "Kavramlar yerel dilde, günlük hayattan örneklerle ve sezgisel açıklamalarla sunuluyor."
+            },
+            {
+                "icon": "λ",
+                "title": "Özgün içerik",
+                "text": "Her yazı, formül ve açıklama bu portal için özel olarak hazırlanıyor."
+            }
+        ]
+    },
+    "features": [
+        {
+            "id": "mekanik",
+            "label": "mekanik çalışırken",
+            "title": "Newton'dan Lagrange'a",
+            "text": "Kuvvet, hareket ve enerji kavramlarını adım adım takip et. Basit sarkaçtan yörünge hesaplarına kadar her şeyi formüllerle birlikte incele."
+        },
+        {
+            "id": "elektro",
+            "label": "devre kurarken",
+            "title": "Alanlar ve akımlar",
+            "text": "Elektrik alanı, manyetizma ve Maxwell denklemlerini görselleştir. Ohm kanunundan dalga rezonansına pratik örneklerle ilerle."
+        },
+        {
+            "id": "kuantum",
+            "label": "kuantum okurken",
+            "title": "Olasılık ve süperpozisyon",
+            "text": "Schrödinger denklemi, dalga fonksiyonu ve belirsizlik ilkesini sade bir dille anlat. Kuantum dünyasının mantığını kavramsal olarak keşfet."
+        },
+        {
+            "id": "termodinamik",
+            "label": "enerji düşünürken",
+            "title": "Isı, entropi, denge",
+            "text": "Termodinamiğin yasalarından Carnot çevrimine kadar enerjinin evrendeki rolünü anla. Entropi ve zaman oku üzerine düşünceler."
+        },
+        {
+            "id": "optik",
+            "label": "ışığı takip ederken",
+            "title": "Dalga ve parçacık",
+            "text": "Yansıma, kırılma, girişim ve kırınım olaylarını deneylerle birleştir. Işığın hem dalga hem parçacık olduğunu somut örneklerle gör."
+        },
+        {
+            "id": "astrofizik",
+            "label": "gökyüzüne bakarken",
+            "title": "Yıldızlar ve evren",
+            "text": "Kara deliklerden Hubble genişlemesine evrenin ölçeğini kavra. Kozmoloji ve gökbiliminin fizik temellerini keşfet."
+        }
+    ],
+    "faq": [
+        {
+            "q": "Fizik Portal diğer eğitim sitelerinden nasıl ayrılıyor?",
+            "a": "Bu tamamen kişisel bir hobi projesi. Ticari bir platform değil; içerikler merak üzerine kurulu, sade anlatımlı ve özgün olarak hazırlanıyor."
+        },
+        {
+            "q": "İçerikler hangi seviyeye uygun?",
+            "a": "Lise ve üniversite giriş seviyesinden başlayarak ileri konulara uzanan bir yelpaze hedefleniyor. Her bölümde temel kavramlar önce açıklanıyor."
+        },
+        {
+            "q": "Hesap makinesi veya simülasyon var mı?",
+            "a": "Anasayfa tanıtım amaçlıdır. İlerleyen aşamalarda interaktif hesaplayıcılar ve basit fizik simülasyonları eklenebilir."
+        },
+        {
+            "q": "İçerikler ücretsiz mi?",
+            "a": "Evet. Bu proje tamamen hobi amaçlıdır; herhangi bir ücret veya abonelik sistemi yoktur."
+        },
+        {
+            "q": "Konu önerisi veya geri bildirim gönderebilir miyim?",
+            "a": "Elbette. Proje kişisel bir laboratuvar gibi büyüyor; hangi konuları görmek istediğini iletebilirsin."
+        }
+    ],
+    "son_guncelleme": "08.08.2026 19:47"
+}

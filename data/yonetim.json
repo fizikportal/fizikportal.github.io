@@ -1,0 +1,65 @@
+[
+    {
+        "id": "yonetim_1785675444",
+        "meta": {
+            "konu": "Disiplin Yönetmeliği",
+            "baslik": "Disiplin Soruşturma Usulleri ve Uygulama Rehberi",
+            "tarih": "02.08.2026 14:57:24"
+        },
+        "page": [
+            {
+                "uid": "block_1785688751297_6626",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><b>MADDE 1 – &nbsp;SORUŞTURMA VE KANIT TOPLAMA SÜRECİ</b> Disiplin vakalarında gerçeğin ortaya çıkarılması için izlenecek yöntemler şunlardır:&nbsp;</p>"
+                }
+            },
+            {
+                "uid": "block_1785688751297_7721",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><b>&nbsp;1.1. &nbsp;Ön İnceleme ve Sorgulama:</b> Bir disiplin ihlali şüphesi doğduğunda, ilgili öğretmen veya okul yöneticisi durumu derhal incelemeye alır.&nbsp;</p>"
+                }
+            },
+            {
+                "uid": "block_1785688751297_5523",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>&nbsp;<b>1.2. &nbsp;İfade Alma:</b> Hakkında iddia bulunan öğrenci, olayla ilgili kendi anlatımını sunma ve savunmasını yapma hakkına sahiptir.</p>"
+                }
+            },
+            {
+                "uid": "block_1785688751297_631",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><b>&nbsp;1.3. &nbsp;Kanıtların Değerlendirilmesi:</b> Karar vericiler; tanık beyanlarını, fiziksel kanıtları ve varsa dijital kayıtları (kamera, sistem logları vb.) adil bir şekilde değerlendirir.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p>"
+                }
+            }
+        ]
+    },
+    {
+        "id": "yonetim_1785675738",
+        "meta": {
+            "konu": "Disiplin Yönetmeliği",
+            "baslik": "Öğrencilerin Okuldan Uzaklaştırılması ve İtiraz Usulleri Yönetmeliği",
+            "tarih": "02.08.2026 15:02:18"
+        },
+        "page": [
+            {
+                "uid": "block_1786298452599_344",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "ÖĞRENCİLERİN OKULDAN UZAKLAŞTIRILMASI VE İTİRAZ USULLERİ YÖNETMELİĞİ"
+                }
+            },
+            {
+                "uid": "block_1786298452600_9630",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><p><strong>MADDE 1 – </strong><b>&nbsp;UZAKLAŞTIRMA YETKİSİ VE BİLDİRİM<p><br></p></b></p><p></p><p><strong>1.1. </strong><span>&nbsp;</span><b>Yetki ve Süre: </b>Öğrenciler;<b> </b>okul müdürü veya müfettiş tarafından, on (10) okul gününü aşmayacak bir süre için okuldan uzaklaştırılabilir.</p><p></p><p><strong>1.2. </strong><b>&nbsp;Yazılı Niyet Beyanı: </b>Kararı verecek olan müdür veya müfettiş, uzaklaştırma niyetini öğrenciye yazılı olarak bildirmekle yükümlüdür.</p><p></p><p><strong>MADDE 2 – </strong><span>&nbsp;</span><b>GAYRİ RESMİ DURUŞMA VE SAVUNMA FIRSATI</b></p><p></p><p><strong>2.1. </strong><b>&nbsp;Ön Görüşme Hakkı:</b> Uzaklaştırma işlemi fiilen gerçekleşmeden önce öğrenci; uzaklaştırma kararının nedenlerine itiraz etmek veya eylemlerini açıklamak için bir fırsata sahip olacaktır.</p><p></p><p><strong>2.2. </strong><span>&nbsp;</span><b>Makam Önünde Sunum: </b>Bu süreç; bölge yöneticisi, vekil yönetici veya bu iş için atanan yetkili kişi önünde yapılacak \"gayri resmi bir duruşma\" şeklinde yürütülür.</p><p><br></p><br><p></p><br><p></p><br><p></p><br><p></p><p><br></p><br><p></p><p><br></p><br></div>"
+                }
+            }
+        ]
+    }
+]

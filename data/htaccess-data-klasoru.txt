@@ -1,0 +1,14 @@
+# data/ klasörü sadece JSON veri kaynaklarını barındırır.
+# Bu dosyalara tarayıcıdan doğrudan (örn. site.com/data/meb.json) erişim
+# tamamen engellenmelidir — aksi halde tüm site verisi herkese açık hale gelir.
+
+# Apache 2.4+
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+# Apache 2.2 ve öncesi (barındırma eskiyse bu devreye girer)
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
