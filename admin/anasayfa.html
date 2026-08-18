@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa Yönetimi — Admin</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/themes.css">
+    <link rel="stylesheet" href="../assets/css/editor.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <style>
+        .anasayfa-tabs { display: flex; gap: 10px; margin: 20px 0; border-bottom: 2px solid var(--glass-border); padding-bottom: 10px; }
+        .anasayfa-tab { padding: 10px 20px; background: var(--glass-bg); border-radius: 8px 8px 0 0; cursor: pointer; text-decoration: none; color: var(--text-muted); }
+        .anasayfa-tab.active { background: var(--accent-blue); color: #fff; }
+        .anasayfa-tab i { margin-right: 6px; }
+        .repeatable-item { border: 1px solid var(--glass-border); padding: 15px; border-radius: 8px; margin-bottom: 15px; background: var(--glass-bg); }
+        .item-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px dashed var(--glass-border); padding-bottom: 10px; }
+        .btn-remove { background: #dc3545; color: #fff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; }
+        .btn-add-item { margin-top: 10px; padding: 10px 15px; background: var(--accent-cyan); color: #000; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .admin-alert { padding: 15px; border-radius: 8px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+        .admin-alert-success { background: rgba(40, 167, 69, 0.2); color: #28a745; border: 1px solid #28a745; }
+        .admin-alert-error { background: rgba(220, 53, 69, 0.2); color: #dc3545; border: 1px solid #dc3545; }
+        .form-group { margin-bottom: 15px; }
+        .form-label { display: block; margin-bottom: 5px; font-weight: bold; color: var(--text-primary); }
+        .form-control { width: 100%; padding: 10px; background: var(--bg-primary); border: 1px solid var(--glass-border); color: var(--text-primary); border-radius: 6px; }
+    </style>
+</head>
+<body class="theme-warm-amber">
+
+    <div class="admin-layout-wrapper">
+        <div class="admin-sidebar-zone" id="sidebar-yeri"></div>
+
+        <div class="admin-main-content">
+            <div class="admin-page-header">
+                <div>
+                    <h1><i class="fa-solid fa-house"></i> Anasayfa Yönetimi</h1>
+                    <p>Anasayfanın bölümlerini buradan JSONBin üzerinden düzenleyebilirsiniz.</p>
+                </div>
+            </div>
+
+            <div class="admin-content" style="padding: 20px;">
+                <div id="alert-container"></div>
+
+                <div class="admin-card">
+                    <div class="card-header"><h2><i class="fa fa-info-circle"></i> Anasayfa Bölümleri</h2></div>
+                    <div class="card-body">
+                        <p style="margin: 0;">Aşağıdaki sekmelerden anasayfanın farklı bölümlerini düzenleyebilirsiniz. Değişiklikleri kaydettiğinizde veriler JSONBin'de güncellenecektir.</p>
+                    </div>
+                </div>
+
+                <div class="anasayfa-tabs">
+                    <a href="#" class="anasayfa-tab active" data-tab="hero"><i class="fa fa-star"></i> Hero</a>
+                    <a href="#" class="anasayfa-tab" data-tab="intro"><i class="fa fa-th-large"></i> Giriş</a>
+                    <a href="#" class="anasayfa-tab" data-tab="features"><i class="fa fa-bolt"></i> Özellikler</a>
+                    <a href="#" class="anasayfa-tab" data-tab="faq"><i class="fa fa-question-circle"></i> SSS</a>
+                </div>
+
+                <form id="adminForm">
+                    <!-- HERO -->
+                    <div class="admin-card tab-panel" data-tab="hero" style="display: block;">
+                        <div class="card-header"><h2><i class="fa fa-star"></i> Hero Bölümü</h2></div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="form-label">Başlık</label>
+                                <input type="text" name="hero_title" class="form-control" placeholder="Örn: evrenin yeni dili">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Alt başlık</label>
+                                <input type="text" name="hero_subtitle" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">CTA buton metni</label>
+                                <input type="text" name="hero_cta_text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">CTA buton bağlantısı</label>
+                                <input type="text" name="hero_cta_url" class="form-control" placeholder="#konular veya /sayfa.php">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- INTRO -->
+                    <div class="admin-card tab-panel" data-tab="intro" style="display: none;">
+                        <div class="card-header"><h2><i class="fa fa-th-large"></i> Giriş Bölümü</h2></div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="form-label">Bölüm başlığı</label>
+                                <input type="text" name="intro_title" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Özet metin (lead)</label>
+                                <textarea name="intro_lead" class="form-control" rows="3"></textarea>
+                            </div>
+                            <h3 style="font-size: 1rem; margin: 24px 0 12px; padding-top: 20px; border-top: 1px solid var(--glass-border);">
+                                <i class="fa fa-cards"></i> Giriş Kartları
+                            </h3>
+                            <div class="repeatable-list" id="introCards"></div>
+                            <button type="button" class="btn-add-item" data-target="introCards" data-template="tpl-card">
+                                <i class="fa fa-plus"></i> Kart ekle
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- FEATURES -->
+                    <div class="admin-card tab-panel" data-tab="features" style="display: none;">
+                        <div class="card-header"><h2><i class="fa fa-bolt"></i> Özellikler / Konu Kartları</h2></div>
+                        <div class="card-body">
+                            <div class="repeatable-list" id="featureList"></div>
+                            <button type="button" class="btn-add-item" data-target="featureList" data-template="tpl-feature">
+                                <i class="fa fa-plus"></i> Özellik ekle
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="admin-card tab-panel" data-tab="faq" style="display: none;">
+                        <div class="card-header"><h2><i class="fa fa-question-circle"></i> Sık Sorulan Sorular</h2></div>
+                        <div class="card-body">
+                            <div class="repeatable-list" id="faqList"></div>
+                            <button type="button" class="btn-add-item" data-target="faqList" data-template="tpl-faq">
+                                <i class="fa fa-plus"></i> Soru ekle
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="admin-action-bar">
+                        <button type="submit" class="btn-kaydet-ana" id="btn-save">
+                            <i class="fa fa-save"></i> Değişiklikleri kaydet
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- ŞABLONLAR -->
+<template id="tpl-card">
+    <div class="repeatable-item">
+        <div class="item-header">
+            <strong>Yeni Kart</strong>
+            <button type="button" class="btn-remove" title="Kaldır">✕</button>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Simge</label>
+            <input type="text" name="card_icon[]" class="form-control" value="">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Başlık</label>
+            <input type="text" name="card_title[]" class="form-control" value="">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Açıklama</label>
+            <textarea name="card_text[]" class="form-control" rows="2"></textarea>
+        </div>
+    </div>
+</template>
+
+<template id="tpl-feature">
+    <div class="repeatable-item">
+        <div class="item-header">
+            <strong>Yeni Özellik</strong>
+            <button type="button" class="btn-remove" title="Kaldır">✕</button>
+        </div>
+        <div class="form-group">
+            <label class="form-label">ID (slug)</label>
+            <input type="text" name="feature_id[]" class="form-control" value="">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Etiket</label>
+            <input type="text" name="feature_label[]" class="form-control" value="">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Başlık</label>
+            <input type="text" name="feature_title[]" class="form-control" value="">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Açıklama</label>
+            <textarea name="feature_text[]" class="form-control" rows="2"></textarea>
+        </div>
+    </div>
+</template>
+
+<template id="tpl-faq">
+    <div class="repeatable-item">
+        <div class="item-header">
+            <strong>Yeni Soru</strong>
+            <button type="button" class="btn-remove" title="Kaldır">✕</button>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Soru</label>
+            <input type="text" name="faq_q[]" class="form-control" value="">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Cevap</label>
+            <textarea name="faq_a[]" class="form-control" rows="3"></textarea>
+        </div>
+    </div>
+</template>
+
+    <script>
+        // JSONBin ve Sayfa Bilgileri
+        window.CURRENT_PAGE = 'anasayfa';
+        window.PAGE_BIN_ID = '6a844972da38895dfef28db6';
+    </script>
+
+    <!-- Sidebar'ı getirmek için standart modül -->
+    <script src="includes/alan_tanimlari.js"></script>
+    <script src="includes/alan_render.js"></script>
+
+    <script>
+    (async function() {
+        'use strict';
+
+        const MASTER_KEY = '$2a$10$hoEcTWYG61JDdqk2la71Veddbtk73v/joKCtYExbBKqnXE9Ss.NtS';
+        const API_URL = `https://api.jsonbin.io/v3/b/${window.PAGE_BIN_ID}`;
+
+        // Sidebar'ı yükle
+        try {
+            const res = await fetch('includes/sidebar.html');
+            if (res.ok) document.getElementById('sidebar-yeri').innerHTML = await res.text();
+        } catch(e) {}
+
+        // Sekme geçişleri
+        document.querySelectorAll('.anasayfa-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = tab.dataset.tab;
+                document.querySelectorAll('.anasayfa-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+                document.querySelector(`.tab-panel[data-tab="${target}"]`).style.display = 'block';
+            });
+        });
+
+        // Dinamik kart ekleme
+        document.querySelectorAll('.btn-add-item').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.dataset.target;
+                const tplId = btn.dataset.template;
+                const list = document.getElementById(targetId);
+                const tpl = document.getElementById(tplId);
+                if (!list || !tpl) return;
+                const clone = tpl.content.firstElementChild.cloneNode(true);
+                list.appendChild(clone);
+                clone.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+
+        // Kaldır butonu
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('btn-remove')) {
+                const item = e.target.closest('.repeatable-item');
+                if (!item) return;
+                if (confirm('Bu öğeyi kaldırmak istediğine emin misin?')) {
+                    item.style.transition = 'opacity .2s, transform .2s';
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateX(-10px)';
+                    setTimeout(() => item.remove(), 200);
+                }
+            }
+        });
+
+        // --- JSONBİN'DEN VERİLERİ YÜKLEME ---
+        async function loadAnasayfaData() {
+            try {
+                const res = await fetch(API_URL + '/latest', { headers: { 'X-Master-Key': MASTER_KEY } });
+                if (!res.ok) return; // Hata varsa boş form açılır
+                const data = await res.json();
+                const home = data.record || {};
+                const hero = home.hero || {};
+                const intro = home.intro || {};
+                const features = home.features || [];
+                const faq = home.faq || [];
+
+                document.querySelector('[name="hero_title"]').value = hero.title || '';
+                document.querySelector('[name="hero_subtitle"]').value = hero.subtitle || '';
+                document.querySelector('[name="hero_cta_text"]').value = hero.cta_text || '';
+                document.querySelector('[name="hero_cta_url"]').value = hero.cta_url || '';
+
+                document.querySelector('[name="intro_title"]').value = intro.title || '';
+                document.querySelector('[name="intro_lead"]').value = intro.lead || '';
+
+                const introCards = document.getElementById('introCards');
+                (intro.cards || []).forEach(card => {
+                    const clone = document.getElementById('tpl-card').content.firstElementChild.cloneNode(true);
+                    clone.querySelector('[name="card_icon[]"]').value = card.icon || '';
+                    clone.querySelector('[name="card_title[]"]').value = card.title || '';
+                    clone.querySelector('[name="card_text[]"]').value = card.text || '';
+                    introCards.appendChild(clone);
+                });
+
+                const featureList = document.getElementById('featureList');
+                features.forEach(f => {
+                    const clone = document.getElementById('tpl-feature').content.firstElementChild.cloneNode(true);
+                    clone.querySelector('[name="feature_id[]"]').value = f.id || '';
+                    clone.querySelector('[name="feature_label[]"]').value = f.label || '';
+                    clone.querySelector('[name="feature_title[]"]').value = f.title || '';
+                    clone.querySelector('[name="feature_text[]"]').value = f.text || '';
+                    featureList.appendChild(clone);
+                });
+
+                const faqList = document.getElementById('faqList');
+                faq.forEach(item => {
+                    const clone = document.getElementById('tpl-faq').content.firstElementChild.cloneNode(true);
+                    clone.querySelector('[name="faq_q[]"]').value = item.q || '';
+                    clone.querySelector('[name="faq_a[]"]').value = item.a || '';
+                    faqList.appendChild(clone);
+                });
+
+            } catch (error) {
+                console.error('Veri yükleme hatası:', error);
+            }
+        }
+
+        await loadAnasayfaData();
+
+        // --- AJAX KAYDET (JSONBİN'E PUT) ---
+        const form = document.getElementById('adminForm');
+        const btnSave = document.getElementById('btn-save');
+        const alertContainer = document.getElementById('alert-container');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = {
+                hero: {
+                    title: formData.get('hero_title') || '',
+                    subtitle: formData.get('hero_subtitle') || '',
+                    cta_text: formData.get('hero_cta_text') || '',
+                    cta_url: formData.get('hero_cta_url') || ''
+                },
+                intro: { title: formData.get('intro_title') || '', lead: formData.get('intro_lead') || '', cards: [] },
+                features: [],
+                faq: []
+            };
+
+            const cardIcons = formData.getAll('card_icon[]');
+            const cardTitles = formData.getAll('card_title[]');
+            const cardTexts = formData.getAll('card_text[]');
+            cardIcons.forEach((icon, idx) => {
+                const title = cardTitles[idx] || '';
+                const text = cardTexts[idx] || '';
+                if (icon || title || text) data.intro.cards.push({ icon, title, text });
+            });
+
+            const featIds = formData.getAll('feature_id[]');
+            const featLabels = formData.getAll('feature_label[]');
+            const featTitles = formData.getAll('feature_title[]');
+            const featTexts = formData.getAll('feature_text[]');
+            featIds.forEach((id, idx) => {
+                const label = featLabels[idx] || '';
+                const title = featTitles[idx] || '';
+                const text = featTexts[idx] || '';
+                if (id || label || title || text) data.features.push({ id, label, title, text });
+            });
+
+            const faqQs = formData.getAll('faq_q[]');
+            const faqAs = formData.getAll('faq_a[]');
+            faqQs.forEach((q, idx) => {
+                const a = faqAs[idx] || '';
+                if (q || a) data.faq.push({ q, a });
+            });
+
+            btnSave.disabled = true;
+            const originalHtml = btnSave.innerHTML;
+            btnSave.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Kaydediliyor...';
+
+            try {
+                await fetch(API_URL, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json', 'X-Master-Key': MASTER_KEY },
+                    body: JSON.stringify(data)
+                });
+                showAlert('success', 'Anasayfa verileri başarıyla kaydedildi!');
+            } catch (error) {
+                showAlert('error', 'Kaydetme hatası: ' + error.message);
+            } finally {
+                btnSave.disabled = false;
+                btnSave.innerHTML = originalHtml;
+            }
+        });
+
+        function showAlert(type, message) {
+            const alert = document.createElement('div');
+            alert.className = `admin-alert admin-alert-${type === 'success' ? 'success' : 'error'}`;
+            alert.innerHTML = `<i class="fa fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i><span>${message}</span>`;
+            alertContainer.innerHTML = '';
+            alertContainer.appendChild(alert);
+            setTimeout(() => {
+                alert.style.transition = 'opacity .3s';
+                alert.style.opacity = '0';
+                setTimeout(() => alert.remove(), 300);
+            }, 3000);
+        }
+    })();
+    </script>
+</body>
+</html>

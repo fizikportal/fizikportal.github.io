@@ -1,0 +1,75 @@
+<nav class="app-sidebar">
+    <div class="brand">
+        <i class="fa-solid fa-atom"></i> Fizik Portalı
+    </div>
+
+    <!-- GENEL -->
+    <div class="menu-grup-baslik">Genel</div>
+    <a href="index.html" class="menu-link" data-sayfa="index">
+        <i class="fa-solid fa-tachometer-alt"></i> Gösterge Paneli
+    </a>
+
+    <!-- İÇERİK YÖNETİMİ -->
+    <div class="menu-grup-baslik">İçerik Yönetimi</div>
+    <a href="anasayfa.html" class="menu-link" data-sayfa="anasayfa">
+        <i class="fa-solid fa-house"></i> Anasayfa İçeriği
+    </a>
+    <a href="egitim.html" class="menu-link" data-sayfa="egitim">
+        <i class="fa-solid fa-graduation-cap"></i> Eğitim Modeli
+    </a>
+    <a href="yonetim.html" class="menu-link" data-sayfa="yonetim">
+        <i class="fa-solid fa-landmark"></i> Yönetmelikler
+    </a>
+    <a href="soru_ilk.html" class="menu-link" data-sayfa="soru_ilk">
+        <i class="fa-solid fa-circle-info"></i> Soru Bankası Tanıtımı
+    </a>
+    <a href="soru.html" class="menu-link" data-sayfa="soru">
+        <i class="fa-solid fa-list-check"></i> Soru Bankası
+    </a>
+    <a href="deney.html" class="menu-link" data-sayfa="deney">
+        <i class="fa-solid fa-flask"></i> Deneyler
+    </a>
+    <a href="okuma.html" class="menu-link" data-sayfa="okuma">
+        <i class="fa-solid fa-book-open"></i> Okuma Metinleri
+    </a>
+
+    <!-- ETKİLEŞİM -->
+    <div class="menu-grup-baslik">Etkileşim</div>
+    <a href="yorumlar.html" class="menu-link" data-sayfa="yorumlar">
+        <i class="fa-solid fa-comments"></i> Yorumlar
+    </a>
+    <a href="kullanici.html" class="menu-link" data-sayfa="kullanici">
+        <i class="fa-solid fa-users"></i> Kullanıcılar
+    </a>
+    <a href="istatistikler.html" class="menu-link" data-sayfa="istatistikler">
+        <i class="fa-solid fa-chart-line"></i> İstatistikler
+    </a>
+
+    <!-- HESAP -->
+    <div class="menu-grup-baslik">Hesap</div>
+    <a href="sifre.html" class="menu-link" data-sayfa="sifre">
+        <i class="fa-solid fa-key"></i> Şifre Değiştir
+    </a>
+
+    <!-- EN ALTTA ÖZEL LINKLER -->
+    <div class="sidebar-alt">
+        <a href="../index.html" class="siteye-don-link" target="_blank">
+            <i class="fa-solid fa-globe"></i> Siteye Dön (Yeni Sekme)
+        </a>
+        <a href="#" onclick="localStorage.clear(); window.location.href='../index.html';" class="cikis-link">
+            <i class="fa-solid fa-right-from-bracket"></i> Çıkış Yap
+        </a>
+    </div>
+</nav>
+
+<script>
+    // Hangi sayfada olduğumuzu otomatik bulup active sınıfı ekleyen minik script
+    document.addEventListener("DOMContentLoaded", () => {
+        const aktifYol = window.location.pathname.split("/").pop().replace(".html", "") || "index";
+        document.querySelectorAll(".app-sidebar .menu-link").forEach(link => {
+            if (link.getAttribute("data-sayfa") === aktifYol) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>

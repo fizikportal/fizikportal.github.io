@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetim Paneli — Okuma Metinleri & Makaleler</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/themes.css">
+    <link rel="stylesheet" href="../assets/css/editor.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="theme-warm-amber">
+
+    <div class="admin-layout-wrapper">
+        <div class="admin-sidebar-zone" id="sidebar-yeri"></div>
+
+        <div class="admin-main-content">
+            <div class="admin-page-header">
+                <div>
+                    <h1><i class="fa-solid fa-book-open"></i> Okuma Metinleri & Makaleler</h1>
+                    <p>Sınırsız okuma metni ekleyip düzenleyebilirsiniz. (JSONBin Sürümü)</p>
+                </div>
+                <div id="header-buttons"></div>
+            </div>
+
+            <div id="duzenleme-alani" style="display: none;">
+                <div class="meta-cubugu">
+                    <input type="hidden" id="edit_id" value="">
+                    <div class="meta-alan">
+                        <label>Konu / Ünite</label>
+                        <input type="text" id="meta_konu" name="meta_konu" class="meta-input" value="" placeholder="Örn: Dinamik">
+                    </div>
+                    <div class="meta-alan meta-alan-genis">
+                        <label>Başlık</label>
+                        <input type="text" id="meta_baslik" name="meta_baslik" class="meta-input" value="" placeholder="Bağlam başlığı">
+                    </div>
+                    <div class="meta-alan">
+                        <label>Tarih</label>
+                        <input type="text" id="meta_tarih" name="meta_tarih" class="meta-input" value="" placeholder="Tarih">
+                    </div>
+                </div>
+
+                <div class="editor-container">
+                    <div id="toolbar-yeri"></div>
+                    <script>window.EDITOR_DATA = [];</script>
+                    <div id="word-canvas" class="editor-content" contenteditable="true"></div>
+                    <div class="editor-info-bar">
+                        <span>Mod: <strong id="editor-mode">Yazım</strong></span>
+                        <span>Son hücrede <strong>Tab</strong> tuşu yeni satır ekler.</span>
+                    </div>
+                </div>
+
+                <div class="admin-action-bar">
+                    <a href="okuma.html" class="btn-onizleme">
+                        <i class="fa-solid fa-xmark"></i> İptal
+                    </a>
+                    <button type="button" id="btn-preview" class="btn-onizleme">
+                        <i class="fa-solid fa-eye"></i> Öngörünüm
+                    </button>
+                    <button type="button" id="btn-save-page" class="btn-kaydet-ana">
+                        <i class="fa-solid fa-floppy-disk"></i> Kaydet
+                    </button>
+                </div>
+            </div>
+
+            <div id="liste-alani" style="display: none;">
+                <div class="liste-kutusu">
+                    <table class="liste-tablosu" style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="text-align: left; border-bottom: 2px solid #ddd;">
+                                <th style="width:100px">Kapak</th>
+                                <th style="width:160px">Konu</th>
+                                <th>Başlık</th>
+                                <th style="width:150px">Yazar</th>
+                                <th style="width:150px">Tarih</th>
+                                <th style="width:120px" class="text-end">İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody id="veri-tablosu-govdesi">
+                            <tr>
+                                <td colspan="6" class="liste-bos">
+                                    <i class="fa-solid fa-spinner fa-spin"></i><br>
+                                    Veriler yükleniyor...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-yeri"></div>
+
+    <script>
+        // SADECE BU SAYFAYA AİT BİLGİLER (Bu ikisi dışında her şey kayit-coklu.js'de)
+        window.CURRENT_PAGE = 'okuma';
+        window.PAGE_BIN_ID = '6a8180e5da38895dfeeac9ba';
+    </script>
+
+    <!-- YENİ EKLENEN DOSYALAR -->
+    <script src="includes/alan_tanimlari.js"></script>
+    <script src="includes/alan_render.js"></script>
+
+    <!-- Scriptler en son yükleniyor -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/kayit-coklu.js"></script>
+
+</body>
+</html>

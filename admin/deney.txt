@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetim Paneli — İçerik Yönetimi</title>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="../assets/css/themes.css">
+    <link rel="stylesheet" href="../assets/css/editor.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="theme-warm-amber" id="adminBody">
+
+    <div class="admin-layout-wrapper">
+        <!-- SOL MENÜ BURAYA OTOMATİK YÜKLENİR -->
+        <div class="admin-sidebar-zone" id="sidebar-container"></div>
+
+        <div class="admin-main-content" style="flex-grow: 1; padding: 24px;">
+
+            <div class="admin-page-header">
+                <div>
+                    <h1 id="pageTitle"><i class="fa-solid fa-flask"></i> İçerik Yönetimi</h1>
+                    <p id="pageDescription">Kayıtları güncelleyin, kategorilere ayırın.</p>
+                </div>
+                <div id="headerButtons">
+                    <button type="button" class="btn-kaydet-ana" onclick="yeniKayitAc()">
+                        <i class="fa-solid fa-plus"></i> <span id="btnText">Yeni Ekle</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 1. BÖLÜM: LİSTELEME ALANI -->
+            <div id="liste-alani">
+                <table class="admin-table" style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th>Kapak / İkon</th>
+                            <th>Konu / Ünite</th>
+                            <th>Başlık</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody id="kayitTablosu">
+                        <tr><td colspan="4" style="text-align:center;">Yükleniyor...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 2. BÖLÜM: DÜZENLEME / EKLEME ALANI -->
+            <div id="duzenleme-alani" style="display: none;">
+                <div class="meta-cubugu">
+                    <input type="hidden" id="edit_id">
+                    <div class="meta-alan">
+                        <label id="konuLabel">Ünite / Konu</label>
+                        <input type="text" id="meta_konu" class="meta-input" placeholder="Örn: Dinamik">
+                    </div>
+                    <div class="meta-alan meta-alan-genis">
+                        <label>Başlık</label>
+                        <input type="text" id="meta_baslik" class="meta-input" placeholder="Bağlam başlığı">
+                    </div>
+                </div>
+
+                <div class="editor-container" style="margin-top: 20px;">
+                    <!-- ARAÇ ÇUBUĞU (toolbar.html) BURAYA OTOMATİK YÜKLENİR -->
+                    <div id="toolbar-container"></div>
+                    
+                    <!-- EDİTÖR YAZI ALANI -->
+                    <div id="word-canvas" class="editor-content" contenteditable="true" style="min-height: 300px; border: 1px solid #ccc; padding: 15px; margin-top: 5px; background: #fff; color: #000;"></div>
+                    
+                    <div class="editor-info-bar">
+                        <span>Mod: <strong id="editor-mode">Yazım</strong></span>
+                        <span>Son hücrede <strong>Tab</strong> tuşu yeni satır ekler.</span>
+                    </div>
+                </div>
+
+                <div class="admin-action-bar" style="margin-top: 15px;">
+                    <button type="button" class="btn-onizleme" onclick="listeyeDon()">
+                        <i class="fa-solid fa-xmark"></i> İptal
+                    </button>
+                    <button type="button" id="btn-save-page" class="btn-kaydet-ana" onclick="kaydiSakla()">
+                        <i class="fa-solid fa-floppy-disk"></i> Kaydet
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const sayfaAdi = window.location.pathname.split("/").pop().replace(".html", "") || "deney";
+        let kayitlar = [];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const aktifTema = localStorage.getItem("aktif_tema") || "warm-amber";
+            document.getElementById("adminBody").className = "theme-" + aktifTema;
+
+            sayfaBasliklariniAyarla();
+
+            // Sidebar Yükle
+            fetch('includes/sidebar.html')
+                .then(res => res.ok ? res : fetch('sidebar.html'))
+                .then(res => res.text())
+                .then(html => { document.getElementById('sidebar-container').innerHTML = html; })
+                .catch(() => console.log("Sidebar yüklenemedi."));
+
+            // Toolbar Yükle
+            fetch('includes/toolbar.html')
+                .then(res => res.ok ? res : fetch('toolbar.html'))
+                .then(res => res.text())
+                .then(html => { 
+                    document.getElementById('toolbar-container').innerHTML = html;
+                    initToolbarFunctions(); 
+                })
+                .catch(() => console.log("Toolbar yüklenemedi."));
+
+            verileriCek();
+        });
+
+        function sayfaBasliklariniAyarla() {
+            const t = document.getElementById("pageTitle");
+            const d = document.getElementById("pageDescription");
+            const b = document.getElementById("btnText");
+            const k = document.getElementById("konuLabel");
+
+            if (sayfaAdi === "deney") {
+                if(t) t.innerHTML = '<i class="fa-solid fa-flask"></i> Deneyler';
+                if(d) d.innerText = "Fizik deneylerini güncelleyin, kategorilere ayırın.";
+                if(b) b.innerText = "Deney Ekle";
+            } else if (sayfaAdi === "soru") {
+                if(t) t.innerHTML = '<i class="fa-solid fa-list-check"></i> Soru Bankası';
+                if(d) d.innerText = "Soru bankası içeriklerini ve testleri düzenleyin.";
+                if(b) b.innerText = "Soru Ekle";
+            } else if (sayfaAdi === "okuma") {
+                if(t) t.innerHTML = '<i class="fa-solid fa-book-open"></i> Okuma Metinleri';
+                if(d) d.innerText = "Fizik okuma metinlerini ve makaleleri yönetin.";
+                if(b) b.innerText = "Metin Ekle";
+            } else if (sayfaAdi === "yonetim") {
+                if(t) t.innerHTML = '<i class="fa-solid fa-landmark"></i> Yönetmelikler';
+                if(d) d.innerText = "Mevzuat ve resmi yönetmelik maddelerini güncelleyin.";
+                if(b) b.innerText = "Madde Ekle";
+                if(k) k.innerText = "Kategori";
+            }
+        }
+
+        async function verileriCek() {
+            try {
+                const res = await fetch(`../data/${sayfaAdi}.json`);
+                kayitlar = res.ok ? await res.json() : [];
+                listeyiEkranaBas();
+            } catch (err) {
+                console.error("Veri okunurken hata:", err);
+                kayitlar = [];
+                listeyiEkranaBas();
+            }
+        }
+
+        function listeyiEkranaBas() {
+            const tbody = document.getElementById("kayitTablosu");
+            if (!tbody) return;
+            
+            if (kayitlar.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="4" style="text-align:center;">Henüz kayıt bulunmuyor.</td></tr>`;
+                return;
+            }
+            const gosterilecekListe = [...kayitlar].reverse();
+
+            tbody.innerHTML = gosterilecekListe.map((item) => {
+                const gercekIndex = kayitlar.findIndex(k => k.id === item.id);
+                return `
+                    <tr>
+                        <td><div class="liste-kapak-thumb liste-kapak-bos"><i class="fa-solid fa-file"></i></div></td>
+                        <td><strong>${item.meta?.konu || '-'}</strong></td>
+                        <td>${item.meta?.baslik || '-'}</td>
+                        <td>
+                            <button onclick="duzenle(${gercekIndex})" class="btn-onizleme"><i class="fa-solid fa-pen"></i></button>
+                            <button onclick="sil(${gercekIndex})" class="btn-onizleme" style="color:red;"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function yeniKayitAc() {
+            document.getElementById("liste-alani").style.display = "none";
+            document.getElementById("duzenleme-alani").style.display = "block";
+            document.getElementById("edit_id").value = "";
+            document.getElementById("meta_konu").value = "";
+            document.getElementById("meta_baslik").value = "";
+            document.getElementById("word-canvas").innerHTML = "<h2>Başlığınızı buraya yazın</h2><p>İçeriğe başlamak için tıklayın...</p>";
+        }
+
+        function listeyeDon() {
+            document.getElementById("liste-alani").style.display = "block";
+            document.getElementById("duzenleme-alani").style.display = "none";
+        }
+
+        function duzenle(index) {
+            const item = kayitlar[index];
+            document.getElementById("liste-alani").style.display = "none";
+            document.getElementById("duzenleme-alani").style.display = "block";
+            document.getElementById("edit_id").value = index;
+            document.getElementById("meta_konu").value = item.meta?.konu || "";
+            document.getElementById("meta_baslik").value = item.meta?.baslik || "";
+            
+            let icerikHTML = "";
+            if (typeof item.page === 'object' && Array.isArray(item.page)) {
+                icerikHTML = item.page.map(blok => {
+                    if (blok.content && blok.content.html) return blok.content.html;
+                    if (blok.html) return blok.html;
+                    return "";
+            // Başlık seçimi değiştiğinde (H1, H2 vb.)
+            const headingSelect = document.getElementById("heading-select");
+            if (headingSelect) {
+                headingSelect.addEventListener("change", () => {
+                    document.execCommand("formatBlock", false, headingSelect.value);
+                });
+            }
+
+            // Yazı tipi boyutu değiştiğinde
+            const fontSizeSelect = document.getElementById("font-size-select");
+            if (fontSizeSelect) {
+                fontSizeSelect.addEventListener("change", () => {
+                    const selection = window.getSelection();
+                    if (selection.rangeCount) {
+                        const range = selection.getRangeAt(0);
+                        const span = document.createElement("span");
+                        span.style.fontSize = fontSizeSelect.value;
+                        range.surroundContents(span);
+                    }
+                });
+            }
+        } // initToolbarFunctions fonksiyonunun kapanış parantezi
+    </script>
+</body>
+</html>
