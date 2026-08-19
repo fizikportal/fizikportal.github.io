@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınav Ol — Fizik Portalı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+
+        <div class="sinav-sayfa">
+            <!-- KURULUM EKRANI -->
+            <div id="sinav-kurulum" class="sinav-kurulum">
+                <h1><i class="fa-solid fa-graduation-cap"></i> Sınav Ol</h1>
+                <p class="sinav-aciklama">Kendini test et — sınıfını ve konularını seç, sınava başla.</p>
+
+                <div class="kurulum-adim">
+                    <label class="baslik-label">Hangi sınıf seviyesinden sınava girmek istiyorsunuz?</label>
+                    <div class="secim-grup" id="sinif-secim-grup"></div>
+                </div>
+
+                <div class="kurulum-adim">
+                    <label class="baslik-label">Lütfen sınav olmak istediğiniz konuları seçin:</label>
+                    <div class="secim-grup" id="konu-secim-grup"></div>
+                </div>
+
+                <div class="kurulum-adim">
+                    <label class="baslik-label">Kaç soruluk sınav istiyorsunuz?</label>
+                    <div class="soru-sayisi-satiri">
+                        <input type="number" id="soru-sayisi-input" value="10" min="1">
+                        <span id="soru-sayisi-bilgi" class="soru-sayisi-bilgi"></span>
+                    </div>
+                </div>
+
+                <button type="button" id="sinav-basla-btn" class="btn-kaydet-ana">
+                    <i class="fa-solid fa-play"></i> Sınavı Başlat
+                </button>
+            </div>
+
+            <!-- SINAV EKRANI -->
+            <div id="sinav-alani" class="sinav-alani" style="display:none;">
+                <div class="sinav-ust-cubuk">
+                    <span id="sinav-ilerleme"></span>
+                </div>
+
+                <div id="sinav-govde" class="sinav-govde editor-content"></div>
+                <div id="sinav-secenekler" class="sinav-secenekler"></div>
+
+                <div class="sinav-alt-cubuk">
+                    <button type="button" id="sinav-geri-btn" class="quiz-yardim-btn" style="display:none;">
+                        <i class="fa-solid fa-arrow-left"></i> Geri
+                    </button>
+                    <div style="flex:1"></div>
+                    <button type="button" id="sinav-ileri-btn" class="btn-kaydet-ana" style="display:none;">
+                        İleri <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button type="button" id="sinav-bitir-btn" class="btn-kaydet-ana" style="display:none;">
+                        <i class="fa-solid fa-flag-checkered"></i> Sınavı Bitir
+                    </button>
+                </div>
+            </div>
+
+            <!-- SONUÇ EKRANI -->
+            <div id="sinav-sonuc" style="display:none;"></div>
+        </div>
+
+        <div id="footer-yeri"></div>
+    </div>
+
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/sinav-motoru.js"></script>
+</body>
+</html>
