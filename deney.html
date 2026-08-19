@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deneyler - Fizik Portalı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+
+        <div class="soru-layout deneyler-layout">
+            <button type="button" id="deney-menu-toggle" class="kategori-toggle-btn">
+                <i class="fa fa-bars"></i> Sınıf ve Deney Seç
+            </button>
+
+            <div id="deney-menu-overlay" class="okuma-menu-overlay"></div>
+
+            <aside class="soru-sidebar" id="deney-sidebar">
+                <div class="sidebar-card">
+                    <div class="sidebar-header">
+                        <i class="fa fa-flask"></i> Deneyler
+                    </div>
+                    <div class="sidebar-content" id="deney-menu">
+                        <p class="empty-state" style="padding: 20px 0; font-size: 14px;">Yükleniyor...</p>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="soru-main">
+                <div id="deney-icerik" class="reading-container site-block">
+                    <!-- Varsayılan Boş Ekran -->
+                    <div class="deney-bos-ekran" id="deney-bos-ekran">
+                        <i class="fa fa-flask"></i>
+                        <h2>Deney Seçilmedi</h2>
+                        <p>Lütfen sol taraftaki <strong>"Sınıf ve Deney Seç"</strong> menüsüne tıklayarak incelemek istediğiniz deneyi seçiniz.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div id="footer-yeri"></div>
+    </div>
+
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/deney.js"></script>
+</body>
+</html>
