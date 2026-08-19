@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giriş Yap - Fizik Portalı</title>
+<style>
+  body { font-family: sans-serif; background:#0f0f14; color:#fff; display:flex; justify-content:center; padding-top:60px; }
+  .kutu { max-width:380px; width:100%; padding:24px; background:rgba(255,255,255,0.05); border-radius:16px; }
+  input { width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #444; background:#1a1a22; color:#fff; box-sizing:border-box; }
+  button { width:100%; padding:12px; border:none; border-radius:999px; background:#f2994a; color:#1a0f0a; font-weight:700; cursor:pointer; margin-top:10px; }
+  .mesaj { margin-top:14px; padding:10px; border-radius:8px; font-size:0.9rem; }
+  .hata { background:rgba(224,7,36,0.15); color:#ffb4b4; }
+  .basari { background:rgba(94,194,120,0.15); color:#a8f0bd; }
+</style>
+</head>
+<body>
+<div class="kutu">
+  <h2>Giriş Yap</h2>
+  <form id="girisForm">
+    <input type="email" id="email" placeholder="E-posta" required>
+    <input type="password" id="sifre" placeholder="Şifre" required>
+    <label><input type="checkbox" id="beniHatirla" style="width:auto;"> Beni Hatırla</label>
+    <button type="submit">Giriş Yap</button>
+  </form>
+  <div id="mesajKutusu"></div>
+</div>
+
+<script>
+document.getElementById('girisForm').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const email = document.getElementById('email').value;
+  const sifre = document.getElementById('sifre').value;
+  const beniHatirla = document.getElementById('beniHatirla').checked;
+  const mesajKutusu = document.getElementById('mesajKutusu');
+  
+  mesajKutusu.innerHTML = '';
+
+  try {
+    const res = await fetch('https://soru.gt.tc/giris_api.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({ email, sifre, beni_hatirla: beniHatirla })
+    });
+    
+    const veri = await res.json();
+
+    if (veri.basarili) {
+      // Oturum token'ını ve rolü sakla
+      if (veri.token) localStorage.setItem('adminToken', veri.token);
+      if (veri.kullanici && veri.kullanici.rol) localStorage.setItem('kullaniciRol', veri.kullanici.rol);
+
+      mesajKutusu.innerHTML = '<div class="mesaj basari">' + veri.mesaj + '</div>';
+      
+      // Yönlendirme
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 1000);
+    } else {
+      mesajKutusu.innerHTML = '<div class="mesaj hata">' + (veri.mesaj || 'Giriş başarısız.') + '</div>';
+    }
+  } catch (err) {
+    console.error('Hata:', err);
+    mesajKutusu.innerHTML = '<div class="mesaj hata">Sunucuya ulaşılamadı, lütfen tekrar deneyin.</div>';
+  }
+});
+</script>
+</body>
+</html>
