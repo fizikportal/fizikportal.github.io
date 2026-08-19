@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okuma Parçaları — Fizik Portalı</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+
+        <!-- 1. LİSTE GÖRÜNÜMÜ (Başlangıçta görünür) -->
+        <main class="readings-archive" id="liste-gorunumu">
+            <div class="container">
+                <button id="kategori-toggle-btn" class="kategori-toggle-btn">
+                    <i class="fa fa-bars"></i> Kategoriler
+                </button>
+                <div id="filtre-cubugu-gizli" class="filtre-cubugu-gizli"></div>
+                
+                <header class="archive-header">
+                    <h1 class="archive-title">okuma metinleri</h1>
+                    <p class="archive-lead">Fizik konularını derinlemesine keşfet</p>
+                </header>
+                
+                <div class="readings-grid" id="readings-grid">
+                    <div class="empty-state"><p><i class="fa fa-spinner fa-spin"></i> Yükleniyor...</p></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 2. DETAY GÖRÜNÜMÜ (Başlangıçta gizli) -->
+        <main class="reading-main" id="detay-gorunumu" style="display: none;">
+            <div class="reading-container">
+                <div class="reading-cover" id="detay-cover"></div>
+                <div class="reading-meta">
+                    <div class="detay-geri" style="margin-bottom: 16px;">
+                        <a href="okuma.html" style="text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 14px;">
+                            <i class="fa fa-arrow-left"></i> Tüm Okuma Parçalarına Dön
+                        </a>
+                    </div>
+                    <span class="badge" id="detay-badge"></span>
+                    <h1 class="reading-title" id="detay-baslik"></h1>
+                    <div class="reading-author-date" id="detay-meta"></div>
+                </div>
+                <div class="reading-content site-block" id="detay-icerik"></div>
+
+                <!-- YORUM BÖLÜMÜ (Statik gösterim) -->
+                <section class="yorum-section" style="padding: 40px 48px 64px; max-width: 100%; margin: 0;">
+                    <div class="yorum-card">
+                        <div class="yorum-header">
+                            <i class="fa fa-comments"></i>
+                            <span>Yorumlar ve Görüşleriniz</span>
+                        </div>
+                        <div class="yorum-body">
+                            <div class="yorum-login">
+                                <i class="fa fa-lock"></i>
+                                <h3>Yorum yapmak için giriş yapmalısınız</h3>
+                                <div class="yorum-login-buttons">
+                                    <a href="giris.html" class="btn-login">Giriş Yap</a>
+                                    <a href="kayit_ol.html" class="btn-register">Kayıt Ol</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div id="footer-yeri"></div>
+    </div>
+
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/okuma.js"></script>
+</body>
+</html>
