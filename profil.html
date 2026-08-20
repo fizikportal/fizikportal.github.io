@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Profilim / Şifre Güncelleme</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body { font-family: sans-serif; background:#0f0f14; color:#fff; display:flex; justify-content:center; padding-top:60px; }
+    .kutu { max-width:380px; width:100%; padding:24px; background:rgba(255,255,255,0.05); border-radius:16px; }
+    input { width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #444; background:#1a1a22; color:#fff; box-sizing:border-box; }
+    button { width:100%; padding:12px; border:none; border-radius:999px; background:#f2994a; color:#1a0f0a; font-weight:700; cursor:pointer; margin-top:10px; }
+    .cikis-btn { background:#e53935; color:#fff; margin-top:15px; }
+    .mesaj { margin-top:14px; padding:10px; border-radius:8px; font-size:0.85rem; text-align:center; }
+    .basari { background:rgba(94,194,120,0.15); color:#a8f0bd; }
+  </style>
+</head>
+<body>
+
+<div class="kutu">
+  <h2>Hesap Ayarları</h2>
+  <p id="kullaniciBilgi" style="font-size:0.85rem; color:#f2994a;"></p>
+
+  <h3>Yeni Şifre Belirle</h3>
+  <form id="guncelleForm">
+    <input type="password" id="yeniSifre" placeholder="Yeni Şifreniz" required minlength="6">
+    <button type="submit">Şifreyi Güncelle</button>
+  </form>
+  <div id="mesaj"></div>
+
+  <button class="cikis-btn" onclick="cikisYap()">Oturumu Kapat (Çıkış)</button>
+</div>
+
+<script>
+  const SUPABASE_URL = 'https://xynrvyltphhlctgknsbl.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_...'; // Kendi anahtarınızı yazın
+  const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  // Oturum Kontrolü
+  async function oturumKontrol() {
+    const { data: { user } } = await _supabase.auth.getUser();
+    if (!user) {
+      window.location.href = 'giris.html';
+    } else {
+      document.getElementById('kullaniciBilgi').innerText = 'Giriş Yapan: ' + user.email;
+    }
+  }
+  oturumKontrol();
+
+  // Şifre Güncelleme
+  document.getElementById('guncelleForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const yeniSifre = document.getElementById('yeniSifre').value;
+    const mesajKutusu = document.getElementById('mesaj');
+
+    const { error } = await _supabase.auth.updateUser({ password: yeniSifre });
+
+    if (error) {
+      mesajKutusu.innerHTML = '<div class="mesaj" style="background:rgba(224,7,36,0.15); color:#ffb4b4;">Hata: ' + error.message + '</div>';
+    } else {
+      mesajKutusu.innerHTML = '<div class="mesaj basari">Şifreniz başarıyla güncellendi!</div>';
+      document.getElementById('guncelleForm').reset();
+    }
+  });
+
+  // Çıkış İşlemi
+  async function cikisYap() {
+    await _supabase.auth.signOut();
+    localStorage.removeItem('supabaseSession');
+    window.location.href = 'giris.html';
+  }
+</script>
+</body>
+</html>

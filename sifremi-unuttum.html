@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Şifremi Unuttum</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body { font-family: sans-serif; background:#0f0f14; color:#fff; display:flex; justify-content:center; padding-top:60px; }
+    .kutu { max-width:380px; width:100%; padding:24px; background:rgba(255,255,255,0.05); border-radius:16px; }
+    input { width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #444; background:#1a1a22; color:#fff; box-sizing:border-box; }
+    button { width:100%; padding:12px; border:none; border-radius:999px; background:#f2994a; color:#1a0f0a; font-weight:700; cursor:pointer; margin-top:10px; }
+    .mesaj { margin-top:14px; padding:10px; border-radius:8px; font-size:0.85rem; text-align:center; }
+    .basari { background:rgba(94,194,120,0.15); color:#a8f0bd; }
+    .hata { background:rgba(224,7,36,0.15); color:#ffb4b4; }
+  </style>
+</head>
+<body>
+
+<div class="kutu">
+  <h2>Şifremi Unuttum</h2>
+  <p style="font-size:0.85rem; color:#aaa;">Hesabınıza ait e-posta adresini girin.</p>
+  <form id="sifreForm">
+    <input type="email" id="email" placeholder="E-posta Adresiniz" required>
+    <button type="submit">Sıfırlama Bağlantısı Gönder</button>
+  </form>
+  <div id="mesaj"></div>
+</div>
+
+<script>
+  const SUPABASE_URL = 'https://xynrvyltphhlctgknsbl.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_...'; // Kendi anahtarınızı yazın
+  const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  document.getElementById('sifreForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const mesajKutusu = document.getElementById('mesaj');
+
+    const { error } = await _supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: window.location.origin + '/profil.html' // Bağlantıya tıklayınca profil/şifre yenileme sayfasına gider
+    });
+
+    if (error) {
+      mesajKutusu.innerHTML = '<div class="mesaj hata">Hata: ' + error.message + '</div>';
+    } else {
+      mesajKutusu.innerHTML = '<div class="mesaj basari">Şifre sıfırlama bağlantısı e-postanıza gönderildi!</div>';
+    }
+  });
+</script>
+</body>
+</html>
