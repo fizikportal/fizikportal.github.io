@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kayıt Ol - Fizik Portalı</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body { font-family: sans-serif; background:#0f0f14; color:#fff; display:flex; justify-content:center; padding-top:60px; }
+    .kutu { max-width:380px; width:100%; padding:24px; background:rgba(255,255,255,0.05); border-radius:16px; }
+    input { width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #444; background:#1a1a22; color:#fff; box-sizing:border-box; }
+    button { width:100%; padding:12px; border:none; border-radius:999px; background:#f2994a; color:#1a0f0a; font-weight:700; cursor:pointer; margin-top:10px; }
+    .mesaj { margin-top:14px; padding:10px; border-radius:8px; font-size:0.9rem; text-align:center; }
+    .basari { background:rgba(94,194,120,0.15); color:#a8f0bd; }
+    .hata { background:rgba(224,7,36,0.15); color:#ffb4b4; }
+  </style>
+</head>
+<body>
+
+<div class="kutu">
+  <h2>Aramıza Katılın</h2>
+  <p style="font-size: 0.85rem; color: #aaa;">Yorum yapabilmek için lütfen ücretsiz hesap oluşturun.</p>
+
+  <form id="kayitForm">
+    <input type="email" id="kayitEmail" placeholder="E-posta Adresiniz" required>
+    <input type="password" id="kayitSifre" placeholder="Şifreniz (En az 6 karakter)" required minlength="6">
+    <button type="submit">Kayıt Ol</button>
+  </form>
+
+  <div id="kayitMesaj"></div>
+</div>
+
+<script>
+  const SUPABASE_URL = 'https://xynrvyltphhlctgknsbl.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_ILE_BAŞLAYAN_KEYINIZ';
+  const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  document.getElementById('kayitForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('kayitEmail').value;
+    const password = document.getElementById('kayitSifre').value;
+    const mesajKutusu = document.getElementById('kayitMesaj');
+
+    // Kullanıcının kendi kendine kayıt olması
+    const { data, error } = await _supabase.auth.signUp({
+      email: email,
+      password: password
+    });
+
+    if (error) {
+      mesajKutusu.innerHTML = '<div class="mesaj hata">Hata: ' + error.message + '</div>';
+    } else {
+      mesajKutusu.innerHTML = '<div class="mesaj basari">Kayıt başarılı! Şimdi giriş yapabilirsiniz.</div>';
+      document.getElementById('kayitForm').reset();
+    }
+  });
+</script>
+
+</body>
+</html>
