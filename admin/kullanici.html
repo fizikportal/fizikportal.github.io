@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kullanıcı Yönetim Paneli</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body { font-family: sans-serif; background: #121212; color: #fff; padding: 40px; }
+    .kutu { max-width: 450px; margin: 0 auto; background: #1e1e1e; padding: 25px; border-radius: 12px; }
+    input { width: 100%; padding: 10px; margin: 8px 0; background: #2a2a2a; border: 1px solid #444; color: #fff; border-radius: 6px; box-sizing: border-box; }
+    button { width: 100%; padding: 12px; background: #4caf50; color: #fff; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+    .cikis-btn { background: #e53935; margin-top: 20px; }
+    .mesaj { margin-top: 15px; padding: 10px; border-radius: 6px; text-align: center; }
+  </style>
+</head>
+<body>
+
+<div class="kutu">
+  <h2>Yeni Kullanıcı Kaydı</h2>
+  <form id="yeniKullaniciForm">
+    <input type="email" id="yeniEmail" placeholder="Yeni Kullanıcı E-postası" required>
+    <input type="password" id="yeniSifre" placeholder="Geçici Şifre" required>
+    <button type="submit">Kullanıcıyı Kaydet</button>
+  </form>
+  
+  <div id="islemMesaji"></div>
+  <button class="cikis-btn" onclick="cikisYap()">Çıkış Yap</button>
+</div>
+
+<script>
+  const SUPABASE_URL = 'https://xynrvyltphhlctgknsbl.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_ILE_BAŞLAYAN_KEYINIZ';
+  const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  // 1. KONTROL: Oturum açılmamışsa doğrudan giriş sayfasına fırlat
+  const sessionData = localStorage.getItem('supabaseSession');
+  if (!sessionData) {
+    window.location.href = '../giris.html'; // Dosya konumunuza göre güncelleyin
+  }
+
+  // 2. YENİ KULLANICI KAYDI
+  document.getElementById('yeniKullaniciForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('yeniEmail').value;
+    const password = document.getElementById('yeniSifre').value;
+    const mesajKutusu = document.getElementById('islemMesaji');
+
+    // Supabase SignUp ile yeni kullanıcı oluşturma
+    const { data, error } = await _supabase.auth.signUp({
+      email: email,
+      password: password
+    });
+
+    if (error) {
+      mesajKutusu.innerHTML = '<div class="mesaj" style="background:#5a1e1e">Hata: ' + error.message + '</div>';
+    } else {
+      mesajKutusu.innerHTML = '<div class="mesaj" style="background:#1e5a22">Kullanıcı başarıyla oluşturuldu!</div>';
+      document.getElementById('yeniKullaniciForm').reset();
+    }
+  });
+
+  // 3. ÇIKIŞ YAPMA
+  async function cikisYap() {
+    await _supabase.auth.signOut();
+    localStorage.removeItem('supabaseSession');
+    window.location.href = '../giris.html';
+  }
+</script>
+
+</body>
+</html>
