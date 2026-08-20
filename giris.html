@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Giriş Yap - Fizik Portalı</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body { font-family: sans-serif; background:#0f0f14; color:#fff; display:flex; justify-content:center; padding-top:60px; }
+    .kutu { max-width:380px; width:100%; padding:24px; background:rgba(255,255,255,0.05); border-radius:16px; }
+    input { width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #444; background:#1a1a22; color:#fff; box-sizing:border-box; }
+    button { width:100%; padding:12px; border:none; border-radius:999px; background:#f2994a; color:#1a0f0a; font-weight:700; cursor:pointer; margin-top:10px; }
+    .mesaj { margin-top:14px; padding:10px; border-radius:8px; font-size:0.9rem; }
+    .hata { background:rgba(224,7,36,0.15); color:#ffb4b4; }
+    .basari { background:rgba(94,194,120,0.15); color:#a8f0bd; }
+  </style>
+</head>
+<body>
+
+<div class="kutu">
+  <h2>Giriş Yap</h2>
+  <form id="girisForm">
+    <input type="email" id="email" placeholder="E-posta" value="validebag.fizik@gmail.com" required>
+    <input type="password" id="sifre" placeholder="Şifre" required>
+    <button type="submit">Giriş Yap</button>
+  </form>
+  <div id="mesajKutusu"></div>
+</div>
+
+<script>
+  // Supabase bağlantı bilgileriniz
+  const SUPABASE_URL = 'https://xynrvyltphhlctgknsbl.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_s4GbYjutbYiSdLEqzDG4gQ_rXbEnFyJ';
+
+  const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  document.getElementById('girisForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('sifre').value;
+    const mesajKutusu = document.getElementById('mesajKutusu');
+    mesajKutusu.innerHTML = '';
+
+    // Supabase ile giriş yap
+    const { data, error } = await _supabase.auth.signInWithPassword({
+      email: email,
+      password: password
+    });
+
+    if (error) {
+      mesajKutusu.innerHTML = '<div class="mesaj hata">Giriş Başarısız: ' + error.message + '</div>';
+    } else {
+      mesajKutusu.innerHTML = '<div class="mesaj basari">Giriş Başarılı! Yönlendiriliyorsunuz...</div>';
+      
+      // Oturum bilgisini sakla
+      localStorage.setItem('supabaseSession', JSON.stringify(data.session));
+      
+      // Admin paneline yönlendir
+      setTimeout(() => {
+        window.location.href = 'admin/index.html';
+      }, 1000);
+    }
+  });
+</script>
+
+</body>
+</html>
