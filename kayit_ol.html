@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol - Fizik Portalı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+    <style>
+        .auth-page { display:flex; justify-content:center; align-items:center; min-height:calc(100vh - 100px); padding: 40px 20px; }
+        .auth-card { max-width: 400px; width: 100%; background: var(--bg-mid); border: 1px solid var(--glass-border); border-radius: 16px; padding: 40px; }
+        .auth-title { margin-bottom: 24px; text-align: center; font-size: 1.5rem; }
+        .auth-link { display:block; text-align:center; margin-top: 20px; color: var(--accent-cyan); text-decoration: none; }
+    </style>
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+        
+        <main class="auth-page">
+            <div class="auth-card">
+                <h1 class="auth-title">Kayıt Ol</h1>
+                <div id="mesajKutusu" style="margin-bottom: 15px; display:none;"></div>
+                <form id="kayitForm">
+                    <div class="form-group">
+                        <input type="text" id="adSoyad" class="form-control" placeholder="Adınız Soyadınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder="E-posta adresiniz" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="sifre" class="form-control" placeholder="Şifreniz (En az 6 karakter)" required>
+                    </div>
+                    <button type="submit" class="btn-kaydet-ana"><i class="fa fa-user-plus"></i> Hesap Oluştur</button>
+                </form>
+                <a href="giris.html" class="auth-link">Zaten hesabın var mı? Giriş Yap</a>
+            </div>
+        </main>
+        
+        <div id="footer-yeri"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/site.js"></script>
+    <script>
+        document.getElementById('kayitForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const adSoyad = document.getElementById('adSoyad').value;
+            const email = document.getElementById('email').value;
+            const sifre = document.getElementById('sifre').value;
+            const mesajKutusu = document.getElementById('mesajKutusu');
+            
+            mesajKutusu.style.display = 'block';
+            mesajKutusu.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Hesap oluşturuluyor...';
+            mesajKutusu.style.color = 'var(--text-muted)';
+
+            try {
+                const { data, error } = await supabaseClient.auth.signUp({
+                    email: email,
+                    password: sifre,
+                    options: { data: { full_name: adSoyad } }
+                });
+                
+                if (error) throw error;
+
+                mesajKutusu.innerHTML = '<i class="fa fa-check-circle"></i> Hesabınız oluşturuldu! Giriş sayfasına yönlendiriliyorsunuz...';
+                mesajKutusu.style.color = 'var(--accent-lime)';
+                setTimeout(() => window.location.href = 'giris.html', 2000);
+            } catch (err) {
+                mesajKutusu.innerHTML = '<i class="fa fa-exclamation-circle"></i> ' + (err.message || 'Kayıt başarısız.');
+                mesajKutusu.style.color = '#ef4444';
+            }
+        });
+    </script>
+</body>
+</html>
