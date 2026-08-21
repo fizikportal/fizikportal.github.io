@@ -8,31 +8,38 @@
         },
         "page": [
             {
-                "uid": "block_1785688751297_6626",
+                "uid": "block_1787336691146_7223",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><b>MADDE 1 – &nbsp;SORUŞTURMA VE KANIT TOPLAMA SÜRECİ</b> Disiplin vakalarında gerçeğin ortaya çıkarılması için izlenecek yöntemler şunlardır:&nbsp;</p>"
                 }
             },
             {
-                "uid": "block_1785688751297_7721",
+                "uid": "block_1787336691146_6133",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><b>&nbsp;1.1. &nbsp;Ön İnceleme ve Sorgulama:</b> Bir disiplin ihlali şüphesi doğduğunda, ilgili öğretmen veya okul yöneticisi durumu derhal incelemeye alır.&nbsp;</p>"
                 }
             },
             {
-                "uid": "block_1785688751297_5523",
+                "uid": "block_1787336691146_6465",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>&nbsp;<b>1.2. &nbsp;İfade Alma:</b> Hakkında iddia bulunan öğrenci, olayla ilgili kendi anlatımını sunma ve savunmasını yapma hakkına sahiptir.</p>"
                 }
             },
             {
-                "uid": "block_1785688751297_631",
+                "uid": "block_1787336691146_9952",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><b>&nbsp;1.3. &nbsp;Kanıtların Değerlendirilmesi:</b> Karar vericiler; tanık beyanlarını, fiziksel kanıtları ve varsa dijital kayıtları (kamera, sistem logları vb.) adil bir şekilde değerlendirir.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p>"
+                }
+            },
+            {
+                "uid": "block_1787336691146_752",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><p><strong>MADDE 2 – </strong><span>&nbsp;</span><b>CEZALANDIRMA YÖNTEMLERİ VE KADEMELENDİRME&nbsp;&nbsp;</b>Cezalar, öğrencinin hatasını anlamasını sağlayacak ve okul huzurunu yeniden tesis edecek şekilde asgari standartlara göre uygulanır:</p><p><p><strong>2.1. </strong><span>&nbsp;</span><b>Sözlü ve Yazılı Uyarı:</b> Hafif ihlallerde öğrencinin davranışını düzeltmesi için yapılan ilk resmi müdahaledir.</p><p><p><strong>2.2. </strong><b>&nbsp;Geçici Uzaklaştırma</b> (Suspension): Öğrencinin belirli bir süre okul binasından ve faaliyetlerinden men edilmesidir.</p><p><strong>2.3. </strong>&nbsp;<b>Okuldan Atılma / İlişik Kesme (Expulsion):</b> Telafisi mümkün olmayan ağır ihlallerde, öğrencinin kurumla ilişiğinin tamamen kesilmesidir.</p></p><p><p><p><strong>2.4. </strong><span>&nbsp;</span><b>Acil Uzaklaştırma:</b> Güvenliği doğrudan tehdit eden durumlarda, yasal süreç beklenmeksizin uygulanan hızlı tahliye işlemidir.</p><p><br></p></p></p></p></p>"
                 }
             }
         ]
