@@ -2,7 +2,8 @@
 const SUPABASE_URL = "https://xynrvyltphhlctgknsbl.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_s4GbYjutbYiSdLEqzDG4gQ_rXbEnFyJ";
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
+// Bunu Ekleyin:
+const ADMIN_EMAIL = "validebag.fizik@gmail.com"; 
 // ORTAK HTML YÜKLEYİCÜ
 async function htmlYukle(url, elementId) {
     try {
