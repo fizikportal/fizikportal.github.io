@@ -47,6 +47,14 @@ async function checkAuthState() {
 
 document.addEventListener("DOMContentLoaded", async () => {
     await htmlYukle('includes/header.html', 'header-yeri');
+        // 3 Çizgi Menü Aç/Kapat Mantığı
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinksContainer = document.getElementById('nav-links-container');
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('active');
+        });
+    }
     await htmlYukle('includes/footer.html', 'footer-yeri');
 
     // Aktif menü linkini işaretle
