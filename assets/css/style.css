@@ -375,3 +375,52 @@ details.kategori-group { background: rgba(0, 0, 0, 0.2); border: 1px solid var(-
 @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
 }
+
+/* ==========================================================================
+   MOBİL (CEP TELEFONU) UYUMLULUK AYARLARI
+   ========================================================================== */
+
+/* Sayfanın sağa kaymasını (felç olmasını) kesin olarak engelle */
+body { overflow-x: hidden; }
+
+/* 3 Çizgili Buton Başlangıçta Gizli (PC'de görünmez) */
+.nav-toggle { display: none; background: none; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer; }
+
+@media (max-width: 768px) {
+    /* PC menüsünü gizle, 3 çizgili butonu göster */
+    .nav-toggle { display: block; }
+    .nav-container-fluid { flex-wrap: wrap; height: auto; padding: 10px 15px; }
+    
+    /* Linkler kapsayıcısı başlangıçta kapalı olsun */
+    .nav-links-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 15px 0;
+        border-top: 1px solid var(--glass-border);
+    }
+    
+    /* 3 çizgiye basınca .active classı gelir ve açılır */
+    .nav-links-container.active {
+        display: flex;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .nav-auth {
+        justify-content: center;
+    }
+    
+    /* İçerikleri daralt ki taşmasın */
+    .hero { padding: 0 15px 40px; min-height: 60vh; }
+    .cta-button { position: relative; bottom: 0; right: 0; margin-top: 20px; display: inline-block; }
+    .intro, .features, .faq { padding: 40px 15px; }
+    .detay-kagit { padding: 20px; }
+    .reading-content { padding: 0 15px 40px; }
+    .reading-meta { padding: 20px 15px 10px; }
+    .reading-cover img { width: 100% !important; }
+}
