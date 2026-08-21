@@ -22,20 +22,31 @@
 
 <script>
   const SUPABASE_URL = 'https://xynrvyltphhlctgknsbl.supabase.co';
-  const SUPABASE_ANON_KEY = 'sb_publishable_s4GbYjutbYiSdLEqzDG4gQ_rXbEnFyJ'; // Kendi anahtarınızı yazın
+  const SUPABASE_ANON_KEY = 'sb_publishable_s4GbYjutbYiSdLEqzDG4gQ_rXbEnFyJ';
   const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-  // Yorumları Getir
+  // 1. Giriş Yapmış mı Kontrol Et (Güvenlik Duvarı için şart)
+  _supabase.auth.getSession().then(({ data: { session } }) => {
+    if (!session) {
+      alert("Bu sayfayı görmek için giriş yapmalısınız!");
+      window.location.href = "giris.html"; // Giriş yapmadıysa login sayfasına at
+      return;
+    }
+    // Giriş yapmışsa yorumları yükle
+    yorumlariYukle();
+  });
+
+  // 2. Yorumları Getir
   async function yorumlariYukle() {
     const { data: yorumlar, error } = await _supabase
-      .from('yorumlar')
+      .from('comments') // Tablo adımız comments
       .select('*')
-      .eq('durum', 'bekliyor');
+      .eq('is_approved', false); // Sadece onay bekleyenleri (false) getir
 
     const liste = document.getElementById('yorumListesi');
     liste.innerHTML = '';
 
-    if (!yorumlar || yorumlar.length === 0) {
+    if (error || !yorumlar || yorumlar.length === 0) {
       liste.innerHTML = '<p style="color:#888;">Onay bekleyen yorum bulunmuyor.</p>';
       return;
     }
@@ -44,31 +55,29 @@
       liste.innerHTML += `
         <div class="yorum-kart" id="yorum-${y.id}">
           <div>
-            <strong>${y.kullanici_email}:</strong>
-            <p style="margin:5px 0 0 0; color:#ccc;">${y.yorum_metni}</p>
+            <strong>${y.user_email}:</strong>
+            <p style="margin:5px 0 0 0; color:#ccc;">${y.comment_text}</p>
           </div>
           <div>
-            <button class="btn btn-onay" onclick="durumGuncelle(${y.id}, 'onaylandi')">Onayla</button>
-            <button class="btn btn-sil" onclick="yorumSil(${y.id})">Sil</button>
+            <button class="btn btn-onay" onclick="durumGuncelle('${y.id}')">Onayla</button>
+            <button class="btn btn-sil" onclick="yorumSil('${y.id}')">Sil</button>
           </div>
         </div>
       `;
     });
   }
 
-  // Yorum Onayla
-  async function durumGuncelle(id, yeniDurum) {
-    await _supabase.from('yorumlar').update({ durum: yeniDurum }).eq('id', id);
+  // 3. Yorum Onayla
+  async function durumGuncelle(id) {
+    await _supabase.from('comments').update({ is_approved: true }).eq('id', id);
     document.getElementById(`yorum-${id}`).remove();
   }
 
-  // Yorum Sil
+  // 4. Yorum Sil
   async function yorumSil(id) {
-    await _supabase.from('yorumlar').delete().eq('id', id);
+    await _supabase.from('comments').delete().eq('id', id);
     document.getElementById(`yorum-${id}`).remove();
   }
-
-  yorumlariYukle();
 </script>
 </body>
 </html>
