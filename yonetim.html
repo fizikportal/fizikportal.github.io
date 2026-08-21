@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetmelikler ve Eğitim Modeli — Fizik Portalı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+
+        <div class="soru-layout">
+            <button type="button" id="yonetim-menu-toggle" class="kategori-toggle-btn">
+                <i class="fa fa-bars"></i> Kategoriler
+            </button>
+
+            <div id="yonetim-menu-overlay" class="okuma-menu-overlay"></div>
+
+            <aside class="soru-sidebar" id="yonetim-sidebar">
+                <div class="sidebar-card">
+                    <div class="sidebar-header">
+                        <i class="fa fa-folder-open"></i> Yönetmelikler
+                    </div>
+                    <div class="sidebar-content" id="yonetim-menu">
+                        <p class="empty-state" style="padding: 20px 0; font-size: 14px;">Yükleniyor...</p>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="soru-main">
+                <div id="yonetim-icerik" class="soru-rehber site-block detay-kagit" style="padding: 40px; margin-bottom: 40px;">
+                    <p>İçerik yükleniyor...</p>
+                </div>
+
+                <!-- YORUM BÖLÜMÜ -->
+<section class="yorum-section" style="padding: 40px 0;">
+    <div class="yorum-container">
+        <div class="yorum-card">
+            <div class="yorum-header">
+                <i class="fa fa-comments"></i>
+                <span>Yorumlar ve Görüşleriniz</span>
+            </div>
+            <div class="yorum-body" id="yorum-form-alani">
+                <!-- JS Buraya Formu veya "Giriş Yapın" Yazısını Basacak -->
+            </div>
+        </div>
+        <div class="yorumlar-listesi" id="yorumlar-listesi">
+            <!-- JS Onaylı Yorumları Buraya Basacak -->
+        </div>
+    </div>
+</section>
+            </main>
+        </div>
+
+        <div id="footer-yeri"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/yonetim.js"></script>
+</body>
+</html>
+</body>
+</html>
