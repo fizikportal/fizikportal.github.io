@@ -480,7 +480,7 @@
         },
         "page": [
             {
-                "uid": "block_1786359839742_6931",
+                "uid": "block_1787381455535_7340",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -488,14 +488,14 @@
                 }
             },
             {
-                "uid": "block_1786359839742_2390",
+                "uid": "block_1787381455535_4052",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bu sistem dışarıdan bakıldığında sadece \"toprağa boru gömmek\" gibi görünür. Ancak arkasında <b>akışkanlar mekaniği, termodinamik, biyoloji (küf/bakteri) ve zemin mekaniği</b> yatar. İnce ayrıntıları kaçırırsan, evine taze soğuk hava yerine rutubetli ve koku yapan bir hava basarsın. İşte adım adım rehberin:</p>"
                 }
             },
             {
-                "uid": "block_1786359839742_7322",
+                "uid": "block_1787381455535_8214",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -503,14 +503,14 @@
                 }
             },
             {
-                "uid": "block_1786359839742_3423",
+                "uid": "block_1787381455535_373",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>Hafriyata başlamadan önce elindeki malzemeyi ve araziyi tanımanız gerekir.</div>"
                 }
             },
             {
-                "uid": "block_1786359839742_1496",
+                "uid": "block_1787381455535_9863",
                 "type": "baslik",
                 "content": {
                     "tag": "h3",
@@ -518,35 +518,35 @@
                 }
             },
             {
-                "uid": "block_1786359839742_6479",
+                "uid": "block_1787381455535_2984",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><ul><li><b>Kumlu Zemin:</b> Isı iletkenliği düşüktür (kuru hava kabarcıkları yalıtım yapar). Verim az olur.\n</li><li><b>Killi / Nemli / Islak Zemin: </b>Harika! Su ve kil, ısıyı çok hızlı iletir. Borudaki havanın ısısını toprak anında emer.\n</li><li><i>Uygulama İpucu</i>: Eğer toprağın kumluksa, boruyu gömdükten sonra etrafını killi toprakla doldurmak verimi %30 artırır.&nbsp;</li></ul><h3>2.\tYeraltı Su Seviyesi:</h3></div>"
                 }
             },
             {
-                "uid": "block_1786359839742_5837",
+                "uid": "block_1787381455535_5124",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><ul><li>Boruyu gömeceğin derinlikte yeraltı suyu varsa, bu aslında ısı iletimi için mükemmeldir. Ancak boru bağlantılarının %100 su geçirmez olması şarttır. Aksi halde borunun içine su dolar!</li></ul><h3>3.\tDerinlik Seçimi:</h3></div>"
                 }
             },
             {
-                "uid": "block_1786359839742_6651",
+                "uid": "block_1787381455535_9551",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><ul><li>Türkiye ikliminde ideal derinlik <b>2,0 metre ile 3,0 metre </b>arasıdır. 1 metrenin altında toprak yüzeydeki güneşten/soğuktan etkilenmeye devam eder. 3 metrenin altına inmek ise hafriyat maliyetini boş yere katlar.</li></ul><h2>ADIM 2: KRİTİK MÜHENDİSLİK HESAPLARI (Çok Önemli!)</h2></div>"
                 }
             },
             {
-                "uid": "block_1786359839742_2817",
+                "uid": "block_1787381455535_588",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>Burada yapılan 3 temel hata sistemi çöp olmasına neden olur: Borunun çok kısa olması, havanın çok hızlı akması veya borunun çok geniş olması.</div>"
                 }
             },
             {
-                "uid": "block_1786359839742_1567",
+                "uid": "block_1787381455535_7405",
                 "type": "baslik",
                 "content": {
                     "tag": "h3",
@@ -554,28 +554,28 @@
                 }
             },
             {
-                "uid": "block_1786359839742_5806",
+                "uid": "block_1787381455535_8886",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><ul><li>Havanın borunun içinden geçerken toprakla \"<b>ısı alışverişi yapacak zamana</b>\" ihtiyacı vardır.</li><li>İdeal hava akış hızı: <b>1.5 m/s ile 3 m/s </b>arasıdır. Hızı 5 m/s üzerine çıkarırsan hava ısınmadan/soğumadan eve girer.</li></ul><h3>2.\tBoru Çapı Seçimi:</h3></div>"
                 }
             },
             {
-                "uid": "block_1786359839742_3892",
+                "uid": "block_1787381455535_297",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><ul><li>Evin büyüklüğüne göre genellikle<b> DN160 (16 cm) </b>veya <b>DN200 (20 cm)</b> pürüzsüz borular tercih edilir. Boru çok geniş olursa havanın ortasındaki moleküller boru çeperine değmeden geçer (termal katmanlaşma).</li></ul><h3>3.\tBoru Uzunluğu:</h3></div>"
                 }
             },
             {
-                "uid": "block_1786359839742_9492",
+                "uid": "block_1787381455535_9678",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><ul><li>Tek bir hat için ideal uzunluk 35 metredir. 50 metreden sonrası sürtünme direncini (basınç kaybını) çok artırır, fanı yorar.</li><li>Eğer evin daha fazla havaya ihtiyacı varsa, tek bir 70 metrelik boru yapmak yerine paralel 2 adet 35 metrelik boru (Tichelmann / U-Sistemi) ile sistemi kurmanız gerekir.</li></ul><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a79a3fe276e2.png\" alt=\"Görsel\">\n        <div class=\"img-caption\" contenteditable=\"false\">&nbsp; &nbsp;</div>\n    </div><p><br></p><h2>ADIM 3: MALZEME SEÇİMİ (Ucuza Kaçılmayacak Nokta)</h2></div>"
                 }
             },
             {
-                "uid": "block_1786359839742_780",
+                "uid": "block_1787381455535_1227",
                 "type": "baslik",
                 "content": {
                     "tag": "h3",
@@ -583,10 +583,24 @@
                 }
             },
             {
-                "uid": "block_1786359839742_4772",
+                "uid": "block_1787381455535_3002",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>&nbsp;<span>Neden mi? Turuncu PVC borular genellikle geri dönüştürülmüş plastikten yapılır. Yıllar içinde toprağın altında ftalat ve zararlı kimyasal gazlar (VOC) salgılarlar. Ayrıca iç yüzeyleri tamamen pürüzsüz değildir ve anti-bakteriyel değillerdir.\n\nNe Kullanmalısın?\nİç yüzeyi Anti-Bakteriyel &amp; Anti-Statik sert Polietilen (HDPE) veya PP (Polipropilen) Borular. (Örn: REHAU AWADUKT Thermo gibi bu iş için özel üretilmiş borular). Bu boruların iç kaplamasında gümüş iyonları bulunur; küf ve bakteri oluşumunu %99 engeller.\n\n</span></p>"
+                }
+            },
+            {
+                "uid": "block_1787381455535_3630",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><h3><b>Ne Kullanmalısın?\n</b></h3>İç yüzeyi Anti-Bakteriyel &amp; Anti-Statik sert Polietilen (HDPE) veya PP (Polipropilen) Borular. (Örn: REHAU AWADUKT Thermo gibi bu iş için özel üretilmiş borular). Bu boruların iç kaplamasında gümüş iyonları bulunur; küf ve bakteri oluşumunu %99 engeller.&nbsp;<br></p>"
+                }
+            },
+            {
+                "uid": "block_1787381455535_9651",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><h2>ADIM 4: SAHADA UYGULAMA VE KURULUM (Adım Adım)\n</h2><h3>1. Dış Hava Giriş Kulesi (Bahçedeki Başlangıç Noktası)\n</h3><ul><li>Bahçenin rüzgar alan, egzoz gazından, fosseptik çukurundan veya komşunun ızgara dumanından uzak bir köşesini seç.\n</li><li>Yerden en az 1 - 1.5 metre yüksekte paslanmaz çelik bir \"Hava Emiş Kulesi\" kur.\n</li><li>Kulanın tepesine G4 veya F7 sınıfı Polisaj/Polen Filtresi koy. Kuşların, böceklerin ve tozun girmesini engellemek için ince telli ızgara tak.&nbsp;</li></ul><h3>2. Hendek Kazımı ve Eğim (EN HASSAS NOKTA!)\n</h3><ul><li>Kepçe ile 2.5 metre derinliğinde hendek kazılır.\n</li><li>Eğim Şartı: Boru hattı, dış kule yönünden eve doğru en az %1.5 - %2 EĞİMLİ düşmelidir. (Yani her 10 metrede boru 15-20 cm aşağı inmeli).\n</li><li>Neden? Yazın sıcak nemli hava borudaki 15°C soğukla karşılaşınca boru içinde su damlacıkları (yoğuşma) oluşur. Bu suyun geriye veya öne akıp tek bir noktada toplanması gerekir.\n</li></ul><h3>3. Yoğuşma / Kondens Kuyusu (Sistemin Kalbi)\n</h3><ul><li>Borunun bittiği, eve girmeden önceki en alt noktaya bir Yoğuşma Sifonu (Kondens Kuyusu) yapılır.\n</li><li>Buraya biriken su, bir şamandıralı küçük drenaj pompasıyla dışarı atılır veya toprağa sızdırılır.\n</li><li>Aksi halde ne olur? Borunun dip noktasında su birikir. Biriken su hava akışını tıkar, kokar ve birkaç ay içinde evin içine leş gibi küf kokusu basar!\n</li></ul><h3>4. Borunun Gömülmesi (Geri Dolgu)\n</h3><ul><li>Borunun altına ve üstüne 15'er cm kırma taş veya nemli kil serilir.\n</li><li>Taşların boruyu ezmemesine dikkat edilir. Taş yerine ince kum/kil karışımı sıkıştırılarak doldurulmalıdır ki borunun etrafında hava boşluğu kalmasın (hava yalıtım yapar, ısı iletimini keser).&nbsp;</li></ul></p>"
                 }
             }
         ]
