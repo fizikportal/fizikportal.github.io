@@ -40,7 +40,7 @@
         },
         "page": [
             {
-                "uid": "block_1787384114092_9224",
+                "uid": "block_1787384279833_2152",
                 "type": "baslik",
                 "content": {
                     "tag": "h3",
@@ -48,59 +48,80 @@
                 }
             },
             {
-                "uid": "block_1787384114092_1238",
+                "uid": "block_1787384279834_8494",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>Günümüz mutfaklarında, sabah kahvesini ısıtmaktan akşam yemeğini <b>dakikalar </b>içinde hazır etmeye kadar her evin vazgeçilmezi haline gelen bir \"sihirli kutu\" var. Bu cihaz, yiyeceğin içindeki su moleküllerini saniyede milyarlarca kez titreştirerek ısıtırken, tabağı veya seramiği neredeyse hiç ısıtmadan bırakıyor. Sanki yiyecek, dışarıdan bir ateş görmeden kendi kendine ısınıyor gibi...</div>"
                 }
             },
             {
-                "uid": "block_1787384114092_5683",
+                "uid": "block_1787384279834_5104",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8951141459d.png\" alt=\"Görsel\">\n \n    </div></div>"
                 }
             },
             {
-                "uid": "block_1787384114092_2665",
+                "uid": "block_1787384279834_3402",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><i><b>Resim 1:</b> Isı Transfer Mekanizmaları. Geleneksel fırınlarda ısı, hava yoluyla dışarıdan içeriye iletim (kondüksiyon) yöntemiyle geçerken; mikrodalga fırında elektromanyetik dalgalar doğrudan yiyeceğin içindeki su moleküllerine nüfuz ederek içten dışa ısınmayı başlatır.</i></p></div></blockquote></blockquote>"
                 }
             },
             {
-                "uid": "block_1787384114092_8988",
+                "uid": "block_1787384279834_2121",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Su molekülleri bipolar (iki kutuplu) yapıdadır; tıpkı küçük birer mıknatıs gibi bir uçları pozitif, diğer uçları negatiftir. Mikrodalga fırın, 2.45 GHz frekansında elektromanyetik dalgalar üreterek fırın içinde saniyede 2 milyar 450 milyon kez yön değiştiren bir elektrik alanı oluşturur.</p>"
                 }
             },
             {
-                "uid": "block_1787384114092_3987",
+                "uid": "block_1787384279834_9642",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a71e1c192246.png\" alt=\"Görsel\">\n \n    </div></div>"
                 }
             },
             {
-                "uid": "block_1787384114092_8685",
+                "uid": "block_1787384279834_6915",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><i><b>Resim 2:</b> Elektromanyetik Alan ve Dipol Dönüşü. 2.45 GHz frekansındaki değişken elektrik alanı, bipolar su moleküllerini saniyede milyarlarca kez kendi ekseni etrafında dönmeye zorlar. Bu kinetik hareketin sonucu olan moleküler sürtünme, enerjiyi saniyeler içinde ısıya dönüştürür.</i></p></div></blockquote></blockquote>"
                 }
             },
             {
-                "uid": "block_1787384114092_2379",
+                "uid": "block_1787384279834_4458",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><h3>&nbsp; Peki Bu İşin Sırrı Ne?</h3><div><p>Su molekülleri bu baş döndürücü hıza ayak uydurmaya çalışırken adeta deli gibi dönmeye başlar. Bu hızlı dönüş sırasında moleküller birbirine sürtünür ve bu moleküler sürtünme ısı üretir. Kuru tabak veya hava gibi maddeler bu \"dansa\" katılamadığı için ısınmaz; enerji doğrudan yiyeceğin içine gider.&nbsp;</p><h3>Neden Döner Tabla Var?</h3></div></div>"
                 }
             },
             {
-                "uid": "block_1787384114092_1958",
+                "uid": "block_1787384279834_6910",
                 "type": "paragraf",
                 "content": {
-                    "html": "<div><br></div>"
+                    "html": "<div><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a894df82aa92.png\" alt=\"Görsel\">\n \n    </div></div>"
+                }
+            },
+            {
+                "uid": "block_1787384279834_8102",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><i><b>Resim 3:</b> Daimi Dalga (Standing Wave) Yapısı. Fırın içindeki dalga yansımaları sonucu oluşan enerji düğüm noktaları görülmektedir. Döner tabla, yiyeceği bu \"sıcak\" ve \"soğuk\" noktalar arasından geçirerek ısıl dengeyi (homojen ısınmayı) sağlar.</i></p></div></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787384279834_213",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>Fırının içindeki dalgalar \"daimi dalga\" (standing wave) oluşturur. Bu da fırın içinde bazı noktaların çok sıcak, bazı noktaların ise soğuk kalmasına neden olur. İşte o döner tabla, yiyeceği bu sıcak ve soğuk noktalar arasında gezdirerek her yerin eşit şekilde ısınmasını ve pişmesini sağlar. \n<br><h3>\"Çikolata Cebimde Eridi!\"\n</h3>Bu harika icat, 1945 yılında tam bir tesadüf eseri doğdu. Mühendis Percy Spencer, radar sistemleri için mikrodalga üreten \"magnetron\" tüplerini test ederken tuhaf bir şey fark etti: Cebindeki çikolata barı tamamen erimişti!&nbsp;&nbsp;<br></div>"
+                }
+            },
+            {
+                "uid": "block_1787384279834_7148",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8951cb92d7f.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p></div>"
                 }
             }
         ]
