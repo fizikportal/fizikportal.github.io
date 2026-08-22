@@ -678,7 +678,7 @@
         },
         "page": [
             {
-                "uid": "block_1787387243925_4829",
+                "uid": "block_1787387886096_2380",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -686,42 +686,42 @@
                 }
             },
             {
-                "uid": "block_1787387243926_9854",
+                "uid": "block_1787387886096_3748",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Gece yarısını çoktan geçmişti.</p>"
                 }
             },
             {
-                "uid": "block_1787387243926_9311",
+                "uid": "block_1787387886096_5273",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Sessiz laboratuvarda yalnızca kâğıt hışırtıları ve duvardaki saatin tik takları duyuluyordu. Masanın üzerindeki sarı ışık altında genç bir fizikçi defalarca aynı hesapları yapıyordu. Adı Niels Bohr idi.</p>"
                 }
             },
             {
-                "uid": "block_1787387243926_7395",
+                "uid": "block_1787387886096_9377",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>O yıllarda atom, bilimin en büyük gizemlerinden biriydi. İnsanlar atomun var olduğunu düşünüyor ama içinde neler olduğunu tam olarak bilmiyordu. Özellikle tek bir soru herkesi zorluyordu: <b>“Elektronlar neden çekirdeğin içine düşmüyor?”</b></p>"
                 }
             },
             {
-                "uid": "block_1787387243926_4605",
+                "uid": "block_1787387886096_7108",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Çünkü bilinen fizik kurallarına göre dönen bir elektron enerji kaybetmeliydi. Enerji kaybeden elektron da giderek çekirdeğe yaklaşmalıydı. Eğer bu doğruysa bütün maddelerin çökmesi gerekirdi. Ama çökmüyordu. Demek ki atomun içinde henüz keşfedilmemiş gizli bir düzen vardı.</p>"
                 }
             },
             {
-                "uid": "block_1787387243926_4376",
+                "uid": "block_1787387886096_6420",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a895d612bb95.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p><br></p>"
                 }
             },
             {
-                "uid": "block_1787387243926_9271",
+                "uid": "block_1787387886096_279",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
