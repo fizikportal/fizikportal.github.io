@@ -10,7 +10,7 @@
         },
         "page": [
             {
-                "uid": "block_1785845487961_4240",
+                "uid": "block_1787385859234_7234",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -18,13 +18,20 @@
                 }
             },
             {
-                "uid": "block_1785845487962_338",
+                "uid": "block_1787385859234_3297",
                 "type": "sutunlu_yazi",
                 "content": {
                     "layout_type": "1",
                     "cell_1_type": "text",
-                    "text_block_block_1785845487962_338_1": "<h3>Atomun İçindeki Rüya</h3><div>Gece yarısını çoktan geçmişti.\n<br>\n<br>Sessiz laboratuvarda yalnızca kâğıt hışırtıları ve duvardaki saatin tik takları duyuluyordu. Masanın üzerindeki sarı ışık altında genç bir fizikçi defalarca aynı hesapları yapıyordu. Adı Niels Bohr idi.\n<br>\n<br>O yıllarda atom, bilimin en büyük gizemlerinden biriydi. İnsanlar atomun var olduğunu düşünüyor ama içinde neler olduğunu tam olarak bilmiyordu. Özellikle tek bir soru herkesi zorluyordu: “Elektronlar neden çekirdeğin içine düşmüyor?”\n<br>\n<br>Çünkü bilinen fizik kurallarına göre dönen bir elektron enerji kaybetmeliydi. Enerji kaybeden elektron da giderek çekirdeğe yaklaşmalıydı. Eğer bu doğruysa bütün maddelerin çökmesi gerekirdi. Ama çökmüyordu. Demek ki atomun içinde henüz keşfedilmemiş gizli bir düzen vardı.</div><h3>Bohr Laboratuvarda</h3><div>﻿﻿﻿Çünkü bilinen fizik kurallarına göre dönen bir elektron enerji kaybetmeliydi. Enerji kaybeden elektron da giderek çekirdeğe yaklaşmalıydı. Eğer bu doğruysa bütün maddelerin çökmesi gerekirdi. Ama çökmüyordu. Demek ki atomun içinde henüz keşfedilmemiş gizli bir düzen vardı.\n<br>\n<br>Bohr Laboratuvarda\n<br>\n<br>﻿﻿﻿Çünkü bilinen fizik kurallarına göre dönen bir elektron enerji kaybetmeliydi. Enerji kaybeden elektron da giderek çekirdeğe yaklaşmalıydı. Eğer bu doğruysa bütün maddelerin çökmesi gerekirdi. Ama çökmüyordu. Demek ki atomun içinde henüz keşfedilmemiş gizli bir düzen vardı.</div>",
-                    "image_path_block_block_1785845487962_338_1": ""
+                    "text_block_block_1787385859234_3297_1": "<h3>Atomun İçindeki Rüya</h3><div>Gece yarısını çoktan geçmişti.\n<br>\n<br>Sessiz laboratuvarda yalnızca kâğıt hışırtıları ve duvardaki saatin tik takları duyuluyordu. Masanın üzerindeki sarı ışık altında genç bir fizikçi defalarca aynı hesapları yapıyordu. Adı Niels Bohr idi.\n<br>\n<br>O yıllarda atom, bilimin en büyük gizemlerinden biriydi. İnsanlar atomun var olduğunu düşünüyor ama içinde neler olduğunu tam olarak bilmiyordu. Özellikle tek bir soru herkesi zorluyordu: “Elektronlar neden çekirdeğin içine düşmüyor?”\n<br>\n<br>Çünkü bilinen fizik kurallarına göre dönen bir elektron enerji kaybetmeliydi. Enerji kaybeden elektron da giderek çekirdeğe yaklaşmalıydı. Eğer bu doğruysa bütün maddelerin çökmesi gerekirdi. Ama çökmüyordu. Demek ki atomun içinde henüz keşfedilmemiş gizli bir düzen vardı.</div><div><br></div><h3>Bohr Laboratuvarda</h3><div>﻿﻿﻿Çünkü bilinen fizik kurallarına göre dönen bir elektron enerji kaybetmeliydi. Enerji kaybeden elektron da giderek çekirdeğe yaklaşmalıydı. Eğer bu doğruysa bütün maddelerin çökmesi gerekirdi. Ama çökmüyordu. Demek ki atomun içinde henüz keşfedilmemiş gizli bir düzen vardı.\n<br>\n<br>Bohr Laboratuvarda\n<br>\n<br>﻿﻿﻿Çünkü bilinen fizik kurallarına göre dönen bir elektron enerji kaybetmeliydi. Enerji kaybeden elektron da giderek çekirdeğe yaklaşmalıydı. Eğer bu doğruysa bütün maddelerin çökmesi gerekirdi. Ama çökmüyordu. Demek ki atomun içinde henüz keşfedilmemiş gizli bir düzen vardı.</div>",
+                    "image_path_block_block_1787385859234_3297_1": ""
+                }
+            },
+            {
+                "uid": "block_1787385859234_4443",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8957ece25ea.png\" alt=\"Görsel\">\n \n    </div>"
                 }
             }
         ]
@@ -659,5 +666,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "okuma_1787386667",
+        "meta": {
+            "konu": "Atom",
+            "baslik": "Atomun İçindeki Rüya",
+            "yazar": "Fuat Karalı",
+            "kapak": "uploads/okuma/img_6a895b1733afa.jpg",
+            "tarih": "22.08.2026 04:17:47"
+        },
+        "page": []
     }
 ]
