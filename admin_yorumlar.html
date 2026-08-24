@@ -36,14 +36,9 @@
     </div>
 
     <script src="assets/js/site.js"></script>
-    <script>
-        const SUPABASE_URL = "https://xynrvyltphhlctgknsbl.supabase.co";
-        const SUPABASE_ANON_KEY = "sb_publishable_s4GbYjutbYiSdLEqzDG4gQ_rXbEnFyJ";
-        const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-        const ADMIN_EMAIL = "validebag.fizik@gmail.com";
-
+      <script>
         document.addEventListener("DOMContentLoaded", async () => {
-            const { data: { session } } = await _supabase.auth.getSession();
+            const { data: { session } } = await supabaseClient.auth.getSession();
             if (!session || session.user.email !== ADMIN_EMAIL) {
                 alert("Bu sayfaya erişim yetkiniz yok.");
                 window.location.href = "index.html";
@@ -53,7 +48,7 @@
         });
 
         async function loadComments() {
-            const { data: comments, error } = await _supabase.from('comments').select('*').order('created_at', { ascending: false });
+            const { data: comments, error } = await supabaseClient.from('comments').select('*').order('created_at', { ascending: false });
             const listEl = document.getElementById('yorum-listesi');
             
             if (error || !comments || comments.length === 0) {
@@ -88,13 +83,13 @@
         }
 
         async function approveComment(id) {
-            await _supabase.from('comments').update({ is_approved: true }).eq('id', id);
+            await supabaseClient.from('comments').update({ is_approved: true }).eq('id', id);
             loadComments();
         }
 
         async function replyComment(id) {
             const replyText = document.getElementById('reply-' + id).value;
-            const { error } = await _supabase.from('comments').update({ admin_reply: replyText }).eq('id', id);
+            const { error } = await supabaseClient.from('comments').update({ admin_reply: replyText }).eq('id', id);
             if (error) { alert("Hata: " + error.message); return; }
             alert("Cevap kaydedildi!");
             loadComments();
@@ -102,7 +97,7 @@
 
         async function deleteComment(id) {
             if (!confirm("Bu yorumu silmek istediğinize emin misiniz?")) return;
-            await _supabase.from('comments').delete().eq('id', id);
+            await supabaseClient.from('comments').delete().eq('id', id);
             loadComments();
         }
     </script>
