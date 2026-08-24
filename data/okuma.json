@@ -760,7 +760,7 @@
         },
         "page": [
             {
-                "uid": "block_1787570986766_6180",
+                "uid": "block_1787571057769_9000",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -768,7 +768,7 @@
                 }
             },
             {
-                "uid": "block_1787570986767_3955",
+                "uid": "block_1787571057769_8625",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>İçeriğe başlamak için tıklayın...</p>"
