@@ -750,30 +750,14 @@
         ]
     },
     {
-        "id": "okuma_1787569450",
+        "id": "okuma_1787570843",
         "meta": {
             "konu": "Kinematik",
             "baslik": "deneme",
             "yazar": "",
-            "kapak": "uploads/okuma/img_6a895b1733afa.jpg",
-            "tarih": "24.08.2026 07:04:10"
+            "kapak": "uploads/okuma/img_6a895d612bb95.jpg",
+            "tarih": "24.08.2026 13:27:23"
         },
-        "page": [
-            {
-                "uid": "block_1787569515008_935",
-                "type": "baslik",
-                "content": {
-                    "tag": "h2",
-                    "text": "Başlığınızı buraya yazın"
-                }
-            },
-            {
-                "uid": "block_1787569515008_6200",
-                "type": "paragraf",
-                "content": {
-                    "html": "<p>İçeriğe başlamak için tıklayın...</p>"
-                }
-            }
-        ]
+        "page": []
     }
 ]
