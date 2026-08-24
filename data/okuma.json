@@ -673,12 +673,12 @@
             "konu": "Atom",
             "baslik": "Atomun İçindeki Rüya",
             "yazar": "Fuat Karalı",
-            "kapak": "uploads/okuma/img_6a8960672bd0a.jpg",
+            "kapak": "uploads/okuma/img_6a895b1733afa.jpg",
             "tarih": "22.08.2026 04:17:47"
         },
         "page": [
             {
-                "uid": "block_1787566594177_983",
+                "uid": "block_1787566652424_6744",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -686,35 +686,35 @@
                 }
             },
             {
-                "uid": "block_1787566594178_5025",
+                "uid": "block_1787566652424_5573",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Gece yarısını çoktan geçmişti.</p>"
                 }
             },
             {
-                "uid": "block_1787566594178_651",
+                "uid": "block_1787566652424_2137",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Sessiz laboratuvarda yalnızca kâğıt hışırtıları ve duvardaki saatin tik takları duyuluyordu. Masanın üzerindeki sarı ışık altında genç bir fizikçi defalarca aynı hesapları yapıyordu. Adı Niels Bohr idi.</p>"
                 }
             },
             {
-                "uid": "block_1787566594178_8124",
+                "uid": "block_1787566652424_8781",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>O yıllarda atom, bilimin en büyük gizemlerinden biriydi. İnsanlar atomun var olduğunu düşünüyor ama içinde neler olduğunu tam olarak bilmiyordu. Özellikle tek bir soru herkesi zorluyordu: <b>“Elektronlar neden çekirdeğin içine düşmüyor?”</b></p>"
                 }
             },
             {
-                "uid": "block_1787566594178_7961",
+                "uid": "block_1787566652424_5124",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Çünkü bilinen fizik kurallarına göre dönen bir elektron enerji kaybetmeliydi. Enerji kaybeden elektron da giderek çekirdeğe yaklaşmalıydı. Eğer bu doğruysa bütün maddelerin çökmesi gerekirdi. Ama çökmüyordu. Demek ki atomun içinde henüz keşfedilmemiş gizli bir düzen vardı.</p>"
                 }
             },
             {
-                "uid": "block_1787566594178_6217",
+                "uid": "block_1787566652424_3938",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -722,63 +722,63 @@
                 }
             },
             {
-                "uid": "block_1787566594178_8174",
+                "uid": "block_1787566652424_6535",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1787566594178_6614",
+                "uid": "block_1787566652424_1117",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1787566594178_5393",
+                "uid": "block_1787566652424_2589",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8960672bd0a.jpg\" alt=\"Görsel\">\n \n    </div>"
                 }
             },
             {
-                "uid": "block_1787566594178_6759",
+                "uid": "block_1787566652424_3291",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><p><i><b>Resim 1: </b>Niels Bohr, klasik fiziğin tıkandığı noktada atomun gizemli dünyasını çözmek için geceler boyu formüllerle ve teorik hesaplamalarla baş başa kalmıştı.</i></p></blockquote></blockquote>"
                 }
             },
             {
-                "uid": "block_1787566594178_8472",
+                "uid": "block_1787566652424_8147",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bohr günlerdir bunu düşünüyordu. Defterleri denklemlerle dolmuştu. Bazen aynı satıra dakikalarca bakıyor, bazen sinirlenip sayfaları buruşturuyordu. Çünkü atom sanki gözlerinin önünde duruyor ama sırrını vermiyordu.</p>"
                 }
             },
             {
-                "uid": "block_1787566594178_597",
+                "uid": "block_1787566652424_3213",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>O gece yorgunluktan başı masasının üzerine düştü. Ve uykuya daldı.</div>"
                 }
             },
             {
-                "uid": "block_1787566594178_1967",
+                "uid": "block_1787566652424_2468",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>Birden kendisini karanlık bir boşluğun içinde buldu. Önünde parlak bir küre vardı. Bu bir atom çekirdeğiydi. Çevresinde ise ışıklı parçacıklar dönüyordu: Elektronlar…</div>"
                 }
             },
             {
-                "uid": "block_1787566594178_2753",
+                "uid": "block_1787566652424_7914",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>Ama rastgele hareket etmiyorlardı. Sanki görünmez rayların üzerinde kayıyor gibiydiler. Her biri belirli halkalar boyunca dönüyor, bazen bir halkadan diğerine sıçrarken kısa ışık parlamaları oluşturuyordu.</div>"
                 }
             },
             {
-                "uid": "block_1787566594178_7393",
+                "uid": "block_1787566652424_1632",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><h2>Rüyadaki Atom Dünyası</h2><p></p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8c15cf41e50.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p><br><p></p><p><br></p></div>"
