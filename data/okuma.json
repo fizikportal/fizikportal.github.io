@@ -758,6 +758,22 @@
             "kapak": "uploads/okuma/img_6a895b1733afa.jpg",
             "tarih": "24.08.2026 07:04:10"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1787569495911_2007",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Başlığınızı buraya yazın"
+                }
+            },
+            {
+                "uid": "block_1787569495912_1166",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>İçeriğe başlamak için tıklayın...</p>"
+                }
+            }
+        ]
     }
 ]
