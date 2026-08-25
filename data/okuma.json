@@ -641,7 +641,7 @@
         },
         "page": [
             {
-                "uid": "block_1787566652424_6744",
+                "uid": "block_1787656415773_4915",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -649,35 +649,35 @@
                 }
             },
             {
-                "uid": "block_1787566652424_5573",
+                "uid": "block_1787656415774_1536",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Gece yarısını çoktan geçmişti.</p>"
                 }
             },
             {
-                "uid": "block_1787566652424_2137",
+                "uid": "block_1787656415774_6647",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Sessiz laboratuvarda yalnızca kâğıt hışırtıları ve duvardaki saatin tik takları duyuluyordu. Masanın üzerindeki sarı ışık altında genç bir fizikçi defalarca aynı hesapları yapıyordu. Adı Niels Bohr idi.</p>"
                 }
             },
             {
-                "uid": "block_1787566652424_8781",
+                "uid": "block_1787656415774_5326",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>O yıllarda atom, bilimin en büyük gizemlerinden biriydi. İnsanlar atomun var olduğunu düşünüyor ama içinde neler olduğunu tam olarak bilmiyordu. Özellikle tek bir soru herkesi zorluyordu: <b>“Elektronlar neden çekirdeğin içine düşmüyor?”</b></p>"
                 }
             },
             {
-                "uid": "block_1787566652424_5124",
+                "uid": "block_1787656415774_4759",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Çünkü bilinen fizik kurallarına göre dönen bir elektron enerji kaybetmeliydi. Enerji kaybeden elektron da giderek çekirdeğe yaklaşmalıydı. Eğer bu doğruysa bütün maddelerin çökmesi gerekirdi. Ama çökmüyordu. Demek ki atomun içinde henüz keşfedilmemiş gizli bir düzen vardı.</p>"
                 }
             },
             {
-                "uid": "block_1787566652424_3938",
+                "uid": "block_1787656415774_154",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -685,93 +685,130 @@
                 }
             },
             {
-                "uid": "block_1787566652424_6535",
+                "uid": "block_1787656415774_1951",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1787566652424_1117",
+                "uid": "block_1787656415774_2600",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1787566652424_2589",
+                "uid": "block_1787656415774_7560",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8960672bd0a.jpg\" alt=\"Görsel\">\n \n    </div>"
                 }
             },
             {
-                "uid": "block_1787566652424_3291",
+                "uid": "block_1787656415774_6500",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><p><i><b>Resim 1: </b>Niels Bohr, klasik fiziğin tıkandığı noktada atomun gizemli dünyasını çözmek için geceler boyu formüllerle ve teorik hesaplamalarla baş başa kalmıştı.</i></p></blockquote></blockquote>"
                 }
             },
             {
-                "uid": "block_1787566652424_8147",
+                "uid": "block_1787656415774_8105",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bohr günlerdir bunu düşünüyordu. Defterleri denklemlerle dolmuştu. Bazen aynı satıra dakikalarca bakıyor, bazen sinirlenip sayfaları buruşturuyordu. Çünkü atom sanki gözlerinin önünde duruyor ama sırrını vermiyordu.</p>"
                 }
             },
             {
-                "uid": "block_1787566652424_3213",
+                "uid": "block_1787656415774_8206",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>O gece yorgunluktan başı masasının üzerine düştü. Ve uykuya daldı.</div>"
                 }
             },
             {
-                "uid": "block_1787566652424_2468",
+                "uid": "block_1787656415774_9333",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>Birden kendisini karanlık bir boşluğun içinde buldu. Önünde parlak bir küre vardı. Bu bir atom çekirdeğiydi. Çevresinde ise ışıklı parçacıklar dönüyordu: Elektronlar…</div>"
                 }
             },
             {
-                "uid": "block_1787566652424_7914",
+                "uid": "block_1787656415774_4232",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>Ama rastgele hareket etmiyorlardı. Sanki görünmez rayların üzerinde kayıyor gibiydiler. Her biri belirli halkalar boyunca dönüyor, bazen bir halkadan diğerine sıçrarken kısa ışık parlamaları oluşturuyordu.</div>"
                 }
             },
             {
-                "uid": "block_1787566652424_1632",
+                "uid": "block_1787656415774_7085",
                 "type": "paragraf",
                 "content": {
-                    "html": "<div><h2>Rüyadaki Atom Dünyası</h2><p></p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8c15cf41e50.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p><br><p></p><p><br></p></div>"
-                }
-            }
-        ]
-    },
-    {
-        "id": "okuma_1787574963",
-        "meta": {
-            "konu": "Kinematik",
-            "baslik": "deneme",
-            "yazar": "",
-            "kapak": "uploads/okuma/img_6a8c3aa8838de.jpg",
-            "tarih": "24.08.2026 08:36:03"
-        },
-        "page": [
-            {
-                "uid": "block_1787574974246_9969",
-                "type": "baslik",
-                "content": {
-                    "tag": "h2",
-                    "text": "Başlığınızı buraya yazın"
+                    "html": "<div><h2>Rüyadaki Atom Dünyası</h2><p></p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8c15cf41e50.jpg\" alt=\"Görsel\">\n \n    </div></div>"
                 }
             },
             {
-                "uid": "block_1787574974247_3564",
+                "uid": "block_1787656415774_3878",
                 "type": "paragraf",
                 "content": {
-                    "html": "<p>İçeriğe başlamak için tıklayın...</p>"
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><i><b>Resim 2: </b>Bohr'un rüyasındaki atom; elektronların rastgele değil, tıpkı görünmez raylar veya merdiven basamakları gibi sadece belirli yörüngelerde var olabildiği kuantumlu bir düzendi.</i></p></div></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787656415774_8638",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>Bohr büyülenmiş gibi onları izledi. Bir elektron aniden yön değiştirdi. Doğruca ona doğru gelmeye başladı. Kendi çevresinde öylesine hızlı dönüyordu ki çevresinde titreşen bir ışık tabakası oluşmuştu. Yaklaştıkça Bohr yüzünde küçük damlacıklar hisseder gibi oldu. Eski fizik kitaplarında yıllarca anlatılan “elektron yüzüne tükürdü” hikâyesi işte bu tuhaf rüya anısından doğmuştu.</div>"
+                }
+            },
+            {
+                "uid": "block_1787656415774_6678",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>Bohr irkilerek uyandı. Nefes nefeseydi. Bir süre nerede olduğunu anlamaya çalıştı. Sonra gözleri masadaki hesaplara kaydı. Ve o anda zihninde bir düşünce şimşek gibi çaktı:</div>"
+                }
+            },
+            {
+                "uid": "block_1787656415774_9831",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><b>“Elektronlar her yerde bulunamaz… Sadece belirli yörüngelerde hareket edebilirler! Tıpkı bir merdivenin basamakları gibi; elektron ya birinci basamaktadır ya da ikinci basamakta. Asla iki basamağın arasında, boşlukta duramaz!”</b></div>"
+                }
+            },
+            {
+                "uid": "block_1787656415774_6734",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>Hemen kalemine sarıldı. Sayfalar dolusu not yazmaya başladı. 1913 yılında ortaya çıkan bu fikir daha sonra tüm dünyanın tanıyacağı bir modele dönüştü: Bohr Atom Modeli.</div>"
+                }
+            },
+            {
+                "uid": "block_1787656415774_3724",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Enerji Seviyeleri ve Işıma (Foton)"
+                }
+            },
+            {
+                "uid": "block_1787656415774_8369",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8d788a2ddee.jpg\" alt=\"Görsel\">\n \n    </div></div>"
+                }
+            },
+            {
+                "uid": "block_1787656415774_2728",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><i><b>Resim 3:</b> Bir elektron yüksek enerjili bir yörüngeden daha düşük bir yörüngeye sıçradığında (kuantum geçişi), aradaki enerji farkını dışarıya renkli bir ışık (foton) olarak salar.</i></p></div></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787656415774_1412",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>Bu modele göre elektronlar çekirdeğin çevresinde rastgele dolaşmıyordu. Yalnızca belirli enerji düzeylerinde bulunabiliyorlardı. Elektron bir yörüngeden başka bir yörüngeye geçtiğinde ise ışık yayıyor ya da ışık soğuruyordu. Bu fikir, atomların neden belirli renklerde ışık verdiğini (spektrum çizgilerini) açıklamayı başardı.\n<br>Bilim dünyası büyük bir şaşkınlık yaşadı. Çünkü atomun içinde klasik fiziğin kuralları tam olarak işlemiyordu. İşte modern kuantum fiziğine açılan kapılardan biri böyle aralandı.\n<br>Bugün bilim insanları elektronların küçük gezegenler gibi kesin yollar çizmediğini biliyor. Modern fizik (modern atom teorisi) dalga mekaniğiyle çok daha gelişmiş açıklamalara sahip. Ama Bohr’un modeli bilim tarihinde dev bir adımdı.\n<br>Çünkü bazen insanlık, evrenin sırlarını yalnızca büyük laboratuvarlarda değil; merak eden bir zihnin yorgun bir gecesinde, bir rüyanın içinden gelen küçücük bir fikirle keşfeder.</div>"
                 }
             }
         ]
