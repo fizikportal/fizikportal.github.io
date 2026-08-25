@@ -822,6 +822,14 @@
             "kapak": "uploads/okuma/img_6a8d7b216c4e2.jpg",
             "tarih": "25.08.2026 13:23:21"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1787657056603_1292",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><h2>Vücudun İçini Görmek: Sessiz Dalgaların Hikâyesi\n</h2>Doktor, elindeki küçük cihazı (prob) annenin karnına doğru yaklaştırıyor. O anda odada hiçbir ses yok… Ama aslında ortam, insan kulağının sınırlarını aşan, saniyede milyonlarca kez titreşen sessiz dalgalarla dolu. Ekranda bir anda bir görüntü beliriyor: Minik bir kalp… Atıyor.\n<br>Peki ama bu nasıl mümkün olabilir? Sesle \"görmek\" gerçekten mümkün mü?\n<br><h2>Sesin Bir \"Göz\"e Dönüşmesi\n</h2>Günlük hayatta sesi sadece duymak için kullanırız. Oysa bilim insanları sesi bir “görme aracına” dönüştürdü. Ultrason cihazı, saniyede yaklaşık 10 milyon kez (10 MHz) titreşen ses dalgaları gönderir. Bu dalgalar vücudun içine girer; kemiğe çarpınca hemen geri yansır, sıvıya çarpınca içinden süzülüp geçer.&nbsp;<br></p>"
+                }
+            }
+        ]
     }
 ]
