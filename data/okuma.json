@@ -824,10 +824,118 @@
         },
         "page": [
             {
-                "uid": "block_1787657056603_1292",
+                "uid": "block_1787657686723_3671",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><h2>Vücudun İçini Görmek: Sessiz Dalgaların Hikâyesi\n</h2>Doktor, elindeki küçük cihazı (prob) annenin karnına doğru yaklaştırıyor. O anda odada hiçbir ses yok… Ama aslında ortam, insan kulağının sınırlarını aşan, saniyede milyonlarca kez titreşen sessiz dalgalarla dolu. Ekranda bir anda bir görüntü beliriyor: Minik bir kalp… Atıyor.\n<br>Peki ama bu nasıl mümkün olabilir? Sesle \"görmek\" gerçekten mümkün mü?\n<br><h2>Sesin Bir \"Göz\"e Dönüşmesi\n</h2>Günlük hayatta sesi sadece duymak için kullanırız. Oysa bilim insanları sesi bir “görme aracına” dönüştürdü. Ultrason cihazı, saniyede yaklaşık 10 milyon kez (10 MHz) titreşen ses dalgaları gönderir. Bu dalgalar vücudun içine girer; kemiğe çarpınca hemen geri yansır, sıvıya çarpınca içinden süzülüp geçer.&nbsp;<br></p>"
+                }
+            },
+            {
+                "uid": "block_1787657686723_2811",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8d7bbe48468.jpg\" alt=\"Görsel\">\n \n    </div></p>"
+                }
+            },
+            {
+                "uid": "block_1787657686723_9790",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><p><p><i><b>Resim 1:</b> Dokularda Yankı Analizi. Ultrason probundan çıkan dalgaların farklı yoğunluktaki dokularla (sıvı, kas, kemik) etkileşimi. Farklı geri dönüş süreleri, bilgisayar tarafından işlenerek anlık bir derinlik haritasına (görüntüye) dönüştürülür.</i></p></p></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787657686723_6998",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Bilgisayar, bu yankıların ne kadar sürede geri döndüğünü ölçerek içerideki \"manzarayı\" çizer. Yani doktor aslında sesi <b>dinleyerek </b>görür.\n<br>İşte bu sessizliğin içindeki büyüleyici dünyanın hikâyesi...&nbsp;<br></p>"
+                }
+            },
+            {
+                "uid": "block_1787657686723_1445",
+                "type": "baslik",
+                "content": {
+                    "tag": "h3",
+                    "text": "1. Doğanın Süper Gücü: Yarasa Gözüyle Bakmak"
+                }
+            },
+            {
+                "uid": "block_1787657686723_6420",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8d7cb88d92e.jpg\" alt=\"Görsel\">\n \n    </div></div>"
+                }
+            },
+            {
+                "uid": "block_1787657686723_2694",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><i><b>Resim 2: </b>Dalga Boyu ve Ayrıntı İlişkisi. Yüksek frekanslı dalgaların λ= 0,15 mm gibi kısa dalga boyu) ufacık yapıları nasıl ayırt edebildiği görülmektedir. Formülümüzün (λ= v / f) pratikteki karşılığı: Frekans arttıkça ayrıntı artar ama sesin dokudaki ilerleme derinliği azalır.</i></p></div></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787657686723_9438",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>Zifiri karanlık bir mağara düşünün. Bir yarasa, hiçbir ışık olmadığı halde ufacık bir sineği havada yakalayabiliyor. Nasıl mı? Aslında yarasa \"bağırıyor\" ama biz duyamıyoruz. Gönderdiği bu ses dalgaları sineğe çarpıp geri dönüyor. Yarasa kulağıyla sadece bir sesi duymuyor; sineğin büyüklüğünü, hızını ve tam konumunu \"görüyor\".</div>"
+                }
+            },
+            {
+                "uid": "block_1787657686723_7601",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>İnsanoğlu bu muazzam yeteneği doğadan kopyaladı ve adını <b>ultrason </b>koydu.</div>"
+                }
+            },
+            {
+                "uid": "block_1787657686723_6329",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Neden Bu Sesi Duyamıyoruz?"
+                }
+            },
+            {
+                "uid": "block_1787657686724_8707",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>İnsan kulağı hantaldır; saniyede en fazla 20.000 titreşimi algılayabilir. Ultrason ise çok \"hızlı\" ve \"kısa\" dalgalardır. Şöyle düşünün: Bir kamyon (düşük frekans) sokağı sarsarak geçerken her şeyi gürültüyle belli eder, ama ince bir iğne (yüksek frekans) ufacık bir delikten sessizce süzülüp gider. İşte bu \"ince\" dalgalar sayesinde bir bebeğin parmak boğumlarını bile görebiliyoruz.</div>"
+                }
+            },
+            {
+                "uid": "block_1787657686724_1559",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8d7d66634e2.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p></div>"
+                }
+            },
+            {
+                "uid": "block_1787657686724_483",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><i><b>Resim 4: </b>Ses Spektrumu ve Algı Sınırları. İnsan kulağının 20 Hz - 20 kHz arasındaki dar bandına karşılık, yunusların ve yarasaların çok daha geniş bir alanı kullandığı görülmektedir. Spektrumun en sağındaki \"bilinmeyen\" bölge, belki de bizim henüz dahil olamadığımız o beşinci boyut iletişiminin geçtiği alandır.</i></div></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787657686724_1966",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Doğadan İlham ve Sessiz Bekçiler"
+                }
+            },
+            {
+                "uid": "block_1787657686724_347",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>İnsan bu fikri yarasalardan kopyaladı. Zifiri karanlıkta avlanan bir yarasa, aslında \"bağırıyor\" ama biz duyamıyoruz. O da ultrason kullanarak çevresini \"görüyor\". Bugün bu teknoloji sadece hastanelerde değil, arabaların park sensörlerinde veya bahçelerdeki kedi-köpek uzaklaştırıcı cihazlarda bile karşımıza çıkıyor.</div>"
+                }
+            },
+            {
+                "uid": "block_1787657686724_8500",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><i><br></i></div>"
                 }
             }
         ]
