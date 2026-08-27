@@ -1111,6 +1111,51 @@
             "kapak": "uploads/okuma/img_6a8fe43158674.png",
             "tarih": "27.08.2026 09:16:12"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1787815410976_4087",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Kozmik Kavşak: Eter Teknolojisi, Antik Sırlar ve Büyük Sessizlik"
+                }
+            },
+            {
+                "uid": "block_1787815410976_3979",
+                "type": "baslik",
+                "content": {
+                    "tag": "h3",
+                    "text": "\"Evrende yalnız mıyız? Eğer değilsek, neden hâlâ kimseyle selamlaşmadık?\""
+                }
+            },
+            {
+                "uid": "block_1787815410976_1894",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>1950 yılında nükleer fizikçi Enrico Fermi, iş arkadaşlarıyla öğle yemeği yerken basit ama sarsıcı bir soru sordu: \"Herkes nerede?\" Galaksimizde milyarlarca yıldız ve bu yıldızların etrafinda dönen milyarlarca gezegen varken, neden hâlâ bir uzaylı medeniyetine dair kesin bir kanıt bulamadık? Bugün bu büyük bilmeceye \"<b>Fermi Paradoksu</b>\" diyoruz. Ancak bu sessizliğin cevabı; yasaklı fizik teorilerinde, genetik kodlarımızda ve tarihin sıfir noktası olan Göbekli Tepe'de gizli olabilir.\n<br><h3>1.\tBölüm: Fermi Paradoksu – Neden Hâlâ Cevap Yok?\n</h3>Galaksimizde 200 milyardan fazla yıldız var. Eğer medeniyetler kütleçekimini kontrol edip \"Eter\" üzerinden seyahat edebiliyorsa, neden kapımızı çalmadılar? Bu sessizliğin teknik bir sebebi olabilir: <b>Analogdan Dijitale Sağırlaşma</b>.\n<br><ul><li><b>Sinyal Kaybı:</b> Son 100 yıldır uzaya analog radyo dalgaları sızdırıyorduk; yani kozmik okyanusta her yöne \"bağırıyorduk\". Ancak artık dijital yayınlara ve dar odaklı uydulara geçtik. Sinyal kaçaklarımız azaldı, kozmik bir sessizliğe büründük.\n</li><li><b>Kozmik Kamuflaj: </b>Belki de gelişmiş medeniyetler, hantal radyo dalgalarını binlerce yıl önce terk ettiler. Onlar \"Eter tabanlı\" anlık iletişim sistemleri kullanırken, biz hâlâ kumsalda şişe içinde mektup (<b>Arecibo Mesajı</b>) bekleyen çocuklar gibiyiz.&nbsp;</li></ul><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8fe58cb8081.jpg\" alt=\"Görsel\">\n \n    </div></div>"
+                }
+            },
+            {
+                "uid": "block_1787815410977_8543",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><i><b>Şekil 1: </b>İnsanlığın 21.000 ışık yılı ötedeki M13 yıldız kümesine gönderdiği ilk organize mesaj. İçeriğinde sayı sistemimiz, DNA sarmalımız ve Güneş sistemindeki yerimiz bulunmaktadır.</i></p></div></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787815410977_4964",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div>Ancak bu mesajın ulaşıp cevaplanması binlerce yıl sürebilir; bu da Fermi'nin 'Neden sessizler?' sorusuna verilen en hüzünlü teknik cevaptır.</div>"
+                }
+            },
+            {
+                "uid": "block_1787815410977_3110",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><br></div>"
+                }
+            }
+        ]
     }
 ]
