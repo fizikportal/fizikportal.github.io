@@ -1023,7 +1023,7 @@
         },
         "page": [
             {
-                "uid": "block_1787756933704_5613",
+                "uid": "block_1787814637132_4504",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -1031,17 +1031,73 @@
                 }
             },
             {
-                "uid": "block_1787756933705_6741",
+                "uid": "block_1787814637133_1656",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Düşünün: 125 milyon dolarlık bir uzay aracı, Mars İklim Yörünge Aracı, tam dokuz buçuk ay boyunca uzayın karanlık boşluğunda süzülüyor. Yıl 1999. NASA’nın en parlak beyinleri, bu aracı Mars’ın gizemli iklimini çözmek için göndermiş. Kızıl gezegene ulaşmak üzere olan bu teknolojik harika, insanlığın sınırlarını zorlayan bir umut ışığı. 23 Eylül günü, kritik an geliyor. Motorlar ateşleniyor, araç Mars’ın yörüngesine yerleşmek için harekete geçiyor. Kontrol odasında nefesler tutulmuş, gözler ekranda. Ve sonra… sessizlik. Sinyal kayboluyor. 125 milyon dolarlık bir rüya, bir anda uzayın derinliklerinde yitip gidiyor.</p>"
                 }
             },
             {
-                "uid": "block_1787756933705_6800",
+                "uid": "block_1787814637133_1305",
                 "type": "paragraf",
                 "content": {
-                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8f00fc7e72c.jpg\" alt=\"Görsel\">\n \n    </div><p>Ne mi oldu? Uzaylı istilası mı? Bir meteor çarpması mı? Hayır, çok daha inanılmaz ve bir o kadar basit bir sebep! Aylar süren araştırmalar sonunda gerçek ortaya çıkıyor: Bu felaketin nedeni ne bir motor arızası ne de teknolojik bir çöküş. Suçlu, insanlığın en basit hatalarından biri: ölçü birimi karışıklığı! Lockheed Martin ekibi, uzay aracının itki gücünü İngiliz birimi olan pound-saniye ile hesaplamış. NASA’nın seyrüsefer ekibi ise bu verilerin, şartnamelere uygun olarak metrik birim olan Newton-saniye cinsinden geldiğini sanmış. Sanki biri “sağdan dön” derken diğeri “sola git” anlamış gibi!\n<br>Şimdi sıkı durun: Bir pound-saniye, Newton-saniye’den tam 4.45 kat büyük. Bu küçük hata, her hesaplamada katlanarak büyüdü. Yazılım, uzay aracının yörüngesini sürekli yanlış okudu. Mühendisler her şeyin yolunda olduğunu düşünürken, araç her geçen saniye Mars’a biraz daha yaklaşıyordu. Sonuç mu? Güvenli irtifa olan 150 kilometre yerine, araç 57 kilometre gibi tehlikeli bir alçaklığa indi. Mars’ın yoğun atmosferi ya aracı yuttu ya da uzayın sonsuz boşluğuna fırlattı. 125 milyon dolar, bir ölçü birimi hatasıyla toza dönüştü!</p><p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8f00a7e015c.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p>&nbsp;Ama bu hikâye sadece bir kayıp değil, aynı zamanda bir uyanış! Ölçmenin, birimlerin, o sıkıcı sandığınız matematik derslerinin ne kadar hayati olduğunu gösteriyor. Bir köprü inşa ederken, bir ilaç geliştirirken ya da bir kod yazarken, tek bir yanlış birim felakete yol açabilir. Ölçme, bilimin ve mühendisliğin ortak dili. Bu dilde hata yapmak, bir uzay aracını kaybetmekle kalmaz; hayatları, hayalleri, geleceği riske atar. Mars İklim Yörünge Aracı’nın hikâyesi, yenilginin değil, hassasiyetin zaferinin öyküsü. Bir dahaki sefere metreyle feet, gramla ons hesaplarken şunu unutmayın: Küçük bir dikkat, bir dünyayı kurtarabilir!</p></p>"
+                    "html": "<p></p>"
+                }
+            },
+            {
+                "uid": "block_1787814637133_1329",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8f00fc7e72c.jpg\" alt=\"Görsel\">\n \n    </div>"
+                }
+            },
+            {
+                "uid": "block_1787814637133_7752",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Ne mi oldu? Uzaylı istilası mı? Bir meteor çarpması mı? Hayır, çok daha inanılmaz ve bir o kadar basit bir sebep! Aylar süren araştırmalar sonunda gerçek ortaya çıkıyor: Bu felaketin nedeni ne bir motor arızası ne de teknolojik bir çöküş. Suçlu, insanlığın en basit hatalarından biri: ölçü birimi karışıklığı! Lockheed Martin ekibi, uzay aracının itki gücünü İngiliz birimi olan pound-saniye ile hesaplamış. NASA’nın seyrüsefer ekibi ise bu verilerin, şartnamelere uygun olarak metrik birim olan Newton-saniye cinsinden geldiğini sanmış. Sanki biri “sağdan dön” derken diğeri “sola git” anlamış gibi!\n<br>Şimdi sıkı durun: Bir pound-saniye, Newton-saniye’den tam 4.45 kat büyük. Bu küçük hata, her hesaplamada katlanarak büyüdü. Yazılım, uzay aracının yörüngesini sürekli yanlış okudu. Mühendisler her şeyin yolunda olduğunu düşünürken, araç her geçen saniye Mars’a biraz daha yaklaşıyordu. Sonuç mu? Güvenli irtifa olan 150 kilometre yerine, araç 57 kilometre gibi tehlikeli bir alçaklığa indi. Mars’ın yoğun atmosferi ya aracı yuttu ya da uzayın sonsuz boşluğuna fırlattı. 125 milyon dolar, bir ölçü birimi hatasıyla toza dönüştü!</p>"
+                }
+            },
+            {
+                "uid": "block_1787814637133_4248",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p></p>"
+                }
+            },
+            {
+                "uid": "block_1787814637133_330",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a8f00a7e015c.jpg\" alt=\"Görsel\">\n \n    </div>"
+                }
+            },
+            {
+                "uid": "block_1787814637133_4536",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1787814637133_2238",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p> Ama bu hikâye sadece bir kayıp değil, aynı zamanda bir uyanış! Ölçmenin, birimlerin, o sıkıcı sandığınız matematik derslerinin ne kadar hayati olduğunu gösteriyor. Bir köprü inşa ederken, bir ilaç geliştirirken ya da bir kod yazarken, tek bir yanlış birim felakete yol açabilir. Ölçme, bilimin ve mühendisliğin ortak dili. Bu dilde hata yapmak, bir uzay aracını kaybetmekle kalmaz; hayatları, hayalleri, geleceği riske atar. Mars İklim Yörünge Aracı’nın hikâyesi, yenilginin değil, hassasiyetin zaferinin öyküsü. Bir dahaki sefere metreyle feet, gramla ons hesaplarken şunu unutmayın: Küçük bir dikkat, bir dünyayı kurtarabilir!</p>"
+                }
+            },
+            {
+                "uid": "block_1787814637133_2201",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p></p>"
+                }
+            },
+            {
+                "uid": "block_1787814637133_3879",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p></p>"
                 }
             }
         ]
