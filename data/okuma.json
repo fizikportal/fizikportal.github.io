@@ -1262,7 +1262,7 @@
         },
         "page": [
             {
-                "uid": "block_1787846672590_7208",
+                "uid": "block_1787847597766_7044",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -1270,56 +1270,56 @@
                 }
             },
             {
-                "uid": "block_1787846672591_7018",
+                "uid": "block_1787847597767_1859",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Düşün bir an. Yaz ortası... Güneş dimdik tepede. Üstelik gündüz sıcaklığın 40–45°C civarında olduğu, kavurucu rüzgârların ve kum fırtınalarının estiği bir İran çölündesiniz. Elektrik yok. Buzdolabı yok. Klima yok. Ama canın buz gibi soğuk bir şey istiyor. Ve elinizde... buz var! Yaz ortasında, çölün göbeğinde.</p>"
                 }
             },
             {
-                "uid": "block_1787846672591_9498",
+                "uid": "block_1787847597767_216",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>İmkânsız gibi duruyor, değil mi?</p>"
                 }
             },
             {
-                "uid": "block_1787846672591_3654",
+                "uid": "block_1787847597767_6806",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bu bir bilim kurgu değil. Bundan 2500 yıl önce Persler bunu gerçekten yapıyordu. Nasıl mı? Çöllerin ortasına devasa, konik toprak yapılar inşa ettiler. Fizik derslerinde öğrendiğiniz üç kavramı —ışınım, buharlaşma ve taşınım— ustaca birleştiren tek bir yapıda bunu gerçekleştirdiler. Adını <b>Yakçal </b>koydular.</p>"
                 }
             },
             {
-                "uid": "block_1787846672591_2552",
+                "uid": "block_1787847597767_6520",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bu yapılar sadece buz saklama depoları değildi; elektriksiz, motorsuz, fanı olmayan, tamamen doğanın kendi kurallarıyla çalışan devasa birer soğutma makinesiydi.</p>"
                 }
             },
             {
-                "uid": "block_1787846672591_2907",
+                "uid": "block_1787847597767_7434",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bugün hâlâ İran’ın bazı bölgelerinde ayakta duran bu yapılar bize çok önemli bir şey fısıldıyor: <b>Doğayla savaşmak zorunda değilsin. Onun hareketini kullanabilirsin.</b></p>"
                 }
             },
             {
-                "uid": "block_1787846672591_1370",
+                "uid": "block_1787847597767_9862",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a905d03c7e2e.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p></p>"
                 }
             },
             {
-                "uid": "block_1787846672591_5163",
+                "uid": "block_1787847597767_6573",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><p><i><b>Şekil 1: </b>Güneşin altında çölün ortasında yükselen Yakçal yapısı ve gölgeleme duvarı</i></p></blockquote></blockquote>"
                 }
             },
             {
-                "uid": "block_1787846672591_1147",
+                "uid": "block_1787847597767_4294",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -1327,14 +1327,14 @@
                 }
             },
             {
-                "uid": "block_1787846672591_7584",
+                "uid": "block_1787847597767_9493",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>Yakçal, Farsça'da \"buz kuyusu\" demektir. MÖ 400'lerden itibaren Persler tarafından inşa edilen bu yapılar, aslında çağının ötesinde birer buzdolabından başka bir şey değildi. Yerin altına doğru inen derin bir çukurun üzerine, genellikle 18-20 metreye ulaşan konik veya kubbeli devasa bir kule inşa edilirdi.</div>"
                 }
             },
             {
-                "uid": "block_1787846672591_469",
+                "uid": "block_1787847597767_2229",
                 "type": "baslik",
                 "content": {
                     "tag": "h3",
@@ -1342,14 +1342,14 @@
                 }
             },
             {
-                "uid": "block_1787846672591_9303",
+                "uid": "block_1787847597767_6575",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>Bu kuleler sıradan tuğladan yapılmazdı. Yapının dış duvarları özel bir karışımla sıvanırdı: Kum, kil, kireç, yumurta akı ve keçi kılının karışımı... Adı Sarooj. Kulağa garip gelebilir ama bu karışım, dönemin en gelişmiş yalıtım malzemesiydi. Bu harç hem su geçirmezdi hem de dışarıdaki kavurucu sıcağın içeriye sızmasını neredeyse tamamen engellerdi.</div>"
                 }
             },
             {
-                "uid": "block_1787846672591_6394",
+                "uid": "block_1787847597767_9767",
                 "type": "baslik",
                 "content": {
                     "tag": "h3",
@@ -1357,45 +1357,87 @@
                 }
             },
             {
-                "uid": "block_1787846672591_3287",
+                "uid": "block_1787847597767_4083",
                 "type": "paragraf",
                 "content": {
                     "html": "<div>İşte işin gerçekten büyülü kısmı burada başlıyor. Yakçal, tesadüfen soğuk olmuyordu; üç ısı transferi mekanizmasını bilerek birleştirmişlerdi.</div>"
                 }
             },
             {
-                "uid": "block_1787846672591_7720",
+                "uid": "block_1787847597767_7154",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a905de5b850f.jpg\" alt=\"Görsel\">\n \n    </div></div>"
                 }
             },
             {
-                "uid": "block_1787846672591_8543",
+                "uid": "block_1787847597767_2687",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><i><b>Şekil 2:</b> Dış Havanın Emiş Kuyusundan Alınması\" şematik diyagram\n</i></p></div></blockquote></blockquote>"
                 }
             },
             {
-                "uid": "block_1787846672591_2792",
+                "uid": "block_1787847597767_1724",
                 "type": "paragraf",
                 "content": {
                     "html": "<div><p><h3>1. Gece Gökyüzüne Işıma (Işınımla Soğuma)\n</h3>Her sıcak cisim çevresine kızılötesi ışınım yayarak ısı kaybeder —tıpikı bir sobanın yaydığı ısıyı hissetmeniz gibi. Bunun tersi de geçerlidir: Kış geceleri çöl gökyüzü bulutsuz ve nem sıfıra yakın olduğu için adeta uzayın dondurucu derinliğine açılan pencereye dönüşür.\n<br>Yakçal’ın etrafına yüksek gölgeleme duvarları dikilir, arkalarına sığ havuzlar kazılırdı. Kış gecelerinde bu havuzlara su doldurulur; berrak çöl gecesinde su yüzeyi, ısısını gökyüzüne ışınım yoluyla uzaya aktarırdı. Dışarıda hava sıcaklığı 3–4°C bile olsa, su doğrudan soğuk gece gökyüzüne ısı kaybettiği için donardı! Bugün buna Stefan-Boltzmann yasasının pratik hali diyoruz.&nbsp;</p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a905ed1ae3e1.jpg\" alt=\"Görsel\">\n \n    </div></div>"
                 }
             },
             {
-                "uid": "block_1787846672591_4064",
+                "uid": "block_1787847597767_4229",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><i><b>Şekil 3: </b>Derin Toprak Isı Transferi ve Boruda Soğuma\" şematik diyagramı</i></p></div></blockquote></blockquote>"
                 }
             },
             {
-                "uid": "block_1787846672591_6050",
+                "uid": "block_1787847597767_2002",
                 "type": "paragraf",
                 "content": {
-                    "html": "<div><h3>2. Buharlaşmalı Soğutma (Gizli Isı)</h3><p>Sizin de günlük hayattan bildiğiniz bir olay: Terlediğinizde serinlersiniz. Çünkü sıvının buharlaşması, çevresinden ısı çeker (gizli buharlaşma ısısı). Yakçal’ın çevresindeki su kanalları ve havuzlar da aynı prensiple çalışırdı: Kuru çöl havasında su buharlaştıkça, hem kendisini hem de etrafındaki havayı soğuturdu.</p><h3>3. Termal Baca Etkisi ve Rüzgar Kuleleri (Doğal Konveksiyon)</h3><p>Yakçal’ın şekli bir külaha benzerdi: Aşağıda geniş, yukarıda dar. Gündüz ısınan hava hafifleyip kubbenin tepesindeki delikten dışarı kaçarken; ağır ve soğuk hava, yerin metrelerce altındaki kuyuya çökerdi.</p><p>Bu sisteme genellikle <b>Badgir </b>adı verilen rüzgar kuleleri eşlik ederdi. Bu kuleler dışarıdaki rüzgarı yakalayıp aşağıya, buz çukurunun içine yönlendirirdi. Hiçbir vantilatör veya motor yoktu; sadece havanın kendi yoğunluk farkı ve baca etkisi sayesinde çukurun içinde sürekli bir hava döngüsü oluşur, sıcaklık dengede kalırdı.</p><h2>Peki Bugün Bu Yöntemle Bir Evi Isıtabilir ya da Soğutabilir miyiz?</h2><p>Kesinlikle evet — ve dünyanın dört bir yanındaki mimarlar bunu zaten yapıyor. Yakçal’ın mantığına mimaride \"pasif iklimlendirme\" denir: Klima ya da kalorifer gibi sürekli enerji harcayan bir makine yerine, binanın kendisini fizik kurallarına göre tasarlayarak sıcaklığı dengelemek.</p><p>Şimdi düşünelim: Bu antik mantığı modern bir eve adım adım nasıl taşıyabiliriz?</p><p>Toprağın 2,5–3 metre altı, yaz-kış neredeyse sabit sıcaklıktadır (çoğu yerde 15–18 °C). Bu, doğanın mimarlara sunduğu ücretsiz bir termostat gibidir.</p><h3>1. Aşama: Doğal Hava Sirkülasyonu (Pasif Hava Sistemi)</h3><p>Sistemi sadece hava akışıyla kurgularsak süreç şöyle işler:</p><p><ul><li><b>Yeraltı Boruları (Toprak-Hava Isı Değiştiricisi): </b>Dışarıdaki sıcak hava, filtreden geçerek yerin 2–3 metre altına döşenen borulara çekilir. Borudan geçen hava ısısını serin toprağa bırakır ve eve ulaşana kadar sıcaklığı 17–18 °C’ye düşer.</li><li><b>Güneş Bacası (Termal Baca): </b>Evin çatısına cam kaplı, siyah yüzeyli bir baca yerleştirilir. Güneş bu bacanın içini ısıttıkça yükselen sıcak hava dışarı kaçar. Yükselen bu hava evde hafif bir emiş (vakum) yaratarak alttaki serin havayı kendiliğinden içeri çeker. Motor yok, vantilatör yok; sadece yoğunluk farkı!</li><li><b>Hafif Nemlendirme:</b> Eve giren serin hava, zemin seviyesindeki küçük bir su havuzunun üzerinden geçerken hem biraz daha soğur hem de nem oranı dengelenir.</li><li><b>Yavaş ve Sessiz Dağıtım: </b>Soğuk hava ağır olduğu için odaların süpürgeliklerinden \"sıvı gibi\" sakince yayılır. Yüzünüze rüzgâr çarpmaz; sadece ayağınızın altından yükselen bir mağara serinliği hissedersiniz. Yüksek ısıl kütleli duvarlar da serinleyerek odayı ışınım yoluyla soğutur.</li></ul></p><p><br></p><br></div>"
+                    "html": "<div><h3>2. Buharlaşmalı Soğutma (Gizli Isı)</h3><p>Sizin de günlük hayattan bildiğiniz bir olay: Terlediğinizde serinlersiniz. Çünkü sıvının buharlaşması, çevresinden ısı çeker (gizli buharlaşma ısısı). Yakçal’ın çevresindeki su kanalları ve havuzlar da aynı prensiple çalışırdı: Kuru çöl havasında su buharlaştıkça, hem kendisini hem de etrafındaki havayı soğuturdu.</p><h3>3. Termal Baca Etkisi ve Rüzgar Kuleleri (Doğal Konveksiyon)</h3><p>Yakçal’ın şekli bir külaha benzerdi: Aşağıda geniş, yukarıda dar. Gündüz ısınan hava hafifleyip kubbenin tepesindeki delikten dışarı kaçarken; ağır ve soğuk hava, yerin metrelerce altındaki kuyuya çökerdi.</p><p>Bu sisteme genellikle <b>Badgir </b>adı verilen rüzgar kuleleri eşlik ederdi. Bu kuleler dışarıdaki rüzgarı yakalayıp aşağıya, buz çukurunun içine yönlendirirdi. Hiçbir vantilatör veya motor yoktu; sadece havanın kendi yoğunluk farkı ve baca etkisi sayesinde çukurun içinde sürekli bir hava döngüsü oluşur, sıcaklık dengede kalırdı.</p><h2>Peki Bugün Bu Yöntemle Bir Evi Isıtabilir ya da Soğutabilir miyiz?</h2><p>Kesinlikle evet — ve dünyanın dört bir yanındaki mimarlar bunu zaten yapıyor. Yakçal’ın mantığına mimaride \"pasif iklimlendirme\" denir: Klima ya da kalorifer gibi sürekli enerji harcayan bir makine yerine, binanın kendisini fizik kurallarına göre tasarlayarak sıcaklığı dengelemek.</p><p>Şimdi düşünelim: Bu antik mantığı modern bir eve adım adım nasıl taşıyabiliriz?</p><p>Toprağın 2,5–3 metre altı, yaz-kış neredeyse sabit sıcaklıktadır (çoğu yerde 15–18 °C). Bu, doğanın mimarlara sunduğu ücretsiz bir termostat gibidir.</p><h3>1. Aşama: Doğal Hava Sirkülasyonu (Pasif Hava Sistemi)</h3><p>Sistemi sadece hava akışıyla kurgularsak süreç şöyle işler:</p><p><ul><li><b>Yeraltı Boruları (Toprak-Hava Isı Değiştiricisi): </b>Dışarıdaki sıcak hava, filtreden geçerek yerin 2–3 metre altına döşenen borulara çekilir. Borudan geçen hava ısısını serin toprağa bırakır ve eve ulaşana kadar sıcaklığı 17–18 °C’ye düşer.</li><li><b>Güneş Bacası (Termal Baca): </b>Evin çatısına cam kaplı, siyah yüzeyli bir baca yerleştirilir. Güneş bu bacanın içini ısıttıkça yükselen sıcak hava dışarı kaçar. Yükselen bu hava evde hafif bir emiş (vakum) yaratarak alttaki serin havayı kendiliğinden içeri çeker. Motor yok, vantilatör yok; sadece yoğunluk farkı!</li><li><b>Hafif Nemlendirme:</b> Eve giren serin hava, zemin seviyesindeki küçük bir su havuzunun üzerinden geçerken hem biraz daha soğur hem de nem oranı dengelenir.</li><li><b>Yavaş ve Sessiz Dağıtım: </b>Soğuk hava ağır olduğu için odaların süpürgeliklerinden \"sıvı gibi\" sakince yayılır. Yüzünüze rüzgâr çarpmaz; sadece ayağınızın altından yükselen bir mağara serinliği hissedersiniz. Yüksek ısıl kütleli duvarlar da serinleyerek odayı ışınım yoluyla soğutur.</li></ul></p><p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a9060701677c.jpg\" alt=\"Görsel\">\n \n    </div></p></div>"
+                }
+            },
+            {
+                "uid": "block_1787847597767_8933",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><p><i><b>Şekil 4: </b>Nemlendirme Havuzu ve Mikrokılcal Yapı\" şematik diyagramı\n</i></p></p></div></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787847597767_3485",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><p><p><h3>Peki Kışın Ne Olur?\n</h3>Aynı sistem kışın da çalışır! Dışarıda -50C hava varken, toprağın altı hâlâ 12-150C'dir. Soğuk hava borulardan geçerken ön ısınmaya uğrar. Çatıdaki güneş bacasının kapakları kapatılarak bir sera gibi kullanılır ve topraktan gelen hava burada daha da ısıtılarak eve verilir.\n<br>Yazın soğutur, kışın ısıtır. Aynı borular, aynı baca, aynı fizik!\n<br><h3>2. Aşama: Bir Adım Ötesi — \"Güneş-Gece Su Çevrimi\" (Sıvı Tabanlı Tesisat)\n</h3>Peki bu iklimlendirmeyi sadece havayla değil de su borularıyla, yani doğrudan evimizin zemin tesisatıyla yapmak istersek?\n<br>Burada günlük hayattan iki tanıdık şeyden yola çıkalım:\n<br><b>1.\tGüneş Kolektörleri:</b> Çatıdaki borulardan geçen su, güneş ışığıyla ısınır ve evde sıcak su olur.\n<br><b>2.\tKarpuz Soğutma Hilesi:</b> Yazın sahilde karpuzu ipe bağlayıp denize bırakırız. Karpuzun geniş yüzeyi, iletim yoluyla ısısını serin deniz suyuna aktarır ve karpuz hızla serinler.\n<br>Yakçal havuzlarındaki su da benzer bir yolla ısı kaybediyordu; fakat orada iletimden ziyade <b>ışınım ve buharlaşma </b>baskındı. Çünkü Yakçal havuzu sığ ve geniş bir su tabakasıydı; suyun neredeyse tamamı gökyüzüyle temas halindeydi (yüzey alanı hacme kıyasla çok büyüktü). Aynı miktardaki suyu dar bir bardağa değil de geniş bir tepsiye koyduğunuzda çok daha hızlı soğuduğunu fark etmişsinizdir. Sebep tam olarak budur: <b>Yüzey/hacim oranı büyüdükçe, ısı transferi de hızlanır</b>.\n<br>Bu iki basit gözlemi Yakçal'ın 2500 yıllık mantığıyla harmanlarsak ortaya sıvı tabanlı gelişmiş bir sistem çıkıyor: <b>Güneş-Gece Su Çevrimi.</b>&nbsp;<br></p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a90619427ea3.jpg\" alt=\"Görsel\">\n \n    </div></p></div>"
+                }
+            },
+            {
+                "uid": "block_1787847597767_8414",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><p><i><b>Şekil 5: </b>Çatı kolektörünün sıcak su deposu, yeraltı mahzeninin soğuk su deposunu beslediği ve bir bypass vanasıyla evin tek boru ağına bağlandığı genel ev kesiti şeması\n</i></p></p></div></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787847597767_3374",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><p><p><h3>İki Ayrı Kaynak, Tek Ev ve Bypass Vanası\n</h3>Tek bir depoyu mevsim mevsim değiştirmek yerine, her mevsime kendi kaynağını ayıralım:\n<br><b>1.\tKış Kaynağı (Çatı Kolektörü):</b> Güneş çatıdaki borularda bulunan suyu ısıtır ve bu su yalıtımlı sıcak su deposunda birikir.\n<br><b>2.\tYaz Kaynağı (Yeraltı Mahzeni):</b> Toprağın 2-3 metre altına gömülü, içinde sığ su havuzu bulunan bir mahzen düşünün. Yeraltı borularından çekilen hava bu havuzun üzerinden geçer. Su, hem toprağın serinliğiyle hem de Badgir (rüzgar kuleleri) mantığıyla üzerinden geçen hava akımının buharlaşmayı hızlandırmasıyla iyice soğur. Bu soğuk su ayrı bir depoda toplanır.\n<br><b>3.\tBypass Vanası: </b>Mevsime göre hangi deponun evin zeminindeki borulara bağlanacağına karar verir. Kışın sıcak su deposu devrededir, mahzen bypass edilir (aksi halde evi kışın soğuturduk!). Yazın ise çatı kolektörü bypass edilerek mahzenden gelen soğuk su zemine pompalanır.\n<br><b>4.\tZemin Boruları:</b> Evin içindeki tek bir boru ağı (yerden ısıtma/soğutma), gelen suyun kaynağına göre kışın zemini ısıtır, yazın serinletir.&nbsp;<br></p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a906245c57db.jpg\" alt=\"Görsel\">\n \n    </div></p></div>"
+                }
+            },
+            {
+                "uid": "block_1787847597767_18",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><div><p><p><i><b>Şekil 6:</b> Bypass vanasının kışın çatı kolektörünü, yazın yeraltı mahzenini devreye aldığını gösteren panelli karşılaştırma\n</i></p></p></div></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787847597767_5090",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><p><p><h3>Sistemin Kendi Freni: Negatif Geri Besleme\n</h3>Bu düzeneğin fark etmeyebileceğiniz son derece şık bir özelliği var: <b>Kendi kendini durdurması.\n</b><br>Isı alışverişini sağlayan şey, borularda dolaşan su ile evin içindeki havanın sıcaklık farkıdır. Sistem evi serinlettikçe (ya da ısıttıkça) bu sıcaklık farkı küçülür; dolayısıyla ısı akışı da zamanla yavaşlar. Yani sistem evi belirli bir noktaya kadar serinletir, ardından doğal bir denge kurulur. Sizi ne üşütür ne de bunaltır.\n<br>Bu, klimadan en temel farkıdır: Klima elektronik bir termostatla sıcaklığı \"zorla\" düşürür. Burada ise fizik kendi sınırını kendi çizer. Mühendislik dilinde buna <b>negatif geri besleme </b>denir —tıpkı vücudumuzun serinledikçe terlemeyi kendiliğinden azaltması gibi!\n<br><h3>Peki Bu Düzenek Nerede Zorlanır?\n</h3>İyi bir fizik araştırmacısı sadece \"nasıl çalışır\"ı değil, \"nerede çalışmaz\"ı da sorar!\n<br><ul><li><b>Zemin Sıcaklığı ve Yeraltı Suyu: </b>Mahzenin işe yaraması için o derinlikteki toprağın gerçekten serin olması gerekir. Aşırı sıcak iklimlerde veya volkanik bölgelerde toprak sıcaklığı yeterince düşük olmayabilir. Ayrıca yeraltı su seviyesinin yüksek olduğu kıyı bölgelerinde 2-3 metrelik bir kazı suyla dolabilir.\n</li><li><b>Maliyet:</b> Toprağın altına oda kazmak ve yalıtmak, çatıya panel koymaktan daha maliyetlidir.\n</li></ul>Yine de bu yeraltı tasarımı, gece açık ve kuru bir gökyüzüne muhtaç değildir. Bulutlu ve nemli gecelerde bile toprağın altı serin kalmaya devam eder. Bu da bize harika bir ders verir: Hiçbir mühendislik çözümü her ortamda aynı verimde çalışmaz; ancak doğru fiziği doğru iklim ve zeminle eşleştirmek harikalar yaratır.<br><h3>Neden Bu Kadar Önemli?\n</h3>Bugün klimalar hem yüksek miktarda elektrik harcıyor hem gürültü yapıyor hem havayı kurutuyor hem de sera gazı salıyor. Yakçal ve modern pasif mimari ise bize çok temel bir gerçeği hatırlatıyor: <b>En akıllı teknoloji, bazen en basit olandır.\n</b><br>Isı transferi, konveksiyon, radyatif soğuma, termal kütle, buharlaşma gizli ısısı... Bunlar ders kitaplarında sadece formüllerden ibaret değildir. Doğanın bu gizli dili bir araya geldiğinde; 2500 yıl önce çölün ortasında buz üretebilir, bugün ise modern bir evi faturasız iklimlendirebilir.\n<br>Sıcak bir ağustos gününde böyle bir eve girdiğinizde \"klima çarptı\" hissi yerine, asırlık bir taş konağın veya bir mağaranın huzurlu serinliğiyle karşılaşırsınız. Ne gürültü vardır ne kuru hava ne de kabarık bir elektrik faturası...\n<br><h3><i>Sadece ışığın ve gölgenin, sıcağın ve soğuğun, toprağın ve gökyüzünün doğayla sessiz dansı!</i></h3></p></p></div>"
                 }
             }
         ]
