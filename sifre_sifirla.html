@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifre Sıfırla - Fizik Portalı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+        
+        <main class="auth-page">
+            <div class="auth-card">
+                <h1 class="auth-title">Yeni Şifre Belirle</h1>
+                <div id="mesajKutusu" class="mesaj" style="display:none;"></div>
+                <form id="yeniSifreForm">
+                    <input type="password" id="yeniSifre" class="auth-input" placeholder="Yeni Şifreniz (En az 6 karakter)" required>
+                    <button type="submit" class="auth-btn"><i class="fa fa-save"></i> Şifreyi Güncelle</button>
+                </form>
+            </div>
+        </main>
+        
+        <div id="footer-yeri"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/site.js"></script>
+    <script>
+        document.getElementById('yeniSifreForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const yeniSifre = document.getElementById('yeniSifre').value;
+            const mesajKutusu = document.getElementById('mesajKutusu');
+            
+            mesajKutusu.style.display = 'block';
+            mesajKutusu.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Güncelleniyor...';
+            mesajKutusu.style.color = 'var(--text-muted)';
+
+            try {
+                // Supabase linke tıklandığında oturumu otomatik kurtarır.
+                // Sadece yeni şifreyi kaydetmemiz yeterli.
+                const { data, error } = await supabaseClient.auth.updateUser({ password: yeniSifre });
+
+                if (error) throw error;
+
+                mesajKutusu.innerHTML = '<i class="fa fa-check-circle"></i> Şifreniz başarıyla güncellendi! Giriş sayfasına yönlendiriliyorsunuz...';
+                mesajKutusu.style.color = 'var(--accent-lime)';
+                setTimeout(() => window.location.href = 'giris.html', 2000);
+            } catch (err) {
+                mesajKutusu.innerHTML = '<i class="fa fa-exclamation-circle"></i> ' + (err.message || 'Bir hata oluştu.');
+                mesajKutusu.style.color = '#ef4444';
+            }
+        });
+    </script>
+</body>
+</html>
