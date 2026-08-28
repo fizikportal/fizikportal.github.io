@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifremi Unuttum - Fizik Portalı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+        
+        <main class="auth-page">
+            <div class="auth-card">
+                <h1 class="auth-title">Şifremi Unuttum</h1>
+                <div id="mesajKutusu" class="mesaj" style="display:none;"></div>
+                <form id="sifreForm">
+                    <input type="email" id="email" class="auth-input" placeholder="E-posta adresiniz" required>
+                    <button type="submit" class="auth-btn"><i class="fa fa-paper-plane"></i> Sıfırlama Linki Gönder</button>
+                </form>
+                <a href="giris.html" class="auth-link">Şifreni hatırlıyor musun? Giriş Yap</a>
+            </div>
+        </main>
+        
+        <div id="footer-yeri"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/site.js"></script>
+    <script>
+        document.getElementById('sifreForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const mesajKutusu = document.getElementById('mesajKutusu');
+            
+            mesajKutusu.style.display = 'block';
+            mesajKutusu.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Gönderiliyor...';
+            mesajKutusu.style.color = 'var(--text-muted)';
+
+            try {
+                const { data, error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+                    redirectTo: window.location.origin + '/sifre_sifirla.html'
+                });
+
+                if (error) throw error;
+
+                mesajKutusu.innerHTML = '<i class="fa fa-check-circle"></i> Sıfırlama bağlantısı e-posta adresinize gönderildi! Lütfen gelen kutunuzu kontrol edin.';
+                mesajKutusu.style.color = 'var(--accent-lime)';
+            } catch (err) {
+                mesajKutusu.innerHTML = '<i class="fa fa-exclamation-circle"></i> ' + (err.message || 'Bir hata oluştu.');
+                mesajKutusu.style.color = '#ef4444';
+            }
+        });
+    </script>
+</body>
+</html>
