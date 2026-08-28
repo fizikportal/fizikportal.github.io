@@ -38,6 +38,7 @@ async function checkAuthState() {
                     </button>
                     <div id="admin-dropdown-menu" style="display: none; position: absolute; right: 0; top: 100%; background: var(--bg-mid); border: 1px solid var(--glass-border); border-radius: 8px; padding: 10px; min-width: 180px; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
                         <a href="admin_yorumlar.html" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-comments"></i> Yorumları Oku</a>
+                        <a href="profil.html" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-user-edit"></i> Hesap Ayarlarım</a>
                         <a href="#" id="theme-toggle-btn" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-palette"></i> Tema Değiştir</a>
                         <a href="#" onclick="cikisYap()" style="display: flex; align-items: center; gap: 8px; color: #ef4444; text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-sign-out-alt"></i> Çıkış Yap</a>
                     </div>
@@ -49,7 +50,10 @@ async function checkAuthState() {
                 <span style="color: var(--text-primary); margin-right: 10px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
                     <i class="fa fa-user-circle"></i> ${fullName}
                 </span>
-                <button onclick="cikisYap()" class="btn-login" style="cursor:pointer; border: none;">
+                <a href="profil.html" class="btn-login" style="cursor:pointer;">
+                    <i class="fa fa-cog"></i> Hesabım
+                </a>
+                <button onclick="cikisYap()" class="btn-login" style="cursor:pointer; border: none; margin-left: 5px;">
                     <i class="fa fa-sign-out-alt"></i> Çıkış
                 </button>
             `;
@@ -62,7 +66,6 @@ async function checkAuthState() {
         `;
     }
 }
-
 document.addEventListener("DOMContentLoaded", async () => {
     await htmlYukle('includes/header.html', 'header-yeri');
     await htmlYukle('includes/footer.html', 'footer-yeri');
