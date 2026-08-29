@@ -1472,6 +1472,136 @@
             "kapak": "uploads/okuma/img_6a929da684053.jpg",
             "tarih": "29.08.2026 10:52:06"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1787994324902_3091",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "37 Derecenin Koruyucuları: Kutup Kürkü, Çöl Poşisi ve Katmanlı Giyim"
+                }
+            },
+            {
+                "uid": "block_1787994324903_5708",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><h2>Hava: Doğanın Görünmez Termostatı\n</h2>İnsan vücudu, hassas bir denge üzerine kuruludur. İç sıcaklığımız yaklaşık 37,0°C’de sabit kalmak zorundadır. Bu sıcaklığın sadece birkaç derece aşağı ya da yukarı kayması, önce rahatsızlığa, sonra ciddi sağlık sorunlarına, en sonunda da ölüme yol açabilir.\n<br>Vücudumuzu çevreleyen hava ise hiç durmadan değişir. Kimi zaman dondurucu soğuk, kimi zaman kavurucu sıcak… İşte tam bu noktada devreye giren şey, çoğu zaman gözle görülmeyen ama hayat kurtaran bir mucizedir: <b>Hava.\n</b><br>Hava, doğadaki en kötü ısı iletkenlerinden biridir. Bu özelliği sayesinde, incecik bir hava tabakası bile enerji transferini büyük ölçüde engeller. İnsanlık, binlerce yıldır bu gerçeği sezgisel olarak keşfetmiş ve hayatta kalmak için ondan ustaca faydalanmıştır.\n<br><h3>Kutup Soğuğunda Hayatta Kalma Sanatı: Eskimoların Atigisi\n</h3>Kuzey Alaska’da, hava sıcaklığının -37°C’ye kadar düştüğü kutup ikliminde yaşayan Eskimolar (İnuitler), bu prensibi mükemmel bir şekilde uygulamışlardır. Geleneksel atigi denen ceketleri, genellikle ren geyiği derisinden yapılırdı.&nbsp;<br></p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_294",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a929e9184fa4.jpg\" alt=\"Görsel\">\n \n    </div></p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_8484",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><p><p><i><b>Şekil 1:</b> -37°C'ye varan dondurucu kutup ikliminde Eskimoları hayatta tutan mühendislik dehası: Atigi. Çift katmanlı ren geyiği derisi ve kürk tüyleri arasına hapsolmuş durgun hava, vücut ısısının dışarı kaçmasını engelleyen paha biçilmez bir yalıtım katmanı oluşturur.</i></p></p></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_1000",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>İçe giyilen ve dışa giyilen iki ayrı ceket sistemiyle çalışırlardı. Kürkün kısa iç tüyleri ile uzun tüyler arasındaki boşluklar, hareketsiz (durgun) havayı hapseder. Bu hareketsiz hava, vücut ısısının dışarı kaçmasını engelleyen en etkili yalıtım katmanı olur. Günümüzde bile bazı modellerde koyun postu ve yelken bezi kombinasyonu kullanılarak aynı prensip korunmaktadır.</p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_4584",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Vücut, bu doğal yalıtım sayesinde kendi enerjisini boşa harcamadan sıcaklığını korur. Hipotermi tehdidi böylece büyük ölçüde bertaraf edilir.</p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_8806",
+                "type": "baslik",
+                "content": {
+                    "tag": "h3",
+                    "text": "Çöl Sıcağında Serin Kalma Mucizesi: Bedevi Poşisi"
+                }
+            },
+            {
+                "uid": "block_1787994324903_8902",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Dünyanın diğer ucunda, Arap Çölü’nde yaşayan Bedeviler ise tamamen farklı bir sorunla başa çıkmak zorundaydı: Gündüzleri 38°C’yi aşan kavurucu sıcaklık ve yoğun güneş radyasyonu.</p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_8007",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a929f2c5b5d1.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p></p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_4268",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><p><i><b>Şekil 2: Buharlaşma ile Soğuma Sistemi.</b> Çöl sıcağında (38°C) kullanılan Poşi, teri emerek buharlaşma yoluyla vücuttan ısı çeker ve 'sıvı klima' etkisi yaratır. Aynı zamanda kumaş kıvrımları arasına hapsolan hava boşlukları, çölün dondurucu gecelerinde başın sıcaklığını koruyan bir yalıtım katmanına dönüşür.</i></p></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_671",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Onların çözümü de yine hava ve buharlaşma prensibine dayanıyordu. Erkeklerin başına sardığı <b>poşi </b>(keffiyeh) ve kadınların mandil denen baş örtüleri, sadece güneşten korunmakla kalmaz, aynı zamanda aktif bir soğutma sistemi gibi çalışır.</p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_7024",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Kumaş teri emer. Bu nem, çölün kuru havasında hızla buharlaşırken vücuttan ısı çeker. Böylece “sıvı klima” etkisi yaratılır. Aynı örtü, çöl gecelerinin ani soğuğunda ise katmanları arasındaki hava boşluklarını kullanarak başı yalıtır ve ısı kaybını önler.</p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_5363",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Bir bez parçası, hem yakıcı sıcakta serinletir hem dondurucu gecede ısıtır. İşte doğanın şaşırtıcı verimliliği burada gizlidir.</p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_7033",
+                "type": "baslik",
+                "content": {
+                    "tag": "h3",
+                    "text": "Anadolu’dan Gelen Ders: Katmanların Gücü"
+                }
+            },
+            {
+                "uid": "block_1787994324903_3606",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Anadolu’nun sert iklimi, özellikle Erzincan bozkırları gibi bölgelerde yaşayanlara benzer bir ders verir. Gündüz güneş altında kavrulur, akşam bastığında hava aniden buz gibi olur.</p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_6667",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/okuma/img_6a92a00df0c73.jpg\" alt=\"Görsel\">\n \n    </div></p>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_6879",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote><p><p><i><b>Şekil 3: </b>Erzincan’ın sert gece-gündüz sıcaklık farklarında uygulanan katmanlı giyim yöntemi. Üst üste giyilen ince pamuklu katmanlar arasındaki milimetrik hava boşlukları, dışarıdaki ısının içeri girmesini engellediği gibi, vücudun ürettiği sıcaklığın dışarı kaçmasını da zorlaştırarak termal dengeyi sağlar.</i></p></p></blockquote></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1787994324903_9266",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><p>Bu ekstrem sıcaklık dalgalanmalarına karşı en etkili savunma, kalın tek bir katman değil, <b>üst üste giyilen ince katmanlardır.</b></p><p><ul><li>Pamuklu iç katmanlar hafif terlemeyi hapsederek “sıvı klima” etkisi yaratır.</li><li>Katmanlar arasındaki milimetrik hava boşlukları, durgun havayı tuzağa düşürür.</li><li>Bu durgun hava, hem sıcakta dışarıdaki sıcak havanın içeri girmesini, hem de soğukta vücut ısısının dışarı kaçmasını engeller.</li></ul></p><p>Askerlik yapmış herkesin bildiği gibi, “bir kat kalın kazak” yerine “üç kat ince kazak” çoğu zaman daha fazla korur. Çünkü asıl yalıtkan, kumaşın kendisi değil, kumaşın içinde ve arasında hapsolan <b>havadır.</b></p><h3>Sonuç: Görünmez Koruyucumuz</h3><p>Fizik kitapları ısı yalıtımını formüllerle, laboratuvar deneyleriyle anlatır. Ama gerçek hayat, dondurucu bir Erzincan gecesiyle kavurucu bir çöl sabahı arasındaki o ince çizgide yaşanır.</p><p>İnsanlık tarih boyunca, Eskimoların kürkünde, Bedevilerin poşisinde, Anadolu köylüsünün katmanlı giysisinde aynı gerçeği keşfetmiştir:</p><p><b>En iyi yalıtkan, çoğu zaman en bol ve en ucuz olan şeydir: Hava.</b></p><p>Vücudumuzu 37°C’de tutmak için bazen binlerce yıllık geleneklere, bazen de çok basit bir fizik prensibine ihtiyacımız vardır.</p><p>Hava, sadece soluduğumuz bir gaz değildir. O, doğanın görünmez termostatıdır. Bizi hem yakıcı sıcaktan hem dondurucu soğuktan koruyan, sessiz ve müthiş bir koruyucudur.</p><p>Bu yüzden bir dahaki sefere kat kat giyindiğinizde ya da başınıza bir poşi sardığınızda, sadece giyinmiyor olacaksınız. Doğanın en eski ve en etkili iklimlendirme sistemini devreye sokuyor olacaksınız.</p><p><i>Hava… Görünmez ama hayati. Ucuz ama paha biçilmez.</i></p></p>"
+                }
+            }
+        ]
     }
 ]
