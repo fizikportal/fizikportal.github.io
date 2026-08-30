@@ -219,6 +219,36 @@
             "baslik": "Ortaöğretim Kurumları Mezuniyet Yeterlilikleri",
             "tarih": "30.08.2026 17:58:55"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788105891138_1274",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "ORTAÖĞRETİM KURUMLARI MEZUNİYET YETERLİLİKLERİ VE YETKİNLİK MÜHÜRLERİ YÖNERGESİ"
+                }
+            },
+            {
+                "uid": "block_1788105891138_2809",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><p><strong>MADDE 1 – </strong><span>&nbsp;</span><b>ASGARİ MEZUNİYET KREDİ DAĞILIMI </b><span>(1) Mezuniyet için gerekli 21 birim kredinin temel branşlara göre dağılımı ve içerik standartları aşağıda düzenlenmiştir:</span></p><p><ul><li><b>İngilizce (4 Birim):</b> Akademik okuma, yazma ve bağlam temelli iletişim becerileri esastır.</li><li><b>Matematik (4 Birim): </b>En az 1 birim \"Cebir II\" veya dengi bir ileri matematik modülü zorunludur. Kariyer hedefi mühendislik olan öğrenciler için \"İleri Analitik Geometri\" seçeneği sunulur.</li><li><b>Fen Bilimleri (3 Birim)</b>: Laboratuvar uygulamalı Fizik, Kimya ve Biyoloji alanlarını kapsar. En az 1 birim; Astronomi, Yer Bilimleri veya İleri Seviye Biyoloji/Fizik gibi \"İleri Bilim\" çalışması içermelidir.</li><li><b>Sosyal Bilimler (3 Birim): </b>T.C. İnkılap Tarihi, Anayasa Yönetimi ve Dünya Medeniyetleri derslerini kapsar.</li><li><b>Finansal Okuryazarlık (1/2 Birim): </b>Ekonomi ve kaynak yönetimi bilinci kazandırılması zorunludur.</li><li><b>Sağlık ve Beden Eğitimi (1 Birim):</b> 1/2 birim Sağlık, 1/2 birim Fiziksel Gelişim modüllerinden oluşur.</li><li><b>Güzel Sanatlar (1 Birim):</b> En az 2 yarıyıl süreyle uygulamalı sanat eğitimi alınması şarttır.</li></ul></p><p><p><strong>MADDE 2 – </strong><span>&nbsp;</span><b>YETKİNLİK KANITI VE DİPLOMA MÜHÜRLERİ </b>(1) Mezuniyet için sadece kredi tamamlamak yeterli değildir. Öğrenciler, \"Hazır Bulunuşluk\"larını kanıtlamak üzere aşağıdaki \"Bakanlık Mühürleri\"nden en az ikisini kazanmak zorundadır:&nbsp;</p></p></p>"
+                }
+            },
+            {
+                "uid": "block_1788105891138_1086",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p><p><p><b>* Bilim ve Teknoloji Mührü: </b>İleri düzey deney veya teknik tasarım (3D yazılım vb.) başarıları ile kazanılır.&nbsp;</p></p></p><p><p><p><b>* Vatandaşlık ve Karakter Mührü: </b>Yüksek Disiplin Kredisi ve sosyal sorumluluk projeleri ile kazanılır.&nbsp;</p></p></p><p><p><p><b>* Mesleki Hazırlık Mührü: </b>Kariyer Merkezlerindeki staj ve uygulama modüllerinin \"Öğretmen Onayı\" ile tamamlanması sonucu verilir.</p></p></p></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1788105891138_132",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><p><p><p><strong>MADDE 3 – </strong><b>&nbsp;UYGULAMALI SINAV VE PORTFOLYO ŞARTI </b><span>(1) Sayın Hocam, sizin vurguladığınız üzere; Fen Bilimleri ve Teknik derslerde mezuniyet, sadece teorik sınavla değil, yıl boyu yapılan \"Deney Portfolyosu\"nun kurul tarafından onaylanmasıyla gerçekleşir. Deney kotasını doldurmayan öğrenci, kredi miktarını tamamlasa dahi mezuniyet hakkı kazanamaz.</span></p><p><b>YÜRÜRLÜK:</b> Bu yönerge hükümleri 2026-2027 öğretim yılı itibarıyla uygulanır.&nbsp;</p></p></p></p>"
+                }
+            }
+        ]
     }
 ]
