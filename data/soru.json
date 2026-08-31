@@ -1,21 +1,13 @@
 [
     {
-        "id": "soru_1788193661",
+        "id": "soru_1788195496",
         "meta": {
+            "konu": "Ölçme",
+            "baslik": "Hareket",
             "sinif": "9. Sınıf",
-            "konu": "Bilimin Doğası",
-            "baslik": "Bilimin Doğası ve Fiziğin Kapsamı",
             "dogru": "D",
-            "tarih": "31.08.2026 18:27:41"
+            "tarih": "31.08.2026 18:58:16"
         },
-        "page": [
-            {
-                "uid": "block_1788194174644_4930",
-                "type": "paragraf",
-                "content": {
-                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/soru/img_6a95abd5243f0.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p><h2>Antarktika Araştırma İstasyonu ve Bilimsel Yöntem</h2><div>Bir iklim bilimci Antarktika'daki araştırma üssünde buz çekirdeği numunelerini incelerken hava sıcaklığı ile buz kalınlığı arasındaki ilişkiyi anlamaya çalışmaktadır. Bilim insanı, <i>\"Küresel ısınma arttıkça yıllık buz katmanı kalınlığı azalmaktadır\"</i> iddiasını ortaya atarak bu durumu doğrulamak için son 50 yıla ait buz numunelerinin kalınlıklarını hassas kumpaslarla ölçer ve verileri tabloya döker.</div><div><b>Bilimsel çalışma adımları dikkate alındığında, araştırmacının izlediği süreçle ilgili aşağıdakilerden hangisi yanlıştır?</b></div><div><div class=\"question-options-grid\" contenteditable=\"false\"><div class=\"option-box\">\n                        <span class=\"option-prefix\">A)</span>\n                        <div class=\"option-text\" contenteditable=\"true\">Ortaya atılan iddia, test edilebilir ve geçici bir çözüm önerisi olan bir <b>hipotez</b>dir.</div>\n                    </div><div class=\"option-box\">\n                        <span class=\"option-prefix\">B)</span>\n                        <div class=\"option-text\" contenteditable=\"true\">Son 50 yıla ait buz kalınlıklarının kumpasla ölçülmesi <b>nicel gözleme</b> örnektir.</div>\n                    </div><div class=\"option-box\">\n                        <span class=\"option-prefix\">C)</span>\n                        <div class=\"option-text\" contenteditable=\"true\">Toplanan veriler hipotezi desteklemezse bilim insanı hipotezini güncellemelidir.</div>\n                    </div><div class=\"option-box\">\n                        <span class=\"option-prefix\">D)</span>\n                        <div class=\"option-text\" contenteditable=\"true\">Hipotez çok sayıda deneyle doğrulanırsa doğrudan değişmez bir<b> doğa kanununa</b> dönüşür.</div>\n                    </div><div class=\"option-box\">\n                        <span class=\"option-prefix\">E)</span>\n                        <div class=\"option-text\" contenteditable=\"true\">Bilim insanı problem tespitinden sonra veri toplamış ve sınanabilir bir önerme geliştirmiştir.</div>\n                    </div></div><p><div class=\"meta-box meta-solution\" contenteditable=\"false\">\n                    <div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div>\n                    <div class=\"meta-content\" contenteditable=\"false\" placeholder=\"Detaylı çözüm adımlarını buraya yazın...\"></div>\n                </div><p><div class=\"meta-box meta-correct\" contenteditable=\"false\">\n                    <div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div>\n                    <div class=\"meta-content-wrapper\">\n                        <select class=\"correct-answer-select\">\n                            <option value=\"A\">A Şıkkı</option>\n                            <option value=\"B\">B Şıkkı</option>\n                            <option value=\"C\">C Şıkkı</option>\n                            <option value=\"D\">D Şıkkı</option>\n                            <option value=\"E\">E Şıkkı</option>\n                        </select>\n                    </div>\n                </div><p><br></p><br></p><br></p><br></div></p>"
-                }
-            }
-        ]
+        "page": []
     }
 ]
