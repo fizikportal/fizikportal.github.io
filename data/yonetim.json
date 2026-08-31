@@ -333,6 +333,22 @@
             "baslik": "Okul Depolama Alanları ve Öğrenci Dolapları Kullanım Yönetmeliği",
             "tarih": "30.08.2026 18:33:30"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788107960593_7249",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "OKUL DEPOLAMA ALANLARI VE ÖĞRENCİ DOLAPLARI KULLANIM YÖNETMELİĞİ"
+                }
+            },
+            {
+                "uid": "block_1788107960594_9217",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><p><strong>MADDE 1 – </strong><b>&nbsp;MÜLKİYET VE KULLANIM HAKKI</b></p><p>Okul bünyesinde bulunan tüm dolaplar okulun mülkiyetindedir ve öğrencilere sadece eğitim dönemleri boyunca geçici olarak tahsis edilir.&nbsp;</p><p><strong>1.1. </strong><b>&nbsp;Denetim Yetkisi: </b><span>Okul yönetimi; güvenlik, sağlık veya yasal zorunluluk hallerinde dolapları önceden haber vermeksizin denetleme hakkına sahiptir.&nbsp;</span></p><p><p><strong>1.2. </strong><b>&nbsp;Kişisel Sorumluluk: </b><span>Tahsis edilen dolabın temizliği, düzeni ve içindeki eşyaların güvenliğinden doğrudan öğrenci sorumludur.</span></p><p><p><strong>MADDE 2 – </strong><b>&nbsp;DOLABI OLMAYAN OKULLAR İÇİN \"HİBRİT DEPOLAMA\" MODELİ</b></p><p>Fiziksel dolap imkanı kısıtlı olan okullarda öğrenci yükünü azaltmak amacıyla şu tedbirler alınır:</p><p><strong>2.1. </strong><b>&nbsp;Dijital Depolama (Bulut): </b><span>Okulun etkileşimli tahta ve internet altyapısı kullanılarak, öğrencilerin ağır kitaplar yerine kendi dijital portfolyolarına, teknik çizimlerine ve ödevlerine erişimi sağlanır.</span></p><p><p><strong>2.2. </strong><b>&nbsp;Ortak Teknik Alanlar: </b><span>Fizik ve kimya gibi laboratuvarı olan derslerde, öğrencilerin proje malzemelerini (3D modelleri, deney setleri vb.) güvenle bırakabileceği \"Proje Rafları\" oluşturulur.</span></p><p><p><strong>MADDE 3 – </strong><b>&nbsp;GÜVENLİK VE YASAKLAR</b></p><p><p><strong>3.1. </strong><b>&nbsp;Uygunsuz İçerik:</b><span> Dolaplarda veya okulun tahsis ettiği depolama alanlarında; yanıcı, patlayıcı, yasa dışı veya okul disiplin kurallarına aykırı hiçbir materyal bulundurulamaz.&nbsp;</span></p><p><p><strong>3.2. </strong><b>&nbsp;Zarar Verme: </b><span>Dolapların kapaklarına yazı yazmak, çıkartma yapıştırmak veya mekanizmasına zarar vermek \"Kamu Malına Zarar Verme\" kapsamında değerlendirilir.</span></p><p><p><strong>MADDE 4 – </strong><b>&nbsp;BAKIM VE TAHLİYE</b></p><p><p><strong>4.1. </strong><b>&nbsp;Dönem Sonu Tahliyesi: </b><span>Eğitim yılı sonunda tüm dolaplar ve depolama alanları boşaltılarak okul idaresine teslim edilir.&nbsp;</span></p><p><p><strong>4.2. </strong><b>&nbsp;Sahipsiz Eşyalar: </b><span>Belirlenen süre içinde boşaltılmayan alanlardaki eşyalar, okulun kayıp eşya birimine devredilir veya imha edilir.&nbsp;</span></p><p><b>GEREKÇE: </b>Bu yönetmelik, dolabı olan okullarda güvenliği sağlarken; dolabı olmayan okullarda ise öğrencileri ağır çanta yükünden kurtaracak \"Dijital Arşivleme\" ve \"Bağlam Temelli Laboratuvar Depolama\" sistemini teşvik eder.&nbsp;</p></p></p></p></p></p></p></p></p></p></p>"
+                }
+            }
+        ]
     }
 ]
