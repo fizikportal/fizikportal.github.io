@@ -408,6 +408,30 @@
             "baslik": "Ortaöğretim Kurumları İleri Düzey Kurslar ve İhtisas Modülleri Yönergesi",
             "tarih": "31.08.2026 12:37:15"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788173339325_4362",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "ORTAÖĞRETİM KURUMLARI İLERİ DÜZEY KURSLAR VE İHTİSAS MODÜLLERİ YÖNERGESİ"
+                }
+            },
+            {
+                "uid": "block_1788173339325_4426",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "İleri Düzey Kursların Açılması, Eğitmen Yeterliliği, İçerik Standartları ve İhtisas Muafiyet Esasları"
+                }
+            },
+            {
+                "uid": "block_1788173339325_6321",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><p><strong>MADDE 1 – </strong><b>&nbsp;Kurum ve Altyapı Yeterlilik Şartları</b></p><p><p><strong>1.1. </strong><span>&nbsp;</span>Ortaöğretim kurumlarında yürütülecek \"İleri Düzey Kurslar\", seçmeli ders statüsünde açılamaz. Bu kursların açılabilmesi için kurumun fiziki, teknik ve akademik altyapısının yeterliliği esastır.</p><p><p><strong>1.2. </strong><b>&nbsp;İleri Düzey Kurslar; y</b>alnızca gerekli fen ve mühendislik laboratuvarları, 3D modelleme/CAD altyapısı ve teknik ekipmana sahip Mesleki ve Uygulamalı Kariyer Merkezleri (MUKM) ile Bakanlıkça belirlenen pilot Fen Liseleri ve Proje Okulları bünyesinde ihdas edilir.</p><p><p><strong>1.3. </strong>&nbsp;Fiziki ve teknik donanımı yetersiz olan kurumlarda bu kursların açılmasına izin verilmez.</p><p><p><strong>MADDE 2 – </strong><b>&nbsp;Eğitmen Yeterliliği ve Sertifikasyon</b></p><p><p><strong>2.1. </strong><span>&nbsp;İleri Düzey Kurslarda görev alacak öğretmenler, alan yeterlilik sınavına ve ön değerlendirmeye tabi tutulur.</span></p><p><p><strong>2.2. </strong><span>&nbsp;Görevlendirilecek öğreticilerin, Bakanlık ile yükseköğretim kurumları (üniversiteler) iş birliğinde yürütülen akademik hizmet içi eğitim programlarını başarıyla tamamlayarak \"</span><b>İleri Düzey Eğitmen Sertifikası</b><span>\" almış olmaları zorunludur.</span></p><p><p><strong>2.3. </strong><span>&nbsp;Sertifikasyona sahip olmayan öğretmenler bu kurslarda görevlendirilemez.</span></p><p><p><strong>MADDE 3 – </strong><b>&nbsp;Müfredat Nitelikleri ve Uygulama Kotası</b></p><p><p><strong>3.1. </strong><span>&nbsp;İleri Düzey Kurs müfredatları; tekdüze formül ezberine dayalı öğretim metodolojisinden arındırılmış olup, Bağlam Temelli Öğrenme Yaklaşımı ilkesine göre kurgulanır.</span></p><p><p><strong>3.2. </strong><span>&nbsp;Bu kursların haftalık ders saati yükünün en az %40'ı doğrudan laboratuvar uygulamasına, teknik tasarıma, modellemeye veya deneysel araştırmalara ayrılmak zorundadır.</span></p><p><p><strong>3.3. </strong><span>&nbsp;Kurs kapsamındaki ödev, proje ve değerlendirme araçları; doğa, mekanik, mühendislik, temel bilimler ve günlük hayat problemlerini sorgulatan, analitik ve sentetik düşünmeyi ölçen bağlam temelli senaryolar üzerinden kurgulanır.</span></p><p><p><strong>MADDE 4 – </strong><span>&nbsp;</span><b>Ölçme, Değerlendirme ve Kör Puanlama Standartları</b></p><p><p><strong>4.1. </strong><span>&nbsp;İleri Düzey Kursların dönem içi ara sınavları ve başarı değerlendirmeleri, dersi veren öğreticinin tek taraflı takdirine bırakılamaz.</span></p><p><p><strong>4.2. </strong><span>&nbsp;Sınav soruları, Bakanlık merkezi soru bankasından kurgulanan çapraz değerlendirme matrisleri üzerinden çekilir.</span></p><p><p><strong>4.3. </strong><span>&nbsp;Öğrenci yanıt kağıtları üzerindeki kimlik ve kurum bilgileri maskelenerek (kör puanlama esası), ulusal havuzda yer alan ve farklı illerde/merkezlerde görevlendirilen bağımsız koordinatör komisyonlarca değerlendirilir.</span></p><p><p><strong>4.4. </strong><span>&nbsp;Elde edilen başarı notları ve katsayılar doğrudan merkezi veri tabanına işlenir.</span></p><p><p><strong>MADDE 5 – </strong><b>&nbsp;Yükseköğretim (YÖK) Entegrasyonu ve Akademik Muafiyet</b></p><p><p><strong>5.1. </strong><span>&nbsp;İleri Düzey Kursları başarıyla tamamlayan ve ulusal bitirme/değerlendirme sınavında belirlenen başarı katsayısını elde eden öğrencilerin akademik hakları koruma altındadır.</span></p><p><p><strong>5.2. </strong><span>&nbsp;Bakanlık ile Yükseköğretim Kurulu (YÖK) arasında imzalanan protokol çerçevesinde; bu kurslardan mezun olan öğrencilerin elde ettiği kredi ve yetkinlikler, üniversitelerin ilgili lisans programlarında (Mühendislik, Tıp, Temel Bilimler vb.) yer alan 101 seviyesi (Giriş/Temel) derslerden akademik muafiyet sağlar.</span></p><p><p><strong>5.3. </strong><span>&nbsp;Öğrencinin lisede elde ettiği İleri Düzey Kurs kredileri, yükseköğretim kurumlarınca transkripte doğrudan muafiyet kredisi olarak işlenir.</span></p><p><b>GEREKÇE: </b>Mevcut ortaöğretim sistemimizde yürütülen destekleme ve yetiştirme kursları ile seçmeli ders uygulamaları; ders dışı saatlerde tekdüze formül ezberleten, yalnızca test çözme odaklı ve nitelik yönünden standart derslerin ötesine geçemeyen bir yapıya bürünmüştür. Bu durum, üstün yetenekli ve ihtisas alanlarına eğilimli öğrencilerin potansiyellerini köreltmekte, ortaöğretim ile yükseköğretim arasındaki akademik kopukluğu derinleştirmektedir.</p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></div>"
+                }
+            }
+        ]
     }
 ]
