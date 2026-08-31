@@ -383,6 +383,22 @@
             "baslik": "Ortaöğretim Kurumları Mezuniyet ve Akademik Yeterlilik Yönetmeliği",
             "tarih": "31.08.2026 12:10:38"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788171678660_3548",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "ORTAÖĞRETİM KURUMLARI MEZUNİYET VE AKADEMİK YETERLİLİK YÖNETMELİĞİ"
+                }
+            },
+            {
+                "uid": "block_1788171678661_8854",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div><p><strong>MADDE 1 – </strong><b>&nbsp;Genel Esaslar ve Mezuniyet Şartları</b></p><p><p><strong>1.1. </strong><span>&nbsp;</span><b>(Mezuniyet Yeterlilik Esası):</b><span> Ortaöğretim diploması; öğretim süresini tamamlayan öğrencilerden Akademik Kredi Tabanını, Uygulamalı Yetkinlik Kredisini ve Disiplin Kredi Barajını bir arada sağlayanlara düzenlenir. Bu şartlardan herhangi birini sağlayamayan öğrenci mezun sayılmaz.</span></p><p><p><strong>1.2. </strong><b>&nbsp;(Kurumlar Arası Akademik Geçiş ve Kontenjan Revizyonu): </b><span>Özel nitelikli ortaöğretim kurumlarında (Fen Liseleri vb.) öğrenim gören öğrencilerin yıl sonu akademik kredi puanı, ilgili kurum için belirlenen taban eşiğin altına düşmesi halinde öğrencilerin alt seviyedeki ortaöğretim kurumlarına nakil işlemleri re'sen gerçekleştirilir. Alt derece kurumlarda akademik başarı gösteren öğrenciler, oluşan kontenjan açığına merkezi başarı sırasına göre dikey nakil hakkı kazanır.</span></p><p><p><strong>MADDE 2 – </strong><b>&nbsp;Akademik Kredi ve İleri Seviye (AP) Müfredat Yükümlülüğü&nbsp;</b></p><p><p><strong>2.1. </strong><b>&nbsp;(Çekirdek Akademik Kredi): </b><span>Öğrenciler, haftalık ders çizelgesinin teorik öğretim oturumlarında yer alan ortak dersleri tamamlayarak ilgili alanın zorunlu akademik kredisini almakla yükümlüdür.</span></p><p><p><strong>2.2. </strong><b>&nbsp;(Yükseköğretime Esas İleri Seviye Ders Zorunluluğu):</b></p><p><ul><li><span>Yükseköğretim kurumlarının ihtisas alanlarını (Tıp, Mühendislik, Mimarlık vb.) hedefleyen öğrenciler, kayıtlı oldukları okul türüne bakılmaksızın ilgili alanın İleri Seviye Modül Kredisini (İleri Biyoloji, İleri Fizik, Uygulamalı Teknik Çizim vb.) tamamlamak zorundadır.</span></li><li><span>İlgili İleri Seviye Modül Kredisi tamamlanmadığı takdirde, genel akademik ortalamaya bakılmaksızın ilgili lisans programlarına tercih hakkı tanınmaz.</span></li></ul></p><p><p><strong>2.3. </strong><b>&nbsp;(Mezuniyet Sonrası İhtisas Tamamlama ve İkinci Şans Hakkı):</b></p><p><ul><li>Lise öğrenimi sırasında ilgili İleri Seviye Modül Kredisini almamış veya tamamlamamış olarak mezun olan adayların yükseköğretim hedef değişiklikleri koruma altındadır.</li><li>Mezun bireyler; Bakanlıkça belirlenen Halk Eğitim Merkezleri, Dijital Eğitim Portalları veya Liselerin Yaz/Kış Dönemi Modüler Programlarına başvurarak eksik oldukları<b> İleri Seviye Modül Sınavlarına ve Laboratuvar Uygulamalarına</b> katılma hakkına sahiptir.</li><li><span>Uygulamalı ve teorik sınavları başarıyla tamamlayan adaylara ilgili alanın \"</span><b>İhtisas Yeterlilik Sertifikası</b>\" düzenlenir. Bu sertifika, adayın diplomasına işlenerek hedeflediği yükseköğretim programlarına tercih yapabilmesinin önündeki hukuki ve akademik engeli kaldırır.</li></ul></p><p><p><strong>MADDE 3 – </strong><b>&nbsp;Uygulamalı Öğretim ve Performans Tamamlama</b></p><p><p><strong>3.1. </strong><b>&nbsp;(Uygulamalı Ders Oturumları): </b><span>Haftalık ders çizelgesinin uygulamaya ayrılan bölümünde ders tamamlama kriteri zaman süresi ile kısıtlanmaz; performans ve deney başarısı esas alınır.</span></p><p><p><strong>3.2. </strong><b>&nbsp;(Uygulama ve Deney Kredisi):</b></p><p><ul><li>Fen ve teknoloji alanında öğrenim gören öğrenciler, müfredatça belirlenen uygulamalı deney portfolyosunu bizzat tamamlayarak ders öğretmeninin onayına sunmakla yükümlüdür.</li><li>İlgili deney ve uygulama kriterlerini tamamlayamayan öğrenciler dersi başarmış sayılmaz ve ilgili kredisini tamamlayamaz.</li><li>Spor ve sanat alanındaki uygulamalı derslerde de benzer şekilde ürün, performans ve uygulama yeterliliği onayı aranır.</li></ul></p><p><p><strong><span>MADDE </span>4 – </strong><b>&nbsp;Disiplin Kredisi ve Puan Esaslı Değerlendirme&nbsp;</b></p><p><br></p><br></p><br></p><br></p><br></p><br></p><p><br></p><br></p><br></p><br></p><br></p><br></p><br></div>"
+                }
+            }
+        ]
     }
 ]
