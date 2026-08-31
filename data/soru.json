@@ -2,12 +2,105 @@
     {
         "id": "soru_1788197862",
         "meta": {
+            "sinif": "9. Sınıf",
             "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
             "baslik": "Bağlam Temelli Kazanım Tarama Testi",
-            "sinif": "9. Sınıf",
             "dogru": "D",
             "tarih": "31.08.2026 19:37:42"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788198217020_698",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Antarktika Araştırma İstasyonu ve Bilimsel Yöntem"
+                }
+            },
+            {
+                "uid": "block_1788198217021_7582",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/soru/img_6a95abd5243f0.jpg\" alt=\"Görsel\">\n \n    </div><p><br></p></p>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_6598",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Bir iklim bilimci Antarktika'daki araştırma üssünde buz çekirdeği numunelerini incelerken hava sıcaklığı ile buz kalınlığı arasındaki ilişkiyi anlamaya çalışmaktadır. Bilim insanı, \"<i>Küresel ısınma arttıkça yıllık buz katmanı kalınlığı azalmaktadır</i>\" iddiasını ortaya atarak bu durumu doğrulamak için son 50 yıla ait buz numunelerinin kalınlıklarını hassas kumpaslarla ölçer ve verileri tabloya döker.</p>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_9073",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><b>Bilimsel çalışma adımları dikkate alındığında, araştırmacının izlediği süreçle ilgili aşağıdakilerden hangisi yanlıştır?</b></p>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_8825",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_5268",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"question-options-grid\" contenteditable=\"false\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\" contenteditable=\"true\">Ortaya atılan iddia, test edilebilir ve geçici bir çözüm önerisi olan bir <b>hipotez</b>dir.</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\" contenteditable=\"true\">Son 50 yıla ait buz kalınlıklarının kumpasla ölçülmesi<b> nicel gözleme </b>örnektir.</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\" contenteditable=\"true\">Toplanan veriler hipotezi desteklemezse bilim insanı<b> hipotezini</b> güncellemelidir.</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\" contenteditable=\"true\">Hipotez çok sayıda deneyle doğrulanırsa doğrudan değişmez bir <b>doğa kanununa</b> dönüşür.</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\" contenteditable=\"true\">Bilim insanı problem tespitinden sonra veri toplamış ve sınanabilir bir önerme geliştirmiştir.</div></div></div>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_8980",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_9449",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-solution\" contenteditable=\"false\">\n                    <div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div>\n                    <div class=\"meta-content\" contenteditable=\"false\" data-placeholder=\"Detaylı çözüm adımlarını buraya yazın...\">Deneylerle doğrulanan hipotezler teoriye dönüşebilir; teoriler veya hipotezler doğrudan \"kanuna\" dönüşmez. Teori ve kanun farklı bilimsel bilgi türleridir. O yüzden cevap D</div></div>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_7350",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_4994",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-correct\" contenteditable=\"false\">\n                    <div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div>\n                    <div class=\"meta-content-wrapper\">\n                        <select class=\"correct-answer-select\">\n                            <option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option>\n                            <option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option>\n                            <option value=\"E\">E Şıkkı</option>\n                        </select>\n                    </div></div>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_8322",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_3716",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-hint\" contenteditable=\"false\">\n                    <div class=\"meta-title text-warning\"><i class=\"fa-solid fa-key\"></i> Öğrenci İpucu / Yardımcı Not</div>\n                    <div class=\"meta-content\" contenteditable=\"false\" data-placeholder=\"Öğrenciye yol gösterecek ipucunu buraya yazın...\">Deneylerle doğrulanan hipotezler teoriye dönüşebilir; teoriler veya hipotezler doğrudan \"kanuna\" dönüşmez.</div></div>"
+                }
+            },
+            {
+                "uid": "block_1788198217021_299",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
