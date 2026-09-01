@@ -192,5 +192,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "soru_1788252031",
+        "meta": {
+            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
+            "baslik": "Elektrikli Araç Şarj İstasyonu Tasarımı",
+            "sinif": "9. Sınıf",
+            "dogru": "B",
+            "tarih": "01.09.2026 10:40:31"
+        },
+        "page": []
     }
 ]
