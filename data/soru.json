@@ -102,5 +102,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "soru_1788251558",
+        "meta": {
+            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
+            "baslik": "Otoyolda Hız Kontrolü ve Denetim",
+            "sinif": "9. Sınıf",
+            "dogru": "C",
+            "tarih": "01.09.2026 10:32:38"
+        },
+        "page": []
     }
 ]
