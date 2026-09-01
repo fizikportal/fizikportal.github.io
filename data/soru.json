@@ -273,7 +273,7 @@
         },
         "page": [
             {
-                "uid": "block_1788264951513_562",
+                "uid": "block_1788265411791_1666",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -281,112 +281,112 @@
                 }
             },
             {
-                "uid": "block_1788264951513_2704",
+                "uid": "block_1788265411792_199",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1788264951513_1488",
+                "uid": "block_1788265411792_4095",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/soru/img_6a96913817d98.jpg\" alt=\"Görsel\">\n \n    </div>"
                 }
             },
             {
-                "uid": "block_1788264951513_1501",
+                "uid": "block_1788265411792_4991",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bir kargo firması, paket teslimatı yapacak otonom dronun yazılımına yönlendirme komutları yüklemektedir. Yazılımcı drona şu iki farklı komut tanımlar:</p>"
                 }
             },
             {
-                "uid": "block_1788264951513_3200",
+                "uid": "block_1788265411792_918",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>•\t<b>Komut X: </b>\"Yer istasyonundan kalktıktan sonra toplam 15 dakika boyunca havada kal.\"</p>"
                 }
             },
             {
-                "uid": "block_1788264951513_6170",
+                "uid": "block_1788265411792_5668",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>•\t<b>Komut Y:</b> \"Kalkış noktasından itibaren güneybatı yönünde 500m ilerleyip paketi bırak.\"</p>"
                 }
             },
             {
-                "uid": "block_1788264951513_3773",
+                "uid": "block_1788265411792_1207",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><b>Bu talimatlarda geçen fiziksel büyüklüklerin türü aşağıdakilerin hangisinde doğru sınıflandırılmıştır?</b></p>"
                 }
             },
             {
-                "uid": "block_1788264951513_1506",
+                "uid": "block_1788265411792_7427",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1788264951513_5768",
+                "uid": "block_1788265411792_1199",
                 "type": "paragraf",
                 "content": {
                     "html": "<br>"
                 }
             },
             {
-                "uid": "block_1788264951513_2916",
+                "uid": "block_1788265411792_5698",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><table class=\"table-w-50 table-border-thin table-theme-gray\"><tbody><tr><th>Komut X</th><th>Komut Y</th></tr></tbody></table></p>"
                 }
             },
             {
-                "uid": "block_1788264951513_6035",
+                "uid": "block_1788265411792_3869",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"question-options-grid\" contenteditable=\"false\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\" contenteditable=\"true\"><div>Skaler ve Temel&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Vektörel ve Türetilmiş</div></div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\" contenteditable=\"true\"><div>Skaler ve Temel&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Vektörel ve Temel</div></div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\" contenteditable=\"true\"><div>Vektörel ve Türetilmiş&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Skaler ve Temel</div></div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\" contenteditable=\"true\"><div>Skaler ve Türetilmiş&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Vektörel ve Türetilmiş</div></div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\" contenteditable=\"true\"><div>Vektörel ve Temel&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Vektörel ve Temel</div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1788264951513_7306",
+                "uid": "block_1788265411792_8733",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788264951513_7607",
+                "uid": "block_1788265411792_6787",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1788264951513_5628",
+                "uid": "block_1788265411792_9309",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-solution\" contenteditable=\"false\">\n                    <div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div>\n                    <div class=\"meta-content\" contenteditable=\"false\" data-placeholder=\"Detaylı çözüm adımlarını buraya yazın...\">Zaman (15 dk) skaler ve temeldir. Konum değişimi (500 m güneybatı) yön içerdiği için vektörel, uzunluk olduğu için temel bir büyüklüktür.</div></div>"
                 }
             },
             {
-                "uid": "block_1788264951513_3013",
+                "uid": "block_1788265411792_3983",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788264951513_5280",
+                "uid": "block_1788265411792_6318",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-correct\" contenteditable=\"false\">\n                    <div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div>\n                    <div class=\"meta-content-wrapper\">\n                        <select class=\"correct-answer-select\">\n                            <option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option>\n                            <option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option>\n                            <option value=\"E\">E Şıkkı</option>\n                        </select>\n                    </div></div>"
                 }
             },
             {
-                "uid": "block_1788264951513_4356",
+                "uid": "block_1788265411792_3277",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
