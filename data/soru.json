@@ -204,7 +204,7 @@
         },
         "page": [
             {
-                "uid": "block_1788252316746_223",
+                "uid": "block_1788252327338_1386",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -212,49 +212,49 @@
                 }
             },
             {
-                "uid": "block_1788252316747_1277",
+                "uid": "block_1788252327338_6776",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/soru/img_6a968fce39a05.jpg\" alt=\"Görsel\">\n \n    </div><p>Bir mühendislik ekibi, yeni nesil bir elektrikli araç şarj istasyonu tasarlamaktadır. Tasarım aşamasında teknik dokümana şu parametreler eklenmiştir:</p><p>1.\tŞarj kablosundan geçen akım şiddeti: 32A</p><p>2.\tBataryanın tam dolma süresi: 45dk</p><p>3.\tŞarj ünitesinin toplam kütlesi: 85kg</p><p>4.\tAraç kablosundaki elektriksel potansiyel farkı: 400V</p><p><b>Dokümanda yer alan büyüklüklerden hangisi SI (Uluslararası) Birim Sistemi'nde hem \"temel\" hem de \"skaler\" bir büyüklüğün SI birimiyle verilmiştir?</b></p></p>"
                 }
             },
             {
-                "uid": "block_1788252316747_720",
+                "uid": "block_1788252327338_7340",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"question-options-grid\" contenteditable=\"false\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\" contenteditable=\"true\">Yalnız 1</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\" contenteditable=\"true\">1 ve 3</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\" contenteditable=\"true\">2 ve 3</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\" contenteditable=\"true\">1, 2 ve 3</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\" contenteditable=\"true\">1, 3 ve 4</div></div></div>"
                 }
             },
             {
-                "uid": "block_1788252316747_8343",
+                "uid": "block_1788252327338_4424",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788252316747_7601",
+                "uid": "block_1788252327338_2399",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-hint\" contenteditable=\"false\">\n                    <div class=\"meta-title text-warning\"><i class=\"fa-solid fa-key\"></i> Öğrenci İpucu / Yardımcı Not</div>\n                    <div class=\"meta-content\" contenteditable=\"false\" data-placeholder=\"Öğrenciye yol gösterecek ipucunu buraya yazın...\">Akım şiddeti (Amper) ve kütle (kg) SI sisteminde hem temel hem skalerdir. Süre 45 dk verilmiştir, SI zaman birimi saniyedir. Potansiyel farkı ise türetilmiş bir büyüklüktür.</div></div>"
                 }
             },
             {
-                "uid": "block_1788252316747_2983",
+                "uid": "block_1788252327338_2734",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788252316747_1478",
+                "uid": "block_1788252327338_1535",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-correct\" contenteditable=\"false\">\n                    <div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div>\n                    <div class=\"meta-content-wrapper\">\n                        <select class=\"correct-answer-select\">\n                            <option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option>\n                            <option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option>\n                            <option value=\"E\">E Şıkkı</option>\n                        </select>\n                    </div></div>"
                 }
             },
             {
-                "uid": "block_1788252316747_9104",
+                "uid": "block_1788252327338_6331",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
