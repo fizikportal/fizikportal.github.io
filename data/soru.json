@@ -389,12 +389,98 @@
     {
         "id": "soru_1788253372",
         "meta": {
+            "sinif": "9. Sınıf",
             "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
             "baslik": "Uzay Gemisinde Hassas Tartım",
-            "sinif": "9. Sınıf",
             "dogru": "E",
             "tarih": "01.09.2026 11:02:52"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788253701736_7420",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Uzay Gemisinde Hassas Tartım"
+                }
+            },
+            {
+                "uid": "block_1788253701737_1002",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/soru/img_6a969509f1cce.jpg\" alt=\"Görsel\">\n \n    </div><p>Bir astronot, yer çekiminin dünyadakinden çok farklı olduğu Uluslararası Uzay İstasyonu'nda (ISS) yer alan iki farklı ölçüm cihazını test etmektedir:</p><p><ul><li><b>Cihaz 1: </b>Esnek bir yayın ucuna kütle asarak yayın uzama miktarını ölçen dinamometre.</li><li><b>Cihaz 2:</b> İçine konulan maddenin molekül miktarını kütle-spektrometresi yöntemiyle belirleyen elektronik eşit kollu terazi simülatörü.</li></ul></p><p><b>Bu ölçümlerle ilgili;</b></p></p>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_9917",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p><p>I. Dinamometre ile ölçülen büyüklük türetilmiş ve vektörel bir niceliktir.</p></p></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_9940",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p><p>II. Ağırlık, bulunulan gezegenin çekim ivmesine bağlı olduğu için her ortamda değişebilir.</p></p></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_7767",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p><p>III. Kütle temel bir büyüklük olup, cismin konumuna göre değişmeyen madde miktarıdır.</p></p></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_2800",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><p><b>yargılarından hangileri doğrudur?</b></p></p>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_5948",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"question-options-grid\" contenteditable=\"false\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\" contenteditable=\"true\">Yalnız I</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\" contenteditable=\"true\">Yalnız II</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\" contenteditable=\"true\">I ve III</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\" contenteditable=\"true\">II ve III</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\" contenteditable=\"true\">I, II ve III</div></div></div>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_6760",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_5964",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-solution\" contenteditable=\"false\">\n                    <div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div>\n                    <div class=\"meta-content\" contenteditable=\"false\" data-placeholder=\"Detaylı çözüm adımlarını buraya yazın...\">Dinamometre kuvveti (ağırlığı) ölçer, vektörel ve türetilmiştir. Ağırlık ivmeye göre değişir, kütle ise madde miktarı olup sabittir.</div></div>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_2412",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_2060",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-correct\" contenteditable=\"false\">\n                    <div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div>\n                    <div class=\"meta-content-wrapper\">\n                        <select class=\"correct-answer-select\">\n                            <option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option>\n                            <option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option>\n                            <option value=\"E\">E Şıkkı</option>\n                        </select>\n                    </div></div>"
+                }
+            },
+            {
+                "uid": "block_1788253701737_4950",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
