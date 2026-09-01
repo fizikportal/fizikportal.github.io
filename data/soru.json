@@ -106,12 +106,91 @@
     {
         "id": "soru_1788251558",
         "meta": {
+            "sinif": "9. Sınıf",
             "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
             "baslik": "Otoyolda Hız Kontrolü ve Denetim",
-            "sinif": "9. Sınıf",
             "dogru": "C",
             "tarih": "01.09.2026 10:32:38"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788251967781_7915",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Otoyolda Hız Kontrolü ve Denetim"
+                }
+            },
+            {
+                "uid": "block_1788251967782_9801",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/soru/img_6a968e0fdacfc.jpg\" alt=\"Görsel\">\n \n    </div><p>Trafik polisi Mehmet Bey, otoyolda devriye gezerken iki farklı tespit yapmaktadır:</p></p>"
+                }
+            },
+            {
+                "uid": "block_1788251967782_6188",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p><p><b>I. Durum: </b>Önünden geçen siyah otomobil için \"<i>Bu araç limitlerin çok üzerinde, aşırı hızlı gidiyor</i>\" değerlendirmesinde bulunur.</p></p></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1788251967782_2240",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p><p><b>II. Durum:</b> Lidar bazlı radarı araca doğrulttuğunda ekranda \"<i>142 km/h</i>\" değerini okur ve araca cezai işlem uygular.</p></p></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1788251967782_1572",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><p><b>Mehmet Bey'in yaptığı bu iki tespit ile ilgili aşağıdaki yargılardan hangisi doğrudur?</b></p></p>"
+                }
+            },
+            {
+                "uid": "block_1788251967782_3150",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"question-options-grid\" contenteditable=\"false\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\" contenteditable=\"true\">I. tespit nicel, II. tespit nitel gözlemdir.</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\" contenteditable=\"true\">I. tespit kişiden kişiye değişmeyen kesin bir sonuç sunar.</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\" contenteditable=\"true\">II. tespitte bir ölçme aracı kullanıldığı için objektif ve nicel bir gözlemdir.</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\" contenteditable=\"true\">&nbsp;I. tespitte kullanılan büyüklük SI birim sisteminde temel bir büyüklüktür.</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\" contenteditable=\"true\">II. tespitte okunan hız değeri skaler ve temel bir büyüklüğü ifade eder.</div></div></div>"
+                }
+            },
+            {
+                "uid": "block_1788251967782_5663",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788251967782_30",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-hint\" contenteditable=\"false\">\n                    <div class=\"meta-title text-warning\"><i class=\"fa-solid fa-key\"></i> Öğrenci İpucu / Yardımcı Not</div>\n                    <div class=\"meta-content\" contenteditable=\"false\" data-placeholder=\"Öğrenciye yol gösterecek ipucunu buraya yazın...\">Bir ölçü aleti (radar) kullanarak sayısal sonuç elde etmek kişiden bağımsız, objektif bir nicel gözlemdir.</div></div>"
+                }
+            },
+            {
+                "uid": "block_1788251967782_7250",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788251967782_686",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-correct\" contenteditable=\"false\">\n                    <div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div>\n                    <div class=\"meta-content-wrapper\">\n                        <select class=\"correct-answer-select\">\n                            <option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option>\n                            <option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option>\n                            <option value=\"E\">E Şıkkı</option>\n                        </select>\n                    </div></div>"
+                }
+            },
+            {
+                "uid": "block_1788251967782_1408",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
