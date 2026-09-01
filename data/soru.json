@@ -320,12 +320,70 @@
     {
         "id": "soru_1788252994",
         "meta": {
+            "sinif": "9. Sınıf",
             "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
             "baslik": "Güneş Enerjisi Panelleri ve Fizik Alt Alanları",
-            "sinif": "9. Sınıf",
             "dogru": "C",
             "tarih": "01.09.2026 10:56:34"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788253301551_4347",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Güneş Enerjisi Panelleri ve Fizik Alt Alanları"
+                }
+            },
+            {
+                "uid": "block_1788253301551_3158",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/soru/img_6a96939195559.jpg\" alt=\"Görsel\">\n \n    </div><p>Bir teknoloji firması, uzay istasyonlarında kullanılmak üzere esnek, yüksek verimli ve ışığı maksimum oranda emen yeni nesil silisyum kristalli güneş panelleri geliştirmektedir. Bu süreçte maddelerin mikro düzeydeki atomik dizilimleri ve yarı iletken teknolojisi incelenmektedir.\n<br><b>Bu güneş panellerinin geliştirilmesinde doğrudan katkı sağlayan fiziğin alt alanı aşağıdakilerden hangisidir?&nbsp;</b></p></p>"
+                }
+            },
+            {
+                "uid": "block_1788253301551_119",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"question-options-grid\" contenteditable=\"false\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\" contenteditable=\"true\">Optik</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\" contenteditable=\"true\">Yüksek Enerji ve Plazma Fiziği</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\" contenteditable=\"true\">Katıhal Fiziği</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\" contenteditable=\"true\">Nükleer Fizik</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\" contenteditable=\"true\">Mekanik</div></div></div>"
+                }
+            },
+            {
+                "uid": "block_1788253301551_4035",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788253301551_5393",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-solution\" contenteditable=\"false\">\n                    <div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div>\n                    <div class=\"meta-content\" contenteditable=\"false\" data-placeholder=\"Detaylı çözüm adımlarını buraya yazın...\">Yarı iletkenler, mikroçipler ve kristal yapılar Katıhal Fiziği'nin çalışma alanına girer.</div></div>"
+                }
+            },
+            {
+                "uid": "block_1788253301551_3395",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788253301551_8835",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-correct\" contenteditable=\"false\">\n                    <div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div>\n                    <div class=\"meta-content-wrapper\">\n                        <select class=\"correct-answer-select\">\n                            <option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option>\n                            <option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option>\n                            <option value=\"E\">E Şıkkı</option>\n                        </select>\n                    </div></div>"
+                }
+            },
+            {
+                "uid": "block_1788253301551_8318",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
