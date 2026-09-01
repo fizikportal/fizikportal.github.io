@@ -265,12 +265,56 @@
     {
         "id": "soru_1788252394",
         "meta": {
+            "sinif": "9. Sınıf",
             "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
             "baslik": "Otonom İHA (İnsansız Hava Aracı) Rotalama",
-            "sinif": "9. Sınıf",
             "dogru": "B",
             "tarih": "01.09.2026 10:46:34"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788252922674_234",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Otonom İHA (İnsansız Hava Aracı) Rotalama"
+                }
+            },
+            {
+                "uid": "block_1788252922675_2463",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><div class=\"single-img-container\" contenteditable=\"false\">\n        <img src=\"../uploads/soru/img_6a96913817d98.jpg\" alt=\"Görsel\">\n \n    </div><p>Bir kargo firması, paket teslimatı yapacak otonom dronun yazılımına yönlendirme komutları yüklemektedir. Yazılımcı drona şu iki farklı komut tanımlar:</p><p>•\t<b>Komut X: </b>\"Yer istasyonundan kalktıktan sonra toplam 15 dakika boyunca havada kal.\"</p><p>•\t<b>Komut Y:</b> \"Kalkış noktasından itibaren güneybatı yönünde 500m ilerleyip paketi bırak.\"</p><p><b>Bu talimatlarda geçen fiziksel büyüklüklerin türü aşağıdakilerin hangisinde doğru sınıflandırılmıştır?</b></p><p><table class=\"table-w-50 table-border-medium table-theme-gray\"><tbody><tr><th>Komut X</th><th>Komut Y</th></tr><tr><td>Skaler ve Temel</td><td>Vektörel ve Türetilmiş</td></tr><tr><td>Skaler ve Temel</td><td>Vektörel ve Temel</td></tr><tr><td>Vektörel ve Türetilmiş</td><td>Skaler ve Temel</td></tr><tr><td>Skaler ve Türetilmiş</td><td>Vektörel ve Türetilmiş</td></tr><tr><td>Vektörel ve Temel</td><td>Vektörel ve Temel</td></tr></tbody></table><p><br></p></p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788252922675_8818",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-solution\" contenteditable=\"false\">\n                    <div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div>\n                    <div class=\"meta-content\" contenteditable=\"false\" data-placeholder=\"Detaylı çözüm adımlarını buraya yazın...\">Zaman (15 dk) skaler ve temeldir. Konum değişimi (500 m güneybatı) yön içerdiği için vektörel, uzunluk olduğu için temel bir büyüklüktür.</div></div>"
+                }
+            },
+            {
+                "uid": "block_1788252922675_3329",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788252922675_5069",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-correct\" contenteditable=\"false\">\n                    <div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div>\n                    <div class=\"meta-content-wrapper\">\n                        <select class=\"correct-answer-select\">\n                            <option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option>\n                            <option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option>\n                            <option value=\"E\">E Şıkkı</option>\n                        </select>\n                    </div></div>"
+                }
+            },
+            {
+                "uid": "block_1788252922675_2700",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
