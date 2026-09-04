@@ -509,3 +509,35 @@ details.kategori-group { background: rgba(0, 0, 0, 0.2); border: 1px solid var(-
     font-size: 0.85rem; color: var(--text-soft); margin-top: 8px;
 }
 .reading-author-date i { margin-right: 5px; color: var(--accent-cyan); }
+/* ==========================================================================
+   11. MOBİL NAVBAR (site.js #nav-toggle → .active toggle'ı için)
+   ========================================================================== */
+@media (max-width: 991px) {
+    .nav-container-fluid { padding: 0 20px; }
+    #nav-links-container {
+        display: none;
+        width: 100%;
+        background: var(--bg-mid);
+        border-top: 1px solid var(--glass-border);
+    }
+    #nav-links-container.active { display: block; }
+    .nav-links {
+        flex-direction: column;
+        height: auto;
+        padding: 12px 20px 16px;
+        align-items: stretch;
+        gap: 4px;
+    }
+    .nav-links a {
+        height: auto;
+        padding: 10px 4px;
+        border-bottom: 1px solid rgba(255,255,255,.06);
+        border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+    }
+    .nav-links a:hover, .nav-links a.active { border-bottom-color: transparent; background: var(--glass); border-radius: 8px; }
+    .nav-auth {
+        padding: 12px 20px 16px;
+        border-top: 1px solid var(--glass-border);
+        flex-wrap: wrap;
+    }
+}
