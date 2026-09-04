@@ -510,34 +510,63 @@ details.kategori-group { background: rgba(0, 0, 0, 0.2); border: 1px solid var(-
 }
 .reading-author-date i { margin-right: 5px; color: var(--accent-cyan); }
 /* ==========================================================================
-   11. MOBİL NAVBAR (site.js #nav-toggle → .active toggle'ı için)
+   11. MOBİL NAVBAR — hamburger + açılır menü
    ========================================================================== */
+/* Hamburger: yalnız dar ekranda görünür */
+.nav-toggle {
+    display: none;
+    background: transparent; border: 1px solid var(--glass-border);
+    color: var(--text-primary); font-size: 18px;
+    width: 42px; height: 42px; border-radius: 10px;
+    cursor: pointer; align-items: center; justify-content: center;
+}
+
 @media (max-width: 991px) {
-    .nav-container-fluid { padding: 0 20px; }
+    .nav-container-fluid { padding: 0 20px; flex-wrap: wrap; height: auto; min-height: 64px; padding-top: 10px; padding-bottom: 10px; }
+    .brand { font-size: 1.2rem; }
+    .nav-toggle { display: inline-flex; margin-left: auto; }
+
+    /* Menü kabı: kapalı başlar, .active ile açılır (site.js toggle) */
     #nav-links-container {
         display: none;
-        width: 100%;
-        background: var(--bg-mid);
+        flex-basis: 100%;
+        background: rgba(10, 6, 18, 0.97);
         border-top: 1px solid var(--glass-border);
     }
     #nav-links-container.active { display: block; }
+
     .nav-links {
         flex-direction: column;
-        height: auto;
-        padding: 12px 20px 16px;
         align-items: stretch;
-        gap: 4px;
+        height: auto;
+        gap: 2px;
+        padding: 10px 16px;
     }
+    .nav-links li { list-style: none; }
     .nav-links a {
         height: auto;
-        padding: 10px 4px;
+        padding: 12px 10px;
         border-bottom: 1px solid rgba(255,255,255,.06);
-        border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+        border-radius: 8px;
     }
-    .nav-links a:hover, .nav-links a.active { border-bottom-color: transparent; background: var(--glass); border-radius: 8px; }
+    .nav-links a:hover, .nav-links a.active {
+        border-bottom-color: transparent;
+        background: var(--glass);
+        border-radius: 8px;
+    }
+
     .nav-auth {
-        padding: 12px 20px 16px;
-        border-top: 1px solid var(--glass-border);
+        padding: 12px 16px 16px;
         flex-wrap: wrap;
+        border-top: 1px solid rgba(255,255,255,.06);
     }
+
+    /* Masaüstü navbar'ın 70px height'ını gevşet */
+    .site-navbar { position: sticky; }
+}
+
+/* Geniş ekranda hamburger gizli, menü hep açık */
+@media (min-width: 992px) {
+    #nav-links-container { display: flex !important; align-items: center; gap: 16px; flex: 1; }
+    #nav-links-container .nav-links { height: 100%; }
 }
