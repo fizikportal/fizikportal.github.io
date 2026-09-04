@@ -1,11 +1,13 @@
 <nav class="site-navbar">
     <div class="nav-container-fluid">
         <a href="index.html" class="brand">Fizik <span>Platformu</span></a>
-        
-        <!-- 3 ÇİZGİ BUTONU (Sadece mobilde görünür) -->
-        <button class="nav-toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></button>
-        
-        <div class="nav-links-container" id="nav-links-container">
+
+        <!-- MOBİL HAMBURGER (yalnız dar ekranda görünür) -->
+        <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Menü">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="nav-menu-yeri" id="nav-links-container">
             <ul class="nav-links" id="main-nav-links">
                 <li><a href="index.html" data-page="anasayfa">Ana Sayfa</a></li>
                 <li><a href="deney.html" data-page="deney">Deney</a></li>
@@ -14,7 +16,9 @@
                 <li><a href="soru.html" data-page="soru">Soru Bankası</a></li>
                 <li><a href="sinav_ol.html" data-page="sinav_ol">Sınav Ol</a></li>
             </ul>
-            <div class="nav-auth" id="nav-auth-yeri"></div>
+            <div class="nav-auth" id="nav-auth-yeri">
+                <!-- JS Buraya Giriş/Kayıt veya Kullanıcı Adı/Çıkış butonunu basacak -->
+            </div>
         </div>
     </div>
 </nav>
