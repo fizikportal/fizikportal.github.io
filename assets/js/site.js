@@ -174,3 +174,18 @@ function startFeatureSlider() {
     function resetInterval() { clearInterval(featureInterval); startAutoSlide(); }
     if (cards.length > 0) { startAutoSlide(); }
 }
+// ── SAYFA GÖRÜNTÜLEME SAYACI → Supabase ──
+// Aynı sayfayı 30 dk içinde tekrar saymaz (session bazlı). Sessiz çalışır;
+// hata olsa bile siteyi etkilemez. supabaseClient yukarıda tanımlı.
+(function () {
+    try {
+        const yol = window.location.pathname.split('/').pop() || 'index.html';
+        const anahtar = 'ist_' + yol;
+        const son = sessionStorage.getItem(anahtar);
+        if (son && (Date.now() - parseInt(son, 10)) < 30 * 60 * 1000) return;
+        sessionStorage.setItem(anahtar, String(Date.now()));
+        supabaseClient.from('site_istatistik')
+            .insert({ olay: 'sayfa_goruntuleme', sayfa: yol, kaynak: window.location.hostname })
+            .then(() => {}, () => {});
+    } catch (e) { /* sessiz */ }
+})();
