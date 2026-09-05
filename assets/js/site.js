@@ -40,6 +40,7 @@ async function checkAuthState() {
                         <a href="http://localhost/edit/admin/" target="_blank" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-tachometer-alt"></i> İçerik Paneli</a>
                         <a href="https://fizikportal.github.io/admin_yorumlar.html" target="_blank" style="display: none;"><!-- emekli: yorumlar localhost panelde --></a>
                         <a href="#" id="theme-toggle-btn" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-palette"></i> Tema Değiştir</a>
+                        <a href="profil.html" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-user-circle"></i> Profilim</a>
                         <a href="#" onclick="cikisYap()" style="display: flex; align-items: center; gap: 8px; color: #ef4444; text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-sign-out-alt"></i> Çıkış Yap</a>
                     </div>
                 </div>
