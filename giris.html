@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap - Fizik Portalı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+    <style>
+        .giris-sayfa { display:flex; justify-content:center; align-items:center; min-height:calc(100vh - 100px); padding: 40px 20px; }
+        .giris-kart {
+            max-width: 460px; width: 100%;
+            background: var(--bg-mid);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg, 24px);
+            padding: 36px 32px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+        }
+        .giris-baslik { font-size: 1.6rem; font-weight: 700; margin: 0 0 6px; color: var(--text-primary); }
+        .giris-alt-baslik { font-size: 0.92rem; color: var(--text-muted); margin: 0 0 28px; }
+        .giris-alan { margin-bottom: 18px; }
+        .giris-alan label {
+            display: block; font-size: 0.85rem; font-weight: 600;
+            margin-bottom: 6px; color: var(--text-primary);
+        }
+        .giris-input-wrap { position: relative; }
+        .giris-input {
+            width: 100%; padding: 12px 14px;
+            border-radius: var(--radius-md, 12px);
+            border: 1px solid var(--glass-border);
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            font-size: 0.95rem; box-sizing: border-box;
+            transition: border-color .15s ease;
+        }
+        .giris-input:focus { outline: none; border-color: var(--accent-lime); }
+        .giris-input-wrap .giris-input { padding-right: 44px; }
+        .giris-goz-btn {
+            position: absolute; top: 50%; right: 6px;
+            transform: translateY(-50%);
+            background: none; border: none; cursor: pointer;
+            color: var(--text-muted); padding: 8px;
+            display: flex; align-items: center;
+        }
+        .giris-goz-btn:hover { color: var(--text-primary); }
+        .giris-satir-arasi {
+            display: flex; align-items: center; justify-content: space-between;
+            margin: -4px 0 22px; font-size: 0.85rem;
+        }
+        .giris-hatirla {
+            display: flex; align-items: center; gap: 7px;
+            color: var(--text-muted); cursor: pointer; user-select: none;
+        }
+        .giris-hatirla input { accent-color: var(--accent-lime); width: 15px; height: 15px; }
+        .giris-link { color: var(--accent-lime); text-decoration: none; font-weight: 600; }
+        .giris-link:hover { text-decoration: underline; }
+        .giris-btn {
+            width: 100%; padding: 13px; border: none;
+            border-radius: var(--radius-pill, 999px);
+            background: var(--accent-lime); color: var(--bg-deep);
+            font-weight: 700; font-size: 0.98rem; cursor: pointer;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+        .giris-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(200,245,66,0.25); }
+        .giris-btn:active { transform: translateY(0); }
+        .giris-alt-metin {
+            text-align: center; margin-top: 22px;
+            font-size: 0.88rem; color: var(--text-muted);
+        }
+        .giris-uyari {
+            background: rgba(224, 7, 36, 0.12);
+            border: 1px solid rgba(224, 7, 36, 0.35);
+            color: #ffb4b4; padding: 11px 14px;
+            border-radius: 10px; font-size: 0.88rem; margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+
+        <main class="giris-sayfa">
+            <div class="giris-kart">
+                <h1 class="giris-baslik">Giriş Yap</h1>
+                <p class="giris-alt-baslik">Hesabınıza erişmek için bilgilerinizi girin.</p>
+
+                <div id="mesajKutusu" style="display:none; margin-bottom:18px;"></div>
+
+                <form id="girisForm" novalidate>
+                    <div class="giris-alan">
+                        <label for="email">E-posta</label>
+                        <div class="giris-input-wrap">
+                            <input class="giris-input" type="email" id="email" placeholder="ornek@eposta.com" required autofocus>
+                        </div>
+                    </div>
+
+                    <div class="giris-alan">
+                        <label for="sifre">Şifre</label>
+                        <div class="giris-input-wrap">
+                            <input class="giris-input" type="password" id="sifre" placeholder="••••••••" required>
+                            <button type="button" class="giris-goz-btn" onclick="girisSifreGosterGizle()" aria-label="Şifreyi göster/gizle">
+                                <svg id="giris-goz-ikon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="giris-satir-arasi">
+                        <label class="giris-hatirla">
+                            <input type="checkbox" id="beni_hatirla" value="1">
+                            Beni Hatırla
+                        </label>
+                        <a class="giris-link" href="#" id="sifremi-unuttum-link">Şifremi Unuttum</a>
+                    </div>
+
+                    <button type="submit" class="giris-btn">Giriş Yap</button>
+                </form>
+
+                <p class="giris-alt-metin">
+                    Hesabınız yok mu? <a class="giris-link" href="kayit_ol.html">Kayıt Ol</a>
+                </p>
+            </div>
+        </main>
+
+        <div id="footer-yeri"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/site.js"></script>
+    <script>
+        // ── ŞİFRE GÖZ İKONU ──
+        function girisSifreGosterGizle() {
+            const input = document.getElementById('sifre');
+            const goster = input.type === 'password';
+            input.type = goster ? 'text' : 'password';
+
+            const ikon = document.getElementById('giris-goz-ikon');
+            ikon.innerHTML = goster
+                ? '<path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a20.29 20.29 0 0 1 4.06-5.06M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 7 11 7a20.29 20.29 0 0 1-2.34 3.06M1 1l22 22"></path><path d="M14.12 14.12A3 3 0 1 1 9.88 9.88"></path>'
+                : '<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path><circle cx="12" cy="12" r="3"></circle>';
+        }
+
+        // ── ŞİFREMİ UNUTTUM → Supabase sıfırlama maili ──
+        document.getElementById('sifremi-unuttum-link').addEventListener('click', async function (e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value.trim();
+            const mesajKutusu = document.getElementById('mesajKutusu');
+
+            if (!email) {
+                mesajKutusu.style.display = 'block';
+                mesajKutusu.innerHTML = '<i class="fa fa-circle-info"></i> Önce e-posta adresinizi yazın, sonra buraya tıklayın.';
+                mesajKutusu.style.color = 'var(--text-muted)';
+                return;
+            }
+
+            try {
+                const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+                    redirectTo: window.location.origin + '/sifre_sifirla.html'
+                });
+                if (error) throw error;
+
+                mesajKutusu.style.display = 'block';
+                mesajKutusu.innerHTML = '<i class="fa fa-envelope-circle-check"></i> Şifre sıfırlama bağlantısı e-postanıza gönderildi.';
+                mesajKutusu.style.color = 'var(--accent-lime)';
+            } catch (err) {
+                mesajKutusu.style.display = 'block';
+                mesajKutusu.innerHTML = '<i class="fa fa-exclamation-circle"></i> ' + (err.message || 'Bağlantı gönderilemedi.');
+                mesajKutusu.style.color = '#ef4444';
+            }
+        });
+
+        // ── GİRİŞ (Supabase) → herkes anasayfaya ──
+        document.getElementById('girisForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value.trim();
+            const sifre = document.getElementById('sifre').value;
+            const mesajKutusu = document.getElementById('mesajKutusu');
+
+            mesajKutusu.style.display = 'block';
+            mesajKutusu.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Giriş yapılıyor...';
+            mesajKutusu.style.color = 'var(--text-muted)';
+
+            try {
+                const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password: sifre });
+                if (error) throw error;
+
+                mesajKutusu.innerHTML = '<i class="fa fa-check-circle"></i> Giriş başarılı! Yönlendiriliyorsunuz...';
+                mesajKutusu.style.color = 'var(--accent-lime)';
+
+                // ── Bu hesap admin mi? (Sadece PHP çalışan sunucularda anlamlıdır;
+                //    GitHub gibi statik barındırmada bu istek sessizce başarısız
+                //    olur ve normal kullanıcı akışına devam edilir.) ──
+                let hedef = 'index.html';
+                try {
+                    const accessToken = data.session.access_token;
+                    const adminYanit = await fetch('admin/giris_dogrula.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ access_token: accessToken })
+                    });
+                    if (adminYanit.ok) {
+                        const adminData = await adminYanit.json();
+                        if (adminData.basarili && adminData.yonlendir) {
+                            hedef = adminData.yonlendir;
+                        }
+                    }
+                } catch (adminErr) {
+                    // admin/giris_dogrula.php'ye ulaşılamadı (ör. statik barındırma) — normal devam
+                }
+
+                setTimeout(() => window.location.href = hedef, 1000);
+            } catch (err) {
+                mesajKutusu.innerHTML = '<i class="fa fa-exclamation-circle"></i> ' + (err.message || 'Giriş başarısız.');
+                mesajKutusu.style.color = '#ef4444';
+            }
+        });
+    </script>
+</body>
+</html>
