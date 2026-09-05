@@ -36,8 +36,9 @@ async function checkAuthState() {
                     <button id="admin-dropdown-toggle" style="background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 1.4rem;">
                         <i class="fa fa-user-cog"></i>
                     </button>
-                    <div id="admin-dropdown-menu" style="display: none; position: absolute; right: 0; top: 100%; background: var(--bg-mid); border: 1px solid var(--glass-border); border-radius: 8px; padding: 10px; min-width: 180px; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-                        <a href="admin_yorumlar.html" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-comments"></i> Yorumları Oku</a>
+                     <div id="admin-dropdown-menu" style="display: none; position: absolute; right: 0; top: 100%; background: var(--bg-mid); border: 1px solid var(--glass-border); border-radius: 8px; padding: 10px; min-width: 200px; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+                        <a href="http://localhost/edit/admin/" target="_blank" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-tachometer-alt"></i> İçerik Paneli</a>
+                        <a href="https://fizikportal.github.io/admin_yorumlar.html" target="_blank" style="display: none;"><!-- emekli: yorumlar localhost panelde --></a>
                         <a href="#" id="theme-toggle-btn" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-palette"></i> Tema Değiştir</a>
                         <a href="#" onclick="cikisYap()" style="display: flex; align-items: center; gap: 8px; color: #ef4444; text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-sign-out-alt"></i> Çıkış Yap</a>
                     </div>
