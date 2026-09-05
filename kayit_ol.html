@@ -10,52 +10,142 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/themes.css" rel="stylesheet">
     <style>
-        .auth-page { display:flex; justify-content:center; align-items:center; min-height:calc(100vh - 100px); padding: 40px 20px; }
-        .auth-card { max-width: 400px; width: 100%; background: var(--bg-mid); border: 1px solid var(--glass-border); border-radius: 16px; padding: 40px; }
-        .auth-title { margin-bottom: 24px; text-align: center; font-size: 1.5rem; }
-        .auth-link { display:block; text-align:center; margin-top: 20px; color: var(--accent-cyan); text-decoration: none; }
+        .giris-sayfa { display:flex; justify-content:center; align-items:center; min-height:calc(100vh - 100px); padding: 40px 20px; }
+        .giris-kart {
+            max-width: 460px; width: 100%;
+            background: var(--bg-mid);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg, 24px);
+            padding: 36px 32px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+        }
+        .giris-baslik { font-size: 1.6rem; font-weight: 700; margin: 0 0 6px; color: var(--text-primary); }
+        .giris-alt-baslik { font-size: 0.92rem; color: var(--text-muted); margin: 0 0 28px; }
+        .giris-alan { margin-bottom: 18px; }
+        .giris-alan label {
+            display: block; font-size: 0.85rem; font-weight: 600;
+            margin-bottom: 6px; color: var(--text-primary);
+        }
+        .giris-input-wrap { position: relative; }
+        .giris-input {
+            width: 100%; padding: 12px 14px;
+            border-radius: var(--radius-md, 12px);
+            border: 1px solid var(--glass-border);
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            font-size: 0.95rem; box-sizing: border-box;
+            transition: border-color .15s ease;
+        }
+        .giris-input:focus { outline: none; border-color: var(--accent-lime); }
+        .giris-input-wrap .giris-input { padding-right: 44px; }
+        .giris-goz-btn {
+            position: absolute; top: 50%; right: 6px;
+            transform: translateY(-50%);
+            background: none; border: none; cursor: pointer;
+            color: var(--text-muted); padding: 8px;
+            display: flex; align-items: center;
+        }
+        .giris-goz-btn:hover { color: var(--text-primary); }
+        .giris-link { color: var(--accent-lime); text-decoration: none; font-weight: 600; }
+        .giris-link:hover { text-decoration: underline; }
+        .giris-btn {
+            width: 100%; padding: 13px; border: none;
+            border-radius: var(--radius-pill, 999px);
+            background: var(--accent-lime); color: var(--bg-deep);
+            font-weight: 700; font-size: 0.98rem; cursor: pointer;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+        .giris-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(200,245,66,0.25); }
+        .giris-btn:active { transform: translateY(0); }
+        .giris-alt-metin {
+            text-align: center; margin-top: 22px;
+            font-size: 0.88rem; color: var(--text-muted);
+        }
+        .giris-uyari {
+            background: rgba(224, 7, 36, 0.12);
+            border: 1px solid rgba(224, 7, 36, 0.35);
+            color: #ffb4b4; padding: 11px 14px;
+            border-radius: 10px; font-size: 0.88rem; margin-bottom: 20px;
+        }
     </style>
 </head>
 <body class="theme-warm-amber">
 
     <div class="page-shell">
         <div id="header-yeri"></div>
-        
-        <main class="auth-page">
-            <div class="auth-card">
-                <h1 class="auth-title">Kayıt Ol</h1>
-                <div id="mesajKutusu" style="margin-bottom: 15px; display:none;"></div>
-                <form id="kayitForm">
-                    <div class="form-group">
-                        <input type="text" id="adSoyad" class="form-control" placeholder="Adınız Soyadınız" required>
+
+        <main class="giris-sayfa">
+            <div class="giris-kart">
+                <h1 class="giris-baslik">Kayıt Ol</h1>
+                <p class="giris-alt-baslik">Birkaç saniyede hesabını oluştur, hemen başla.</p>
+
+                <div id="mesajKutusu" style="display:none; margin-bottom:18px;"></div>
+
+                <form id="kayitForm" novalidate>
+                    <div class="giris-alan">
+                        <label for="adSoyad">Ad Soyad</label>
+                        <div class="giris-input-wrap">
+                            <input class="giris-input" type="text" id="adSoyad" placeholder="Adınız Soyadınız" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" class="form-control" placeholder="E-posta adresiniz" required>
+
+                    <div class="giris-alan">
+                        <label for="email">E-posta</label>
+                        <div class="giris-input-wrap">
+                            <input class="giris-input" type="email" id="email" placeholder="ornek@eposta.com" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="password" id="sifre" class="form-control" placeholder="Şifreniz (En az 6 karakter)" required>
+
+                    <div class="giris-alan">
+                        <label for="sifre">Şifre</label>
+                        <div class="giris-input-wrap">
+                            <input class="giris-input" type="password" id="sifre" placeholder="En az 6 karakter" required>
+                            <button type="button" class="giris-goz-btn" onclick="kayitSifreGosterGizle()" aria-label="Şifreyi göster/gizle">
+                                <svg id="kayit-goz-ikon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <button type="submit" class="btn-kaydet-ana"><i class="fa fa-user-plus"></i> Hesap Oluştur</button>
+
+                    <button type="submit" class="giris-btn">Hesap Oluştur</button>
                 </form>
-                <a href="giris.html" class="auth-link">Zaten hesabın var mı? Giriş Yap</a>
+
+                <p class="giris-alt-metin">
+                    Zaten hesabın var mı? <a class="giris-link" href="giris.html">Giriş Yap</a>
+                </p>
             </div>
         </main>
-        
+
         <div id="footer-yeri"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="assets/js/site.js"></script>
     <script>
+        // ── ŞİFRE GÖZ İKONU ──
+        function kayitSifreGosterGizle() {
+            const input = document.getElementById('sifre');
+            const goster = input.type === 'password';
+            input.type = goster ? 'text' : 'password';
+
+            const ikon = document.getElementById('kayit-goz-ikon');
+            ikon.innerHTML = goster
+                ? '<path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a20.29 20.29 0 0 1 4.06-5.06M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 7 11 7a20.29 20.29 0 0 1-2.34 3.06M1 1l22 22"></path><path d="M14.12 14.12A3 3 0 1 1 9.88 9.88"></path>'
+                : '<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path><circle cx="12" cy="12" r="3"></circle>';
+        }
+
+        // ── KAYIT ──
         document.getElementById('kayitForm').addEventListener('submit', async (e) => {
             e.preventDefault();
-            const adSoyad = document.getElementById('adSoyad').value;
-            const email = document.getElementById('email').value;
+            const adSoyad = document.getElementById('adSoyad').value.trim();
+            const email = document.getElementById('email').value.trim();
             const sifre = document.getElementById('sifre').value;
             const mesajKutusu = document.getElementById('mesajKutusu');
-            
+
             mesajKutusu.style.display = 'block';
-            mesajKutusu.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Hesap oluşturuluyor...';
+            mesajKutusu.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Hesabın oluşturuluyor...';
             mesajKutusu.style.color = 'var(--text-muted)';
 
             try {
@@ -64,21 +154,22 @@
                     password: sifre,
                     options: { data: { full_name: adSoyad } }
                 });
-                
-                               if (error) throw error;
+                if (error) throw error;
 
                 if (data.session) {
-                    // Onay kapalı → kullanıcı kayıt anında oturum açmış durumda,
-                    // direkt içeri al
+                    // Confirm email KAPALI → kullanıcı zaten girdi, direkt içeri
                     mesajKutusu.innerHTML = '<i class="fa fa-check-circle"></i> Hoş geldin ' + adSoyad.split(' ')[0] + '!';
                     mesajKutusu.style.color = 'var(--accent-lime)';
                     setTimeout(() => window.location.href = 'index.html', 1200);
                 } else {
-                    // Emniyet ağı: onay ileride tekrar açılırsa eski akış çalışsın
-                    mesajKutusu.innerHTML = '<i class="fa fa-check-circle"></i> Hesabınız oluşturuldu! Giriş sayfasına yönlendiriliyorsunuz...';
-                    mesajKutusu.style.color = 'var(--accent-lime)';
+                    // Emniyet ağı: onay ileride açılırsa eski akış
+                    mesajKutusu.innerHTML = '<i class="fa fa-check-circle"></i> Hesabın oluşturuldu! Giriş sayfasına yönlendiriliyorsun...';
                     setTimeout(() => window.location.href = 'giris.html', 2000);
                 }
+            } catch (err) {
+                mesajKutusu.innerHTML = '<i class="fa fa-exclamation-circle"></i> ' + (err.message || 'Kayıt başarısız.');
+                mesajKutusu.style.color = '#ef4444';
+            }
         });
     </script>
 </body>
