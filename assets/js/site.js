@@ -45,12 +45,12 @@ async function checkAuthState() {
                     </div>
                 </div>
             `;
-        } else {
+               } else {
             // NORMAL KULLANICI GİRİŞİ YAPTIYSA
             navAuth.innerHTML = `
-                <span style="color: var(--text-primary); margin-right: 10px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
+                <a href="profil.html" style="color: var(--text-primary); text-decoration: none; margin-right: 10px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
                     <i class="fa fa-user-circle"></i> ${fullName}
-                </span>
+                </a>
                 <button onclick="cikisYap()" class="btn-login" style="cursor:pointer; border: none;">
                     <i class="fa fa-sign-out-alt"></i> Çıkış
                 </button>
