@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilim - Fizik Portalı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+    <style>
+        .profil-sayfa { display:flex; justify-content:center; min-height:calc(100vh - 100px); padding: 40px 20px; }
+        .profil-kart {
+            max-width: 480px; width: 100%;
+            background: var(--bg-mid);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg, 24px);
+            padding: 36px 32px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+        }
+        .profil-baslik { font-size: 1.6rem; font-weight: 700; margin: 0 0 6px; color: var(--text-primary); display: flex; align-items: center; gap: 12px; }
+        .profil-alt-baslik { font-size: 0.92rem; color: var(--text-muted); margin: 0 0 28px; }
+        .profil-alan { margin-bottom: 18px; }
+        .profil-alan label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-primary); }
+        .profil-input {
+            width: 100%; padding: 12px 14px;
+            border-radius: var(--radius-md, 12px);
+            border: 1px solid var(--glass-border);
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            font-size: 0.95rem; box-sizing: border-box;
+            transition: border-color .15s ease;
+        }
+        .profil-input:focus { outline: none; border-color: var(--accent-lime); }
+        .profil-input[readonly] { opacity: .6; cursor: not-allowed; }
+        .sifre-bolumu { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--glass-border); }
+        .sifre-bolumu h3 { font-size: 1.05rem; margin: 0 0 14px; color: var(--text-primary); }
+        .profil-btn {
+            width: 100%; padding: 13px; border: none;
+            border-radius: var(--radius-pill, 999px);
+            background: var(--accent-lime); color: var(--bg-deep);
+            font-weight: 700; font-size: 0.98rem; cursor: pointer;
+            transition: transform .12s ease, box-shadow .12s ease;
+            margin-top: 10px;
+        }
+        .profil-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(200,245,66,0.25); }
+        .mesaj { padding: 11px 14px; border-radius: 10px; font-size: 0.88rem; margin-bottom: 18px; display: none; }
+        .mesaj.ok { background: rgba(34,197,94,.1); border: 1px solid rgba(34,197,94,.3); color: #4ade80; }
+        .mesaj.hata { background: rgba(239,68,68,.1); border: 1px solid rgba(239,68,68,.3); color: #f87171; }
+        .giris-gerekiyor {
+            text-align: center; padding: 60px 20px;
+            background: var(--bg-mid); border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg, 24px);
+        }
+        .giris-gerekiyor i { font-size: 44px; color: var(--accent-cyan); opacity: .5; margin-bottom: 18px; display: block; }
+        .giris-gerekiyor h2 { color: var(--text-primary); margin: 0 0 10px; }
+        .giris-gerekiyor p { color: var(--text-muted); margin: 0 0 22px; }
+        .giris-gerekiyor a { display: inline-block; padding: 11px 26px; border-radius: 999px; background: var(--accent-lime); color: var(--bg-deep); font-weight: 700; text-decoration: none; }
+    </style>
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+
+        <main class="profil-sayfa">
+            <div id="profil-icerik">
+                <div class="giris-gerekiyor">
+                    <i class="fa fa-user-lock"></i>
+                    <h2>Oturum kontrol ediliyor...</h2>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-yeri"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/site.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+        // 1) Oturum kontrolü
+        const { data: { session } } = await supabaseClient.auth.getSession();
+        const alan = document.getElementById('profil-icerik');
+
+        if (!session) {
+            alan.innerHTML = `
+                <div class="giris-gerekiyor">
+                    <i class="fa fa-user-lock"></i>
+                    <h2>Önce giriş yapmalısın</h2>
+                    <p>Profilini görmek ve düzenlemek için hesabına giriş yapman gerekiyor.</p>
+                    <a href="giris.html">Giriş Yap</a>
+                </div>`;
+            return;
+        }
+
+        const user = session.user;
+        const mevcutAd = user.user_metadata?.full_name || user.email.split('@')[0];
+        const email = user.email || '';
+
+        // 2) Formu bas
+        alan.innerHTML = `
+            <div class="profil-kart">
+                <h1 class="profil-baslik"><i class="fa fa-user-circle"></i> Profilim</h1>
+                <p class="profil-alt-baslik">Hesap bilgilerinizi buradan yönetin.</p>
+
+                <div id="mesaj" class="mesaj"></div>
+
+                <form id="bilgiForm">
+                    <div class="profil-alan">
+                        <label for="ad_soyad">Ad Soyad</label>
+                        <input class="profil-input" type="text" id="ad_soyad" value="" required>
+                    </div>
+                    <div class="profil-alan">
+                        <label for="email">E-posta (değiştirilemez)</label>
+                        <input class="profil-input" type="email" id="email" value="${email}" readonly>
+                    </div>
+
+                    <div class="sifre-bolumu">
+                        <h3><i class="fa fa-key"></i> Şifre Değiştir (isteğe bağlı)</h3>
+                        <div class="profil-alan">
+                            <label for="yeni_sifre">Yeni Şifre</label>
+                            <input class="profil-input" type="password" id="yeni_sifre" placeholder="Boş bırakırsan şifre değişmez" minlength="6">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="profil-btn"><i class="fa fa-save"></i> Değişiklikleri Kaydet</button>
+                </form>
+            </div>`;
+
+        // 3) Adı forma doldur
+        const adInput = document.getElementById('ad_soyad');
+        adInput.value = mevcutAd;
+
+        // 4) Mesaj yardımcısı
+        function mesajGoster(yazi, tip) {
+            const m = document.getElementById('mesaj');
+            m.className = 'mesaj ' + tip;
+            m.innerHTML = '<i class="fa ' + (tip === 'ok' ? 'fa-check-circle' : 'fa-exclamation-circle') + '"></i> ' + yazi;
+            m.style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // 5) Kaydet
+        document.getElementById('bilgiForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const yeniAd = adInput.value.trim();
+            const yeniSifre = document.getElementById('yeni_sifre').value;
+
+            if (!yeniAd) { mesajGoster('Ad Soyad boş bırakılamaz.', 'hata'); return; }
+
+            const guncellemeler = {};
+            let degisenVar = false;
+
+            if (yeniAd !== mevcutAd) {
+                guncellemeler.data = { full_name: yeniAd };
+                degisenVar = true;
+            }
+            if (yeniSifre) {
+                if (yeniSifre.length < 6) { mesajGoster('Yeni şifre en az 6 karakter olmalı.', 'hata'); return; }
+                guncellemeler.password = yeniSifre;
+                degisenVar = true;
+            }
+
+            if (!degisenVar) { mesajGoster('Değişiklik yok.', 'ok'); return; }
+
+            const btn = this.querySelector('button');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Kaydediliyor...';
+
+            try {
+                const { error } = await supabaseClient.auth.updateUser(guncellemeler);
+                if (error) throw error;
+
+                // Şifre değiştiyse oturum yenilenebilir — bilgi mesajı
+                mesajGoster('Profilin güncellendi! ✅', 'ok');
+                document.getElementById('yeni_sifre').value = '';
+
+                // site.js'in menüsü yeni adı görsün diye oturumu tazele
+                const { data: { session: yeni } } = await supabaseClient.auth.getSession();
+                if (yeni) {
+                    const navAuth = document.getElementById('nav-auth-yeri');
+                    if (navAuth && yeni.user.email !== 'validebag.fizik@gmail.com') {
+                        const fullName = yeni.user.user_metadata?.full_name || yeni.user.email;
+                        navAuth.innerHTML = '<span style="color: var(--text-primary); margin-right: 10px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;"><i class="fa fa-user-circle"></i> ' + fullName + '</span>';
+                    }
+                }
+            } catch (err) {
+                mesajGoster(err.message || 'Güncelleme başarısız.', 'hata');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fa fa-save"></i> Değişiklikleri Kaydet';
+            }
+        });
+    });
+    </script>
+</body>
+</html>
