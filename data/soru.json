@@ -273,7 +273,7 @@
         },
         "page": [
             {
-                "uid": "block_1788851238193_5344",
+                "uid": "block_1788851246233_8960",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -281,119 +281,119 @@
                 }
             },
             {
-                "uid": "block_1788851238193_7705",
+                "uid": "block_1788851246233_7025",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1788851238193_6516",
+                "uid": "block_1788851246233_136",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"single-img-container\">\n        <img src=\"../uploads/soru/img_6a96913817d98.jpg\" alt=\"Görsel\">\n \n    </div>"
                 }
             },
             {
-                "uid": "block_1788851238193_406",
+                "uid": "block_1788851246233_1404",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bir kargo firması, paket teslimatı yapacak otonom dronun yazılımına yönlendirme komutları yüklemektedir. Yazılımcı drona şu iki farklı komut tanımlar:</p>"
                 }
             },
             {
-                "uid": "block_1788851238193_6519",
+                "uid": "block_1788851246233_956",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>•\t<b>Komut X: </b>\"Yer istasyonundan kalktıktan sonra toplam 15 dakika boyunca havada kal.\"</p>"
                 }
             },
             {
-                "uid": "block_1788851238193_6681",
+                "uid": "block_1788851246233_8841",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>•\t<b>Komut Y:</b> \"Kalkış noktasından itibaren güneybatı yönünde 500m ilerleyip paketi bırak.\"</p>"
                 }
             },
             {
-                "uid": "block_1788851238193_4891",
+                "uid": "block_1788851246233_3675",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><b>Bu talimatlarda geçen fiziksel büyüklüklerin türü aşağıdakilerin hangisinde doğru sınıflandırılmıştır?</b></p>"
                 }
             },
             {
-                "uid": "block_1788851238193_6134",
+                "uid": "block_1788851246233_9407",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1788851238193_5514",
+                "uid": "block_1788851246233_7319",
                 "type": "paragraf",
                 "content": {
                     "html": "<br>"
                 }
             },
             {
-                "uid": "block_1788851238193_4223",
+                "uid": "block_1788851246233_4078",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1788851238193_3746",
+                "uid": "block_1788851246233_6447",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1788851238193_3165",
+                "uid": "block_1788851246233_7760",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"qot-wrap qot-2col\"><div class=\"qot-baslik\"><span class=\"qot-hcell qot-hbos\"></span><span class=\"qot-hcell\" style=\"text-align: left;\">Komut X</span><span class=\"qot-hcell\" style=\"text-align: left;\">Komut Y</span></div><div class=\"question-options-grid question-options-table\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\"><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">Skaler ve Temel&nbsp; &nbsp;</span></span><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">Vektörel ve Türetilmiş</span></span></div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\"><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">Skaler ve Temel&nbsp;&nbsp;</span></span><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">Vektörel ve Temel</span></span></div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\"><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">Vektörel ve Türetilmiş&nbsp; &nbsp;</span></span><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">Skaler ve Temel</span></span></div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\"><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">Skaler ve Türetilmiş&nbsp;</span></span><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">&nbsp;Vektörel ve Türetilmiş</span></span></div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\"><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">Vektörel ve Temel&nbsp;</span></span><span class=\"ot-cell\"><span style=\"background-color: rgb(255, 255, 255);\">Vektörel ve Temel</span></span></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1788851238193_8800",
+                "uid": "block_1788851246234_5141",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788851238193_7012",
+                "uid": "block_1788851246234_9188",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1788851238193_8028",
+                "uid": "block_1788851246234_7170",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-solution\">\n                    <div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div>\n                    <div class=\"meta-content\">Zaman (15 dk) skaler ve temeldir. Konum değişimi (500 m güneybatı) yön içerdiği için vektörel, uzunluk olduğu için temel bir büyüklüktür.</div></div>"
                 }
             },
             {
-                "uid": "block_1788851238193_9854",
+                "uid": "block_1788851246234_2321",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788851238193_6571",
+                "uid": "block_1788851246234_688",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-correct\">\n                    <div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div>\n                    <div class=\"meta-content-wrapper\">\n                        <select class=\"correct-answer-select\">\n                            <option value=\"A\">A Şıkkı</option><option value=\"B\" selected=\"\">B Şıkkı</option>\n                            <option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option>\n                            <option value=\"E\">E Şıkkı</option>\n                        </select>\n                    </div></div>"
                 }
             },
             {
-                "uid": "block_1788851238193_8063",
+                "uid": "block_1788851246234_4737",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
