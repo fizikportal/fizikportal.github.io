@@ -570,23 +570,57 @@
     {
         "id": "soru_1788874970",
         "meta": {
+            "sinif": "9. Sınıf",
             "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
             "baslik": "Medikal Şurup Dozajı ve Birim Dönüşümü",
-            "sinif": "9. Sınıf",
             "dogru": "A",
             "tarih": "08.09.2026 15:42:50"
         },
-        "page": []
-    },
-    {
-        "id": "soru_1788875003",
-        "meta": {
-            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
-            "baslik": "Medikal Şurup Dozajı ve Birim Dönüşümü",
-            "sinif": "9. Sınıf",
-            "dogru": "A",
-            "tarih": "08.09.2026 15:43:23"
-        },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1788875552166_3844",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "\n"
+                }
+            },
+            {
+                "uid": "block_1788875552167_3427",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Medikal Şurup Dozajı ve Birim Dönüşümü"
+                }
+            },
+            {
+                "uid": "block_1788875552167_827",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Bir eczacı, yurt dışından ithal edilen bir çocuk şurubunun prospektüsünü incelerken birimlerin Türkiye'deki standartlara uymadığını fark eder. Prospektüste tek doz için şu değerler yazmaktadır:\n<br><ul><li>Şurubun Hacmi: 0,005dm3\n</li><li>Etken Madde Kütlesi: 250mg\n</li></ul><span style=\"font-weight: bold;\">Bu şurubun tek dozundaki hacim (cm<span style=\"vertical-align: super;\">3</span>) ve etken madde kütlesi (gram) değerleri aşağıdakilerin hangisinde doğru verilmiştir?&nbsp;</span><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788875552167_652",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><span style=\"font-weight: bold;\"><br></span></p>"
+                }
+            },
+            {
+                "uid": "block_1788875552167_6765",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"qot-wrap qot-2col\"><div class=\"qot-baslik\"><span class=\"qot-hcell qot-hbos\"></span><span class=\"qot-hcell\">Hacim (cm<span style=\"vertical-align: super;\">3</span>)</span><span class=\"qot-hcell\">Kütle (g)</span></div><div class=\"question-options-grid question-options-table\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\"><span class=\"ot-cell\">5</span><span class=\"ot-cell\">0,25</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\"><span class=\"ot-cell\">50</span><span class=\"ot-cell\">2,5</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\"><span class=\"ot-cell\">0,5</span><span class=\"ot-cell\">0,025</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\"><span class=\"ot-cell\">5</span><span class=\"ot-cell\">25</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\"><span class=\"ot-cell\">500</span><span class=\"ot-cell\">0,25</span></div></div></div></div>"
+                }
+            },
+            {
+                "uid": "block_1788875552167_7393",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
