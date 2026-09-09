@@ -1,176 +1,126 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fizik Asistanı - Fizik Portalı</title>
-<style>
-:root{
-  --bg:#14101c; --bg2:#1d1626; --kart:#241b30; --kenar:rgba(255,255,255,.10);
-  --metin:#e8e4f0; --soluk:#9a93ab; --vurgu:#f0b429; --vurgu2:#6c5ce7;
-  --basari:#2ecc71; --hata:#ff6b6b;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  background:radial-gradient(1200px 600px at 80% -10%,rgba(108,92,231,.18),transparent),var(--bg);
-  color:var(--metin);font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
-  height:100dvh;display:flex;flex-direction:column;
-}
-.ust{
-  display:flex;align-items:center;gap:12px;
-  padding:14px 18px;background:var(--bg2);
-  border-bottom:1px solid var(--kenar);
-}
-.ust .avatar{
-  width:42px;height:42px;border-radius:50%;
-  background:linear-gradient(135deg,var(--vurgu),var(--vurgu2));
-  display:flex;align-items:center;justify-content:center;font-size:20px;flex:0 0 auto;
-}
-.ust h1{font-size:16px}
-.ust p{font-size:11px;color:var(--soluk)}
-.durum{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:11px;color:var(--soluk)}
-.durum .nokta{width:8px;height:8px;border-radius:50%;background:var(--basari);box-shadow:0 0 8px var(--basari)}
-#sohbet{flex:1;overflow-y:auto;padding:20px 16px;display:flex;flex-direction:column;gap:12px}
-.balon{max-width:min(680px,88%);padding:12px 15px;border-radius:14px;font-size:14px;line-height:1.65;white-space:normal;word-wrap:break-word}
-.balon.ai{background:var(--kart);border:1px solid var(--kenar);border-bottom-left-radius:4px;align-self:flex-start}
-.balon.user{background:linear-gradient(135deg,#8a6d1d,var(--vurgu2));border-bottom-right-radius:4px;align-self:flex-end}
-.balon.hata{background:rgba(255,107,107,.12);border:1px solid rgba(255,107,107,.4);align-self:flex-start}
-.balon .wa{
-  display:inline-block;margin-top:10px;padding:7px 14px;border-radius:8px;
-  background:#25d366;color:#08341a;font-weight:700;font-size:12px;text-decoration:none;
-}
-.yaziyor{display:inline-flex;gap:4px;padding:4px 0}
-.yaziyor span{width:7px;height:7px;border-radius:50%;background:var(--soluk);animation:zp 1s infinite}
-.yaziyor span:nth-child(2){animation-delay:.15s}.yaziyor span:nth-child(3){animation-delay:.3s}
-@keyframes zp{0%,100%{opacity:.25}50%{opacity:1}}
-#chipler{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 10px}
-.chip{
-  padding:7px 13px;border-radius:20px;font-size:12px;cursor:pointer;
-  background:var(--kart);border:1px solid var(--kenar);color:var(--soluk);
-}
-.chip:hover{border-color:var(--vurgu);color:var(--vurgu)}
-.alt{padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--bg2);border-top:1px solid var(--kenar);display:flex;gap:10px}
-#girdi{
-  flex:1;padding:12px 16px;border-radius:24px;outline:none;
-  background:var(--kart);border:1px solid var(--kenar);color:var(--metin);font-size:14px;
-}
-#girdi:focus{border-color:var(--vurgu2)}
-#gonder{
-  width:46px;height:46px;border-radius:50%;border:none;cursor:pointer;flex:0 0 auto;
-  background:linear-gradient(135deg,var(--vurgu),var(--vurgu2));color:#fff;font-size:16px;
-}
-#gonder:disabled{opacity:.5;cursor:not-allowed}
-.not{ text-align:center;font-size:10px;color:var(--soluk);padding:0 0 8px }
-</style>
-</head>
-<body>
+// ==================================================================
+// FizikPortal AI Köprüsü (v2 — Supabase loglama eklendi)
+// Öğrenci sorusu → Gemini → cevap + Supabase ai_sorular'a log
+// ==================================================================
 
-<header class="ust">
-  <div class="avatar">⚛️</div>
-  <div>
-    <h1>Fizik Asistanı</h1>
-    <p>Her zaman açık · Türkçe · Lise fizik</p>
-  </div>
-  <div class="durum"><span class="nokta"></span> çevrimiçi</div>
-</header>
+const SUPABASE_URL = "https://xynrvyltphhlctgknsbl.supabase.co";
 
-<div id="sohbet">
-  <div class="balon ai">Merhaba! 👋 Ben FizikPortal asistanın. Fizik sorularını sor, birlikte çözelim!</div>
-</div>
+const CORS = {
+  "Access-Control-Allow-Origin": "https://fizikportal.github.io",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+};
 
-<div id="chipler">
-  <button class="chip">Özkütle nedir, nasıl hesaplanır?</button>
-  <button class="chip">Newton'un 2. yasasını örnekle anlat</button>
-  <button class="chip">Serbest düşme ile dikey atış farkı nedir?</button>
-  <button class="chip">İş-enerji teoremini kısaca özetle</button>
-</div>
+const SISTEM_MESAJI = `Sen FizikPortal adlı fizik eğitim sitesinin yapay zeka asistanısın.
+Görevin: lise (9-12) fizik konularında öğrencilere Türkçe, anlaşılır ve sabırlı şekilde yardım etmek.
 
-<div class="alt">
-  <input id="girdi" type="text" placeholder="Fizik sorunu yaz… (Enter ile gönder)" autocomplete="off">
-  <button id="gonder" title="Gönder">➤</button>
-</div>
-<div class="not">AI zaman zaman hatalı cevap verebilir; kritik konularda öğretmene danış.</div>
+Kuralların:
+1. Her zaman Türkçe cevap ver.
+2. Günlük hayattan örnekler kullan.
+3. Cevaplarını kısa paragraflar ve maddeler halinde yapılandır.
+4. Çözümü adım adım anlat.
+5. Lise müfredatı dışına çıkarsan nazikçe temel konulara yönlendir.
+6. Öğrenciyi cesaretlendir; hazır ödev cevabı yerine önce düşünmesine rehberlik et.
+7. Cevabın 250 kelimeyi geçmesin.
+8. MATEMATİKSEL İFADELER İÇİN LaTeX KULLANMA! Formülleri düz metin yaz.
+   Örnekler: G = m · g  |  F = G · (m1 · m2) / d²  |  E = mc²  |  h = (1/2) · g · t²
+   Alt/üst simge gerekiyorsa Unicode karakterler kullan: m², m³, m/s², ², ³, ×, ÷, √, π, Δ, θ, ω
+   Asla $, $$, \\frac, \\cdot, \\text ifadelerini kullanma.`;
 
-<script>
-const WORKER_URL = 'https://fizik-ai.validebag-fizik.workers.dev';
-const WA_LINK = 'https://wa.me/905369203356';
+export default {
+  async fetch(request, env, ctx) {
+    const GEMINI_KEY = env.GEMINI_API_KEY;
+    const SUPABASE_KEY = env.SUPABASE_SERVICE_KEY;
 
-const sohbetAlani = document.getElementById('sohbet');
-const girdi  = document.getElementById('girdi');
-const gonder = document.getElementById('gonder');
-
-function kaydirSonu() { sohbetAlani.scrollTop = sohbetAlani.scrollHeight; }
-
-function mdLite(m) {
-    return m
-        .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-        .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-        .replace(/^-\s+/gm,'• ')
-        .replace(/\n/g,'<br>');
-}
-function balonEkle(tip, html) {
-    const b = document.createElement('div');
-    b.className = 'balon ' + tip;
-    b.innerHTML = html;
-    sohbetAlani.appendChild(b);
-    kaydirSonu();
-    return b;
-}
-function yaziyorBalonu() {
-    return balonEkle('ai', '<span class="yaziyor"><span></span><span></span><span></span></span>');
-}
-function hataBalonu() {
-    balonEkle('hata',
-        '⚠️ Bu soruya şu an cevap veremedim (bağlantı veya AI hatası).<br>' +
-        'İstersen sorunu öğretmene iletebilirsin:<br>' +
-        '<a class="wa" href="' + WA_LINK + '" target="_blank" rel="noopener">WhatsApp\'tan sor</a>');
-}
-
-async function aiCevapla(soru) {
-    const yanit = await fetch(WORKER_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ soru: soru, kullanici: 'Misafir' })
-    });
-    if (!yanit.ok) {
-        const hata = await yanit.json().catch(() => ({}));
-        throw new Error(hata.hata || ('HTTP ' + yanit.status));
+    if (request.method === "OPTIONS") {
+      return new Response(null, { status: 204, headers: CORS });
     }
-    const j = await yanit.json();
-    if (!j.cevap) throw new Error('Boş cevap');
-    return j.cevap;
-}
+    if (request.method !== "POST") {
+      return new Response("Sadece POST", { status: 405, headers: CORS });
+    }
 
-async function gonderMesaj(soru) {
-    soru = (soru || '').trim();
-    if (!soru) return;
-    girdi.value = '';
-    gonder.disabled = true;
-    const chipler = document.getElementById('chipler');
-    if (chipler) chipler.style.display = 'none';
-    balonEkle('user', mdLite(soru));
-    const tip = yaziyorBalonu();
     try {
-        const cevap = await aiCevapla(soru);
-        tip.remove();
-        balonEkle('ai', mdLite(cevap));
-    } catch (e) {
-        console.error(e);
-        tip.remove();
-        hataBalonu();
-    } finally {
-        gonder.disabled = false;
-        girdi.focus();
-    }
-}
+      const istek = await request.json();
+      const soru = (istek.soru || "").trim();
+      const kullanici = (istek.kullanici || "Misafir").slice(0, 120);
 
-gonder.addEventListener('click', function () { gonderMesaj(girdi.value); });
-girdi.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter') { e.preventDefault(); gonderMesaj(girdi.value); }
-});
-document.querySelectorAll('.chip').forEach(function (c) {
-    c.addEventListener('click', function () { gonderMesaj(c.textContent); });
-});
-</script>
-</body>
-</html>
+      if (soru.length < 2 || soru.length > 1000) {
+        return jsonYolla({ hata: "Soru 2-1000 karakter arasında olmalı." }, 400);
+      }
+
+      // ── Gemini'ye sor (yedek modellerle) ──
+      const MODELLER = [
+        "gemini-3.6-flash",        // Google'ın önerdiği
+        "gemini-flash-latest",     // yedek: her zaman güncel flash
+        "gemini-3-flash-preview"   // AI Studio'da gördüğümüz preview model
+      ];
+
+      let cevap = "";
+      let sonHata = "";
+
+      for (const model of MODELLER) {
+        const geminiCevap = await fetch(
+          "https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent?key=" + GEMINI_KEY,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              systemInstruction: { parts: [{ text: SISTEM_MESAJI }] },
+              contents: [{ parts: [{ text: soru }] }],
+              generationConfig: { temperature: 0.7, maxOutputTokens: 2000 }
+            })
+          }
+        );
+
+        const geminiVeri = await geminiCevap.json();
+        if (geminiCevap.ok) {
+          cevap = geminiVeri?.candidates?.[0]?.content?.parts?.map(p => p.text).join("") || "";
+          if (cevap) break;
+        }
+        sonHata = (geminiVeri.error?.message || ("HTTP " + geminiCevap.status));
+      }
+
+      if (!cevap) {
+        return jsonYolla({ hata: "AI şu an yoğun. Birkaç saniye sonra tekrar dene. (" + sonHata + ")" }, 502);
+      }
+
+      // ── SUPABASE'E LOG (soru-cevap çiftini kaydet) ──
+      try {
+        const supabaseResponse = await fetch(SUPABASE_URL + "/rest/v1/ai_sorular", {
+          method: "POST",
+          headers: {
+            "apikey": SUPABASE_KEY,
+            "Authorization": "Bearer " + SUPABASE_KEY,
+            "Content-Type": "application/json",
+            "Prefer": "return=minimal"
+          },
+          body: JSON.stringify({
+            kullanici: kullanici,
+            soru: soru,
+            cevap: cevap
+          })
+        });
+        
+        if (!supabaseResponse.ok) {
+          console.warn("Supabase log hatası:", supabaseResponse.status);
+        }
+      } catch (logHata) {
+        console.warn("Supabase log gönderilemedi:", logHata);
+        // Log başarısız olsa bile cevabı döndür — öğrenci mağdur olmasın
+      }
+
+      // ── Öğrenciye cevap ──
+      return jsonYolla({ cevap });
+
+    } catch (h) {
+      return jsonYolla({ hata: "Sunucu hatası: " + (h.message || h) }, 500);
+    }
+  }
+};
+
+function jsonYolla(obj, status = 200) {
+  return new Response(JSON.stringify(obj), {
+    status,
+    headers: { "Content-Type": "application/json", ...CORS }
+  });
+}
