@@ -676,15 +676,22 @@
         },
         "page": [
             {
-                "uid": "block_1788885103729_9797",
+                "uid": "block_1788942857774_5586",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
-                    "text": "\n"
+                    "text": ""
                 }
             },
             {
-                "uid": "block_1788885103730_1090",
+                "uid": "block_1788942857774_2878",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p style=\"text-align: center;\"><img src=\"../uploads/soru/img_6aa03760ced59.jpg\" alt=\"\"><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788942857774_6934",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -692,63 +699,63 @@
                 }
             },
             {
-                "uid": "block_1788885103730_9615",
+                "uid": "block_1788942857774_9792",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bir havacılık mühendisi; tasarladığı İHA'nın rüzgârdan etkilenmemesi için gövde hacmini sabit tutarken, uçuş süresini artırmak adına gövde ağırlığını olabildiğince düşük tutmak istemektedir. Laboratuvarda A, B ve C kompozit malzemelerinden alınan numunelerin kütle-hacim grafiği yukarıdaki gibidir:</p>"
                 }
             },
             {
-                "uid": "block_1788885103730_420",
+                "uid": "block_1788942857774_4716",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><span style=\"font-weight: bold;\">Mühendisin hedefi doğrultusunda İHA gövdesinde tercih etmesi gereken malzeme ve fiziksel gerekçesi hangisinde doğru verilmiştir?</span></p>"
                 }
             },
             {
-                "uid": "block_1788885103730_9212",
+                "uid": "block_1788942857774_4593",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><span style=\"font-weight: bold;\"><br></span></p>"
                 }
             },
             {
-                "uid": "block_1788885103730_4820",
+                "uid": "block_1788942857774_3475",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"question-options-grid\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">A malzemesi</span>; çünkü kütle-hacim grafiğinin eğimi en büyük olup özkütlesi en yüksektir.</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">C malzemesi;</span> çünkü aynı hacimde en az kütleye sahip olup özkütlesi en küçüktür.</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">B malzemesi;</span> çünkü özkütlesi A ve C'nin tam ortasında yer alıp en kararlı malzemedir.</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">A malzemesi; </span>çünkü özkütlesi küçük olan maddelerin dayanıklılığı daha azdır.</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">C malzemesi</span>; çünkü hacmi arttıkça kütlesi azalan tek malzemedir.</div></div></div>"
                 }
             },
             {
-                "uid": "block_1788885103730_1943",
+                "uid": "block_1788942857774_1409",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788885103730_5991",
+                "uid": "block_1788942857774_7311",
                 "type": "paragraf",
                 "content": {
-                    "html": "<div class=\"meta-box meta-correct\"><div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div><div class=\"meta-content-wrapper\"><select class=\"correct-answer-select\"><option value=\"A\" selected=\"\">A Şıkkı</option><option value=\"B\">B Şıkkı</option><option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option><option value=\"E\">E Şıkkı</option></select></div></div>"
+                    "html": "<div class=\"meta-box meta-correct\"><div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div><div class=\"meta-content-wrapper\"><select class=\"correct-answer-select\"><option value=\"A\">A Şıkkı</option><option value=\"B\" selected=\"\">B Şıkkı</option><option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option><option value=\"E\">E Şıkkı</option></select></div></div>"
                 }
             },
             {
-                "uid": "block_1788885103730_2692",
+                "uid": "block_1788942857774_8839",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788885103730_273",
+                "uid": "block_1788942857774_5736",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-solution\"><div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div><div class=\"meta-content\">Hacim sabitken<span style=\"font-weight: bold;\"> (V) </span>kütlenin küçük olması isteniyorsa özkütlesi en küçük olan malzeme (<span style=\"font-weight: bold;\">d = m/V</span>) seçilmelidir. Grafikte eğimi en küçük olan C malzemesidir.</div></div>"
                 }
             },
             {
-                "uid": "block_1788885103730_4818",
+                "uid": "block_1788942857774_6851",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
