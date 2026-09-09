@@ -755,5 +755,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "soru_1788940272",
+        "meta": {
+            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
+            "baslik": "Zeytinyağı Saflık Kontrolü",
+            "sinif": "9. Sınıf",
+            "dogru": "B",
+            "tarih": "09.09.2026 09:51:12"
+        },
+        "page": []
     }
 ]
