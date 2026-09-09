@@ -564,7 +564,7 @@
         },
         "page": [
             {
-                "uid": "block_1788879117045_8683",
+                "uid": "block_1788942913710_8768",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -572,7 +572,14 @@
                 }
             },
             {
-                "uid": "block_1788879117045_2654",
+                "uid": "block_1788942913710_1767",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p style=\"text-align: center;\"><img src=\"../uploads/soru/img_6aa011d74f6c7.jpg\" alt=\"\"><br></p>"
+                }
+            },
+            {
+                "uid": "block_1788942913710_7584",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -580,84 +587,84 @@
                 }
             },
             {
-                "uid": "block_1788879117045_2055",
+                "uid": "block_1788942913710_3337",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bir eczacı, yurt dışından ithal edilen bir çocuk şurubunun prospektüsünü incelerken birimlerin Türkiye'deki standartlara uymadığını fark eder. Prospektüste tek doz için şu değerler yazmaktadır:\n<br></p>"
                 }
             },
             {
-                "uid": "block_1788879117046_4034",
+                "uid": "block_1788942913710_5771",
                 "type": "paragraf",
                 "content": {
                     "html": "<ul><li>Şurubun Hacmi: 0,005dm3\n</li><li>Etken Madde Kütlesi: 250mg\n</li></ul>"
                 }
             },
             {
-                "uid": "block_1788879117046_324",
+                "uid": "block_1788942913710_1474",
                 "type": "paragraf",
                 "content": {
                     "html": "<span style=\"font-weight: bold;\">Bu şurubun tek dozundaki hacim (cm<span style=\"vertical-align: super;\">3</span>) ve etken madde kütlesi (gram) değerleri aşağıdakilerin hangisinde doğru verilmiştir?&nbsp;</span>"
                 }
             },
             {
-                "uid": "block_1788879117046_3702",
+                "uid": "block_1788942913710_1681",
                 "type": "paragraf",
                 "content": {
                     "html": "<br>"
                 }
             },
             {
-                "uid": "block_1788879117046_2861",
+                "uid": "block_1788942913710_9847",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1788879117046_874",
+                "uid": "block_1788942913710_891",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><span style=\"font-weight: bold;\"><br></span></p>"
                 }
             },
             {
-                "uid": "block_1788879117046_4693",
+                "uid": "block_1788942913710_9869",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"qot-wrap qot-2col\"><div class=\"qot-baslik\"><span class=\"qot-hcell qot-hbos\"></span><span class=\"qot-hcell\">Hacim (cm<span style=\"vertical-align: super;\">3</span>)</span><span class=\"qot-hcell\">Kütle (g)</span></div><div class=\"question-options-grid question-options-table\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\"><span class=\"ot-cell\">5</span><span class=\"ot-cell\">0,25</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\"><span class=\"ot-cell\">50</span><span class=\"ot-cell\">2,5</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\"><span class=\"ot-cell\">0,5</span><span class=\"ot-cell\">0,025</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\"><span class=\"ot-cell\">5</span><span class=\"ot-cell\">25</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\"><span class=\"ot-cell\">500</span><span class=\"ot-cell\">0,25</span></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1788879117046_6070",
+                "uid": "block_1788942913710_8243",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788879117046_102",
+                "uid": "block_1788942913710_9893",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-correct\"><div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div><div class=\"meta-content-wrapper\"><select class=\"correct-answer-select\"><option value=\"A\" selected=\"\">A Şıkkı</option><option value=\"B\">B Şıkkı</option><option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option><option value=\"E\">E Şıkkı</option></select></div></div>"
                 }
             },
             {
-                "uid": "block_1788879117046_1084",
+                "uid": "block_1788942913710_9971",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1788879117046_3841",
+                "uid": "block_1788942913710_9142",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-solution\"><div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div><div class=\"meta-content\">&nbsp;1 dm<span style=\"vertical-align: super;\">3</span> = 1000 cm<span style=\"vertical-align: super;\">3</span> olduğundan 0,005. 1000 = 5 cm<span style=\"vertical-align: super;\">3</span>.1 g = 1000mg olduğundan 250 / 1000 = 0,25 g.</div></div>"
                 }
             },
             {
-                "uid": "block_1788879117046_3448",
+                "uid": "block_1788942913710_8606",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
