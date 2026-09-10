@@ -1137,5 +1137,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "soru_1789048370",
+        "meta": {
+            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
+            "baslik": "Kimya Laboratuvarında Sıvı Seviyeleri",
+            "sinif": "9. Sınıf",
+            "dogru": "A",
+            "tarih": "10.09.2026 15:52:50"
+        },
+        "page": []
     }
 ]
