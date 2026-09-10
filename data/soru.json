@@ -1699,5 +1699,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "soru_1789054625",
+        "meta": {
+            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
+            "baslik": "Sağlık Teknolojileri ve Fizik",
+            "sinif": "9. Sınıf",
+            "dogru": "E",
+            "tarih": "10.09.2026 17:37:05"
+        },
+        "page": []
     }
 ]
