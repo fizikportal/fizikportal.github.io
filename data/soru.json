@@ -1381,12 +1381,69 @@
     {
         "id": "soru_1789051039",
         "meta": {
+            "sinif": "9. Sınıf",
             "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
             "baslik": "Denizaltı Havuzlama ve Ağır Sıvılar",
-            "sinif": "9. Sınıf",
             "dogru": "C",
             "tarih": "10.09.2026 16:37:19"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1789051620162_8492",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p style=\"text-align: center;\"><img src=\"../uploads/soru/img_6aa2c0bd1e003.jpg\" alt=\"\"></p>"
+                }
+            },
+            {
+                "uid": "block_1789051620162_1805",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>Bir denizaltı maketinin batma-çıkma testleri için K ve L sıvılarının kütle-hacim grafiği test edilmiş ve şekildeki grafik elde edilmiştir:\n<br><span style=\"font-weight: bold;\">K sıvısının özkütlesinin L sıvısının özkütlesine oranı (d<span style=\"vertical-align: sub;\">K</span>/d<span style=\"vertical-align: sub;\">L</span>) =3 olduğuna göre, grafikte gösterilen X hacim değeri kaç cm<span style=\"vertical-align: super;\">3</span>'tür?&nbsp;</span></p>"
+                }
+            },
+            {
+                "uid": "block_1789051620162_6206",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"question-options-grid\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\">12</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\">15</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\">18</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\">20</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\">25</div></div></div>"
+                }
+            },
+            {
+                "uid": "block_1789051620162_5364",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1789051620162_1231",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-correct\"><div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div><div class=\"meta-content-wrapper\"><select class=\"correct-answer-select\"><option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option><option value=\"C\" selected=\"\">C Şıkkı</option><option value=\"D\">D Şıkkı</option><option value=\"E\">E Şıkkı</option></select></div></div>"
+                }
+            },
+            {
+                "uid": "block_1789051620162_1350",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1789051620162_488",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-solution\"><div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div><div class=\"meta-content\">d<span style=\"vertical-align: sub;\">K</span> = 60 / 10 = 6 g/cm<span style=\"vertical-align: super;\">3</span>. d<span style=\"vertical-align: sub;\">K</span> / d<span style=\"vertical-align: sub;\">L</span> = 3 d<span style=\"vertical-align: sub;\">L</span> = 2 g/cm<span style=\"vertical-align: super;\">3</span>. L için d<span style=\"vertical-align: sub;\">L</span> = 30 / X = 2 X = 15 cm<span style=\"vertical-align: super;\">3</span>.</div></div>"
+                }
+            },
+            {
+                "uid": "block_1789051620162_6428",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
