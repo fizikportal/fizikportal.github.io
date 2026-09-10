@@ -961,14 +961,14 @@
         },
         "page": [
             {
-                "uid": "block_1789046409053_4082",
+                "uid": "block_1789046414297_3781",
                 "type": "paragraf",
                 "content": {
                     "html": "<p style=\"text-align: center;\"><img src=\"../uploads/soru/img_6aa2ad12875a6.jpg\" alt=\"\" class=\"\"></p>"
                 }
             },
             {
-                "uid": "block_1789046409053_8037",
+                "uid": "block_1789046414297_663",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -976,49 +976,49 @@
                 }
             },
             {
-                "uid": "block_1789046409054_4883",
+                "uid": "block_1789046414297_9472",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Bir otomotiv fabrikasında döküm motor bloğu üretilmektedir. Tasarıma göre 2,7g/cm3 özkütleye sahip alüminyum malzemeden 500 cm3 dış hacminde bir parça dökülmüştür. Parça kalite kontrolden geçerken hassas kantarda tartıldığında kütlesi 1080g olarak ölçülüyor.\n<br><span style=\"font-weight: bold;\">Fabrika mühendisi parçanın içinde döküm hatası nedeniyle hava boşluğu kaldığını anladığına göre, parçanın içindeki boşluğun hacmi kaç cm3'tür?&nbsp;</span></p>"
                 }
             },
             {
-                "uid": "block_1789046409054_565",
+                "uid": "block_1789046414297_6104",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"question-options-grid\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\">50</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\">100</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\">150</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\">200</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\">250</div></div></div>"
                 }
             },
             {
-                "uid": "block_1789046409054_9090",
+                "uid": "block_1789046414297_3345",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1789046409054_2793",
+                "uid": "block_1789046414297_4681",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-correct\"><div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div><div class=\"meta-content-wrapper\"><select class=\"correct-answer-select\"><option value=\"A\">A Şıkkı</option><option value=\"B\" selected=\"\">B Şıkkı</option><option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option><option value=\"E\">E Şıkkı</option></select></div></div>"
                 }
             },
             {
-                "uid": "block_1789046409054_8195",
+                "uid": "block_1789046414297_7145",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1789046409054_4386",
+                "uid": "block_1789046414297_9933",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-solution\"><div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div><div class=\"meta-content\">Sıfır boşluklu parçanın olması gereken kütlesi m = d .V = 2,7 . 500 = 1350g. Mevcut kütle 1080 g olduğuna göre eksik kütle 1350 - 1080 = 270g. Boşluğun hacmi V<span style=\"vertical-align: sub;\">boşluk</span> = 270 / 2,7 = 100 cm<span style=\"vertical-align: super;\">3</span>.</div></div>"
                 }
             },
             {
-                "uid": "block_1789046409054_387",
+                "uid": "block_1789046414297_9588",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
