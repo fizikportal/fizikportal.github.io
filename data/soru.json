@@ -1377,5 +1377,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "soru_1789051039",
+        "meta": {
+            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
+            "baslik": "Denizaltı Havuzlama ve Ağır Sıvılar",
+            "sinif": "9. Sınıf",
+            "dogru": "C",
+            "tarih": "10.09.2026 16:37:19"
+        },
+        "page": []
     }
 ]
