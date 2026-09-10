@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizik Asistanı - Fizik Portalı</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/themes.css" rel="stylesheet">
+    <style>
+        .ai-sayfa { display:flex; justify-content:center; min-height:calc(100vh - 100px); padding: 30px 16px 60px; }
+        .ai-panel {
+            width: 100%; max-width: 720px;
+            background: var(--bg-mid);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg, 24px);
+            display: flex; flex-direction: column;
+            overflow: hidden; height: calc(100vh - 140px); min-height: 480px;
+        }
+        .ai-ust { padding: 18px 22px; border-bottom: 1px solid var(--glass-border); display: flex; align-items: center; gap: 12px; }
+        .ai-ust .ai-avatar {
+            width: 42px; height: 42px; border-radius: 50%;
+            background: var(--glass); display: flex; align-items: center; justify-content: center;
+            color: var(--accent-cyan); font-size: 1.2rem;
+        }
+        .ai-ust h1 { font-size: 1.1rem; margin: 0; color: var(--text-primary); }
+        .ai-ust p { font-size: 0.78rem; color: var(--text-soft); margin: 0; }
+        .ai-mesajlar { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+        .balon { max-width: 85%; padding: 12px 16px; border-radius: 16px; font-size: 0.95rem; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; }
+        .balon.ogrenci { align-self: flex-end; background: var(--accent-cyan); color: var(--bg-deep); border-bottom-right-radius: 4px; }
+        .balon.asistan { align-self: flex-start; background: var(--bg-deep); color: var(--text-muted); border: 1px solid var(--glass-border); border-bottom-left-radius: 4px; }
+        .balon.sistem { align-self: center; background: var(--glass); color: var(--text-soft); font-size: 0.82rem; text-align: center; }
+        .giris-just-ai { background: var(--bg-deep); border: 1px solid var(--glass-border); border-radius: 14px; padding: 16px; align-self: flex-start; max-width: 90%; }
+        .giris-just-ai input { width: 100%; padding: 8px 12px; background: rgba(0,0,0,.2); border: 1px solid var(--glass-border); border-radius: 8px; color: var(--text-primary); font-size: 13px; }
+        .ai-alt { padding: 14px 16px; border-top: 1px solid var(--glass-border); display: flex; gap: 10px; }
+        .ai-girdi { flex: 1; padding: 12px 16px; border-radius: 12px; border: 1px solid var(--glass-border); background: var(--bg-deep); color: var(--text-primary); font-size: 0.95rem; outline: none; }
+        .ai-girdi:focus { border-color: var(--accent-lime); }
+        .ai-gonder {
+            width: 48px; height: 48px; border: none; border-radius: 50%;
+            background: var(--accent-lime); color: var(--bg-deep);
+            font-size: 1.1rem; cursor: pointer; flex-shrink: 0;
+            transition: transform .12s, box-shadow .12s;
+        }
+        .ai-gonder:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(200,245,66,.3); }
+        .ai-gonder:disabled { opacity: .5; cursor: wait; transform: none; }
+        .wa-link {
+            text-align: center; padding: 12px; font-size: 0.85rem;
+            background: var(--bg-deep); border-top: 1px solid var(--glass-border);
+        }
+        .wa-link a { color: #25d366; text-decoration: none; font-weight: 600; }
+        .yaziyor { display: inline-flex; gap: 4px; }
+        .yaziyor span { width: 7px; height: 7px; border-radius: 50%; background: var(--text-soft); animation: zipla 1s infinite; }
+        .yaziyor span:nth-child(2) { animation-delay: .2s; }
+        .yaziyor span:nth-child(3) { animation-delay: .4s; }
+        @keyframes zipla { 0%,60%,100% { transform: translateY(0); } 30% { transform: translateY(-6px); } }
+   .ai-mikrofon {
+    width: 48px; height: 48px; border: none; border-radius: 50%;
+    background: var(--accent-cyan); color: var(--bg-deep);
+    font-size: 1.1rem; cursor: pointer; flex-shrink: 0;
+    transition: transform .12s;
+}
+.ai-mikrofon:hover { transform: translateY(-2px); }
+.ai-mikrofon.kayit {
+    background: #ef4444; color: #fff;
+    animation: nabiz 1.2s infinite;
+}
+ </style>
+</head>
+<body class="theme-warm-amber">
+
+    <div class="page-shell">
+        <div id="header-yeri"></div>
+
+        <main class="ai-sayfa">
+            <div class="ai-panel">
+                <div class="ai-ust">
+                    <div class="ai-avatar"><i class="fa-solid fa-robot"></i></div>
+                    <div>
+                        <h1>Fizik Asistanı</h1>
+                        <p>Her zaman açık · Türkçe · Lise fizik</p>
+                    </div>
+                </div>
+
+                <div class="ai-mesajlar" id="ai-mesajlar">
+                    <div class="balon asistan">Merhaba! 👋 Ben FizikPortal asistanın. Fizik sorularını sor, birlikte çözelim!</div>
+                </div>
+
+                <div class="ai-alt">
+                    <input class="ai-girdi" type="text" id="ai-girdi" placeholder="Fizik sorununu yaz... (örn. atış hareketi nedir?)" maxlength="1000">
+                    <button class="ai-gonder" id="ai-gonder" title="Gönder"><i class="fa-solid fa-paper-plane"></i></button>
+               <button type="button" class="ai-mikrofon" id="ai-mikrofon" title="Konuşarak sor">
+    <i class="fa-solid fa-microphone"></i>
+</button> 
+</div>
+
+                <div class="wa-link" id="wa-satiri" style="display:none;">
+                    AI bu soruda yetersiz kaldıysa <a id="wa-link" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp'tan sor</a>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-yeri"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/site.js"></script>
+    <script>
+        // ── AYARLAR ──
+        const AI_URL = 'https://fizik-ai.validebag-fizik.workers.dev';
+        const WHATSAPP_NUMARA = '905369203356';   // ← KENDİ TELEFON NUMARANI YAZ (90 + numara)
+
+        const mesajlarAlani = document.getElementById('ai-mesajlar');
+        const girdi = document.getElementById('ai-girdi');
+        const gonderBtn = document.getElementById('ai-gonder');
+
+        function balonEkle(metin, tip) {
+            const b = document.createElement('div');
+            b.className = 'balon ' + tip;
+            b.textContent = metin;
+            mesajlarAlani.appendChild(b);
+            mesajlarAlani.scrollTop = mesajlarAlani.scrollHeight;
+            return b;
+        }
+
+        async function soruGonder() {
+            const soru = girdi.value.trim();
+            if (!soru) return;
+
+            girdi.value = '';
+            balonEkle(soru, 'ogrenci');
+
+            // "yazıyor" animasyonu
+            const bekleyen = document.createElement('div');
+            bekleyen.className = 'balon asistan';
+            bekleyen.innerHTML = '<span class="yaziyor"><span></span><span></span><span></span></span>';
+            mesajlarAlani.appendChild(bekleyen);
+            mesajlarAlani.scrollTop = mesajlarAlani.scrollHeight;
+
+            gonderBtn.disabled = true;
+            girdi.disabled = true;
+
+            try {
+                // Kullanıcı e-postası varsa log'a eklenir (misafirse boş)
+                let kullanici = '';
+                try {
+                    const { data: { session } } = await supabaseClient.auth.getSession();
+                    if (session) kullanici = session.user.email;
+                } catch (e) {}
+
+                const res = await fetch(AI_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ soru, kullanici, kaynak: 'kesfet' })
+                });
+                const veri = await res.json();
+
+                bekleyen.remove();
+
+                if (veri.cevap) {
+                    balonEkle(veri.cevap, 'asistan');
+                } else {
+                    balonEkle(veri.hata || 'Bir sorun oldu, tekrar dener misin?', 'asistan');
+                    // WhatsApp yedek kanalı göster
+                    if (WHATSAPP_NUMARA && WHATSAPP_NUMARA.includes('90')) {
+                        document.getElementById('wa-satiri').style.display = 'block';
+                        document.getElementById('wa-link').href =
+                            'https://wa.me/' + WHATSAPP_NUMARA + '?text=' + encodeURIComponent('Merhaba, şu fizik sorusunda takıldım: ' + soru);
+                    }
+                }
+            } catch (err) {
+                bekleyen.remove();
+                balonEkle('Bağlantı hatası. İnternetini kontrol edip tekrar dener misin?', 'asistan');
+                if (veri.cevap) {
+                    balonEkle(latexTemizle(veri.cevap), 'asistan');
+                    cevabiOku(latexTemizle(veri.cevap));   // 📢 sesli okuma
+                }
+            } finally {
+                gonderBtn.disabled = false;
+                girdi.disabled = false;
+                girdi.focus();
+            }
+        }
+
+        gonderBtn.addEventListener('click', soruGonder);
+        girdi.addEventListener('keydown', (e) => { if (e.key === 'Enter') soruGonder(); });
+        girdi.focus();
+// ── SESLİ GİRİŞ: Web Speech API (tarayıcı dahili, ücretsiz) ──
+const mikroBtn = document.getElementById('ai-mikrofon');
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+if (SpeechRecognition && mikroBtn) {
+    const tanıma = new SpeechRecognition();
+    tanıma.lang = 'tr-TR';
+    tanıma.interimResults = false;
+    tanıma.continuous = false;
+
+    let dinliyor = false;
+
+    mikroBtn.addEventListener('click', () => {
+        if (dinliyor) { tanıma.stop(); return; }
+        try {
+            tanıma.start();
+            dinliyor = true;
+            mikroBtn.innerHTML = '<i class="fa-solid fa-stop"></i>';
+            mikroBtn.classList.add('kayit');
+        } catch (e) {}
+    });
+
+    tanıma.onresult = (olay) => {
+        const metin = olay.results[0][0].transcript;
+        girdi.value = metin;            // konuşulanı input'a yaz
+        soruGonder();                    // otomatik gönder (istersen bu satırı sil — elle göndersin)
+    };
+
+    tanıma.onend = () => {
+        dinliyor = false;
+        mikroBtn.innerHTML = '<i class="fa-solid fa-microphone"></i>';
+        mikroBtn.classList.remove('kayit');
+    };
+    tanıma.onerror = () => {
+        dinliyor = false;
+        mikroBtn.innerHTML = '<i class="fa-solid fa-microphone"></i>';
+        mikroBtn.classList.remove('kayit');
+    };
+} else {
+    // Tarayıcı desteklemiyorsa butonu gizle
+    if (mikroBtn) mikroBtn.style.display = 'none';
+}
+
+// ── SESLİ CEVAP: AI'nın cevabını oku (isteğe bağlı toggle) ──
+let sesAcik = false;
+
+function cevabiOku(metin) {
+    if (!sesAcik || !window.speechSynthesis) return;
+    speechSynthesis.cancel();
+    const konusma = new SpeechSynthesisUtterance(metin);
+    konusma.lang = 'tr-TR';
+    konusma.rate = 1;       // hız
+    konusma.pitch = 1;
+    speechSynthesis.speak(konusma);
+}
+    </script>
+</body>
+</html>
