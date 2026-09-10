@@ -80,12 +80,19 @@
         .yaziyor span:nth-child(2) { animation-delay: .2s; }
         .yaziyor span:nth-child(3) { animation-delay: .4s; }
         @keyframes zipla { 0%,60%,100% { transform: translateY(0); } 30% { transform: translateY(-6px); } }
-        .balon.sistem {
-            align-self: center;
-            background: var(--glass);
-            color: var(--text-soft);
-            font-size: 0.82rem;
-            text-align: center;
+
+        /* ── MOBİL: alt çubuk her koşulda görünür ── */
+        @media (max-width: 768px) {
+            .ai-sayfa { padding: 16px 8px 40px; }
+            .ai-panel {
+                height: calc(100dvh - 160px);
+                min-height: 420px;
+            }
+            .ai-mesajlar { padding: 14px; }
+            .ai-alt { padding: 10px 12px; gap: 6px; }
+            .ai-girdi { padding: 10px 12px; font-size: 0.9rem; }
+            .ai-gonder, .ai-mikrofon { width: 42px; height: 42px; font-size: 1rem; }
+            .balon { max-width: 92%; font-size: 0.9rem; }
         }
     </style>
 </head>
@@ -103,14 +110,13 @@
                         <p>Her zaman açık · Türkçe · Lise fizik</p>
                     </div>
                     <span class="durum-nokta" title="Çevrimiçi"></span>
-                    <!-- SESLİ OKUMA AÇ/KAPA -->
                     <button type="button" id="ai-ses-btn" class="ai-ses-btn" title="Sesli cevap aç/kapat">
                         <i class="fa-solid fa-volume-xmark"></i>
                     </button>
                 </div>
 
                 <div class="ai-mesajlar" id="ai-mesajlar">
-                                        <div class="balon asistan">Merhaba! 👋 Ben FizikPortal asistanın. Fizik sorularını yazabilir ya da 🎤 mikrofona basıp konuşabilirsin. Cevabımı sesli duymak istersen üstteki 🔊 hoparlöre bir kez dokun!</div>
+                    <div class="balon asistan">Merhaba! 👋 Ben FizikPortal asistanın. Fizik sorularını yazabilir ya da 🎤 mikrofona basıp konuşabilirsin. Cevabımı sesli duymak istersen üstteki 🔊 hoparlöre bir kez dokun!</div>
                 </div>
 
                 <div class="ai-alt">
@@ -136,6 +142,28 @@
         const mikroBtn = document.getElementById('ai-mikrofon');
         const sesBtn = document.getElementById('ai-ses-btn');
 
+        // ── METİN TEMİZLEYİCİ (görüntü + ses için ortak) ──
+        function metinTemizle(metin, sesIcin) {
+            let t = metin
+                .replace(/\$\$([^$]+)\$\$/g, '$1')
+                .replace(/\$([^$]+)\$/g, '$1')
+                .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, sesIcin ? '($1) bölü ($2)' : '($1)/($2)')
+                .replace(/\\cdot/g, sesIcin ? ' çarpı ' : ' · ')
+                .replace(/\\times/g, sesIcin ? ' çarpı ' : ' × ')
+                .replace(/\\sqrt\{([^}]+)\}/g, sesIcin ? 'karekök $1' : '√($1)')
+                .replace(/\\text\{([^}]+)\}/g, '$1')
+                .replace(/\^\{2\}|\^2/g, sesIcin ? ' kare' : '²')
+                .replace(/\^\{3\}|\^3/g, sesIcin ? ' küp' : '³')
+                .replace(/\^\{([^}]+)\}/g, sesIcin ? ' üzeri ($1)' : '^($1)');
+            if (sesIcin) {
+                t = t
+                    .replace(/\*\*([^*]+)\*\*/g, '$1')      // **kalın** işaretlerini kaldır
+                    .replace(/^\s*\*\s+/gm, '')              // satır başı "* madde" işaretlerini temizle
+                    .replace(/[#_`~]/g, '');                 // kalan markdown karakterleri
+            }
+            return t;
+        }
+
         // ── SESLİ OKUMA (yazı → ses) — tarayıcı dahili, ücretsiz ──
         let sesAcik = false;
 
@@ -147,30 +175,13 @@
                     : '<i class="fa-solid fa-volume-xmark"></i>';
                 sesBtn.classList.toggle('acik', sesAcik);
                 if (!sesAcik && window.speechSynthesis) speechSynthesis.cancel();
-
-                // İlk açılışta nazik hatırlatma
-                if (sesAcik) {
-                    balonEkle('🔊 Sesli cevap açıldı! Artık cevaplarımı yüksek sesle de okuyorum.', 'sistem');
-                }
             });
         }
 
         function cevabiOku(metin) {
             if (!sesAcik || !window.speechSynthesis) return;
-            // LaTeX kalıntılarını okumadan önce temizle (ses daha doğal olur)
-            const temiz = metin
-                .replace(/\$\$([^$]+)\$\$/g, '$1')
-                .replace(/\$([^$]+)\$/g, '$1')
-                .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, '($1) bölü ($2)')
-                .replace(/\\cdot/g, ' çarpı ')
-                .replace(/\\times/g, ' çarpı ')
-                .replace(/\\sqrt\{([^}]+)\}/g, 'karekök $1')
-                .replace(/\\text\{([^}]+)\}/g, '$1')
-                .replace(/\^\{2\}|\^2/g, ' kare')
-                .replace(/\^\{3\}|\^3/g, ' küp')
-                .replace(/\*\*([^*]+)\*\*/g, '$1');
             speechSynthesis.cancel();
-            const konusma = new SpeechSynthesisUtterance(temiz);
+            const konusma = new SpeechSynthesisUtterance(metinTemizle(metin, true));
             konusma.lang = 'tr-TR';
             konusma.rate = 1;
             konusma.pitch = 1;
@@ -221,19 +232,8 @@
                 bekleyen.remove();
 
                 if (veri.cevap) {
-                    const temiz = veri.cevap
-                        .replace(/\$\$([^$]+)\$\$/g, '$1')
-                        .replace(/\$([^$]+)\$/g, '$1')
-                        .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, '($1)/($2)')
-                        .replace(/\\cdot/g, ' · ')
-                        .replace(/\\times/g, ' × ')
-                        .replace(/\\sqrt\{([^}]+)\}/g, '√($1)')
-                        .replace(/\\text\{([^}]+)\}/g, '$1')
-                        .replace(/\^\{2\}|\^2/g, '²')
-                        .replace(/\^\{3\}|\^3/g, '³')
-                        .replace(/\*\*([^*]+)\*\*/g, '$1');
-                    balonEkle(temiz, 'asistan');
-                    cevabiOku(temiz);   // 📢 ses açıkken okur
+                    balonEkle(metinTemizle(veri.cevap, false), 'asistan');
+                    cevabiOku(metinTemizle(veri.cevap, true));   // 📢 ses açıkken okur
                 } else {
                     balonEkle(veri.hata || 'Bir sorun oldu, tekrar dener misin?', 'asistan');
                 }
@@ -274,7 +274,7 @@
             tanima.onresult = (olay) => {
                 const metin = olay.results[0][0].transcript;
                 girdi.value = metin;
-                soruGonder();   // konuşulan soruyu otomatik gönder
+                soruGonder();
             };
 
             tanima.onend = () => {
@@ -288,7 +288,6 @@
                 mikroBtn.classList.remove('kayit');
             };
         } else if (mikroBtn) {
-            // Tarayıcı desteklemiyorsa butonu gizle
             mikroBtn.style.display = 'none';
         }
     </script>
