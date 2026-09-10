@@ -1517,12 +1517,69 @@
     {
         "id": "soru_1789053653",
         "meta": {
+            "sinif": "9. Sınıf",
             "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
             "baslik": "Nanoteknoloji ve Yüzey Alanı / Hacim İlişkisi",
-            "sinif": "9. Sınıf",
             "dogru": "A",
             "tarih": "10.09.2026 17:20:53"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1789053954128_2886",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p style=\"text-align: center;\"><img src=\"../uploads/soru/img_6aa2cafcc5ae3.jpg\" alt=\"\"></p>"
+                }
+            },
+            {
+                "uid": "block_1789053954128_2380",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><h2>Nanoteknoloji ve Yüzey Alanı / Hacim İlişkisi\n</h2>Aynı maddeden yapılmış 10 cm kenar uzunluğundaki küp şeklinde bir blok, nanoteknoloji laboratuvarında kesilerek kenar uzunluğu 1  cm olan küçük küplere ayrılıyor.\n<br><span style=\"font-weight: bold;\">Bu işlem sonucunda elde edilen küçük küplerin ana bloğa göre özkütlesi (d) ve toplam kütlesi (m) nasıl değişir? </span>(Sıcaklık ve basınç sabittir.)&nbsp;</p>"
+                }
+            },
+            {
+                "uid": "block_1789053954128_9049",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"qot-wrap qot-2col\"><div class=\"qot-baslik\"><span class=\"qot-hcell qot-hbos\"></span><span class=\"qot-hcell\">Özkütle (d)</span><span class=\"qot-hcell\">Toplam Kütle (m)</span></div><div class=\"question-options-grid question-options-table\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\"><span class=\"ot-cell\">Değişmez</span><span class=\"ot-cell\">Değişmez</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\"><span class=\"ot-cell\">Azalır</span><span class=\"ot-cell\">Değişmez</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\"><span class=\"ot-cell\">Artar</span><span class=\"ot-cell\">Azalır</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\"><span class=\"ot-cell\">Değişmez</span><span class=\"ot-cell\">Azalır</span></div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\"><span class=\"ot-cell\">Azalır</span><span class=\"ot-cell\">Azalır</span></div></div></div></div>"
+                }
+            },
+            {
+                "uid": "block_1789053954128_8082",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1789053954128_5591",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-correct\"><div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div><div class=\"meta-content-wrapper\"><select class=\"correct-answer-select\"><option value=\"A\" selected=\"\">A Şıkkı</option><option value=\"B\">B Şıkkı</option><option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option><option value=\"E\">E Şıkkı</option></select></div></div>"
+                }
+            },
+            {
+                "uid": "block_1789053954128_9627",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1789053954128_7868",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"meta-box meta-solution\"><div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div><div class=\"meta-content\">Madde bölünse de sıcaklık ve basınç değişmediği sürece özkütle sabittir. Parçalanma sırasında madde kaybı olmadığı için toplam kütle de değişmez.</div></div>"
+                }
+            },
+            {
+                "uid": "block_1789053954128_6640",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
