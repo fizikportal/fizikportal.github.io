@@ -872,77 +872,113 @@
         },
         "page": [
             {
-                "uid": "block_1789045598226_7270",
+                "uid": "block_1789048012483_767",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1789045598226_8119",
+                "uid": "block_1789048012483_8348",
                 "type": "paragraf",
                 "content": {
                     "html": "<p style=\"text-align: center;\"><img src=\"../uploads/soru/img_6aa2aa279ca6c.jpg\" alt=\"\"></p>"
                 }
             },
             {
-                "uid": "block_1789045598226_1083",
-                "type": "paragraf",
+                "uid": "block_1789048012483_2009",
+                "type": "baslik",
                 "content": {
-                    "html": "<p style=\"text-align: left;\">Bir arkeolog restorasyon çalışmasında tarihi bir küpün fiziki özelliklerini belirlemek için şu iki işlemi yapmaktadır:\n<br><ul><li><span style=\"font-weight: bold;\">İşlem 1: </span>Küpün bir kenar uzunluğunu kumpas ile 10 cm olarak ölçüyor ve V = a3 bağıntısından hacmini 1000 cm3 hesaplıyor.\n</li><li><span style=\"font-weight: bold;\">İşlem 2:</span> Küpü ağzına kadar su dolu bir taşırma kabına tamamen batırarak taşan suyun hacmini ölçekli silindir kapta 1000 cm3 olarak okuyor.\n</li></ul><span style=\"font-weight: bold;\">Arkeoloğun yaptığı bu işlemlerle ilgili aşağıdaki yargılardan hangisi doğrudur?&nbsp;</span><br></p>"
+                    "tag": "h2",
+                    "text": "Tarihi Eser Restore Çalışması ve Doğrudan/Dolaylı Ölçme"
                 }
             },
             {
-                "uid": "block_1789045598226_9854",
+                "uid": "block_1789048012483_598",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p style=\"text-align: left;\">Bir arkeolog restorasyon çalışmasında tarihi bir küpün fiziki özelliklerini belirlemek için şu iki işlemi yapmaktadır:\n<br></p>"
+                }
+            },
+            {
+                "uid": "block_1789048012483_1988",
+                "type": "paragraf",
+                "content": {
+                    "html": "<ul><li><span style=\"font-weight: bold;\">İşlem 1: </span>Küpün bir kenar uzunluğunu kumpas ile 10 cm olarak ölçüyor ve V = a3 bağıntısından hacmini 1000 cm3 hesaplıyor.\n</li><li><span style=\"font-weight: bold;\">İşlem 2:</span> Küpü ağzına kadar su dolu bir taşırma kabına tamamen batırarak taşan suyun hacmini ölçekli silindir kapta 1000 cm3 olarak okuyor.\n</li></ul>"
+                }
+            },
+            {
+                "uid": "block_1789048012483_2405",
+                "type": "paragraf",
+                "content": {
+                    "html": "<span style=\"font-weight: bold;\">Arkeoloğun yaptığı bu işlemlerle ilgili aşağıdaki yargılardan hangisi doğrudur?&nbsp;</span>"
+                }
+            },
+            {
+                "uid": "block_1789048012483_8047",
+                "type": "paragraf",
+                "content": {
+                    "html": "<br>"
+                }
+            },
+            {
+                "uid": "block_1789048012483_6907",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p></p>"
+                }
+            },
+            {
+                "uid": "block_1789048012483_9573",
                 "type": "paragraf",
                 "content": {
                     "html": "<p style=\"text-align: left;\"><span style=\"font-weight: bold;\"><br></span></p>"
                 }
             },
             {
-                "uid": "block_1789045598226_3576",
+                "uid": "block_1789048012483_6879",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"question-options-grid\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\">İşlem 1 doğrudan ölçmeye, İşlem 2 dolaylı ölçmeye örnektir.</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\">İşlem 1'de hacim bir matematiksel formül yardımıyla türetildiği için dolaylı ölçmedir.</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\">Her iki işlem de hiçbir araç kullanılmadığı için nitel gözlem sayılır.</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\">İşlem 2'de taşan suyun hacmini okumak dolaylı ölçmedir çünkü küp doğrudan tartılmamıştır.</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\">Kenar uzunluğunu kumpasla ölçmek dolaylı, taşırma kabı kullanmak doğrudan ölçmedir.</div></div></div>"
                 }
             },
             {
-                "uid": "block_1789045598226_6379",
+                "uid": "block_1789048012483_1013",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1789045598226_725",
+                "uid": "block_1789048012483_3447",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-correct\"><div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div><div class=\"meta-content-wrapper\"><select class=\"correct-answer-select\"><option value=\"A\">A Şıkkı</option><option value=\"B\" selected=\"\">B Şıkkı</option><option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option><option value=\"E\">E Şıkkı</option></select></div></div>"
                 }
             },
             {
-                "uid": "block_1789045598226_9292",
+                "uid": "block_1789048012483_4757",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1789045598226_5327",
+                "uid": "block_1789048012483_100",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-solution\"><div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div><div class=\"meta-content\">Ölçülen büyüklük (hacim) doğrudan bir araçla okunmayıp matematiksel bir bağıntı (V = a3) yardımıyla hesaplanıyorsa dolaylı ölçmedir.</div></div>"
                 }
             },
             {
-                "uid": "block_1789045598226_7990",
+                "uid": "block_1789048012483_8809",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1789045598226_6469",
+                "uid": "block_1789048012483_75",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
