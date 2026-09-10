@@ -1285,14 +1285,14 @@
         },
         "page": [
             {
-                "uid": "block_1789050770088_3360",
+                "uid": "block_1789050776301_2502",
                 "type": "paragraf",
                 "content": {
                     "html": "<p style=\"text-align: center;\"><img src=\"../uploads/soru/img_6aa2be336ab8a.jpg\" alt=\"\" class=\"\"></p>"
                 }
             },
             {
-                "uid": "block_1789050770088_437",
+                "uid": "block_1789050776302_6132",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -1300,77 +1300,77 @@
                 }
             },
             {
-                "uid": "block_1789050770088_6287",
+                "uid": "block_1789050776302_8410",
                 "type": "paragraf",
                 "content": {
                     "html": "<p style=\"text-align: left;\">Bir iklim bilimci, kutuplardan getirdiği 450 g kütlesindeki bir buz kalıbını oda sıcaklığında cam bir kaba koyarak tamamen eritmiştir.\n<br>(dbuz = 0,9 g/cm3, dsu = 1 g/cm<span style=\"vertical-align: super;\">3</span>)\n<br>Buzun tamamen eriyip suya dönüştüğü bu süreçle ilgili;\n<br></p>"
                 }
             },
             {
-                "uid": "block_1789050770088_940",
+                "uid": "block_1789050776302_1445",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p style=\"text-align: left;\">I. Maddenin kütlesi değişmeyerek 450 g su oluşur.\n</p></blockquote>"
                 }
             },
             {
-                "uid": "block_1789050770088_49",
+                "uid": "block_1789050776302_3244",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p style=\"text-align: left;\">II. Buz eridikçe kapladığı hacim azalır.\n</p></blockquote>"
                 }
             },
             {
-                "uid": "block_1789050770088_2616",
+                "uid": "block_1789050776302_5966",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p style=\"text-align: left;\">III. Oluşan suyun hacmi 450 cm3'tür.\n</p></blockquote>"
                 }
             },
             {
-                "uid": "block_1789050770088_6889",
+                "uid": "block_1789050776302_2538",
                 "type": "paragraf",
                 "content": {
                     "html": "<p style=\"text-align: left;\"><span style=\"font-weight: bold;\">yargılarından hangileri doğrudur?&nbsp;</span></p>"
                 }
             },
             {
-                "uid": "block_1789050770088_6645",
+                "uid": "block_1789050776302_2553",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"question-options-grid\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\">Yalnız I</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\">Yalnız II</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\">) I ve III</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\">II ve III</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\">I, II ve III</div></div></div>"
                 }
             },
             {
-                "uid": "block_1789050770088_4202",
+                "uid": "block_1789050776302_72",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1789050770088_4717",
+                "uid": "block_1789050776302_9314",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-correct\"><div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div><div class=\"meta-content-wrapper\"><select class=\"correct-answer-select\"><option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option><option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option><option value=\"E\" selected=\"\">E Şıkkı</option></select></div></div>"
                 }
             },
             {
-                "uid": "block_1789050770088_4372",
+                "uid": "block_1789050776302_7964",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1789050770088_287",
+                "uid": "block_1789050776302_8245",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-solution\"><div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div><div class=\"meta-content\">Hal değişiminde kütle korunur (m = 450 g). Oluşan suyun hacmi V = 450 / 1 = 450 cm<span style=\"vertical-align: super;\">3</span>. Buzun hacmi 450/ 0,9 = 500 cm<span style=\"vertical-align: super;\">3</span> idi, hacim azalmıştır.</div></div>"
                 }
             },
             {
-                "uid": "block_1789050770088_5854",
+                "uid": "block_1789050776302_3252",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
