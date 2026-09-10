@@ -1711,14 +1711,14 @@
         },
         "page": [
             {
-                "uid": "block_1789054955733_5732",
+                "uid": "block_1789054962174_2129",
                 "type": "paragraf",
                 "content": {
                     "html": "<p style=\"text-align: center;\"><img src=\"../uploads/soru/img_6aa2cf0b013e8.jpg\" alt=\"\"></p>"
                 }
             },
             {
-                "uid": "block_1789054955733_7743",
+                "uid": "block_1789054962174_5312",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -1726,49 +1726,49 @@
                 }
             },
             {
-                "uid": "block_1789054955733_1544",
+                "uid": "block_1789054962175_7315",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Görünmezlik pelerini teknolojisi, MR (Manyetik Rezonans) cihazları, ultrason cihazı ve PET taramaları modern tıpta teşhis için sıkça kullanılır.\n<br><span style=\"font-weight: bold;\">Aşağıdaki tıp cihazları ve ilgili oldukları fiziğin alt alanları eşleştirmelerinden hangisi <span style=\"font-style: italic; text-decoration-line: underline;\">yanlıştır</span>?&nbsp;</span></p>"
                 }
             },
             {
-                "uid": "block_1789054955733_7175",
+                "uid": "block_1789054962175_5367",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"question-options-grid\"><div class=\"option-box\"><span class=\"option-prefix\">A)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">MR Cihazı </span>(Süperiletken mıknatıslar): Elektromanyetizma</div></div><div class=\"option-box\"><span class=\"option-prefix\">B)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">Röntgen Cihazı</span> (X-Işınları): Atom ve Nükleer Fizik</div></div><div class=\"option-box\"><span class=\"option-prefix\">C)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">Ultrason Cihazı</span> (Ses Dalgaları): Mekanik</div></div><div class=\"option-box\"><span class=\"option-prefix\">D)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">Lazerli Göz Ameliyatı</span> (Işık Demeti): Optik</div></div><div class=\"option-box\"><span class=\"option-prefix\">E)</span><div class=\"option-text\"><span style=\"font-weight: bold;\">Termal Kamera</span> (Isı Haritası): Katıhal Fiziği</div></div></div>"
                 }
             },
             {
-                "uid": "block_1789054955733_9685",
+                "uid": "block_1789054962175_7316",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1789054955733_5393",
+                "uid": "block_1789054962175_1607",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-correct\"><div class=\"meta-title text-success\"><i class=\"fa-solid fa-check-circle\"></i> Doğru Cevap Belirle</div><div class=\"meta-content-wrapper\"><select class=\"correct-answer-select\"><option value=\"A\">A Şıkkı</option><option value=\"B\">B Şıkkı</option><option value=\"C\">C Şıkkı</option><option value=\"D\">D Şıkkı</option><option value=\"E\" selected=\"\">E Şıkkı</option></select></div></div>"
                 }
             },
             {
-                "uid": "block_1789054955733_831",
+                "uid": "block_1789054962175_8017",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1789054955733_4236",
+                "uid": "block_1789054962175_6503",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"meta-box meta-solution\"><div class=\"meta-title text-primary\"><i class=\"fa-solid fa-lightbulb\"></i> Soru Çözüm Açıklaması</div><div class=\"meta-content\">Isı yayılımı ve sıcaklık analizi Termodinamik alt alanının konusudur.</div></div>"
                 }
             },
             {
-                "uid": "block_1789054955733_3356",
+                "uid": "block_1789054962175_9483",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
