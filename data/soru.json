@@ -1273,5 +1273,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "soru_1789050382",
+        "meta": {
+            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
+            "baslik": "İklim Değişikliği ve Buzun Erimesi",
+            "sinif": "9. Sınıf",
+            "dogru": "E",
+            "tarih": "10.09.2026 16:26:22"
+        },
+        "page": []
     }
 ]
