@@ -1581,5 +1581,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "soru_1789054011",
+        "meta": {
+            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
+            "baslik": "Akvaryum Camı ve Bilye Hacmi Tayini",
+            "sinif": "9. Sınıf",
+            "dogru": "B",
+            "tarih": "10.09.2026 17:26:51"
+        },
+        "page": []
     }
 ]
