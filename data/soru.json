@@ -1205,5 +1205,16 @@
                 }
             }
         ]
+    },
+    {
+        "id": "soru_1789049316",
+        "meta": {
+            "konu": "BİLİMSEL BİLGİ, ÖLÇME VE ÖZKÜTLE",
+            "baslik": "Kuyumculukta Saflık Testi (Arşimet Prensibi)",
+            "sinif": "9. Sınıf",
+            "dogru": "A",
+            "tarih": "10.09.2026 16:08:36"
+        },
+        "page": []
     }
 ]
