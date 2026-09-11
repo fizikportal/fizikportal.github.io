@@ -9,7 +9,7 @@
         },
         "page": [
             {
-                "uid": "block_1789149531432_6124",
+                "uid": "block_1789150742912_7992",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -17,73 +17,74 @@
                 }
             },
             {
-                "uid": "block_1789149531432_8314",
+                "uid": "block_1789150742912_6878",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1789149531432_4968",
+                "uid": "block_1789150742913_6696",
                 "type": "paragraf",
                 "content": {
-                    "html": "<ol><ol><li>Amacı:</li></ol></ol>"
+                    "html": "<ol><h3><ol><li>Amacı:</li></ol></h3></ol>"
                 }
             },
             {
-                "uid": "block_1789149531432_4972",
+                "uid": "block_1789150742913_6867",
                 "type": "paragraf",
                 "content": {
                     "html": "<ul><ul><li>Su dalgalarında frekans (f), dalga boyu (λ) ve dalga hızı (v) arasındaki ilişkiyi deneysel olarak incelemek.</li><li>Ölçüm sonuçlarından v = f · λ bağıntısını doğrulamak</li><li>Dalga hızının frekanstan bağımsız olduğunu göstermek</li></ul></ul>"
                 }
             },
             {
-                "uid": "block_1789149531432_8345",
+                "uid": "block_1789150742913_4574",
                 "type": "paragraf",
                 "content": {
                     "html": "<p></p>"
                 }
             },
             {
-                "uid": "block_1789149531432_1521",
+                "uid": "block_1789150742913_5400",
                 "type": "paragraf",
                 "content": {
-                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p>&nbsp; &nbsp; &nbsp;2. Kullanılan Araçlar:</p></blockquote>"
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><h3>&nbsp; &nbsp; &nbsp;2. Kullanılan Araçlar:</h3></blockquote>"
                 }
             },
             {
-                "uid": "block_1789149531432_5968",
+                "uid": "block_1789150742913_6286",
                 "type": "tablo",
                 "content": {
                     "html": "<table style=\"text-align: center; border-collapse: collapse; border-width: medium; border-style: none; border-color: currentcolor; border-image: none;\"><tbody><tr><th class=\"\" style=\"background: rgb(233, 236, 239); border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Araç Adı&nbsp;</th><th class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78); background: rgb(233, 236, 239);\">Adedi</th></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Dalga leğeni (32 × 38 cm)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Ayna (33 × 40 cm)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Buzlu plastik (veya cam) perde&nbsp;</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Ayarlanabilir ayaklar&nbsp;</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">3</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Titreşim motoru (dalga üreteci)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Stroboskop / flaşör (ayarlanabilir frekanslı ışık)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Ayarlanabilir DC güç kaynağı</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1 Hz - 1 MHz Frekans Jeneratörü</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Şeffaf plastik cetvel</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Klipsli kablolar ve bağlantı elemanları</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">-</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Kronometre (frekans ölçümü için)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr></tbody></table>"
                 }
             },
             {
-                "uid": "block_1789149531432_6183",
-                "type": "paragraf",
+                "uid": "block_1789150742913_4600",
+                "type": "baslik",
                 "content": {
-                    "html": "<p>&nbsp; &nbsp; &nbsp; &nbsp; 3. Sistemin Kurulumu:</p>"
+                    "tag": "h3",
+                    "text": "        3. Sistemin Kurulumu:"
                 }
             },
             {
-                "uid": "block_1789149531432_1877",
+                "uid": "block_1789150742913_769",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>Kurulum sırası önemlidir. Aşağıdaki sırayı takip ediniz:</p>"
                 }
             },
             {
-                "uid": "block_1789149531432_9580",
+                "uid": "block_1789150742913_3676",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><ul><li><span style=\"font-weight: bold;\">Ayakları takın:</span> Dalga leğeninin altındaki vida deliklerine üç metal ayağı vidalayın.</li><li><span style=\"font-weight: bold;\">Metal oluklu çubuğu yerleştirin:</span> Oluktaki delikler bacakların uçlarına gelecek şekilde koyun. Geniş açı leğenin ortasına, 90° açı dışa bakmalıdır. Bu aynanın kaymadan durabilmesi için gereklidir.</li><li><span style=\"font-weight: bold;\">Aynayı yerleştirin: </span>Aynayı 45° açıyla ayaklara yaslayın. Ayna yüzeyi leğene bakmalı, kenarı oluk tarafından desteklenmelidir.&nbsp;Ayna, lambadan gelen ışığı su yüzeyinden geçirip zemine (veya bir ekrana) yansıtmak için kullanılır. Bu sayede dalga deseni büyütülmüş ve daha rahat izlenebilir hâlde gözlemlenir; bu sayede öğrencinin doğrudan leğenin üzerine eğilmesi gerekmez. Dolayısıyla uzaktan bakan çğrenciler de dalda katarını görebilirler. Ayna açısı 45°'den saparsa görüntü çarpıklaşır ve ölçüm hatası artar.</li><li><span style=\"font-weight: bold;\">Titreşim motorunu takın:</span> Motoru tabanın üstüne vidalayın. Yüksekliği siyah vida ile ayarlayın.</li><li><span style=\"font-weight: bold;\">Lambayı konumlandırın:</span> Lamba su yüzeyinden uygun uzaklıkta ve açıda olmalıdır. Uzaklık arttıkça görüntü küçülür.</li><li><span style=\"font-weight: bold;\">Su ekleyin: </span>Yaklaşık 10–15 mm derinlikte su koyun. Derinliği cetvelle ölçün (cetvelin sıfır noktasındaki kaymayı hesaba katın). Çok sığ su (5 mm ve altı) yüzey gerilimi etkilerini artırıp deseni bozabileceği için önerilmez.&nbsp;</li></ul></p>"
                 }
             },
             {
-                "uid": "block_1789149531432_5037",
+                "uid": "block_1789150742913_7766",
                 "type": "paragraf",
                 "content": {
-                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p>Su derinliği leğen içinde her yerde aynı değilse, dalgaların hızı farklı bölgelerde değişir. Bu durum dalga deseninin bozulmasına ve ölçüm hatalarına yol açar. Ayrıca yansıyan dalgalarla girişim artar.</p><p><span style=\"font-weight: bold;\">Nasıl ayarlanır?</span> Ayakların siyah plastik uçlarını gevşeterek veya sıkarak leğeni yatay hale getirin. Su yüzeyinin her yerde aynı derinlikte olduğunu cetvelle birkaç noktadan kontrol edin.&nbsp;</p><p><span style=\"font-weight: bold;\">4. Deneyin Yapılışı:</span></p><p><ul><li>Dalga üretecini düzlem (paralel) dalgalar üretecek şekilde ayarlayın ve çalıştırın.\n</li><li>Masa üzerinde açık ve koyu çizgiler halinde dalga deseni oluşur.\n</li><li>Stroboskop frekansını ayarlayarak dalgaları “durmuş” gibi görünür hale getirin (senkronizasyon).\n</li><li>Dalga boyunu ölçün (aşağıdaki “Dalga Boyu Ölçümü” bölümüne bakın).\n</li><li>Frekansı kaydedin.\n</li><li>En az 5 farklı frekans için ölçümü tekrarlayın ve her seferinde v = f · λ hesaplayın.\n</li></ul><p style=\"text-align: center;\"><span style=\"font-weight: bold;\">v = f · λ&nbsp;</span></p><p style=\"text-align: left;\"><span style=\"font-weight: bold;\"><br></span></p></p></blockquote>"
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p>Su derinliği leğen içinde her yerde aynı değilse, dalgaların hızı farklı bölgelerde değişir. Bu durum dalga deseninin bozulmasına ve ölçüm hatalarına yol açar. Ayrıca yansıyan dalgalarla girişim artar.</p><p><span style=\"font-weight: bold;\">Nasıl ayarlanır?</span> Ayakların siyah plastik uçlarını gevşeterek veya sıkarak leğeni yatay hale getirin. Su yüzeyinin her yerde aynı derinlikte olduğunu cetvelle birkaç noktadan kontrol edin.&nbsp;</p><h3><span style=\"font-weight: bold;\">4. Deneyin Yapılışı:</span></h3><p><ul><li>Dalga üretecini düzlem (paralel) dalgalar üretecek şekilde ayarlayın ve çalıştırın.\n</li><li>Masa üzerinde açık ve koyu çizgiler halinde dalga deseni oluşur.\n</li><li>Stroboskop frekansını ayarlayarak dalgaları “durmuş” gibi görünür hale getirin (senkronizasyon).\n</li><li>Dalga boyunu ölçün (aşağıdaki “Dalga Boyu Ölçümü” bölümüne bakın).\n</li><li>Frekansı kaydedin.\n</li><li>En az 5 farklı frekans için ölçümü tekrarlayın ve her seferinde v = f · λ hesaplayın.\n</li></ul><p style=\"text-align: center;\"><span style=\"font-weight: bold;\">v = f · λ&nbsp;</span></p><p style=\"text-align: left;\"><h4>Dalga Boyu Ölçümü – Neden 4λ Alıyoruz?\n</h4>Tek bir dalga boyunu (iki ardışık koyu çizgi arası) ölçmek hata oranını artırır. Çünkü cetvel okuma hatası, paralaks ve çizgi kalınlığı gibi belirsizlikler doğrudan sonuca yansır.\n<br>Bu yüzden 5 dalga tepesi (veya koyu çizgi) arasını ölçeriz. 5 tepe arasındaki mesafe 4 dalga boyuna eşittir.\n<br>Örnek: 5 tepe arası mesafe 12 cm ölçüldüyse → 4λ = 12 cm → λ = 3 cm = 0,03 m\n<br>Bu yöntem, ölçüm hatasını yaklaşık 4 kat azaltır.&nbsp;<br></p><p style=\"text-align: left;\"><img src=\"../uploads/deney/img_6aa445d181cc8.png\" alt=\"\" class=\"\"><br></p><p style=\"text-align: left;\"><span style=\"font-weight: bold; font-style: italic;\">Resim 2: </span><span style=\"font-style: italic;\">Dalga boyu ölçümü — 5 tepe arası = 4λ, cetvel üzerinde gösterimi.</span></p></p></blockquote>"
                 }
             }
         ]
