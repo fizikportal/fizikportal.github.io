@@ -28,11 +28,55 @@
     {
         "id": "deney_1789138497",
         "meta": {
+            "sinif": "11. Sınıf",
             "konu": "Mekanik Dalgalar",
             "baslik": "Dalgalarda Dalga Boyu ve Hız Ölçümü",
-            "sinif": "11. Sınıf",
             "tarih": "11.09.2026 16:54:57"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1789139536857_151",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "Dalgalarda Dalga Boyu ve Hız Ölçümü"
+                }
+            },
+            {
+                "uid": "block_1789139536858_4675",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><ol><ol><li>Amacı:</li></ol></ol><ul><ul><li>Su dalgalarında frekans (f), dalga boyu (λ) ve dalga hızı (v) arasındaki ilişkiyi deneysel olarak incelemek.</li><li>Ölçüm sonuçlarından v = f · λ bağıntısını doğrulamak</li><li>Dalga hızının frekanstan bağımsız olduğunu göstermek</li></ul></ul></p>"
+                }
+            },
+            {
+                "uid": "block_1789139536858_802",
+                "type": "paragraf",
+                "content": {
+                    "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p>&nbsp; &nbsp; &nbsp;2. Kullanılan Araçlar:</p></blockquote>"
+                }
+            },
+            {
+                "uid": "block_1789139536858_9684",
+                "type": "tablo",
+                "content": {
+                    "html": "<table style=\"text-align: center; border-collapse: collapse; border-width: medium; border-style: none; border-color: currentcolor; border-image: none;\"><tbody><tr><th class=\"\" style=\"background: rgb(233, 236, 239); border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Araç Adı&nbsp;</th><th class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78); background: rgb(233, 236, 239);\">Adedi</th></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Dalga leğeni (32 × 38 cm)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Ayna (33 × 40 cm)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Buzlu plastik (veya cam) perde&nbsp;</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Ayarlanabilir ayaklar&nbsp;</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">3</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Titreşim motoru (dalga üreteci)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Stroboskop / flaşör (ayarlanabilir frekanslı ışık)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Ayarlanabilir DC güç kaynağı</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1 Hz - 1 MHz Frekans Jeneratörü</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Şeffaf plastik cetvel</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Klipsli kablolar ve bağlantı elemanları</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">-</td></tr><tr><td class=\"\" style=\"text-align: left; border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">Kronometre (frekans ölçümü için)</td><td class=\"\" style=\"border-width: 1px; border-style: solid; border-color: rgb(87, 83, 78);\">1</td></tr></tbody></table>"
+                }
+            },
+            {
+                "uid": "block_1789139536858_6604",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p>&nbsp; &nbsp; &nbsp; &nbsp; 3. Sistemin Kurulumu:</p>"
+                }
+            },
+            {
+                "uid": "block_1789139536858_7058",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
