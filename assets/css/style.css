@@ -695,3 +695,7 @@ madde imi / alıntı girintilerini azaltır → satırda daha çok karakter.
     margin-right: 0 !important;
   }
 }
+/* Ön yüzde tablo başlıkları: açık zeminde koyu yazı */
+.site-block th, .detay-kagit th, .reading-content th, .sinav-govde th, .quiz-govde th {
+    color: #2a2118 !important;
+}
