@@ -652,3 +652,46 @@ görseller, şık ızgaraları. Masaüstü yerleşimine dokunmaz.
   .qot-wrap .qot-baslik, .question-options-table .option-box { grid-template-columns: 30px 1fr 1fr; }
   .qot-hcell, .ot-cell { padding: 6px 6px; font-size: 12px; }
 }
+/* ==========================================================================
+MOBİL GENİŞLETME YAMASI v3 — metin sütununu büyüt
+Dış kabuk ile iç kâğıt arasındaki ÇİFT boşluğu inceltir,
+madde imi / alıntı girintilerini azaltır → satırda daha çok karakter.
+========================================================================== */
+@media (max-width: 768px) {
+
+  /* 1) DIŞ KABUK boşluklarını incelt (iki "body" arasındaki mesafe) */
+  .detay-geri, .detay-baslik-alani, .detay-kagit-cepe,
+  .yorum-section, .sinav-sayfa, .reading-container,
+  .icerik-sayfa-baslik, .filtre-cubugu, .icerik-grid, .readings-archive {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* 2) İÇ KÂĞIT / kart boşluklarını incelt */
+  .detay-kagit        { padding: 18px 12px !important; }
+  .reading-content    { padding-left: 12px !important; padding-right: 12px !important; }
+  .sinav-kurulum, .sinav-alani { padding: 18px 14px !important; }
+  .sinav-govde        { padding: 16px 12px !important; }
+
+  /* 3) MADDE İMLERİ — girintiyi azalt, satır genişlesin */
+  .detay-kagit ul, .detay-kagit ol,
+  .site-block ul, .site-block ol,
+  .reading-content ul, .reading-content ol,
+  .sinav-govde ul, .sinav-govde ol {
+    padding-left: 18px !important;
+    margin-left: 0 !important;
+  }
+  .detay-kagit li, .site-block li, .reading-content li, .sinav-govde li {
+    margin-left: 0 !important;
+    padding-left: 2px !important;
+  }
+  /* iç içe listeler daha da sıkı */
+  .detay-kagit ul ul, .detay-kagit ol ol,
+  .site-block ul ul, .site-block ol ol { padding-left: 14px !important; }
+
+  /* 4) ALINTI girintisi de incelsin (editor'den gelen inline 40px'e karşı) */
+  .detay-kagit blockquote, .site-block blockquote, .reading-content blockquote {
+    margin-left: 8px !important;
+    margin-right: 0 !important;
+  }
+}
