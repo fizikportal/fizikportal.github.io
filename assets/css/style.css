@@ -562,3 +562,93 @@ details.kategori-group { background: rgba(0, 0, 0, 0.2); border: 1px solid var(-
     #nav-links-container { display: flex !important; align-items: center; gap: 16px; flex: 1; }
     #nav-links-container .nav-links { height: 100%; }
 }
+
+/* ==========================================================================
+MOBİL UYUM YAMASI v2 — style.css SONUNA eklenir
+Kapsam: index hero, detay/deney/soru/okuma içerikleri, tablolar,
+görseller, şık ızgaraları. Masaüstü yerleşimine dokunmaz.
+========================================================================== */
+
+/* ── 0) ŞIK IZGARASI TEMEL STİLLERİ (içerik sayfalarında tanımı yoktu) ── */
+.site-block .question-options-grid,
+.detay-kagit .question-options-grid,
+.reading-content .question-options-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 14px 0; }
+.site-block .option-box,
+.detay-kagit .option-box,
+.reading-content .option-box { display: flex; align-items: flex-start; gap: 10px; background: var(--bg-deep); border: 1px solid var(--glass-border); border-radius: 10px; padding: 10px 12px; }
+.site-block .option-prefix,
+.detay-kagit .option-prefix,
+.reading-content .option-prefix { font-weight: 700; color: var(--accent-lime); flex-shrink: 0; }
+.site-block .option-text,
+.detay-kagit .option-text,
+.reading-content .option-text { flex: 1; min-width: 0; color: var(--text-muted); }
+/* tablo-şıklar (qot): satırlar gerçek ızgara olsun */
+.site-block .question-options-table,
+.detay-kagit .question-options-table { display: block; gap: 0; }
+.site-block .question-options-table .option-box,
+.detay-kagit .question-options-table .option-box { display: grid; grid-template-columns: 36px 1fr 1fr; gap: 0; padding: 0; border: none; border-bottom: 1px solid var(--glass-border); border-radius: 0; background: transparent; }
+.site-block .question-options-table .option-text,
+.detay-kagit .question-options-table .option-text { display: contents; }
+.site-block .ot-cell, .detay-kagit .ot-cell { display: block; padding: 8px 10px; border-right: 1px solid var(--glass-border); }
+.site-block .ot-cell:last-child, .detay-kagit .ot-cell:last-child { border-right: none; }
+
+/* ── 1) INDEX / HERO — buton artık metnin üstüne binmez ── */
+@media (max-width: 768px) {
+  .hero { padding: 0 20px 28px; min-height: 62vh; }
+  .hero-copy { max-width: 100%; }
+  .cta-button { position: static; margin-top: 18px; transform: none; }
+  .hero-center { top: 40%; }
+}
+
+/* ── 2) İÇERİK SAYFALARI — satır/paragraf düzeni ── */
+@media (max-width: 768px) {
+  .detay-kagit { padding: 24px 18px; font-size: 15px; line-height: 1.65; }
+  .reading-content { font-size: 15px; line-height: 1.65; padding: 0 20px 40px; }
+  .site-block, .soru-rehber { font-size: 15px; line-height: 1.65; }
+
+  /* Dev aralıkların kökü: editörün boş <p><br></p> satırları.
+     Gizle → boşluğu kontrollü margin'ler versin. */
+  .detay-kagit p:empty, .detay-kagit p:has(> br:only-child),
+  .site-block p:empty, .site-block p:has(> br:only-child),
+  .reading-content p:empty, .reading-content p:has(> br:only-child) { display: none; }
+
+  .detay-kagit p, .detay-kagit ul, .detay-kagit ol,
+  .detay-kagit blockquote, .detay-kagit table,
+  .site-block p, .site-block ul, .site-block ol,
+  .site-block blockquote, .site-block table,
+  .reading-content p, .reading-content ul, .reading-content ol { margin: 0 0 10px; }
+  .detay-kagit h1, .detay-kagit h2, .detay-kagit h3,
+  .site-block h1, .site-block h2, .site-block h3,
+  .reading-content h1, .reading-content h2, .reading-content h3 { margin: 18px 0 8px; line-height: 1.3; }
+  .detay-kagit h1 { font-size: 22px; }
+  .detay-kagit h2 { font-size: 19px; }
+  .detay-kagit h3 { font-size: 17px; }
+  .detay-kagit blockquote, .site-block blockquote { margin-left: 14px !important; }
+
+  /* sütunlar mobilde alt alta */
+  .editor-col { min-width: 100%; }
+  .ed-sutunlar { flex-direction: column !important; }
+
+  /* meta kutuları kompakt */
+  .meta-box { padding: 10px 12px !important; margin: 10px 0 !important; }
+}
+
+/* ── 3) GÖRSELLER — editörün inline px ölçüleri mobilde taşmasın ── */
+@media (max-width: 768px) {
+  .site-block img, .detay-kagit img, .reading-content img, .soru-rehber img { max-width: 100% !important; height: auto !important; }
+  .site-block .single-img-container, .detay-kagit .single-img-container,
+  .reading-content .single-img-container, .quiz-govde .single-img-container,
+  .sinav-govde .single-img-container { max-width: 100% !important; margin: 14px auto !important; }
+  .col-img-container img { width: 100% !important; }
+}
+
+/* ── 4) TABLOLAR — kompakt satır, girinti yok, taşma yok ── */
+@media (max-width: 768px) {
+  .site-block table, .detay-kagit table, .reading-content table { width: 100% !important; font-size: 12.5px; margin: 12px 0; table-layout: fixed; }
+  .site-block td, .site-block th,
+  .detay-kagit td, .detay-kagit th,
+  .reading-content td, .reading-content th { padding: 6px 8px !important; line-height: 1.35; word-break: break-word; overflow-wrap: break-word; }
+  /* tablo-şıklar biraz daha sıkı */
+  .qot-wrap .qot-baslik, .question-options-table .option-box { grid-template-columns: 30px 1fr 1fr; }
+  .qot-hcell, .ot-cell { padding: 6px 6px; font-size: 12px; }
+}
