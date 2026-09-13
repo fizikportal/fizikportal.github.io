@@ -358,10 +358,6 @@ details.kategori-group { background: rgba(0, 0, 0, 0.2); border: 1px solid var(-
     .atom-icon { width: 120px; height: 120px; }
 }
 
-@media (max-width: 640px) {
-    .detay-kagit { padding: 28px; }
-    .reading-meta, .reading-content { padding-left: 24px; padding-right: 24px; }
-}
 
 @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
@@ -479,10 +475,6 @@ details.kategori-group { background: rgba(0, 0, 0, 0.2); border: 1px solid var(-
 /* Kayıta contenteditable sızdıysa bile ön yüz盐da etkileşimsiz olsun */
 .secenek-btn [contenteditable] { pointer-events: none; }
 
-/* ── Yeni sütun düzeni: masaüstünde inline flex, mobilde istif ── */
-@media (max-width: 700px) {
-    .ed-sutunlar { flex-direction: column; }
-}
 
 /* ── Okuma sayfası kozmetik tamamlama ── */
 .archive-title { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0; color: var(--text-primary); }
@@ -553,9 +545,6 @@ details.kategori-group { background: rgba(0, 0, 0, 0.2); border: 1px solid var(-
         border-top: 1px solid rgba(255,255,255,.06);
     }
 
-    /* Masaüstü navbar'ın 70px height'ını gevşet */
-    .site-navbar { position: sticky; }
-}
 
 /* Geniş ekranda hamburger gizli, menü hep açık */
 @media (min-width: 992px) {
@@ -564,12 +553,10 @@ details.kategori-group { background: rgba(0, 0, 0, 0.2); border: 1px solid var(-
 }
 
 /* ==========================================================================
-MOBİL UYUM YAMASI v2 — style.css SONUNA eklenir
-Kapsam: index hero, detay/deney/soru/okuma içerikleri, tablolar,
-görseller, şık ızgaraları. Masaüstü yerleşimine dokunmaz.
+MOBİL UYUM YAMASI (v2+v3 BİRLEŞİK) — dosyanın SONUNDA TEK BLOK
+Eski v2/v3 parçalarının temizlenmiş halidir; masaüstüne dokunmaz.
 ========================================================================== */
-
-/* ── 0) ŞIK IZGARASI TEMEL STİLLERİ (içerik sayfalarında tanımı yoktu) ── */
+/* 0) ŞIK IZGARASI TEMEL STİLLERİ (içerik sayfalarında tanımı yoktu) */
 .site-block .question-options-grid,
 .detay-kagit .question-options-grid,
 .reading-content .question-options-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 14px 0; }
@@ -582,7 +569,6 @@ görseller, şık ızgaraları. Masaüstü yerleşimine dokunmaz.
 .site-block .option-text,
 .detay-kagit .option-text,
 .reading-content .option-text { flex: 1; min-width: 0; color: var(--text-muted); }
-/* tablo-şıklar (qot): satırlar gerçek ızgara olsun */
 .site-block .question-options-table,
 .detay-kagit .question-options-table { display: block; gap: 0; }
 .site-block .question-options-table .option-box,
@@ -592,30 +578,30 @@ görseller, şık ızgaraları. Masaüstü yerleşimine dokunmaz.
 .site-block .ot-cell, .detay-kagit .ot-cell { display: block; padding: 8px 10px; border-right: 1px solid var(--glass-border); }
 .site-block .ot-cell:last-child, .detay-kagit .ot-cell:last-child { border-right: none; }
 
-/* ── 1) INDEX / HERO — buton artık metnin üstüne binmez ── */
 @media (max-width: 768px) {
+  /* 1) HERO — buton metnin üstüne binmez */
   .hero { padding: 0 20px 28px; min-height: 62vh; }
   .hero-copy { max-width: 100%; }
   .cta-button { position: static; margin-top: 18px; transform: none; }
   .hero-center { top: 40%; }
-}
-
-/* ── 2) İÇERİK SAYFALARI — satır/paragraf düzeni ── */
-@media (max-width: 768px) {
-  .detay-kagit { padding: 24px 18px; font-size: 15px; line-height: 1.65; }
-  .reading-content { font-size: 15px; line-height: 1.65; padding: 0 20px 40px; }
+  /* 2) ÇİFT padding tek katman: dış kabuk + iç kâğıt */
+  .detay-geri, .detay-baslik-alani, .detay-kagit-cepe,
+  .yorum-section, .sinav-sayfa, .reading-container,
+  .icerik-sayfa-baslik, .filtre-cubugu, .icerik-grid, .readings-archive {
+    padding-left: 10px !important; padding-right: 10px !important;
+  }
+  .detay-kagit { padding: 18px 12px !important; font-size: 15px; line-height: 1.65; }
+  .reading-content { font-size: 15px; line-height: 1.65; padding-top: 0; padding-bottom: 40px; padding-left: 12px !important; padding-right: 12px !important; }
+  .reading-meta { padding-left: 12px !important; padding-right: 12px !important; }
+  .sinav-kurulum, .sinav-alani { padding: 18px 14px !important; }
+  .sinav-govde { padding: 16px 12px !important; }
   .site-block, .soru-rehber { font-size: 15px; line-height: 1.65; }
-
-  /* Dev aralıkların kökü: editörün boş <p><br></p> satırları.
-     Gizle → boşluğu kontrollü margin'ler versin. */
+  /* 3) Boş editör paragrafları gizle + kontrollü boşluk */
   .detay-kagit p:empty, .detay-kagit p:has(> br:only-child),
   .site-block p:empty, .site-block p:has(> br:only-child),
   .reading-content p:empty, .reading-content p:has(> br:only-child) { display: none; }
-
-  .detay-kagit p, .detay-kagit ul, .detay-kagit ol,
-  .detay-kagit blockquote, .detay-kagit table,
-  .site-block p, .site-block ul, .site-block ol,
-  .site-block blockquote, .site-block table,
+  .detay-kagit p, .detay-kagit ul, .detay-kagit ol, .detay-kagit blockquote,
+  .site-block p, .site-block ul, .site-block ol, .site-block blockquote,
   .reading-content p, .reading-content ul, .reading-content ol { margin: 0 0 10px; }
   .detay-kagit h1, .detay-kagit h2, .detay-kagit h3,
   .site-block h1, .site-block h2, .site-block h3,
@@ -623,79 +609,29 @@ görseller, şık ızgaraları. Masaüstü yerleşimine dokunmaz.
   .detay-kagit h1 { font-size: 22px; }
   .detay-kagit h2 { font-size: 19px; }
   .detay-kagit h3 { font-size: 17px; }
-  .detay-kagit blockquote, .site-block blockquote { margin-left: 14px !important; }
-
-  /* sütunlar mobilde alt alta */
+  /* 4) Girintiler: madde imi + alıntı */
+  .detay-kagit ul, .detay-kagit ol, .site-block ul, .site-block ol,
+  .reading-content ul, .reading-content ol, .sinav-govde ul, .sinav-govde ol { padding-left: 18px !important; margin-left: 0 !important; }
+  .detay-kagit li, .site-block li, .reading-content li, .sinav-govde li { margin-left: 0 !important; padding-left: 2px !important; }
+  .detay-kagit ul ul, .detay-kagit ol ol, .site-block ul ul, .site-block ol ol { padding-left: 14px !important; }
+  .detay-kagit blockquote, .site-block blockquote, .reading-content blockquote { margin-left: 8px !important; margin-right: 0 !important; }
+  /* 5) Sütunlar alt alta + meta kompakt */
   .editor-col { min-width: 100%; }
   .ed-sutunlar { flex-direction: column !important; }
-
-  /* meta kutuları kompakt */
   .meta-box { padding: 10px 12px !important; margin: 10px 0 !important; }
-}
-
-/* ── 3) GÖRSELLER — editörün inline px ölçüleri mobilde taşmasın ── */
-@media (max-width: 768px) {
+  /* 6) Görseller: editörün inline px ölçüleri taşmasın */
   .site-block img, .detay-kagit img, .reading-content img, .soru-rehber img { max-width: 100% !important; height: auto !important; }
   .site-block .single-img-container, .detay-kagit .single-img-container,
   .reading-content .single-img-container, .quiz-govde .single-img-container,
   .sinav-govde .single-img-container { max-width: 100% !important; margin: 14px auto !important; }
   .col-img-container img { width: 100% !important; }
-}
-
-/* ── 4) TABLOLAR — kompakt satır, girinti yok, taşma yok ── */
-@media (max-width: 768px) {
+  /* 7) Tablolar kompakt */
   .site-block table, .detay-kagit table, .reading-content table { width: 100% !important; font-size: 12.5px; margin: 12px 0; table-layout: fixed; }
-  .site-block td, .site-block th,
-  .detay-kagit td, .detay-kagit th,
+  .site-block td, .site-block th, .detay-kagit td, .detay-kagit th,
   .reading-content td, .reading-content th { padding: 6px 8px !important; line-height: 1.35; word-break: break-word; overflow-wrap: break-word; }
-  /* tablo-şıklar biraz daha sıkı */
   .qot-wrap .qot-baslik, .question-options-table .option-box { grid-template-columns: 30px 1fr 1fr; }
   .qot-hcell, .ot-cell { padding: 6px 6px; font-size: 12px; }
 }
-/* ==========================================================================
-MOBİL GENİŞLETME YAMASI v3 — metin sütununu büyüt
-Dış kabuk ile iç kâğıt arasındaki ÇİFT boşluğu inceltir,
-madde imi / alıntı girintilerini azaltır → satırda daha çok karakter.
-========================================================================== */
-@media (max-width: 768px) {
 
-  /* 1) DIŞ KABUK boşluklarını incelt (iki "body" arasındaki mesafe) */
-  .detay-geri, .detay-baslik-alani, .detay-kagit-cepe,
-  .yorum-section, .sinav-sayfa, .reading-container,
-  .icerik-sayfa-baslik, .filtre-cubugu, .icerik-grid, .readings-archive {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  /* 2) İÇ KÂĞIT / kart boşluklarını incelt */
-  .detay-kagit        { padding: 18px 12px !important; }
-  .reading-content    { padding-left: 12px !important; padding-right: 12px !important; }
-  .sinav-kurulum, .sinav-alani { padding: 18px 14px !important; }
-  .sinav-govde        { padding: 16px 12px !important; }
-
-  /* 3) MADDE İMLERİ — girintiyi azalt, satır genişlesin */
-  .detay-kagit ul, .detay-kagit ol,
-  .site-block ul, .site-block ol,
-  .reading-content ul, .reading-content ol,
-  .sinav-govde ul, .sinav-govde ol {
-    padding-left: 18px !important;
-    margin-left: 0 !important;
-  }
-  .detay-kagit li, .site-block li, .reading-content li, .sinav-govde li {
-    margin-left: 0 !important;
-    padding-left: 2px !important;
-  }
-  /* iç içe listeler daha da sıkı */
-  .detay-kagit ul ul, .detay-kagit ol ol,
-  .site-block ul ul, .site-block ol ol { padding-left: 14px !important; }
-
-  /* 4) ALINTI girintisi de incelsin (editor'den gelen inline 40px'e karşı) */
-  .detay-kagit blockquote, .site-block blockquote, .reading-content blockquote {
-    margin-left: 8px !important;
-    margin-right: 0 !important;
-  }
-}
 /* Ön yüzde tablo başlıkları: açık zeminde koyu yazı */
-.site-block th, .detay-kagit th, .reading-content th, .sinav-govde th, .quiz-govde th {
-    color: #2a2118 !important;
-}
+.site-block th, .detay-kagit th, .reading-content th, .sinav-govde th, .quiz-govde th { color: #2a2118 !important; }
