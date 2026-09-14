@@ -660,3 +660,55 @@ Eski v2/v3 parçalarının temizlenmiş halidir; masaüstüne dokunmaz.
 .site-block table.table-theme-gray th, .site-block table.table-theme-green th { color: #fff !important; }
 /* Sınav/quiz başlıkları: koyu zemin üstü tema rengi — dokunulmaz */
 .sinav-govde th, .quiz-govde th { color: var(--accent-lime); }
+/* ==========================================================================
+   16. GENİŞ EKRAN DÜZELTMELERİ
+   --------------------------------------------------------------------------
+   1) body gradient'i tüm ekranı kaplasın (kenarlarda siyah kalmasın)
+   2) geniş tablolar yatay kaydırılabilir olsun (kesilmesin)
+   ========================================================================== */
+
+/* Body gradient ekranın tamamını kaplasın */
+body {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+/* Geniş tablolar: yatay kaydırılabilir sarmalayıcı */
+.site-block table,
+.sinav-govde table,
+.quiz-govde table {
+    min-width: 480px;           /* tablo çok daralmadan okunur kalsın */
+}
+
+/* Tabloyu sarmalayan container yoksa — tablonun kendisi taşabilir:
+   ebeveyn overflow-x'e izin versin */
+.sinav-govde, .quiz-govde, .site-block {
+    overflow-x: auto !important;
+    overflow-y: hidden;
+}
+
+/* Geniş ekranlarda page-shell'i biraz daha genişlet (1000px yeterliyse dokunma)
+   İstersen 1100px yapabilirsin — kaptan kararı */
+@media (min-width: 1500px) {
+    .page-shell { max-width: 1100px !important; }
+}
+/* ==========================================================================
+   17. İÇERİK GÖRSELLERİ — taşan grafikler container'a sığsın
+   ========================================================================== */
+.site-block img,
+.sinav-govde img,
+.quiz-govde img,
+.reading-content img,
+.detay-kagit img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grafik/diyagram gibi geniş görseller için kaydırma sigortası */
+.sinav-govde .grafik-kapsul,
+.site-block .grafik-kapsul {
+    overflow-x: auto;
+}
