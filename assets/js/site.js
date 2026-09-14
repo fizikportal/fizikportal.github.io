@@ -24,28 +24,46 @@ async function checkAuthState() {
     const { data: { session } } = await supabaseClient.auth.getSession();
     const navAuth = document.getElementById('nav-auth-yeri');
     if (!navAuth) return;
-    
+
     if (session) {
         const user = session.user;
         const fullName = user.user_metadata?.full_name || user.email.split('@')[0];
-        
+
         if (user.email === ADMIN_EMAIL) {
             // ADMIN GİRİŞİ YAPTIYSA
+            // Ortamı tespit et: localhost mu, github.io mu?
+            const isLocalhost = window.location.hostname === 'localhost' 
+                             || window.location.hostname === '127.0.0.1'
+                             || window.location.hostname.includes('.local');
+
+            const adminLink = isLocalhost
+                ? `<a href="http://localhost/edit/admin/" target="_blank" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;">
+                       <i class="fa fa-tachometer-alt"></i> İçerik Paneli
+                   </a>`
+                : `<a href="#" onclick="alert('⚠️ Admin paneli sadece localhost\\'ta çalışır.\\n\\nBilgisayarında: http://localhost/edit/\\n\\nGitHub.io statik sitedir, PHP sunucusu içermez.')" style="display: flex; align-items: center; gap: 8px; color: var(--text-soft); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px; cursor: not-allowed;">
+                       <i class="fa fa-lock"></i> Panel (localhost)
+                   </a>`;
+
             navAuth.innerHTML = `
                 <div style="position: relative;">
                     <button id="admin-dropdown-toggle" style="background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 1.4rem;">
                         <i class="fa fa-user-cog"></i>
                     </button>
-                     <div id="admin-dropdown-menu" style="display: none; position: absolute; right: 0; top: 100%; background: var(--bg-mid); border: 1px solid var(--glass-border); border-radius: 8px; padding: 10px; min-width: 200px; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-                        <a href="http://localhost/edit/admin/" target="_blank" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-tachometer-alt"></i> İçerik Paneli</a>
-                        <a href="https://fizikportal.github.io/admin_yorumlar.html" target="_blank" style="display: none;"><!-- emekli: yorumlar localhost panelde --></a>
-                        <a href="#" id="theme-toggle-btn" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-palette"></i> Tema Değiştir</a>
-                        <a href="profil.html" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-user-circle"></i> Profilim</a>
-                        <a href="#" onclick="cikisYap()" style="display: flex; align-items: center; gap: 8px; color: #ef4444; text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;"><i class="fa fa-sign-out-alt"></i> Çıkış Yap</a>
+                    <div id="admin-dropdown-menu" style="display: none; position: absolute; right: 0; top: 100%; background: var(--bg-mid); border: 1px solid var(--glass-border); border-radius: 8px; padding: 10px; min-width: 200px; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+                        ${adminLink}
+                        <a href="#" id="theme-toggle-btn" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;">
+                            <i class="fa fa-palette"></i> Tema Değiştir
+                        </a>
+                        <a href="profil.html" style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;">
+                            <i class="fa fa-user-circle"></i> Profilim
+                        </a>
+                        <a href="#" onclick="cikisYap()" style="display: flex; align-items: center; gap: 8px; color: #ef4444; text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 14px;">
+                            <i class="fa fa-sign-out-alt"></i> Çıkış Yap
+                        </a>
                     </div>
                 </div>
             `;
-               } else {
+        } else {
             // NORMAL KULLANICI GİRİŞİ YAPTIYSA
             navAuth.innerHTML = `
                 <a href="profil.html" style="color: var(--text-primary); text-decoration: none; margin-right: 10px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
@@ -78,17 +96,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Kullanıcı giriş durumunu kontrol et
     checkAuthState();
 
-    // Tüm tıklamaları body seviyesinde yakala (Mobil menü ve dropdown için en garantili yöntem)
+    // Tüm tıklamaları body seviyesinde yakala
     document.body.addEventListener('click', (e) => {
         // 3 Çizgi Menü Tıklaması
         if (e.target.closest('#nav-toggle')) {
-            document.getElementById('nav-links-container').classList.toggle('active');
+            const kapi = document.getElementById('nav-links-container');
+            kapi.classList.toggle('active');
+            e.stopPropagation();
         }
+
         // Admin Dropdown Tıklaması
         if (e.target.closest('#admin-dropdown-toggle')) {
             const menu = document.getElementById('admin-dropdown-menu');
             if(menu) menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
         }
+
         // Tema Değiştir Tıklaması
         if (e.target.closest('#theme-toggle-btn')) {
             e.preventDefault();
@@ -98,7 +120,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             let nextTheme = themes[(themes.indexOf(currentTheme) + 1) % themes.length];
             body.classList.remove(currentTheme);
             body.classList.add(nextTheme);
-            localStorage.setItem('site_theme', nextTheme); // Seçilen temayı tarayıcıya kaydet
+            localStorage.setItem('site_theme', nextTheme);
         }
     });
 
@@ -121,12 +143,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             heroTitle.innerHTML = home.hero.title;
             document.getElementById('hero-subtitle').textContent = home.hero.subtitle;
+
             const cta = document.getElementById('hero-cta');
             cta.textContent = home.hero.cta_text;
             cta.href = home.hero.cta_url;
 
             document.getElementById('intro-title').textContent = home.intro.title;
             document.getElementById('intro-lead').textContent = home.intro.lead;
+
             const introGrid = document.getElementById('intro-grid');
             introGrid.innerHTML = '';
             home.intro.cards.forEach(card => {
@@ -137,12 +161,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                 const featuresSection = document.getElementById('konular');
                 const featuresTrack = document.getElementById('features-track');
                 const featureDots = document.getElementById('feature-dots');
+
                 featuresTrack.innerHTML = '';
                 featureDots.innerHTML = '';
+
                 home.features.forEach((feature, i) => {
                     featuresTrack.innerHTML += `<article class="feature-card ${i === 0 ? 'is-active' : ''}" data-feature="${feature.id}"><span class="feature-label">${feature.label}</span><h3>${feature.title}</h3><p>${feature.text}</p></article>`;
                     featureDots.innerHTML += `<button type="button" class="feature-dot ${i === 0 ? 'is-active' : ''}" data-index="${i}"></button>`;
                 });
+
                 featuresSection.style.display = 'block';
                 startFeatureSlider();
             }
@@ -155,7 +182,6 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
                 document.getElementById('sss').style.display = 'block';
             }
-
         } catch(e) { console.error('Veri yükleme hatası:', e); }
     }
 });
@@ -171,14 +197,16 @@ function startFeatureSlider() {
         dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
         currentFeature = index;
     }
+
     dots.forEach((dot, index) => { dot.addEventListener('click', () => { showFeature(index); resetInterval(); }); });
+
     function startAutoSlide() { featureInterval = setInterval(() => { let nextIndex = (currentFeature + 1) % cards.length; showFeature(nextIndex); }, 5000); }
     function resetInterval() { clearInterval(featureInterval); startAutoSlide(); }
+
     if (cards.length > 0) { startAutoSlide(); }
 }
-// ── SAYFA GÖRÜNTÜLEME SAYACI → Supabase ──
-// Aynı sayfayı 30 dk içinde tekrar saymaz (session bazlı). Sessiz çalışır;
-// hata olsa bile siteyi etkilemez. supabaseClient yukarıda tanımlı.
+
+// SAYFA GÖRÜNTÜLEME SAYACI
 (function () {
     try {
         const yol = window.location.pathname.split('/').pop() || 'index.html';
