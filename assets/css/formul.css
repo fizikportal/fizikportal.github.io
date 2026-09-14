@@ -1,0 +1,62 @@
+/* ==========================================================================
+formul.css — admin/formul.php SAYFASINA ÖZEL stiller
+Geneller diğer dosyalardan gelir (themes / admin). Burada yalnızca
+formül sayfasının kendi görünümü vardır.
+========================================================================== */
+/* ── Liste: formül sütunu (MathJax burada render olur) ── */
+.liste-tablosu .formul-hucre {
+    font-family: 'Times New Roman', serif;
+    font-size: 15px; color: var(--accent-gold);
+    max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.liste-tablosu .formul-hucre mjx-container { color: var(--accent-gold); margin: 0 !important; }
+/* ── Düzenleme kartları ── */
+.formul-kart {
+    background: var(--bg-mid); border: 1px solid var(--glass-border);
+    border-radius: 12px; padding: 18px 20px; margin-bottom: 14px;
+}
+.formul-kart h2 {
+    font-size: 13px; margin: 0 0 12px; color: var(--text-primary);
+    text-transform: uppercase; letter-spacing: .6px;
+}
+.formul-kart h2 i { color: var(--accent-lime); margin-right: 6px; }
+.formul-izgara { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 800px) { .formul-izgara { grid-template-columns: 1fr; } }
+.formul-alan label { display: block; font-size: 12px; font-weight: 700; color: var(--text-soft); margin-bottom: 6px; }
+.formul-alan input, .formul-alan textarea {
+    width: 100%; box-sizing: border-box; padding: 10px 12px;
+    background: var(--bg-deep); color: var(--text-primary);
+    border: 1px solid var(--glass-border); border-radius: 8px;
+    font-size: 14px; font-family: inherit; outline: none;
+}
+.formul-alan input:focus, .formul-alan textarea:focus { border-color: var(--accent-lime); }
+.formul-alan textarea { resize: vertical; min-height: 64px; line-height: 1.6; }
+.formul-alan textarea.latex-girdi { font-family: ui-monospace, 'Courier New', monospace; font-size: 13px; }
+.latex-onizleme {
+    margin-top: 8px; min-height: 48px; padding: 10px 12px;
+    background: var(--bg-deep); border: 1px solid var(--glass-border);
+    border-left: 4px solid var(--accent-gold); border-radius: 8px;
+    color: var(--accent-gold); font-size: 1.15rem; text-align: center; overflow-x: auto;
+}
+.latex-ipucu { margin-top: 6px; font-size: 11px; color: var(--text-soft); }
+.latex-ipucu code { background: var(--glass); padding: 1px 6px; border-radius: 4px; color: var(--accent-cyan); }
+/* ── Değişken satırları ── */
+.degisken-satir { display: grid; grid-template-columns: 90px 1fr 1fr 36px; gap: 8px; margin-bottom: 8px; align-items: center; }
+.degisken-satir input {
+    width: 100%; box-sizing: border-box; padding: 8px 10px;
+    background: var(--bg-deep); color: var(--text-primary);
+    border: 1px solid var(--glass-border); border-radius: 8px; font-size: 13px; outline: none;
+}
+.degisken-satir input:focus { border-color: var(--accent-lime); }
+.degisken-sil {
+    width: 36px; height: 36px; border: 1px solid var(--glass-border);
+    background: transparent; color: #ef4444; border-radius: 8px; cursor: pointer;
+}
+.degisken-sil:hover { background: rgba(239, 68, 68, .15); }
+.degisken-ekle {
+    width: 100%; padding: 9px; border: 1px dashed var(--glass-border);
+    background: transparent; color: var(--text-muted); border-radius: 8px;
+    cursor: pointer; font-size: 13px;
+}
+.degisken-ekle:hover { border-color: var(--accent-lime); color: var(--accent-lime); }
+@media (max-width: 700px) { .degisken-satir { grid-template-columns: 76px 1fr 1fr 34px; } }
