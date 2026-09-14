@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fizik Formülleri | Fizik Portalı</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/themes.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' },
+      startup: { typeset: false }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+
+  <style>
+    .formul-wrapper { max-width: 700px; margin: 0 auto; }
+
+    /* Seçim satırları */
+    .secim-satir {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 18px; flex-wrap: wrap;
+    }
+    .secim-satir label {
+      font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--text-soft); font-weight: 600; white-space: nowrap;
+      min-width: 200px;
+    }
+    .secim-satir label i {
+      color: var(--accent-lime); margin-right: 6px;
+    }
+    .secim-satir select {
+      flex: 1; min-width: 200px; padding: 10px 14px;
+      background: var(--bg-deep); color: var(--text-primary);
+      border: 1px solid var(--glass-border); border-radius: 8px;
+      font-size: 0.95rem; font-family: inherit; outline: none;
+      cursor: pointer; appearance: auto;
+    }
+    .secim-satir select:focus { border-color: var(--accent-lime); }
+    .secim-satir select:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* Getir butonu */
+    .getir-satir { margin-top: 6px; }
+
+    /* Sonuç animasyonu */
+    .formul-sonuc-karti { display: none; animation: fadeUp 0.4s ease; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Formül kutusu */
+    .formul-kutu {
+      background: var(--bg-deep);
+      border: 1px solid var(--glass-border);
+      border-left: 5px solid var(--accent-lime);
+      border-radius: var(--radius-md);
+      padding: 24px; margin: 20px 0;
+      text-align: center; overflow-x: auto;
+      color: var(--accent-gold); font-size: 1.35rem;
+    }
+    .formul-kutu mjx-container { margin: 0 !important; }
+
+    /* Değişken tablosu */
+    .formul-degisken-tablo { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+    .formul-degisken-tablo th, .formul-degisken-tablo td {
+      border: 1px solid var(--glass-border); padding: 8px 12px;
+      text-align: left; color: var(--text-muted);
+    }
+    .formul-degisken-tablo th {
+      background: rgba(255,255,255,.04); color: var(--text-primary); font-weight: 600;
+    }
+    .formul-degisken-tablo td.sembol-td {
+      color: var(--accent-gold); font-weight: 600; text-align: center; width: 120px;
+    }
+
+    /* Örnek kutuları */
+    .formul-ornek-kutu {
+      background: var(--bg-deep); border: 1px solid var(--glass-border);
+      border-left: 4px solid var(--accent-cyan); border-radius: var(--radius-md);
+      padding: 16px 18px; margin: 14px 0;
+    }
+    .formul-ornek-kutu .etiket {
+      font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--accent-cyan); font-weight: 700; margin-bottom: 8px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .formul-ornek-cozum {
+      text-align: center; color: var(--accent-gold); font-size: 1.1rem; overflow-x: auto;
+    }
+
+    /* Bölüm başlığı */
+    .formul-bolum {
+      font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--accent-lime); font-weight: 700;
+      margin: 24px 0 10px; display: flex; align-items: center; gap: 6px;
+    }
+
+    /* Açıklama */
+    .formul-aciklama {
+      color: var(--text-muted); line-height: 1.75; margin: 10px 0; font-size: 0.98rem;
+    }
+
+    /* Birim rozeti */
+    .birim-rozet {
+      display: inline-block; margin-left: 8px;
+      font-size: 0.82rem; color: var(--text-soft);
+      background: var(--glass); border: 1px solid var(--glass-border);
+      border-radius: 6px; padding: 2px 10px;
+    }
+/* ==========================================================================
+   18. FORMÜL SONUÇ SAYFASI DÜZELTMELERİ
+   ========================================================================== */
+
+/* Grafik görseli: container'a sığ, taşmasın */
+#sonucAlani img,
+.detay-kagit img,
+.formul-sonuc-karti img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 12px auto;
+    border-radius: 8px;
+}
+
+/* "Yeni Bir Formül Ara" butonu — düzgün görünsün */
+.filtre-pil[onclick="sifirla()"],
+.filtre-pil[onclick*="sifirla"] {
+    width: 100%;
+    text-align: center;
+    background: var(--glass);
+    color: var(--text-primary);
+    border: 1px solid var(--glass-border);
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.filtre-pil[onclick*="sifirla"]:hover {
+    background: var(--glass);
+    color: var(--accent-lime);
+    border-color: var(--accent-lime);
+}
+  </style>
+</head>
+
+<body class="theme-warm-amber">
+
+  <div class="page-shell">
+    <div id="header-yeri"></div>
+
+    <div class="icerik-sayfa-baslik">
+      <h1 class="section-title">⚛ Fizik Formülleri Kütüphanesi</h1>
+      <p class="section-lead">Üniteyi seçin, formülü bulun — değişkenleri ve örnek çözümleriyle.</p>
+    </div>
+
+    <div class="formul-wrapper">
+
+      <!-- ══ SEÇİM ALANI ══ -->
+      <div class="detay-kagit" id="secimAlani">
+
+        <div class="secim-satir">
+          <label for="uniteSelect"><i class="fa-solid fa-layer-group"></i> 1. Ünite Seçiniz</label>
+          <select id="uniteSelect">
+            <option value="">— Yükleniyor… —</option>
+          </select>
+        </div>
+
+        <div class="secim-satir">
+          <label for="formulSelect"><i class="fa-solid fa-square-root-variable"></i> 2. Formül Seçiniz</label>
+          <select id="formulSelect" disabled>
+            <option value="">— Önce ünite seçin —</option>
+          </select>
+        </div>
+
+        <div class="secim-satir getir-satir">
+          <label></label>
+          <button id="getirBtn" class="btn-kaydet-ana" disabled style="width: auto; padding: 10px 28px;">
+            <i class="fa-solid fa-bolt"></i> Formülü Getir
+          </button>
+        </div>
+
+        <div id="hataMesaji" class="mesaj" style="display: none; margin-top: 15px;"></div>
+      </div>
+
+      <!-- ══ SONUÇ ALANI ══ -->
+      <div class="detay-kagit formul-sonuc-karti" id="sonucAlani">
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span class="rozet rozet-sinif" id="sonucUnite">Konu</span>
+            <span class="birim-rozet" id="sonucBirim" style="display:none;"></span>
+          </div>
+          <span style="font-size: 0.8rem; color: var(--text-soft);" id="sonucTarih"></span>
+        </div>
+
+        <h2 class="section-title" style="text-align: left; margin-bottom: 8px;" id="sonucBaslik">Formül Başlığı</h2>
+
+        <!-- FORMÜL -->
+        <div class="formul-kutu" id="sonucFormul"></div>
+
+        <!-- AÇIKLAMA -->
+        <div id="sonucAciklamaWrap" style="display: none;">
+          <div class="formul-bolum"><i class="fa-solid fa-align-left"></i> Açıklama</div>
+          <div class="formul-aciklama" id="sonucAciklama"></div>
+        </div>
+
+        <!-- DEĞİŞKENLER -->
+        <div id="sonucDegiskenlerWrap" style="display: none;">
+          <div class="formul-bolum"><i class="fa-solid fa-list"></i> Değişkenler</div>
+          <table class="formul-degisken-tablo">
+            <thead><tr><th style="width:120px">Sembol</th><th>Anlamı</th><th style="width:160px">Birim</th></tr></thead>
+            <tbody id="sonucDegiskenler"></tbody>
+          </table>
+        </div>
+
+        <!-- ÖRNEK -->
+        <div id="sonucOrnekWrap" style="display: none;">
+          <div class="formul-bolum"><i class="fa-solid fa-lightbulb"></i> Örnek</div>
+          <div class="formul-ornek-kutu" id="ornekSoruKutu">
+            <div class="etiket"><i class="fa-solid fa-question"></i> Soru</div>
+            <div id="sonucOrnekSoru"></div>
+          </div>
+          <div class="formul-ornek-kutu" id="ornekCozumKutu">
+            <div class="etiket"><i class="fa-solid fa-calculator"></i> Çözüm</div>
+            <div class="formul-ornek-cozum" id="sonucOrnekCozum"></div>
+          </div>
+        </div>
+
+        <button onclick="sifirla()" class="filtre-pil" style="margin-top: 24px; width: 100%; text-align: center; cursor: pointer;">
+          <i class="fa-solid fa-arrow-left"></i> Yeni Bir Formül Ara
+        </button>
+      </div>
+
+    </div>
+
+    <div id="footer-yeri"></div>
+  </div>
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/js/site.js"></script>
+  <script>
+    // ==========================================
+    // 0. AKTİF TEMA YÜKLE
+    // ==========================================
+    (function () {
+      var gecerli = ['warm-amber', 'deep-space', 'cyber-ocean', 'forest-matrix'];
+      fetch('aktif_tema.txt?v=' + Date.now())
+        .then(function (r) { return r.ok ? r.text() : 'warm-amber'; })
+        .then(function (t) {
+          t = t.trim();
+          if (gecerli.indexOf(t) !== -1) {
+            document.body.className = 'theme-' + t;
+          }
+        })
+        .catch(function () {});
+    })();
+
+    // ==========================================
+    // 1. DEĞİŞKENLER
+    // ==========================================
+    var formulVerisi = [];
+    var uniteSelect  = document.getElementById('uniteSelect');
+    var formulSelect = document.getElementById('formulSelect');
+    var getirBtn     = document.getElementById('getirBtn');
+    var secimAlani   = document.getElementById('secimAlani');
+    var sonucAlani   = document.getElementById('sonucAlani');
+    var hataMesaji   = document.getElementById('hataMesaji');
+
+    // ==========================================
+    // 2. MATHJAX HELPER
+    // ==========================================
+    function mathJaxRender(kok) {
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        if (window.MathJax.typesetClear) window.MathJax.typesetClear([kok]);
+        window.MathJax.typesetPromise([kok]).catch(function () {});
+      }
+    }
+    function esc(s) {
+      if (s == null) return '';
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    // ==========================================
+    // 3. JSON YÜKLEME
+    // ==========================================
+    function verileriYukle() {
+      fetch('data/formul.json?v=' + Date.now())
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function (ham) {
+          formulVerisi = ham.map(function (item) {
+            var meta = item.meta || {};
+            return {
+              id:           (item.id || '').trim(),
+              meta: {
+                konu:   (meta.konu   || '').trim(),
+                baslik: (meta.baslik || '').trim(),
+                birim:  (meta.birim  || '').trim(),
+                tarih:  (meta.tarih  || '').trim()
+              },
+              latex:        (item.latex    || '').trim(),
+              aciklama:     (item.aciklama || '').trim(),
+              degiskenler:  item.degiskenler || [],
+              ornek:        item.ornek       || {}
+            };
+          });
+          uniteleriDoldur();
+        })
+        .catch(function (e) {
+          hataMesaji.textContent = '❌ Formüller yüklenemedi: ' + e.message;
+          hataMesaji.style.display = 'block';
+          hataMesaji.style.background = 'rgba(239,68,68,.15)';
+          hataMesaji.style.color = '#f87171';
+          hataMesaji.style.border = '1px solid rgba(239,68,68,.4)';
+        });
+    }
+
+    // ==========================================
+    // 4. ÜNİTE DROPDOWN
+    // ==========================================
+    function uniteleriDoldur() {
+      var konular = [];
+      formulVerisi.forEach(function (f) {
+        var k = f.meta.konu;
+        if (k && konular.indexOf(k) === -1) konular.push(k);
+      });
+      konular.sort();
+
+      uniteSelect.innerHTML = '<option value="">— Ünite seçiniz —</option>';
+      konular.forEach(function (k) {
+        var opt = document.createElement('option');
+        opt.value = k;
+        opt.textContent = k;
+        uniteSelect.appendChild(opt);
+      });
+    }
+
+    // ==========================================
+    // 5. ÜNİTE SEÇİLDİĞİNDE FORMÜL DROPDOWN
+    // ==========================================
+    uniteSelect.addEventListener('change', function () {
+      var unite = this.value;
+      formulSelect.innerHTML = '';
+      getirBtn.disabled = true;
+      gizleHata();
+      sonucAlani.style.display = 'none';
+
+      if (!unite) {
+        formulSelect.innerHTML = '<option value="">— Önce ünite seçin —</option>';
+        formulSelect.disabled = true;
+        return;
+      }
+
+      var formüller = formulVerisi.filter(function (f) { return f.meta.konu === unite; });
+      formüller.sort(function (a, b) { return a.meta.baslik.localeCompare(b.meta.baslik); });
+
+      formulSelect.innerHTML = '<option value="">— Formül seçiniz —</option>';
+      formüller.forEach(function (f) {
+        var opt = document.createElement('option');
+        opt.value = f.id;
+        opt.textContent = f.meta.baslik;
+        formulSelect.appendChild(opt);
+      });
+      formulSelect.disabled = false;
+      formulSelect.focus();
+    });
+
+    // ==========================================
+    // 6. FORMÜL SEÇİLDİĞİNDE BUTON AKTİF
+    // ==========================================
+    formulSelect.addEventListener('change', function () {
+      getirBtn.disabled = !this.value;
+      gizleHata();
+    });
+
+    // ==========================================
+    // 7. FORMÜLÜ GETİR VE GÖSTER
+    // ==========================================
+    getirBtn.addEventListener('click', function () {
+      var id = formulSelect.value;
+      if (!id) return;
+
+      var f = formulVerisi.find(function (x) { return x.id === id; });
+      if (!f) {
+        hataMesaji.textContent = '⚠️ Formül bulunamadı.';
+        hataMesaji.style.display = 'block';
+        return;
+      }
+
+      // Başlık kartı
+      document.getElementById('sonucUnite').textContent = f.meta.konu;
+      document.getElementById('sonucBaslik').textContent = f.meta.baslik;
+      document.getElementById('sonucTarih').textContent =
+        f.meta.tarih ? 'Güncelleme: ' + f.meta.tarih : '';
+
+      // Birim rozeti
+      var birimEl = document.getElementById('sonucBirim');
+      if (f.meta.birim) {
+        birimEl.textContent = f.meta.birim;
+        birimEl.style.display = 'inline-block';
+      } else {
+        birimEl.style.display = 'none';
+      }
+
+      // Formül kutusu
+      var formulKutu = document.getElementById('sonucFormul');
+      if (f.latex) {
+        formulKutu.innerHTML = '\\[' + esc(f.latex) + '\\]';
+        formulKutu.style.display = 'block';
+      } else {
+        formulKutu.style.display = 'none';
+      }
+
+      // Açıklama
+      var acikWrap = document.getElementById('sonucAciklamaWrap');
+      if (f.aciklama) {
+        document.getElementById('sonucAciklama').textContent = f.aciklama;
+        acikWrap.style.display = 'block';
+      } else {
+        acikWrap.style.display = 'none';
+      }
+
+      // Değişkenler
+      var degWrap  = document.getElementById('sonucDegiskenlerWrap');
+      var degTbody = document.getElementById('sonucDegiskenler');
+      var degListe = Array.isArray(f.degiskenler) ? f.degiskenler : [];
+      if (degListe.length) {
+        degTbody.innerHTML = degListe.map(function (d) {
+          return '<tr>' +
+            '<td class="sembol-td">\\(' + esc((d.sembol || '').trim()) + '\\)</td>' +
+            '<td>' + esc((d.anlam || '').trim()) + '</td>' +
+            '<td>' + esc((d.birim || '').trim()) + '</td>' +
+            '</tr>';
+        }).join('');
+        degWrap.style.display = 'block';
+      } else {
+        degWrap.style.display = 'none';
+      }
+
+      // Örnek
+      var ornekWrap = document.getElementById('sonucOrnekWrap');
+      var ornek     = f.ornek || {};
+      var ornekSoru  = (ornek.soru  || '').trim();
+      var ornekCozum = (ornek.cozum || '').trim();
+      if (ornekSoru || ornekCozum) {
+        document.getElementById('sonucOrnekSoru').textContent = ornekSoru;
+        document.getElementById('ornekSoruKutu').style.display = ornekSoru ? 'block' : 'none';
+        var cozumEl = document.getElementById('sonucOrnekCozum');
+        cozumEl.innerHTML = ornekCozum ? '\\[' + esc(ornekCozum) + '\\]' : '';
+        document.getElementById('ornekCozumKutu').style.display = ornekCozum ? 'block' : 'none';
+        ornekWrap.style.display = 'block';
+      } else {
+        ornekWrap.style.display = 'none';
+      }
+
+      // Ekranı değiştir
+      secimAlani.style.display = 'none';
+      sonucAlani.style.display = 'block';
+      setTimeout(function () { mathJaxRender(sonucAlani); }, 50);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ==========================================
+    // 8. SIFIRLA
+    // ==========================================
+    function sifirla() {
+      secimAlani.style.display = 'block';
+      sonucAlani.style.display = 'none';
+      uniteSelect.value = '';
+      formulSelect.innerHTML = '<option value="">— Önce ünite seçin —</option>';
+      formulSelect.disabled = true;
+      getirBtn.disabled = true;
+      gizleHata();
+    }
+
+    function gizleHata() { hataMesaji.style.display = 'none'; }
+
+    // ==========================================
+    // 9. BAŞLAT
+    // ==========================================
+    document.addEventListener('DOMContentLoaded', verileriYukle);
+  </script>
+
+</body>
+</html>
