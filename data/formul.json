@@ -463,4 +463,436 @@
             "cozum": "t = \\sqrt{\\dfrac{2 \\times 45}{10}} = 3 \\, \\text{s} \\quad ; \\quad x = 20 \\times 3 = 60 \\, \\text{m}"
         }
     }
+    ,
+{
+  "id": "formul_hizlanma_hiz",
+  "meta": { "konu": "Kuvvet ve Hareket", "baslik": "Düzgün Hızlanan Hareket — Hız", "birim": "m/s", "tarih": "15.09.2026" },
+  "latex": "v = v_0 + a \\cdot t",
+  "aciklama": "Sabit ivmeli harekette hız, zamanla doğrusal olarak değişir.",
+  "degiskenler": [
+    { "sembol": "v", "anlam": "Son hız", "birim": "m/s" },
+    { "sembol": "v_0", "anlam": "İlk hız", "birim": "m/s" },
+    { "sembol": "a", "anlam": "İvme", "birim": "m/s²" },
+    { "sembol": "t", "anlam": "Zaman", "birim": "saniye (s)" }
+  ],
+  "ornek": { "soru": "Durgun halden 3 m/s² ivmeyle hızlanan aracın 5 s sonraki hızı nedir?", "cozum": "v = 0 + 3 \\times 5 = 15 \\, \\text{m/s}" }
+},
+{
+  "id": "formul_hizlanma_yol",
+  "meta": { "konu": "Kuvvet ve Hareket", "baslik": "Düzgün Hızlanan Hareket — Yer Değiştirme", "birim": "metre (m)", "tarih": "15.09.2026" },
+  "latex": "x = v_0 \\cdot t + \\dfrac{1}{2} a t^2",
+  "aciklama": "Sabit ivmeli harekette alınan yol; ilk hız ve ivmenin zamana bağlı katkılarının toplamıdır.",
+  "degiskenler": [
+    { "sembol": "x", "anlam": "Yer değiştirme", "birim": "metre (m)" },
+    { "sembol": "v_0", "anlam": "İlk hız", "birim": "m/s" },
+    { "sembol": "a", "anlam": "İvme", "birim": "m/s²" },
+    { "sembol": "t", "anlam": "Zaman", "birim": "saniye (s)" }
+  ],
+  "ornek": { "soru": "Durgun halden 2 m/s² ivmeyle çıkan cismin 4 s'de aldığı yol nedir?", "cozum": "x = 0 + \\dfrac{1}{2} \\times 2 \\times 4^2 = 16 \\, \\text{m}" }
+},
+{
+  "id": "formul_hizlanma_zamansiz",
+  "meta": { "konu": "Kuvvet ve Hareket", "baslik": "Zamandan Bağımsız Hız–Yol Bağıntısı", "birim": "m/s", "tarih": "15.09.2026" },
+  "latex": "v^2 = v_0^2 + 2 \\cdot a \\cdot x",
+  "aciklama": "Zaman bilinmediğinde hız ile yer değiştirme arasındaki ilişkiyi verir.",
+  "degiskenler": [
+    { "sembol": "v", "anlam": "Son hız", "birim": "m/s" },
+    { "sembol": "v_0", "anlam": "İlk hız", "birim": "m/s" },
+    { "sembol": "a", "anlam": "İvme", "birim": "m/s²" },
+    { "sembol": "x", "anlam": "Yer değiştirme", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "Durgun halden 5 m/s² ivmeyle 10 m yol alan cismin hızı nedir?", "cozum": "v^2 = 0 + 2 \\times 5 \\times 10 = 100 \\Rightarrow v = 10 \\, \\text{m/s}" }
+},
+{
+  "id": "formul_serbest_dusme",
+  "meta": { "konu": "Kuvvet ve Hareket", "baslik": "Serbest Düşme", "birim": "metre (m) / saniye (s)", "tarih": "15.09.2026" },
+  "latex": "v = g \\cdot t \\quad | \\quad h = \\dfrac{1}{2} g t^2",
+  "aciklama": "Hava direnci ihmal edildiğinde tüm cisimler aynı ivmeyle (g) düşer; kütle düşmeyi etkilemez.",
+  "degiskenler": [
+    { "sembol": "v", "anlam": "Anlık hız", "birim": "m/s" },
+    { "sembol": "h", "anlam": "Düşme yüksekliği", "birim": "metre (m)" },
+    { "sembol": "g", "anlam": "Yerçekimi ivmesi", "birim": "≈ 10 m/s²" },
+    { "sembol": "t", "anlam": "Düşme süresi", "birim": "saniye (s)" }
+  ],
+  "ornek": { "soru": "3 s serbest düşen cisim kaç metre yol alır?", "cozum": "h = \\dfrac{1}{2} \\times 10 \\times 3^2 = 45 \\, \\text{m}" }
+},
+{
+  "id": "formul_surtunme",
+  "meta": { "konu": "Kuvvet ve Hareket", "baslik": "Sürtünme Kuvveti", "birim": "Newton (N)", "tarih": "15.09.2026" },
+  "latex": "F_s = k \\cdot N",
+  "aciklama": "Sürtünme kuvveti, yüzeyin cinsine (k) ve yüzeye dik tepki kuvvetine (N) bağlıdır; temas alanına bağlı değildir.",
+  "degiskenler": [
+    { "sembol": "F_s", "anlam": "Sürtünme kuvveti", "birim": "Newton (N)" },
+    { "sembol": "k", "anlam": "Sürtünme katsayısı", "birim": "birimsiz" },
+    { "sembol": "N", "anlam": "Yüzeye dik tepki kuvveti", "birim": "Newton (N)" }
+  ],
+  "ornek": { "soru": "k = 0,2 olan yüzeyde N = 50 N ise sürtünme kuvveti nedir?", "cozum": "F_s = 0,2 \\times 50 = 10 \\, \\text{N}" }
+},
+{
+  "id": "formul_hooke",
+  "meta": { "konu": "Kuvvet ve Hareket", "baslik": "Yay Kuvveti (Hooke Yasası)", "birim": "Newton (N)", "tarih": "15.09.2026" },
+  "latex": "F = k \\cdot x",
+  "aciklama": "Esneklik sınırı içinde yayın uyguladığı kuvvet, uzama veya sıkışma miktarıyla doğru orantılıdır.",
+  "degiskenler": [
+    { "sembol": "F", "anlam": "Yay kuvveti", "birim": "Newton (N)" },
+    { "sembol": "k", "anlam": "Yay sabiti", "birim": "N/m" },
+    { "sembol": "x", "anlam": "Uzama / sıkışma", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "k = 200 N/m olan yay 5 cm sıkıştırılırsa hangi kuvveti uygular?", "cozum": "F = 200 \\times 0,05 = 10 \\, \\text{N}" }
+},
+{
+  "id": "formul_kutle_cekim",
+  "meta": { "konu": "Kuvvet ve Hareket", "baslik": "Evrensel Kütle Çekimi", "birim": "Newton (N)", "tarih": "15.09.2026" },
+  "latex": "F = G \\cdot \\dfrac{m_1 \\cdot m_2}{d^2}",
+  "aciklama": "İki kütle arasındaki çekim kuvveti kütlelerle doğru, aradaki uzaklığın karesiyle ters orantılıdır.",
+  "degiskenler": [
+    { "sembol": "F", "anlam": "Çekim kuvveti", "birim": "Newton (N)" },
+    { "sembol": "G", "anlam": "Çekim sabiti", "birim": "6,67·10⁻¹¹ N·m²/kg²" },
+    { "sembol": "m_1, m_2", "anlam": "Kütleler", "birim": "kilogram (kg)" },
+    { "sembol": "d", "anlam": "Merkezler arası uzaklık", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "İki kütle arası uzaklık 2 katına çıkarılırsa çekim kuvveti nasıl değişir?", "cozum": "d \\to 2d \\Rightarrow F \\to \\dfrac{F}{4}" }
+},
+{
+  "id": "formul_potansiyel_enerji",
+  "meta": { "konu": "İş, Güç, Enerji", "baslik": "Yerçekimi Potansiyel Enerjisi", "birim": "Joule (J)", "tarih": "15.09.2026" },
+  "latex": "E_p = m \\cdot g \\cdot h",
+  "aciklama": "Bir cismin yüksekliği sayesinde depoladığı enerjidir; yükseklik arttıkça artar.",
+  "degiskenler": [
+    { "sembol": "E_p", "anlam": "Potansiyel enerji", "birim": "Joule (J)" },
+    { "sembol": "m", "anlam": "Kütle", "birim": "kilogram (kg)" },
+    { "sembol": "g", "anlam": "Yerçekimi ivmesi", "birim": "≈ 10 m/s²" },
+    { "sembol": "h", "anlam": "Yükseklik", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "2 kg kütleli cismin yerden 3 m yükseklikteki potansiyel enerjisi nedir?", "cozum": "E_p = 2 \\times 10 \\times 3 = 60 \\, \\text{J}" }
+},
+{
+  "id": "formul_elastik_enerji",
+  "meta": { "konu": "İş, Güç, Enerji", "baslik": "Esneklik Potansiyel Enerjisi", "birim": "Joule (J)", "tarih": "15.09.2026" },
+  "latex": "E_p = \\dfrac{1}{2} k x^2",
+  "aciklama": "Sıkıştırılmış veya gerilmiş yayın depoladığı enerji; uzamanın karesiyle artar.",
+  "degiskenler": [
+    { "sembol": "E_p", "anlam": "Esneklik enerjisi", "birim": "Joule (J)" },
+    { "sembol": "k", "anlam": "Yay sabiti", "birim": "N/m" },
+    { "sembol": "x", "anlam": "Uzama / sıkışma", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "k = 100 N/m yay 10 cm sıkıştırılırsa depolanan enerji nedir?", "cozum": "E_p = \\dfrac{1}{2} \\times 100 \\times 0,1^2 = 0,5 \\, \\text{J}" }
+},
+{
+  "id": "formul_is_enerji_teorimi",
+  "meta": { "konu": "İş, Güç, Enerji", "baslik": "İş–Enerji Teoremi", "birim": "Joule (J)", "tarih": "15.09.2026" },
+  "latex": "W_{\\text{net}} = \\Delta E_k = \\dfrac{1}{2} m v^2 - \\dfrac{1}{2} m v_0^2",
+  "aciklama": "Net kuvvetin yaptığı iş, cismin kinetik enerjisindeki değişime eşittir.",
+  "degiskenler": [
+    { "sembol": "W_{net}", "anlam": "Net iş", "birim": "Joule (J)" },
+    { "sembol": "\\Delta E_k", "anlam": "Kinetik enerji değişimi", "birim": "Joule (J)" },
+    { "sembol": "m", "anlam": "Kütle", "birim": "kilogram (kg)" }
+  ],
+  "ornek": { "soru": "2 kg cismin hızı 0'dan 4 m/s'ye çıkıyorsa net iş nedir?", "cozum": "W = \\dfrac{1}{2} \\times 2 \\times 4^2 - 0 = 16 \\, \\text{J}" }
+},
+{
+  "id": "formul_mekanik_korunum",
+  "meta": { "konu": "İş, Güç, Enerji", "baslik": "Mekanik Enerjinin Korunumu", "birim": "Joule (J)", "tarih": "15.09.2026" },
+  "latex": "E_{k1} + E_{p1} = E_{k2} + E_{p2}",
+  "aciklama": "Sürtünmesiz ortamda kinetik ile potansiyel enerji birbirine dönüşür; toplam mekanik enerji sabit kalır.",
+  "degiskenler": [
+    { "sembol": "E_k", "anlam": "Kinetik enerji", "birim": "Joule (J)" },
+    { "sembol": "E_p", "anlam": "Potansiyel enerji", "birim": "Joule (J)" }
+  ],
+  "ornek": { "soru": "5 m yüksekten bırakılan cismin yere çarpma hızı nedir? (sürtünmesiz)", "cozum": "m g h = \\dfrac{1}{2} m v^2 \\Rightarrow v = \\sqrt{2 \\times 10 \\times 5} = 10 \\, \\text{m/s}" }
+},
+{
+  "id": "formul_verimlilik",
+  "meta": { "konu": "İş, Güç, Enerji", "baslik": "Verim", "birim": "%", "tarih": "15.09.2026" },
+  "latex": "\\eta = \\dfrac{E_{\\text{faydalı}}}{E_{\\text{harcanan}}} \\cdot 100",
+  "aciklama": "Bir sistemin harcadığı enerjinin ne kadarını işe dönüştürdüğünü gösterir; her zaman %100'ün altındadır.",
+  "degiskenler": [
+    { "sembol": "\\eta", "anlam": "Verim", "birim": "%" },
+    { "sembol": "E_{faydalı}", "anlam": "İşe dönüşen enerji", "birim": "Joule (J)" },
+    { "sembol": "E_{harcanan}", "anlam": "Toplam harcanan enerji", "birim": "Joule (J)" }
+  ],
+  "ornek": { "soru": "200 J harcayıp 150 J faydalı iş veren motorun verimi nedir?", "cozum": "\\eta = \\dfrac{150}{200} \\cdot 100 = 75\\%" }
+},
+{
+  "id": "formul_momentum",
+  "meta": { "konu": "Momentum ve İtme", "baslik": "Momentum ve İtme", "birim": "kg·m/s", "tarih": "15.09.2026" },
+  "latex": "p = m \\cdot v \\quad | \\quad F \\cdot \\Delta t = \\Delta p",
+  "aciklama": "Momentum hareketin 'miktarı'dır; bir cisme uygulanan itme (F·Δt), momentum değişimine eşittir.",
+  "degiskenler": [
+    { "sembol": "p", "anlam": "Momentum", "birim": "kg·m/s" },
+    { "sembol": "m", "anlam": "Kütle", "birim": "kilogram (kg)" },
+    { "sembol": "v", "anlam": "Hız", "birim": "m/s" },
+    { "sembol": "F \\cdot \\Delta t", "anlam": "İtme", "birim": "N·s" }
+  ],
+  "ornek": { "soru": "3 kg kütleli, 4 m/s hızla giden cismin momentumu nedir?", "cozum": "p = 3 \\times 4 = 12 \\, \\text{kg·m/s}" }
+},
+{
+  "id": "formul_tork",
+  "meta": { "konu": "Tork ve Denge", "baslik": "Tork (Kuvvet Momenti)", "birim": "N·m", "tarih": "15.09.2026" },
+  "latex": "\\tau = F \\cdot d \\cdot \\sin\\theta",
+  "aciklama": "Bir kuvvetin cismi dönme eksenine göre döndürme etkisidir; kol uzadıkça tork artar.",
+  "degiskenler": [
+    { "sembol": "\\tau", "anlam": "Tork", "birim": "N·m" },
+    { "sembol": "F", "anlam": "Kuvvet", "birim": "Newton (N)" },
+    { "sembol": "d", "anlam": "Dönme eksenine uzaklık (kol)", "birim": "metre (m)" },
+    { "sembol": "\\theta", "anlam": "Kuvvet ile kol arasındaki açı", "birim": "derece" }
+  ],
+  "ornek": { "soru": "0,5 m'lik anahtara dik uygulanan 10 N kuvvetin torku nedir?", "cozum": "\\tau = 10 \\times 0,5 \\times \\sin 90° = 5 \\, \\text{N·m}" }
+},
+{
+  "id": "formul_dalga_hizi",
+  "meta": { "konu": "Dalga ve Ses", "baslik": "Dalga Hızı", "birim": "m/s", "tarih": "15.09.2026" },
+  "latex": "v = \\lambda \\cdot f",
+  "aciklama": "Bir dalganın hızı, dalga boyu ile frekansın çarpımıdır; ortam değişince hız ve dalga boyu, frekans değil.",
+  "degiskenler": [
+    { "sembol": "v", "anlam": "Dalga hızı", "birim": "m/s" },
+    { "sembol": "\\lambda", "anlam": "Dalga boyu", "birim": "metre (m)" },
+    { "sembol": "f", "anlam": "Frekans", "birim": "Hertz (Hz)" }
+  ],
+  "ornek": { "soru": "Dalga boyu 2 m, frekansı 5 Hz olan dalganın hızı nedir?", "cozum": "v = 2 \\times 5 = 10 \\, \\text{m/s}" }
+},
+{
+  "id": "formul_yay_sarkac",
+  "meta": { "konu": "Dalga ve Ses", "baslik": "Yay Sarkacının Periyodu", "birim": "saniye (s)", "tarih": "15.09.2026" },
+  "latex": "T = 2\\pi \\sqrt{\\dfrac{m}{k}}",
+  "aciklama": "Yay sarkacının periyodu yalnız kütle ve yay sabitine bağlıdır; yerçekimi ivmesinden etkilenmez.",
+  "degiskenler": [
+    { "sembol": "T", "anlam": "Periyot", "birim": "saniye (s)" },
+    { "sembol": "m", "anlam": "Kütle", "birim": "kilogram (kg)" },
+    { "sembol": "k", "anlam": "Yay sabiti", "birim": "N/m" }
+  ],
+  "ornek": { "soru": "Kütle 4 katına çıkarılırsa periyot nasıl değişir?", "cozum": "m \\to 4m \\Rightarrow T \\to 2T" }
+},
+{
+  "id": "formul_basit_sarkac",
+  "meta": { "konu": "Dalga ve Ses", "baslik": "Basit Sarkacın Periyodu", "birim": "saniye (s)", "tarih": "15.09.2026" },
+  "latex": "T = 2\\pi \\sqrt{\\dfrac{L}{g}}",
+  "aciklama": "Basit sarkacın periyodu ip uzunluğuna ve yerçekimi ivmesine bağlıdır; kütle ve genlikten etkilenmez.",
+  "degiskenler": [
+    { "sembol": "T", "anlam": "Periyot", "birim": "saniye (s)" },
+    { "sembol": "L", "anlam": "İp uzunluğu", "birim": "metre (m)" },
+    { "sembol": "g", "anlam": "Yerçekimi ivmesi", "birim": "m/s²" }
+  ],
+  "ornek": { "soru": "İp uzunluğu 4 katına çıkarılırsa periyot nasıl değişir?", "cozum": "L \\to 4L \\Rightarrow T \\to 2T" }
+},
+{
+  "id": "formul_ses_duzeyi",
+  "meta": { "konu": "Dalga ve Ses", "baslik": "Ses Şiddet Düzeyi", "birim": "desibel (dB)", "tarih": "15.09.2026" },
+  "latex": "\\beta = 10 \\cdot \\log\\left(\\dfrac{I}{I_0}\\right)",
+  "aciklama": "Kulağın algıladığı ses düzeyi, şiddetin logaritmik ölçüsüdür; I₀ eşik şiddetidir (10⁻¹² W/m²).",
+  "degiskenler": [
+    { "sembol": "\\beta", "anlam": "Şiddet düzeyi", "birim": "desibel (dB)" },
+    { "sembol": "I", "anlam": "Ses şiddeti", "birim": "W/m²" },
+    { "sembol": "I_0", "anlam": "Eşik şiddeti", "birim": "10⁻¹² W/m²" }
+  ],
+  "ornek": { "soru": "Şiddeti eşik değerinin 100 katı olan sesin düzeyi nedir?", "cozum": "\\beta = 10 \\cdot \\log(100) = 20 \\, \\text{dB}" }
+},
+{
+  "id": "formul_coulomb",
+  "meta": { "konu": "Elektrostatik", "baslik": "Coulomb Yasası", "birim": "Newton (N)", "tarih": "15.09.2026" },
+  "latex": "F = k \\cdot \\dfrac{q_1 \\cdot q_2}{d^2}",
+  "aciklama": "İki noktasal yük arasındaki elektriksel kuvvet; yüklerle doğru, uzaklığın karesiyle ters orantılıdır.",
+  "degiskenler": [
+    { "sembol": "F", "anlam": "Elektriksel kuvvet", "birim": "Newton (N)" },
+    { "sembol": "k", "anlam": "Coulomb sabiti", "birim": "9·10⁹ N·m²/C²" },
+    { "sembol": "q_1, q_2", "anlam": "Yükler", "birim": "Coulomb (C)" },
+    { "sembol": "d", "anlam": "Yükler arası uzaklık", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "Yükler arası uzaklık yarıya inerse kuvvet nasıl değişir?", "cozum": "d \\to \\dfrac{d}{2} \\Rightarrow F \\to 4F" }
+},
+{
+  "id": "formul_elektrik_alan",
+  "meta": { "konu": "Elektrostatik", "baslik": "Elektrik Alan Şiddeti", "birim": "N/C", "tarih": "15.09.2026" },
+  "latex": "E = \\dfrac{F}{q} = k \\cdot \\dfrac{q}{d^2}",
+  "aciklama": "Elektrik alan, birim yük başına düşen kuvvettir; kaynaktan uzaklaştıkça karesiyle azalır.",
+  "degiskenler": [
+    { "sembol": "E", "anlam": "Elektrik alan", "birim": "N/C" },
+    { "sembol": "F", "anlam": "Yüke etki eden kuvvet", "birim": "Newton (N)" },
+    { "sembol": "q", "anlam": "Yük", "birim": "Coulomb (C)" },
+    { "sembol": "d", "anlam": "Yüke uzaklık", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "2 C'luk yüke 10 N kuvvet etki ediyorsa elektrik alan nedir?", "cozum": "E = \\dfrac{10}{2} = 5 \\, \\text{N/C}" }
+},
+{
+  "id": "formul_kondansator",
+  "meta": { "konu": "Elektrostatik", "baslik": "Kondansatör Yükü", "birim": "Coulomb (C)", "tarih": "15.09.2026" },
+  "latex": "Q = C \\cdot V",
+  "aciklama": "Kondansatörün depoladığı yük, sığası ile uçları arasındaki gerilimin çarpımıdır.",
+  "degiskenler": [
+    { "sembol": "Q", "anlam": "Depolanan yük", "birim": "Coulomb (C)" },
+    { "sembol": "C", "anlam": "Sığa (kapasite)", "birim": "Farad (F)" },
+    { "sembol": "V", "anlam": "Gerilim", "birim": "Volt (V)" }
+  ],
+  "ornek": { "soru": "2·10⁻⁶ F kondansatör 50 V ile yüklenirse ne kadar yük depolar?", "cozum": "Q = 2 \\times 10^{-6} \\times 50 = 10^{-4} \\, \\text{C}" }
+},
+{
+  "id": "formul_direnc_oz",
+  "meta": { "konu": "Elektrik", "baslik": "Direnç ve Özdirenç", "birim": "Ohm (Ω)", "tarih": "15.09.2026" },
+  "latex": "R = \\rho \\cdot \\dfrac{L}{A}",
+  "aciklama": "Bir iletkenin direnci; malzemenin özdirenci ve uzunluğuyla doğru, kesit alanıyla ters orantılıdır.",
+  "degiskenler": [
+    { "sembol": "R", "anlam": "Direnç", "birim": "Ohm (Ω)" },
+    { "sembol": "\\rho", "anlam": "Özdirenç", "birim": "Ω·m" },
+    { "sembol": "L", "anlam": "Uzunluk", "birim": "metre (m)" },
+    { "sembol": "A", "anlam": "Kesit alanı", "birim": "m²" }
+  ],
+  "ornek": { "soru": "Telin boyu 2 katına çıkarılırsa direnci nasıl değişir?", "cozum": "L \\to 2L \\Rightarrow R \\to 2R" }
+},
+{
+  "id": "formul_akim_tanim",
+  "meta": { "konu": "Elektrik", "baslik": "Elektrik Akımı", "birim": "Amper (A)", "tarih": "15.09.2026" },
+  "latex": "I = \\dfrac{q}{t}",
+  "aciklama": "Akım, birim zamanda kesitten geçen yük miktarıdır.",
+  "degiskenler": [
+    { "sembol": "I", "anlam": "Akım", "birim": "Amper (A)" },
+    { "sembol": "q", "anlam": "Geçen yük", "birim": "Coulomb (C)" },
+    { "sembol": "t", "anlam": "Zaman", "birim": "saniye (s)" }
+  ],
+  "ornek": { "soru": "4 s'de 12 C yük geçiyorsa akım nedir?", "cozum": "I = \\dfrac{12}{4} = 3 \\, \\text{A}" }
+},
+{
+  "id": "formul_manyetik_kuvvet",
+  "meta": { "konu": "Manyetizma", "baslik": "Akım Taşıyan Tele Etkiyen Kuvvet", "birim": "Newton (N)", "tarih": "15.09.2026" },
+  "latex": "F = B \\cdot I \\cdot L \\cdot \\sin\\theta",
+  "aciklama": "Manyetik alan içindeki akım teline etki eden kuvvet; alan, akım ve tel uzunluğuyla orantılıdır.",
+  "degiskenler": [
+    { "sembol": "F", "anlam": "Manyetik kuvvet", "birim": "Newton (N)" },
+    { "sembol": "B", "anlam": "Manyetik alan", "birim": "Tesla (T)" },
+    { "sembol": "I", "anlam": "Akım", "birim": "Amper (A)" },
+    { "sembol": "L", "anlam": "Tel uzunluğu", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "B = 0,5 T alanda, alana dik 0,5 m telden 4 A geçerse kuvvet nedir?", "cozum": "F = 0,5 \\times 4 \\times 0,5 = 1 \\, \\text{N}" }
+},
+{
+  "id": "formul_induksiyon",
+  "meta": { "konu": "Manyetizma", "baslik": "Elektromanyetik İndüksiyon (Faraday)", "birim": "Volt (V)", "tarih": "15.09.2026" },
+  "latex": "\\varepsilon = -N \\cdot \\dfrac{\\Delta \\Phi}{\\Delta t}",
+  "aciklama": "Akı değişimi bobinde gerilim indükler; değişim ne kadar hızlıysa gerilim o kadar büyüktür.",
+  "degiskenler": [
+    { "sembol": "\\varepsilon", "anlam": "İndüklenen gerilim", "birim": "Volt (V)" },
+    { "sembol": "N", "anlam": "Sarım sayısı", "birim": "adet" },
+    { "sembol": "\\Delta \\Phi", "anlam": "Manyetik akı değişimi", "birim": "Weber (Wb)" },
+    { "sembol": "\\Delta t", "anlam": "Süre", "birim": "saniye (s)" }
+  ],
+  "ornek": { "soru": "50 sarımlı bobinde akı 0,1 s'de 0,02 Wb değişirse gerilim nedir?", "cozum": "\\varepsilon = 50 \\times \\dfrac{0,02}{0,1} = 10 \\, \\text{V}" }
+},
+{
+  "id": "formul_snell",
+  "meta": { "konu": "Optik", "baslik": "Kırılma (Snell Yasası)", "birim": "—", "tarih": "15.09.2026" },
+  "latex": "n_1 \\cdot \\sin\\theta_1 = n_2 \\cdot \\sin\\theta_2",
+  "aciklama": "Işık az yoğun ortamdan çok yoğuna geçerken normale yaklaşır; kırılma bu bağıntıyla hesaplanır.",
+  "degiskenler": [
+    { "sembol": "n_1, n_2", "anlam": "Ortamların kırılma indisleri", "birim": "birimsiz" },
+    { "sembol": "\\theta_1", "anlam": "Gelme açısı", "birim": "derece" },
+    { "sembol": "\\theta_2", "anlam": "Kırılma açısı", "birim": "derece" }
+  ],
+  "ornek": { "soru": "Havadan (n=1) cama (n=1,5) 30° ile giren ışın için sinθ₂ nedir?", "cozum": "1 \\times 0,5 = 1,5 \\times \\sin\\theta_2 \\Rightarrow \\sin\\theta_2 = \\dfrac{1}{3}" }
+},
+{
+  "id": "formul_mercek",
+  "meta": { "konu": "Optik", "baslik": "Mercek Denklemi", "birim": "metre (m)", "tarih": "15.09.2026" },
+  "latex": "\\dfrac{1}{f} = \\dfrac{1}{d_c} + \\dfrac{1}{d_g}",
+  "aciklama": "İnce mercekte odak uzaklığı, cisim ve görüntü uzaklıklarıyla bu bağıntıyla ilişkilidir.",
+  "degiskenler": [
+    { "sembol": "f", "anlam": "Odak uzaklığı", "birim": "metre (m)" },
+    { "sembol": "d_c", "anlam": "Cisim uzaklığı", "birim": "metre (m)" },
+    { "sembol": "d_g", "anlam": "Görüntü uzaklığı", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "f = 10 cm merceğe 30 cm uzaktaki cismin görüntü uzaklığı nedir?", "cozum": "\\dfrac{1}{10} = \\dfrac{1}{30} + \\dfrac{1}{d_g} \\Rightarrow d_g = 15 \\, \\text{cm}" }
+},
+{
+  "id": "formul_buyutme",
+  "meta": { "konu": "Optik", "baslik": "Büyütme", "birim": "birimsiz", "tarih": "15.09.2026" },
+  "latex": "M = \\dfrac{h_g}{h_c} = \\dfrac{d_g}{d_c}",
+  "aciklama": "Görüntünün boyu ile cismin boyu oranı, uzaklıklar oranına eşittir.",
+  "degiskenler": [
+    { "sembol": "M", "anlam": "Büyütme", "birim": "birimsiz" },
+    { "sembol": "h_g, h_c", "anlam": "Görüntü ve cisim boyu", "birim": "metre (m)" },
+    { "sembol": "d_g, d_c", "anlam": "Görüntü ve cisim uzaklığı", "birim": "metre (m)" }
+  ],
+  "ornek": { "soru": "d_g = 15 cm, d_c = 30 cm ise büyütme nedir?", "cozum": "M = \\dfrac{15}{30} = 0,5" }
+},
+{
+  "id": "formul_hal_degisim",
+  "meta": { "konu": "Isı ve Sıcaklık", "baslik": "Hal Değişim Isısı", "birim": "Joule veya kalori", "tarih": "15.09.2026" },
+  "latex": "Q = m \\cdot L",
+  "aciklama": "Hal değişimi sırasında sıcaklık sabit kalır; verilen ısı yalnız bağları çözmek için kullanılır.",
+  "degiskenler": [
+    { "sembol": "Q", "anlam": "Alınan/verilen ısı", "birim": "Joule veya kalori" },
+    { "sembol": "m", "anlam": "Kütle", "birim": "kg veya g" },
+    { "sembol": "L", "anlam": "Hal değişim ısısı (erime/buharlaşma)", "birim": "J/kg veya cal/g" }
+  ],
+  "ornek": { "soru": "2 kg buzu eritmek için gereken ısı nedir? (L = 3,34·10⁵ J/kg)", "cozum": "Q = 2 \\times 3,34 \\times 10^5 = 6,68 \\times 10^5 \\, \\text{J}" }
+},
+{
+  "id": "formul_genlesme",
+  "meta": { "konu": "Isı ve Sıcaklık", "baslik": "Doğrusal Genleşme", "birim": "metre (m)", "tarih": "15.09.2026" },
+  "latex": "\\Delta L = L_0 \\cdot \\lambda \\cdot \\Delta t",
+  "aciklama": "Isınan katıların boyu uzar; uzama ilk boy, malzeme katsayısı ve sıcaklık değişimiyle orantılıdır.",
+  "degiskenler": [
+    { "sembol": "\\Delta L", "anlam": "Boy değişimi", "birim": "metre (m)" },
+    { "sembol": "L_0", "anlam": "İlk boy", "birim": "metre (m)" },
+    { "sembol": "\\lambda", "anlam": "Genleşme katsayısı", "birim": "1/°C" },
+    { "sembol": "\\Delta t", "anlam": "Sıcaklık değişimi", "birim": "°C" }
+  ],
+  "ornek": { "soru": "2 m çubuk (λ = 1,2·10⁻⁵ 1/°C) 50 °C ısıtılırsa ne kadar uzar?", "cozum": "\\Delta L = 2 \\times 1,2 \\times 10^{-5} \\times 50 = 1,2 \\times 10^{-3} \\, \\text{m}" }
+},
+{
+  "id": "formul_boyle",
+  "meta": { "konu": "Basınç ve Kaldırma Kuvveti", "baslik": "Boyle Yasası (Sabit Sıcaklıkta Gaz)", "birim": "atm·L", "tarih": "15.09.2026" },
+  "latex": "P_1 \\cdot V_1 = P_2 \\cdot V_2",
+  "aciklama": "Sıcaklık sabitken gazın basıncı ile hacmi ters orantılıdır.",
+  "degiskenler": [
+    { "sembol": "P_1, P_2", "anlam": "İlk ve son basınç", "birim": "atm veya Pa" },
+    { "sembol": "V_1, V_2", "anlam": "İlk ve son hacim", "birim": "L veya m³" }
+  ],
+  "ornek": { "soru": "1 atm'de 6 L olan gaz 2 atm'ye sıkıştırılırsa hacmi ne olur?", "cozum": "1 \\times 6 = 2 \\times V_2 \\Rightarrow V_2 = 3 \\, \\text{L}" }
+},
+{
+  "id": "formul_sureklilik",
+  "meta": { "konu": "Basınç ve Kaldırma Kuvveti", "baslik": "Süreklilik Denklemi (Akışkanlar)", "birim": "m³/s", "tarih": "15.09.2026" },
+  "latex": "A_1 \\cdot v_1 = A_2 \\cdot v_2",
+  "aciklama": "Boruda kesit daraldıkça akış hızı artar; debi her kesitte aynıdır.",
+  "degiskenler": [
+    { "sembol": "A_1, A_2", "anlam": "Kesit alanları", "birim": "m²" },
+    { "sembol": "v_1, v_2", "anlam": "Akış hızları", "birim": "m/s" }
+  ],
+  "ornek": { "soru": "Kesit 4 m²'den 2 m²'ye inerken hız 2 m/s ise yeni hız nedir?", "cozum": "4 \\times 2 = 2 \\times v_2 \\Rightarrow v_2 = 4 \\, \\text{m/s}" }
+},
+{
+  "id": "formul_foton",
+  "meta": { "konu": "Modern Fizik", "baslik": "Foton Enerjisi", "birim": "Joule (J)", "tarih": "15.09.2026" },
+  "latex": "E = h \\cdot f",
+  "aciklama": "Işığın taşıdığı enerji paketçikleri (fotonlar) frekansla doğru orantılı enerji taşır.",
+  "degiskenler": [
+    { "sembol": "E", "anlam": "Foton enerjisi", "birim": "Joule (J)" },
+    { "sembol": "h", "anlam": "Planck sabiti", "birim": "6,63·10⁻³⁴ J·s" },
+    { "sembol": "f", "anlam": "Frekans", "birim": "Hertz (Hz)" }
+  ],
+  "ornek": { "soru": "f = 5·10¹⁴ Hz ışığın foton enerjisi nedir?", "cozum": "E = 6,63 \\times 10^{-34} \\times 5 \\times 10^{14} \\approx 3,3 \\times 10^{-19} \\, \\text{J}" }
+},
+{
+  "id": "formul_kutle_enerji",
+  "meta": { "konu": "Modern Fizik", "baslik": "Kütle–Enerji Eşdeğerliği", "birim": "Joule (J)", "tarih": "15.09.2026" },
+  "latex": "E = m \\cdot c^2",
+  "aciklama": "Kütle, yoğunlaşmış enerjidir; çok küçük kütleler bile dev enerjiye eşdeğerdir.",
+  "degiskenler": [
+    { "sembol": "E", "anlam": "Enerji", "birim": "Joule (J)" },
+    { "sembol": "m", "anlam": "Kütle", "birim": "kilogram (kg)" },
+    { "sembol": "c", "anlam": "Işık hızı", "birim": "3·10⁸ m/s" }
+  ],
+  "ornek": { "soru": "1 g kütlenin eşdeğer enerjisi nedir?", "cozum": "E = 10^{-3} \\times (3 \\times 10^8)^2 = 9 \\times 10^{13} \\, \\text{J}" }
+},
+{
+  "id": "formul_fotoelektrik",
+  "meta": { "konu": "Modern Fizik", "baslik": "Fotoelektrik Olay", "birim": "Joule veya eV", "tarih": "15.09.2026" },
+  "latex": "E_k = h \\cdot f - \\Phi",
+  "aciklama": "Metalden sökülen elektronun kinetik enerjisi, foton enerjisi ile bağlanma enerjisi (iş fonksiyonu) farkıdır.",
+  "degiskenler": [
+    { "sembol": "E_k", "anlam": "Elektronun kinetik enerjisi", "birim": "Joule veya eV" },
+    { "sembol": "h \\cdot f", "anlam": "Foton enerjisi", "birim": "Joule veya eV" },
+    { "sembol": "\\Phi", "anlam": "İş fonksiyonu (bağlanma enerjisi)", "birim": "Joule veya eV" }
+  ],
+  "ornek": { "soru": "4 eV foton, iş fonksiyonu 2 eV olan metale düşerse elektronun enerjisi nedir?", "cozum": "E_k = 4 - 2 = 2 \\, \\text{eV}" }
+} 
 ]
