@@ -1,0 +1,466 @@
+[
+    {
+        "id": "formul_ohm_yasa",
+        "meta": {
+            "konu": "Elektrik",
+            "baslik": "Ohm Yasası",
+            "birim": "V = A × Ω",
+            "tarih": "09.09.2026"
+        },
+        "latex": "U = I \\cdot R",
+        "aciklama": "İletkenin iki ucu arasındaki potansiyel farkı (U), iletkenden geçen akım (I) ile doğru orantılıdır.",
+        "degiskenler": [
+            {
+                "sembol": "U",
+                "anlam": "Potansiyel farkı",
+                "birim": "Volt (V)"
+            },
+            {
+                "sembol": "I",
+                "anlam": "Akım şiddeti",
+                "birim": "Amper (A)"
+            },
+            {
+                "sembol": "R",
+                "anlam": "Direnç",
+                "birim": "Ohm (Ω)"
+            }
+        ],
+        "ornek": {
+            "soru": "Bir dirençten 2 A akım geçerken uçları arasındaki gerilim 12 V ise, direncin değeri nedir?",
+            "cozum": "R = \\dfrac{U}{I} = \\dfrac{12}{2} = 6 \\, \\Omega"
+        }
+    },
+    {
+        "id": "formul_elektrik_guc",
+        "meta": {
+            "konu": "Elektrik",
+            "baslik": "Elektrik Gücü",
+            "birim": "Watt (W)",
+            "tarih": "09.09.2026"
+        },
+        "latex": "P = U \\cdot I = I^2 \\cdot R",
+        "aciklama": "Elektrik gücü, birim zamanda elektrik enerjisinin tüketilme hızıdır.",
+        "degiskenler": [
+            {
+                "sembol": "P",
+                "anlam": "Güç",
+                "birim": "Watt (W)"
+            },
+            {
+                "sembol": "U",
+                "anlam": "Potansiyel farkı",
+                "birim": "Volt (V)"
+            },
+            {
+                "sembol": "I",
+                "anlam": "Akım",
+                "birim": "Amper (A)"
+            }
+        ],
+        "ornek": {
+            "soru": "220 V gerilim altında çalışan ve 2 A çeken bir ütünün gücü nedir?",
+            "cozum": "P = 220 \\times 2 = 440 \\, \\text{W}"
+        }
+    },
+    {
+        "id": "formul_agirlik",
+        "meta": {
+            "konu": "Kuvvet ve Hareket",
+            "baslik": "Ağırlık (Yerçekimi Kuvveti)",
+            "birim": "Newton (N)",
+            "tarih": "09.09.2026"
+        },
+        "latex": "G = m \\cdot g",
+        "aciklama": "Bir cismin ağırlığı, kütlesi ile yerçekimi ivmesinin çarpımıdır. Kütle değişmez, ağırlık gezegene göre değişir.",
+        "degiskenler": [
+            {
+                "sembol": "G",
+                "anlam": "Ağırlık",
+                "birim": "Newton (N)"
+            },
+            {
+                "sembol": "m",
+                "anlam": "Kütle",
+                "birim": "Kilogram (kg)"
+            },
+            {
+                "sembol": "g",
+                "anlam": "Yerçekimi ivmesi",
+                "birim": "Dünya ≈ 10 m/s²"
+            }
+        ],
+        "ornek": {
+            "soru": "5 kg kütleli bir cismin Dünya'daki ağırlığı nedir?",
+            "cozum": "G = 5 \\times 10 = 50 \\, \\text{N}"
+        }
+    },
+    {
+        "id": "formul_dogrusal_hareket",
+        "meta": {
+            "konu": "Kuvvet ve Hareket",
+            "baslik": "Doğrusal Hareket — Hız ve Yol",
+            "birim": "m/s",
+            "tarih": "09.09.2026"
+        },
+        "latex": "v = \\dfrac{x}{t}",
+        "aciklama": "Sabit hızla hareket eden bir cismin hızı, alınan yolun zamana oranıdır.",
+        "degiskenler": [
+            {
+                "sembol": "v",
+                "anlam": "Hız",
+                "birim": "m/s"
+            },
+            {
+                "sembol": "x",
+                "anlam": "Yer değiştirme",
+                "birim": "metre (m)"
+            },
+            {
+                "sembol": "t",
+                "anlam": "Zaman",
+                "birim": "saniye (s)"
+            }
+        ],
+        "ornek": {
+            "soru": "120 m yolu 20 saniyede alan arabanın hızı nedir?",
+            "cozum": "v = \\dfrac{120}{20} = 6 \\, \\text{m/s}"
+        }
+    },
+    {
+        "id": "formul_basinc",
+        "meta": {
+            "konu": "Basınç ve Kaldırma Kuvveti",
+            "baslik": "Katı Basıncı",
+            "birim": "Pascal (Pa = N/m²)",
+            "tarih": "09.09.2026"
+        },
+        "latex": "P = \\dfrac{F}{S}",
+        "aciklama": "Katı cisimlerin zemine uyguladığı basınç, zemine dik uygulanan kuvvetin temas yüzey alanına oranıdır.",
+        "degiskenler": [
+            {
+                "sembol": "P",
+                "anlam": "Basınç",
+                "birim": "Pascal (Pa)"
+            },
+            {
+                "sembol": "F",
+                "anlam": "Zemine dik kuvvet",
+                "birim": "Newton (N)"
+            },
+            {
+                "sembol": "S",
+                "anlam": "Temas yüzey alanı",
+                "birim": "m²"
+            }
+        ],
+        "ornek": {
+            "soru": "60 kg kütleli bir insan iki ayağıyla (S ≈ 0,04 m²) duruyorsa uyguladığı basınç nedir?",
+            "cozum": "P = \\dfrac{60 \\times 10}{0,04} = 15.000 \\, \\text{Pa}"
+        }
+    },
+    {
+        "id": "formul_kaldirma_kuvveti",
+        "meta": {
+            "konu": "Basınç ve Kaldırma Kuvveti",
+            "baslik": "Kaldırma Kuvveti (Arşimet)",
+            "birim": "Newton (N)",
+            "tarih": "09.09.2026"
+        },
+        "latex": "K = d_{\\text{sıvı}} \\cdot V_{\\text{batık}} \\cdot g",
+        "aciklama": "Sıvı içine batırılan cisimler, yukarı yönlü bir kuvvetle itilir. Bu kuvvet, cismin batırdığı sıvının ağırlığına eşittir.",
+        "degiskenler": [
+            {
+                "sembol": "K",
+                "anlam": "Kaldırma kuvveti",
+                "birim": "Newton (N)"
+            },
+            {
+                "sembol": "d_{sıvı}",
+                "anlam": "Sıvının yoğunluğu",
+                "birim": "kg/m³ (su: 1000)"
+            },
+            {
+                "sembol": "V_{batık}",
+                "anlam": "Cismin batan hacmi",
+                "birim": "m³"
+            },
+            {
+                "sembol": "g",
+                "anlam": "Yerçekimi ivmesi",
+                "birim": "≈ 10 N/kg"
+            }
+        ],
+        "ornek": {
+            "soru": "Suya tamamen batırılmış 0,002 m³ hacimli taşın kaldırma kuvveti nedir?",
+            "cozum": "K = 1000 \\times 0,002 \\times 10 = 20 \\, \\text{N}"
+        }
+    },
+    {
+        "id": "formul_yogunluk",
+        "meta": {
+            "konu": "Maddenin Halleri",
+            "baslik": "Yoğunluk",
+            "birim": "kg/m³ veya g/cm³",
+            "tarih": "09.09.2026"
+        },
+        "latex": "d = \\dfrac{m}{V}",
+        "aciklama": "Yoğunluk, maddenin birim hacimdeki kütle miktarıdır ve maddenin ayırt edici özelliklerindendir.",
+        "degiskenler": [
+            {
+                "sembol": "d",
+                "anlam": "Yoğunluk",
+                "birim": "kg/m³ veya g/cm³"
+            },
+            {
+                "sembol": "m",
+                "anlam": "Kütle",
+                "birim": "kg veya g"
+            },
+            {
+                "sembol": "V",
+                "anlam": "Hacim",
+                "birim": "m³ veya cm³"
+            }
+        ],
+        "ornek": {
+            "soru": "Hacmi 50 cm³, kütlesi 135 g olan cismin yoğunluğu nedir?",
+            "cozum": "d = \\dfrac{135}{50} = 2,7 \\, \\text{g/cm}^3 \\; (\\text{Alüminyum})"
+        }
+    },
+    {
+        "id": "formul_ici_basinc",
+        "meta": {
+            "konu": "Basınç ve Kaldırma Kuvveti",
+            "baslik": "Sıvı İçinde Basınç (Hidrostatik)",
+            "birim": "Pascal (Pa)",
+            "tarih": "09.09.2026"
+        },
+        "latex": "P = d_{\\text{sıvı}} \\cdot g \\cdot h",
+        "aciklama": "Durgun bir sıvının içindeki basınç derinlikle artar; kabın şekline değil, yalnızca sıvının cinsine ve derinliğe bağlıdır.",
+        "degiskenler": [
+            {
+                "sembol": "P",
+                "anlam": "Sıvı basıncı",
+                "birim": "Pascal (Pa)"
+            },
+            {
+                "sembol": "d_{sıvı}",
+                "anlam": "Sıvının yoğunluğu",
+                "birim": "kg/m³"
+            },
+            {
+                "sembol": "g",
+                "anlam": "Yerçekimi ivmesi",
+                "birim": "≈ 10 N/kg"
+            },
+            {
+                "sembol": "h",
+                "anlam": "Sıvı derinliği",
+                "birim": "metre (m)"
+            }
+        ],
+        "ornek": {
+            "soru": "Denizde 10 m derine dalındığında su basıncı ne kadar artar?",
+            "cozum": "P = 1000 \\times 10 \\times 10 = 100.000 \\, \\text{Pa} \\approx 1 \\, \\text{atm}"
+        }
+    },
+    {
+        "id": "formul_isi_miktar",
+        "meta": {
+            "konu": "Isı ve Sıcaklık",
+            "baslik": "Isı Miktarı",
+            "birim": "Joule veya kalori",
+            "tarih": "09.09.2026"
+        },
+        "latex": "Q = m \\cdot c \\cdot \\Delta t",
+        "aciklama": "Bir maddenin sıcaklığını değiştirmek için gereken ısı miktarı; kütleye, öz ısısına ve sıcaklık değişimine bağlıdır.",
+        "degiskenler": [
+            {
+                "sembol": "Q",
+                "anlam": "Isı miktarı",
+                "birim": "Joule veya kalori"
+            },
+            {
+                "sembol": "m",
+                "anlam": "Kütle",
+                "birim": "kg veya g"
+            },
+            {
+                "sembol": "c",
+                "anlam": "Öz ısı",
+                "birim": "J/(kg·°C) veya cal/(g·°C)"
+            },
+            {
+                "sembol": "\\Delta t",
+                "anlam": "Sıcaklık değişimi",
+                "birim": "°C"
+            }
+        ],
+        "ornek": {
+            "soru": "2 kg suyu 5 °C ısıtmak için gereken ısı miktarı nedir? (c_su ≈ 4186 J/kg·°C)",
+            "cozum": "Q = 2 \\times 4186 \\times 5 = 41.860 \\, \\text{J}"
+        }
+    },
+    {
+        "latex": "\\dfrac{1}{f} = \\dfrac{1}{d_c} + \\dfrac{1}{d_g}",
+        "aciklama": "Küresel aynalarda cisim ve görüntü uzaklıkları, odak uzaklığı ile bu denklemle ilişkilidir. Büyütme: M = d_g / d_c.",
+        "degiskenler": [
+            {
+                "sembol": "f",
+                "anlam": "Odak uzaklığı (f = R/2)",
+                "birim": "metre"
+            },
+            {
+                "sembol": "d_c",
+                "anlam": "Cismin aynaya uzaklığı",
+                "birim": "metre"
+            },
+            {
+                "sembol": "d_g",
+                "anlam": "Görüntünün aynaya uzaklığı",
+                "birim": "metre"
+            }
+        ],
+        "ornek": {
+            "soru": "Odak uzaklığı 10 cm olan çukur aynaya 30 cm uzaklıktaki cismin görüntü uzaklığı nedir?",
+            "cozum": "\\dfrac{1}{10} = \\dfrac{1}{30} + \\dfrac{1}{d_g} \\Rightarrow d_g = 15 \\, \\text{cm}"
+        },
+        "id": "formul_optik_ayna",
+        "meta": {
+            "birim": "metre (m)",
+            "konu": "Optik",
+            "baslik": "Çukur Ayna Denklemi",
+            "tarih": "09.09.2026"
+        },
+        "page": []
+    },
+    {
+        "id": "formul_seri_paralel",
+        "meta": {
+            "konu": "Elektrik",
+            "baslik": "Eş Değer Direnç",
+            "birim": "Ohm (Ω)",
+            "tarih": "09.09.2026"
+        },
+        "latex": "\\text{Seri: } R = R_1 + R_2 \\quad | \\quad \\text{Paralel: } \\dfrac{1}{R} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}",
+        "aciklama": "Seri bağlamada dirençler toplanır. Paralel bağlamada eş değer direnç, en küçük dirençten bile küçüktür.",
+        "degiskenler": [
+            {
+                "sembol": "R",
+                "anlam": "Eş değer direnç",
+                "birim": "Ohm (Ω)"
+            },
+            {
+                "sembol": "R_1, R_2",
+                "anlam": "Bireysel dirençler",
+                "birim": "Ohm (Ω)"
+            }
+        ],
+        "ornek": {
+            "soru": "3 Ω ve 6 Ω'luk iki direnç paralel bağlanırsa eş değer direnç nedir?",
+            "cozum": "\\dfrac{1}{R} = \\dfrac{1}{3} + \\dfrac{1}{6} = \\dfrac{1}{2} \\Rightarrow R = 2 \\, \\Omega"
+        }
+    },
+    {
+        "id": "formul_newton_2",
+        "meta": {
+            "konu": "Kuvvet ve Hareket",
+            "baslik": "Newton'ın İkinci Yasası",
+            "birim": "Newton (N)",
+            "tarih": "09.09.2026"
+        },
+        "latex": "\\vec{F}_{\\text{net}} = m \\cdot \\vec{a}",
+        "aciklama": "Bir cisme etki eden net kuvvet, cismin kütlesi ile kazandığı ivmenin çarpımına eşittir.",
+        "degiskenler": [
+            {
+                "sembol": "F_{net}",
+                "anlam": "Net kuvvet",
+                "birim": "Newton (N)"
+            },
+            {
+                "sembol": "m",
+                "anlam": "Kütle",
+                "birim": "Kilogram (kg)"
+            },
+            {
+                "sembol": "a",
+                "anlam": "İvme",
+                "birim": "m/s²"
+            }
+        ],
+        "ornek": {
+            "soru": "1000 kg'lık arabaya 2000 N net kuvvet uygulanırsa ivme nedir?",
+            "cozum": "a = \\dfrac{2000}{1000} = 2 \\, \\text{m/s}^2"
+        }
+    },
+    {
+        "id": "formul_is_guc_enerji",
+        "meta": {
+            "konu": "İş, Güç, Enerji",
+            "baslik": "İş — Güç — Kinetik Enerji",
+            "birim": "Joule (J) / Watt (W)",
+            "tarih": "09.09.2026"
+        },
+        "latex": "W = F \\cdot x \\quad | \\quad P = \\dfrac{W}{t} \\quad | \\quad E_k = \\dfrac{1}{2} m v^2",
+        "aciklama": "İş: kuvvetin yol boyunca etkisi. Güç: birim zamandaki iş. Kinetik enerji: hızın karesiyle orantılıdır.",
+        "degiskenler": [
+            {
+                "sembol": "W",
+                "anlam": "İş",
+                "birim": "Joule (J)"
+            },
+            {
+                "sembol": "P",
+                "anlam": "Güç",
+                "birim": "Watt (W)"
+            },
+            {
+                "sembol": "E_k",
+                "anlam": "Kinetik enerji",
+                "birim": "Joule (J)"
+            }
+        ],
+        "ornek": {
+            "soru": "2 kg kütleli top 10 m/s hızla fırlatılırsa kinetik enerjisi nedir?",
+            "cozum": "E_k = \\dfrac{1}{2} \\times 2 \\times 10^2 = 100 \\, \\text{J}"
+        }
+    },
+    {
+        "id": "formul_yatay_atış",
+        "meta": {
+            "konu": "Atış Hareketi",
+            "baslik": "Yatay Atış",
+            "birim": "metre (m) / saniye (s)",
+            "tarih": "09.09.2026"
+        },
+        "latex": "h = \\dfrac{1}{2} g t^2 \\quad | \\quad x = v_0 \\cdot t",
+        "aciklama": "Yatay atılan cisim, yatayda sabit hızla, düşeyde serbest düşme hareketi yapar. Uçuş süresi yalnızca yüksekliğe bağlıdır.",
+        "degiskenler": [
+            {
+                "sembol": "h",
+                "anlam": "Yükseklik",
+                "birim": "metre (m)"
+            },
+            {
+                "sembol": "x",
+                "anlam": "Menzil (yatay yol)",
+                "birim": "metre (m)"
+            },
+            {
+                "sembol": "v_0",
+                "anlam": "Atış hızı",
+                "birim": "m/s"
+            },
+            {
+                "sembol": "t",
+                "anlam": "Uçuş süresi",
+                "birim": "saniye (s)"
+            }
+        ],
+        "ornek": {
+            "soru": "20 m/s yatay hızla 45 m yüksekten atılan topun yere düşme süresi ve menzili nedir?",
+            "cozum": "t = \\sqrt{\\dfrac{2 \\times 45}{10}} = 3 \\, \\text{s} \\quad ; \\quad x = 20 \\times 3 = 60 \\, \\text{m}"
+        }
+    }
+]
