@@ -1,4 +1,4 @@
-// SUPABASE BAĞLANTISI
+// SUPABASE BAĞLANTISI 
 const SUPABASE_URL = "https://xynrvyltphhlctgknsbl.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_s4GbYjutbYiSdLEqzDG4gQ_rXbEnFyJ";
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
