@@ -443,7 +443,7 @@
         },
         "page": [
             {
-                "uid": "block_1790262783406_1066",
+                "uid": "block_1790262793157_2869",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -451,70 +451,70 @@
                 }
             },
             {
-                "uid": "block_1790262783406_3784",
+                "uid": "block_1790262793157_9365",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">DEĞERLENDİRME MODELİNİN AMACI VE TANIMI</span></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">1.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Analitik Düşünce Süzgeci:&nbsp;</span>İDK Akademik Hazır Bulunuşluk ve Yazma Değerlendirmesi, öğrencilerin lise ileri düzey kurslarına (İDK) kabul edilmeden önce; veri analizi yapma, bir iddiayı bilimsel/mantıksal kanıtlarla savunma ve sentez oluşturma becerilerini ölçer. Bu değerlendirme, adayın sadece bilgiyi geri çağırma değil, üst düzey akademik okuryazarlık seviyesini tespit etmeyi amaçlar.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">1.2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Süreç Odaklı Tasarım: </span>Değerlendirme, test usulü veya klasik açık uçlu bilgi sorularından oluşmaz. Öğrenciye bir metin, grafik, deneysel veri seti veya tarihi bir vaka sunulur; öğrenciden bu verileri yorumlayan özgün bir analitik makale (kompozisyon) kaleme alması istenir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790262783406_3152",
+                "uid": "block_1790262793157_9202",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">UYGULAMA VE BRANŞ KRİTERLERİ</span></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">2.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Ortak Uygulama Esası: </span>İDK modüllerine başvuracak her öğrenci, seçtiği alan grubuna göre belirlenen yazma görevini dijital sınav ortamında tamamlamak zorundadır.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">2.2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Sayısal ve Fen Bilimleri (Fizik, Kimya, Biyoloji, Matematik) Yazma Modeli:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.&nbsp;Veri Kanıtlı Argüman:</span> Öğrenciye ham laboratuvar verileri, bir simülasyon çıktısı veya çelişkili iki bilimsel teori sunulur.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style=\"font-weight: bold;\">&nbsp; b.&nbsp;Görev: </span>Öğrenci, sunulan verideki anomalileri veya teoriler arasındaki mantıksal boşlukları tespit ederek, neden-sonuç ilişkisi içinde teknik bir analiz raporu yazar. Formül kullanmadan, olayın fiziksel/kimyasal mekanizmasını sözel olarak açıklar.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">2.3-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Sözel ve Sosyal Bilimler (Tarih, İngilizce) Yazma Modeli:\n</span><br><span style=\"font-weight: bold;\">&nbsp;a) Kaynak Tabanlı Analiz:</span> Öğrenciye aynı tarihi olay ya da küresel kriz hakkında yazılmış iki farklı birinci el kaynak (makale, antlaşma metni veya manifesto) sunulur.\n<br><span style=\"font-weight: bold;\">&nbsp;b) Görev</span>: Öğrenci, kaynakların yanlılık durumunu, retorik stratejilerini ve tarihsel bağlamını karşılaştırarak nesnel bir sentez metni üretir.&nbsp;<br></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790262783407_2920",
+                "uid": "block_1790262793157_2163",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1790262783407_1082",
+                "uid": "block_1790262793157_6329",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 3-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">DEĞERLENDİRME KRİTERLERİ VE 5'LİK NOT SİSTEMİ UYARLAMASI (RUBRİK)</span></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">3.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Analitik Rubrik Ölçümü:</span> Öğrencilerin sunduğu yazma görevleri, kılavuzdaki performans kriterlerinin özü korunarak, ulusal bütünlüğe uyumlu 5'lik not sistemine göre aşağıdaki şekilde resmi olarak notlandırılır:</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790262783407_5257",
+                "uid": "block_1790262793158_22",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1790262783407_778",
+                "uid": "block_1790262793158_7978",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 4-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">DEĞERLENDİRME KRİTERLERİ VE 5'LİK NOT SİSTEMİ UYARLAMASI (RUBRİK)</span></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div>"
                 }
             },
             {
-                "uid": "block_1790262783407_7641",
+                "uid": "block_1790262793158_7373",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1790262783407_3261",
+                "uid": "block_1790262793158_5042",
                 "type": "tablo",
                 "content": {
                     "html": "<table style=\"margin-left: auto; margin-right: auto;\"><tbody><tr><th class=\"\">Puan</th><th class=\"\">Derece</th><th class=\"\">Yazım ve Değerlendirme Kriterleri</th></tr><tr><td class=\"\" style=\"text-align: center;\"><span style=\"font-weight: bold;\">5</span></td><td class=\"\">Pekiyi</td><td class=\"\">* Üst düzey bütünlük, dilin son derece etkili kullanımı ve kusursuz hakimiyeti.\n<br>* Kusursuz bir açıklama, etkili bir düzen ve net geçişler içeren güçlü mantıksal yapı.\n<br>* Standart yazılı kurallara tamamen hakim olmak, hatasız akademik metin üretmek.&nbsp;<br></td></tr><tr><td class=\"\" style=\"text-align: center;\"><span style=\"font-weight: bold;\">4</span></td><td class=\"\">İyi</td><td class=\"\">* Bütünlük ve dilin etkili kullanımı ve genel hakimiyeti.\n<br>* Kavrayıcı bir açıklama, iyi bir düzen ve belirgin geçişler içeren mantıksal bir yapı.\n<br>* Standart yazılı kurallara güçlü bir şekilde hakim olmak, anlamı etkilemeyen nadir hatalar yapmak.&nbsp;<br></td></tr><tr><td class=\"\" style=\"text-align: center;\"><span style=\"font-weight: bold;\">3</span></td><td class=\"\">Orta</td><td class=\"\">* Bütünlük ve dilin yeterli kullanımı ve temel hakimiyeti.\n<br>* İnandırıcı bir iddia, yeterli bir düzen ve geçişler içeren yapı.\n<br>* Standart yazılı kurallara yeterli düzeyde hakim olmak, sadece anlamı bozmayan küçük hatalar yapmak.&nbsp;<br></td></tr><tr><td class=\"\" style=\"text-align: center;\"><span style=\"font-weight: bold;\">2</span></td><td class=\"\">Geçer</td><td class=\"\">* Az ya da yetersiz uyum veya dile karşı zayıf hakimiyet.\n<br>* Yetersiz bir kurgu, net olmayan bir iddia ve geçişlerin belirgin olmaması.\n<br>* Standart yazılı kurallarda anlamı ve akışı zorlaştıran bazı hatalar.&nbsp;<br></td></tr><tr><td class=\"\" style=\"text-align: center;\"><span style=\"font-weight: bold;\">1</span></td><td class=\"\">Geçmez</td><td class=\"\">* Tam bir uyum eksikliği veya dile hakimiyetin olmaması.\n<br>* Tanımlanabilir bir iddiası olmayan, geçişlerin olmadığı amaçsız veya yetersiz yapı.\n<br>* Standart yazılı kurallarda anlamı tamamen engelleyen yapısal birçok hata.&nbsp;<br></td></tr><tr><td class=\"\"><span style=\"font-weight: bold;\">0</span></td><td class=\"\">Sınava Girmedi / Boş</td><td class=\"\">* Metin üretilmemiş, tamamen boş bırakılmış veya değerlendirilebilecek herhangi bir akademik içerik sunulmamış durumlar.</td></tr></tbody></table>"
                 }
             },
             {
-                "uid": "block_1790262783407_7145",
+                "uid": "block_1790262793158_1303",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p><span style=\"color: rgb(195, 128, 34);\">3.2. </span><span style=\"font-weight: bold;\">Çift Kör Hakem Standardı: </span>Yazma değerlendirmeleri, Madde 13’teki sızdırmazlık ilkesine tabidir. Öğrencinin dijital olarak teslim ettiği metinden isim, okul ve bölge bilgileri sistem tarafından tamamen kazınır. Metin, birbirinden bağımsız çalışan iki farklı dış koordinatör öğretmen tarafından okunur. Puanlar arasında 1 puandan fazla fark olması durumunda, metin otomatik olarak üçüncü bir \"Baş Hakem\" onayına düşer. Puanlamayı gerçekleştiren harici komisyon üyeleri, dosyasındaki mizanpaja sadık kalarak, her öğrenci değerlendirmesinin altına 5'lik notun gerekçelerini içeren özel \"<span style=\"font-weight: bold;\">Yorumlar</span>\" bölümünü işlemek zorundadır.</p></blockquote></blockquote>"
                 }
             },
             {
-                "uid": "block_1790262783407_2619",
+                "uid": "block_1790262793158_1710",
                 "type": "paragraf",
                 "content": {
                     "html": "<br>"
