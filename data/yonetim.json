@@ -785,7 +785,7 @@
         },
         "page": [
             {
-                "uid": "block_1790265748437_4171",
+                "uid": "block_1790265756432_2939",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -793,35 +793,35 @@
                 }
             },
             {
-                "uid": "block_1790265748437_2468",
+                "uid": "block_1790265756432_6181",
                 "type": "paragraf",
                 "content": {
                     "html": "<p>İçeriğe başlamak için tıklayın...</p>"
                 }
             },
             {
-                "uid": "block_1790265748437_9010",
+                "uid": "block_1790265756432_9719",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">SORUŞTURMA VE KANIT TOPLAMA SÜRECİ </span>Disiplin vakalarında gerçeğin ortaya çıkarılması için izlenecek yöntemler şunlardır:</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">1.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Ön İnceleme ve Sorgulama:</span> Bir disiplin ihlali şüphesi doğduğunda, ilgili öğretmen veya okul yöneticisi durumu derhal incelemeye alır.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">1.2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">İfade Alma: </span>Hakkında iddia bulunan öğrenci, olayla ilgili kendi anlatımını sunma ve savunmasını yapma hakkına sahiptir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">1.3-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Kanıtların Değerlendirilmesi: </span>Karar vericiler; tanık beyanlarını, fiziksel kanıtları ve varsa dijital kayıtları (kamera, sistem logları vb.) adil bir şekilde değerlendirir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790265748437_5681",
+                "uid": "block_1790265756432_2987",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">CEZALANDIRMA YÖNTEMLERİ VE KADEMELENDİRME</span> Cezalar, öğrencinin hatasını anlamasını sağlayacak ve okul huzurunu yeniden tesis edecek şekilde asgari standartlara göre uygulanır:</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">2.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Sözlü ve Yazılı Uyarı: </span>Hafif ihlallerde öğrencinin davranışını düzeltmesi için yapılan ilk resmi müdahaledir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">2.2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Geçici Uzaklaştırma (Suspension): </span>Öğrencinin belirli bir süre okul binasından ve faaliyetlerinden men edilmesidir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">2.3-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Okuldan Atılma / İlişik Kesme (Expulsion):</span> Telafisi mümkün olmayan ağır ihlallerde, öğrencinin kurumla ilişiğinin tamamen kesilmesidir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">2.4-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Acil Uzaklaştırma:</span> Güvenliği doğrudan tehdit eden durumlarda, yasal süreç beklenmeksizin uygulanan hızlı tahliye işlemidir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790265748437_2840",
+                "uid": "block_1790265756432_4242",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 3-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">BİNA YÖNETİCİSİNİN (MÜDÜR) ÖZEL YETKİSİ </span>Her okulun kendine has dinamikleri olduğu için müdürlere ek yetkiler verilmiştir:</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">3.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Esnek Düzenleme: </span>Okul müdürü, genel yönetmelikte yer almasa dahi, binanın güvenliği ve başarısı için gerekli gördüğü özel bina kurallarını oluşturabilir ve uygulayabilir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">3.2-</span><span class=\"ed-madde-metin\">Son Karar Merci: Yönetmelikte açıkça tanımlanmamış sıra dışı vakalarda, bina atmosferini korumak adına son karar müdür tarafından verilir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790265748437_3286",
+                "uid": "block_1790265756432_3542",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p><span style=\"font-weight: bold;\">GENEL GEREKÇE: </span>Bu maddelerle amacımız; okulda \"ceza\" odaklı bir sistem değil, \"kural ve adalet\" odaklı bir sistem kurmaktır. Öğrencinin eğitim hakkını korurken, okulun huzurunu bozan unsurlara karşı öğretmenin ve müdürün elini güçlendiriyoruz.</p></blockquote>"
