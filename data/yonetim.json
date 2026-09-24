@@ -531,7 +531,7 @@
         },
         "page": [
             {
-                "uid": "block_1790263534019_3081",
+                "uid": "block_1790263545254_4290",
                 "type": "baslik",
                 "content": {
                     "tag": "h2",
@@ -539,77 +539,77 @@
                 }
             },
             {
-                "uid": "block_1790263534019_3062",
+                "uid": "block_1790263545255_4884",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1790263534019_375",
+                "uid": "block_1790263545255_3058",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">AKADEMİK ODAKLILIK VE İÇERİK STANDARTLARI\n</span><br>Okul bünyesindeki tüm etkileşimli tahtalarda yansıtılan her türlü dijital içerik (film, slayt, web sayfası, simülasyon, teknik çizim), doğrudan müfredat kazanımları ile ilişkilendirilmek zorundadır.&nbsp;&nbsp;<br></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">1.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Eğitsel Değer Şartı:</span> Sadece \"vakit geçirmek\" veya \"eğlence\" amacıyla, akademik bir temeli olmayan film veya video izletilmesi kesinlikle yasaktır. Her materyal, öğretmen tarafından önceden akademik uygunluk denetiminden geçirilmiş olmalıdır.&nbsp;</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">1.2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">İnternet ve Web Kaynakları:</span> YouTube, eğitim portalları veya simülasyon sitelerinden yapılan gösterimler; konuyu somutlaştırmalı ve öğrencinin bağlam temelli öğrenme sürecini desteklemelidir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790263534019_2576",
+                "uid": "block_1790263545255_859",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1790263534019_770",
+                "uid": "block_1790263545255_5795",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">İÇERİK DERECELENDİRMESİ VE GÜVENLİK\n</span><br>Sınıf ortamında paylaşılan görsel içeriklerin, öğrenci yaş grubuna ve toplumsal değerlere uygunluğu esastır:&nbsp;&nbsp;<br></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">2.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Yaş Uygunluk Sınırı: </span>Lise düzeyinde (9-12. Sınıf) sadece \"Genel İzleyici\" veya \"13+\" (PG-13) kategorisindeki içerikler paylaşılabilir. \"18+\" veya \"R\" (Yetişkin) kategorisindeki hiçbir içerik akademik amaçla dahi olsa sınıf ortamına taşınamaz.&nbsp;</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">2.2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Veli Bilgilendirme:</span> Tartışmalı veya hassas konuları içeren 13+ materyallerin kullanımı öncesinde, okul idaresi ve veliler bilgilendirilmelidir.&nbsp;</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790263534019_6738",
+                "uid": "block_1790263545255_7906",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1790263534019_518",
+                "uid": "block_1790263545255_2733",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 3-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">DİJİTAL DÜRÜSTLÜK VE TELİF HAKLARI (INTEGRITY)\n</span><br>Eğitimde dürüstlük ilkesi, dijital materyal kullanımında da en üst düzeyde uygulanır:&nbsp;&nbsp;<br></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">3.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Kaynak Gösterme ve Atıf:</span> Akıllı tahtada kullanılan slaytların, internet sayfalarının veya özgün teknik çizimlerin kaynakları, akademik dürüstlük ilkesi gereği sunum sonunda mutlaka belirtilmelidir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">3.2-</span><span class=\"ed-madde-metin\">Yasal ve Lisanslı İçerik: Derslerde sadece Bakanlık onaylı portallar (EBA gibi) veya telif haklarına uygun yasal platformlar kullanılabilir. Korsan içerik veya illegal yayın siteleri üzerinden ders işlenmesi kesinlikle yasaktır.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790263534019_1167",
+                "uid": "block_1790263545255_7713",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1790263534019_8899",
+                "uid": "block_1790263545255_2529",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 4-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">CİHAZ KULLANIM DİSİPLİNİ VE ETİK</span></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">4.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Amacı Dışında Kullanım: </span>Etkileşimli tahtalar teneffüslerde, boş derslerde veya öğle aralarında kişisel sosyal medya erişimi, oyun veya müfredat dışı eğlence amaçlı kullanılamaz.&nbsp;</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">4.2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Kişisel Verilerin Korunması: </span>Tahta üzerinden sınıf içi görüntülerin izinsiz kaydedilmesi veya sosyal mecralarda paylaşılması, \"Kişisel Verilerin Korunması Kanunu\" ve okul disiplin kuralları çerçevesinde ağır kusur sayılır.&nbsp;</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790263534019_6853",
+                "uid": "block_1790263545255_9375",
                 "type": "paragraf",
                 "content": {
                     "html": "<p><br></p>"
                 }
             },
             {
-                "uid": "block_1790263534019_3939",
+                "uid": "block_1790263545255_3863",
                 "type": "paragraf",
                 "content": {
                     "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 5-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">ÖĞRETMEN REHBERLİĞİ VE DENETİM</span></span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">5.1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Etkileşimli Kullanım:</span> Akıllı tahta bir \"televizyon\" gibi değil, öğrencinin de sürece katıldığı (soru çözümü, modelleme, simülasyon yönetimi) interaktif bir araç olarak kullanılmalıdır.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div><div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">5.2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">Teknik Koruma:</span> Okul yönetimi, tahtaların donanımsal ve yazılımsal güvenliğini sağlamakla; öğretmenler ise yansıtılan içeriğin etik sınırlarını korumakla yükümlüdür.&nbsp;</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div></div></div>"
                 }
             },
             {
-                "uid": "block_1790263534019_2824",
+                "uid": "block_1790263545255_4177",
                 "type": "paragraf",
                 "content": {
                     "html": "<blockquote style=\"margin: 0 0 0 40px; border: none; padding: 0px;\"><p><span style=\"font-weight: bold;\">GEREKÇE</span>: Bu yönetmelik, okullarımızdaki akıllı tahta teknolojisinin bir \"televizyon\" gibi değil, öğrenciyi araştırmaya ve bağlamsal öğrenmeye iten \"interaktif bir laboratuvar\" gibi kullanılmasını hedefler.</p></blockquote>"
