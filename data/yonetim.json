@@ -709,6 +709,71 @@
             "baslik": "Ders Materyalleri ve Eğitim Araçlarının Yönetimine Dair Usul ve Esaslar",
             "tarih": "24.09.2026 17:42:30"
         },
-        "page": []
+        "page": [
+            {
+                "uid": "block_1790264755058_9796",
+                "type": "baslik",
+                "content": {
+                    "tag": "h2",
+                    "text": "DERS MATERYALLERİ VE EĞİTİM ARAÇLARININ YÖNETİMİNE DAİR USUL VE ESASLAR"
+                }
+            },
+            {
+                "uid": "block_1790264755059_5942",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            },
+            {
+                "uid": "block_1790264755059_6331",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 1-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">AMAÇ VE KAPSAM</span> (1) Bu düzenlemenin amacı, eğitim-öğretim süreçlerinde kullanılan ders kitapları ve yardımcı materyallerin temini, muhafazası, iadesi ve bu materyallerin pedagojik niteliklerinin artırılmasına ilişkin usul ve esasları belirlemektir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div>"
+                }
+            },
+            {
+                "uid": "block_1790264755059_631",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 2-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">MATERYAL MÜLKİYETİ VE EMANET ESASI</span> (1) Ücretsiz olarak dağıtılan tüm ders kitapları ve eğitim araçları kamu malı statüsündedir. Materyaller, eğitim yılı başında öğrenciye \"Kullanım Hakkı Devri ve Emanet\" usulüyle teslim edilir. (2) Teslim edilen materyallerin tahrip edilmeden muhafazası ve yıl sonunda iadesi öğrencinin ve velinin ortak sorumluluğundadır.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div>"
+                }
+            },
+            {
+                "uid": "block_1790264755059_4750",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 3-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">İÇERİK YAPISI VE BAĞLAM TEMELLİ YAKLAŞIM</span> (1) Ders kitapları; temel bilimsel gerçekleri içeren \"Sabit Müfredat\" ve güncel teknolojik gelişmeleri içeren \"Dinamik Müfredat\" olmak üzere hibrit yapıda kurgulanır. (2) İçerik üretiminde \"Bağlam Temelli Yaklaşım\" (Context-Based Learning) esastır. Teorik bilgiler, hayatın içinden seçilmiş gerçek yaşam senaryoları, mühendislik modelleri ve uygulama örnekleri üzerinden aktarılır. (3) Kitaplar, öğrencinin seçtiği ileri seviye dersler ve öğleden sonraki yetenek gruplarına (Mühendislik, Sanat, Spor vb.) uygun, branşa özgü \"Uygulama ve Deney Kılavuzları\"nı içerecek şekilde setler halinde düzenlenir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div>"
+                }
+            },
+            {
+                "uid": "block_1790264755059_5906",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 4-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">İSRAFIN ÖNLENMESİ VE DİJİTAL ENTEGRASYON</span> (1) Müfredat değişikliklerinde mevcut basılı materyallerin atıl kalmasını önlemek amacıyla, güncel bilgiler kitap üzerindeki dinamik kodlar vasıtasıyla dijital platformlardan sunulur. (2) Kitapların basım kalitesi, çok yıllık kullanımı mümkün kılacak yüksek standartlarda tutulur.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div>"
+                }
+            },
+            {
+                "uid": "block_1790264755059_7075",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 5-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">SORUMLULUK VE DİSİPLİN HÜKÜMLERİ</span> (1) Eğitim materyallerinin kaybı, kasten tahrif edilmesi veya kullanılamaz hale getirilmesi durumunda oluşacak kamu zararı veli tarafından tazmin edilir. (2) Materyalleri koruma konusundaki tutum ve davranışlar, öğrencinin \"Akademik Kredi ve Disiplin Puanı\" (Kredi Esaslı Disiplin Sistemi) çerçevesinde değerlendirilir. Kitaplarını usulüne uygun ve temiz iade eden öğrenciler, ilgili puanlama sisteminde ödüllendirilir.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div>"
+                }
+            },
+            {
+                "uid": "block_1790264755059_5916",
+                "type": "paragraf",
+                "content": {
+                    "html": "<div class=\"ed-madde\"><div class=\"ed-madde-satir\"><span class=\"ed-madde-no\">MADDE 6-</span><span class=\"ed-madde-metin\"><span style=\"font-weight: bold;\">DENETİM VE YÜRÜRLÜK</span> (1) Kitapların derslerde aktif kullanımı ve kondisyon durumları, okul idaresi ve zümre öğretmenlerince periyodik olarak denetlenir. (2) Bu esaslar, yayımlandığı tarihten itibaren yürürlüğe girer.</span><span class=\"ed-madde-araclar\"><button type=\"button\" class=\"ed-madde-btn ed-madde-ekle\" title=\"Alt madde ekle\"><i class=\"fa-solid fa-plus\"></i></button><button type=\"button\" class=\"ed-madde-btn tehlike ed-madde-sil\" title=\"Sil\"><i class=\"fa-solid fa-xmark\"></i></button></span></div><div class=\"ed-madde-altlar\"></div></div>"
+                }
+            },
+            {
+                "uid": "block_1790264755059_5957",
+                "type": "paragraf",
+                "content": {
+                    "html": "<p><br></p>"
+                }
+            }
+        ]
     }
 ]
